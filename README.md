@@ -55,7 +55,6 @@ create-mernjs-app --help  // get help and check cli usage
 
 ## Documentation
 - Follow [our installing guide](https://mernjs.org/installation) for more information.
-- Follow [our deployment guide](https://mernjs.org/deployment).
 
 ## Sample Apps
 See [list of sample apps](https://mernjs.org/showcase) built in the mernjs with [live demo](https://mernjs.org/showcase).
