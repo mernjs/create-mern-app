@@ -34,8 +34,8 @@ npm run dev
 
 ## Help and Version   
 ```
-mernjs --version // check cli version
-mernjs --help  // get help and check cli usage 
+create-mernjs-app --version // check cli version
+create-mernjs-app --help  // get help and check cli usage 
 ```
 
 ## Documentation
@@ -59,7 +59,7 @@ Follow us on [Facebook](https://www.facebook.com/mernjs), [Twitter](https://twit
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for support, discussion, security concerns and suggestions.
 
 ## License
-[MIT License](https://github.com/create-mernjs-app/blob/master/LICENSE) Copyright (c) 2021 MernJs Community.
+[MIT License](https://github.com/mernjs/create-mernjs-app/blob/master/LICENSE) Copyright (c) 2021 MernJs Community.
 
 ## Links
 [Website](https://mernjs.org)
