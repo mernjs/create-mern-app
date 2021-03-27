@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://mernjs.org/</loc>
+	<lastmod>2021-03-16T21:31:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://mernjs.org/installation</loc>
+	<lastmod>2021-03-16T21:31:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://mernjs.org/versions</loc>
+	<lastmod>2021-03-16T21:31:56+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://mernjs.org/showcase</loc>
+	<lastmod>2021-03-16T21:31:56+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://mernjs.org/community</loc>
+	<lastmod>2021-03-16T21:31:56+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://mernjs.org/deployment</loc>
+	<lastmod>2021-03-16T21:31:56+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+</urlset>

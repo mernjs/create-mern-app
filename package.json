@@ -1,0 +1,34 @@
+{
+  "name": "create-mernjs-app",
+  "version": "0.1.0",
+  "description": "MERN.JS is a super simple boilerplate for building web and mobile apps in pure JavaScript, released as free and open-source software under the MIT License.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "keywords": [
+    "create-mernjs-app",
+    "mern",
+    "mernjs",
+    "isomorphic",
+    "boilerplate",
+    "react",
+    "redux",
+    "express",
+    "mongo",
+    "mongodb",
+    "nodejs",
+    "react-native"
+  ],
+  "author": "MernJs Community <mernjscommunity@gmail.com> (https://mernjs.org)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mernjs/create-mern-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mernjs/create-mern-app/issues"
+  },
+  "homepage": "https://github.com/mernjs/create-mern-app#readme"
+}

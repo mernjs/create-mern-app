@@ -1,0 +1,9 @@
+.custom-navbar{border-top: 5px solid #4c84ff; box-shadow: 5px 5px 5px #eee; z-index:;background-color: #fff;}
+.nav-link{color: #4c84ff!important;}
+.custom-navbar .nav-link:hover{color: black!important;}
+.mr-right{ margin-right: 21px; }
+a{
+	color: #4c84ff;
+    font-weight: 500;
+	padding: 12px 10px;
+}
