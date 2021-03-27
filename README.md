@@ -9,25 +9,40 @@ Before we begin, recommend to read about the basic building blocks that assemble
 Go over the official documentation of [NodeJs](https://nodejs.org/), [ExpressJs](http://expressjs.com/), [ReactJs](https://reactjs.org/), [React Native](https://reactnative.dev/), and [MongoDB](http://mongodb.org/), then continue with the [MernJs](https://mernjs.org/installation).
 
 ## Installation
+You can either use npx , or install the package globally on your machine.
 
-### Install create-mernjs-app globally   
+### 1. Create MernJs App Using NPX   
 ```
-npm i -g create-mernjs-app
+npx create-mernjs-app my_project
 ```
-
-## Create MernJs App
-
-### 1. Create new application using cli   
-```
-create-mernjs-app my_project
-```
-
 ### 2. CD into newly created project directory   
 ```
 cd my_project
 ```
 
 ### 3. Run newly created application   
+```
+npm run dev
+```
+
+OR
+
+### 1. Install globally   
+```
+npm i -g create-mernjs-app
+```
+
+### 2. Create MernJs App Using Globally
+```
+create-mernjs-app my_project
+```
+
+### 3. CD into newly created project directory   
+```
+cd my_project
+```
+
+### 4. Run newly created application   
 ```
 npm run dev
 ```
