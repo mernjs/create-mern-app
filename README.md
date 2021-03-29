@@ -11,38 +11,40 @@ Go over the official documentation of [NodeJs](https://nodejs.org/), [ExpressJs]
 ## Installation
 You can either use npx , or install the package globally on your machine.
 
-### 1. Create MernJs App Using NPX   
+### NPX
+#### 1. Create MernJs App
 ```
 npx create-mernjs-app my_project
 ```
-### 2. CD into newly created project directory   
+#### 2. CD into newly created project directory   
 ```
 cd my_project
 ```
 
-### 3. Run newly created application   
+#### 3. Run newly created application   
 ```
 npm run dev
 ```
 
 OR
 
-### 1. Install globally   
+### Globally
+#### 1. Install globally   
 ```
 npm i -g create-mernjs-app
 ```
 
-### 2. Create MernJs App Using Globally
+#### 2. Create MernJs App
 ```
 create-mernjs-app my_project
 ```
 
-### 3. CD into newly created project directory   
+#### 3. CD into newly created project directory   
 ```
 cd my_project
 ```
 
-### 4. Run newly created application   
+#### 4. Run newly created application   
 ```
 npm run dev
 ```
