@@ -6,9 +6,6 @@ import * as Helpers from '../helpers/helpers';
 import Routes from './routes';
 import '../views/assets/css/app.css'
 
-console.log(process.env.REACT_APP_API_URL)
-
-
 class App extends Component {
   	render() {
     	return (
