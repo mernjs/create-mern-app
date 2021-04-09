@@ -12,7 +12,7 @@ Go over the official documentation of [NodeJs](https://nodejs.org/), [ExpressJs]
 We are working on live demo [Click](https://mernjs.org/live-demo).
 
 ### Installation
-You can either use npx , or install the package globally on your machine.
+You can either use npx or install the package globally on your machine.
 
 #### 1. Create mernjs app using npx
 ```
@@ -77,6 +77,8 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for sup
 
 ### Links
 [Website](https://mernjs.org)
+
+[Blog](https://mernjs-blog.herokuapp.com/)
 
 [Facebook](https://www.facebook.com/mernjs)
 
