@@ -2,19 +2,36 @@
 
 # dependencies
 node_modules
-/.pnp
+.pnp
 .pnp.js
-
-# testing
-/coverage
-
-# production
-/production
-# misc
-.DS_Store
-
 package-lock.json
 
+# testing
+coverage
+
+# next.js
+.next/
+out/
+
+# production
+build
+production
+public/uploads/**/
+
+# misc
+.DS_Store
+*.pem
+
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel

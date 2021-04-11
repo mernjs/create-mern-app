@@ -32,7 +32,7 @@ nextApp.prepare().then(() => {
 
     let server = app.listen(process.env.PORT || process.env.APP_PORT, () => {
         console.log(" ");
-        console.log('********** Server is running on port '+ server.address().port + ' **********')
+        console.log(`********** Server is running on  http://localhost/${server.address().port}  **********`)
         console.log(" ");
     }).on('error', (error) => {
         console.log(" ");

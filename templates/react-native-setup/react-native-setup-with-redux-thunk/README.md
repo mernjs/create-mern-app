@@ -8,8 +8,11 @@ Before we begin, recommend to read about the basic building blocks that assemble
 
 Go over the official documentation of [NodeJs](https://nodejs.org/), [ExpressJs](http://expressjs.com/), [ReactJs](https://reactjs.org/), [React Native](https://reactnative.dev/), and [MongoDB](http://mongodb.org/), then continue with the [MernJs](https://mernjs.org/installation).
 
+### Live Demo
+We are working on live demo [click here](https://mernjs.org/live-demo).
+
 ### Installation
-You can either use npx , or install the package globally on your machine.
+You can either use npx or install the package globally on your machine.
 
 #### 1. Create mernjs app using npx
 ```
@@ -53,11 +56,14 @@ create-mernjs-app --version
 create-mernjs-app --help
 ```
 
+### Live Demo
+We are working on live demo [click here](https://mernjs.org/live-demo).
+
+### Youtube Videos
+We are working on youtube vidoes [click here](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists).
+
 ### Documentation
 Follow [our installing guide](https://mernjs.org/installation) for more information.
-
-### Sample Apps
-See [list of sample apps](https://mernjs.org/showcase) built in the mernjs with [live demo](https://mernjs.org/showcase).
 
 ### Support
 If you have any issues or bugs, report in our [Github](https://github.com/mernjs/create-mernjs-app/issues).
@@ -65,7 +71,7 @@ If you have any issues or bugs, report in our [Github](https://github.com/mernjs
 Please email us, If you have any query or security concerns via mernjscommunity@gmail.com.
 
 ### Community
-Follow us on [Facebook](https://www.facebook.com/mernjs), [Twitter](https://twitter.com/mernjs) and [LinkedIn](https://www.linkedin.com/in/mernjs-community-269551191/) for updates, news, and information on the MERN.JS stack.
+Follow us on [Facebook](https://www.facebook.com/mernjs), [Twitter](https://twitter.com/mernjs), [LinkedIn](https://www.linkedin.com/in/mernjs-community-269551191/) and [Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists) for updates, news, and information on the MERN.JS stack.
 
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for support, discussion, security concerns and suggestions.
 
@@ -74,6 +80,10 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for sup
 
 ### Links
 [Website](https://mernjs.org)
+
+[Blog](https://mernjs-blog.herokuapp.com/)
+
+[Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists)
 
 [Facebook](https://www.facebook.com/mernjs)
 
