@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as WelcomeActions from '../../actions/WelcomeActions'
-import { Link } from 'react-router-dom'
 
 class WelcomePage extends Component {
 
@@ -19,10 +18,11 @@ class WelcomePage extends Component {
                             MernJs
                         </div>
                         <div className="links">
-                            <Link rel="noopener noreferrer" to="http://mernjs.org">Website</Link>
-                            <Link rel="noopener noreferrer" to="https://mernjs.org/installation">Docs</Link>
-                            <Link rel="noopener noreferrer" to="https://mernjs.org/showcase">Sample Apps</Link>
-                            <Link rel="noopener noreferrer" to="https://github.com/mernjs/create-mernjs-app">GitHub</Link>
+                            <a target="_blank" without rel="noopener noreferrer" href="http://mernjs.org">Website</a>
+                            <a target="_blank" without rel="noopener noreferrer" href="https://mernjs.org/installation">Docs</a>
+                            <a target="_blank" without rel="noopener noreferrer" href="https://mernjs.org/live-demo">Live Demo</a>
+                            <a target="_blank" without rel="noopener noreferrer" href="https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists">Youtube</a>
+                            <a target="_blank" without rel="noopener noreferrer" href="https://github.com/mernjs/create-mernjs-app">GitHub</a>
                         </div>
                     </div>
                 </div>
