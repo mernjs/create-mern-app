@@ -8,9 +8,6 @@ Before we begin, recommend to read about the basic building blocks that assemble
 
 Go over the official documentation of [NodeJs](https://nodejs.org/), [ExpressJs](http://expressjs.com/), [ReactJs](https://reactjs.org/), [React Native](https://reactnative.dev/), and [MongoDB](http://mongodb.org/), then continue with the [MernJs](https://mernjs.org/installation).
 
-### Live Demo
-We are working on live demo [click here](https://mernjs.org/live-demo).
-
 ### Installation
 You can either use npx or install the package globally on your machine.
 
@@ -56,8 +53,8 @@ create-mernjs-app --version
 create-mernjs-app --help
 ```
 
-### Live Demo
-We are working on live demo [click here](https://mernjs.org/live-demo).
+### Sample Apps
+We are working on sample apps [click here](https://mernjs.org/sample-apps).
 
 ### Youtube Videos
 We are working on youtube vidoes [click here](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists).
