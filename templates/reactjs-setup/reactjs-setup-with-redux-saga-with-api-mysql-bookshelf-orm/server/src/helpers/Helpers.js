@@ -17,14 +17,6 @@ const apiResponse = (res, status, message = '', data) => {
     });
 }
 
-module.exports.view = (res, file_name, title, message = '', data) => {
-    res.render(file_name, {
-        data    : data  || [] ,
-        title   : title || '',
-        message :  message.message || message
-    });
-}
-
 module.exports.send404 = (req, res) => {
     try {
         let url = req.originalUrl
