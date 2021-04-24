@@ -1,8 +1,12 @@
-const bodyParser 	= require('body-parser')
-const express 		= require('express')
-const logger 		= require('morgan')
-const cors 		    = require('cors')
-require('./server/helpers')
+require('dotenv').config()
+global.Sequelize    = require('sequelize');
+const Helpers       = require('./server/helpers/Helpers')
+const bodyParser    = require('body-parser')
+const express       = require('express')
+const logger        = require('morgan')
+const cors          = require('cors')
+const path          = require('path')
+const fs            = require('fs')
 
 const app 	= express();
 
@@ -14,7 +18,7 @@ if(isProduction){
     })
 }else{
     app.get('/', (req, res) => {
-        return apiResponse(res, 200, 'Welcome')
+        return Helpers.apiResponse(res, 200, 'Welcome')
     })
 } 
 

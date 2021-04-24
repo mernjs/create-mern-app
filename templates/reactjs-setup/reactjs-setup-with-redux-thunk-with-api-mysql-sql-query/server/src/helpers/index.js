@@ -4,7 +4,7 @@ global.Route 	= express.Router();
 global.chalk    = require('chalk');
 global.path     = require('path')
 global.fs       = require('fs')
-global.db       = require('../database/dbconfig/DB_mysql_connection');
+global.db           = require('../database/dbconfig/DB_mysql_connection');
 
 function titleCase(str) {
     return str.toLowerCase().split(' ').map(function(chunk){

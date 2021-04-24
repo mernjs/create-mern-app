@@ -1,14 +1,12 @@
+const Helpers = require('../helpers/Helpers')
+
 class WelcomeController {
-
-    constructor () {
-
-    }
 
     users(req, res){
         try {
-            apiResponse(res, 200, 'User Listing Successfully', [])
+            Helpers.apiResponse(res, 200, 'User Listing Successfully', [])
         } catch (error) {
-            apiResponse(res, 500, error)
+            Helpers.apiResponse(res, 500, error)
         }
     }
 

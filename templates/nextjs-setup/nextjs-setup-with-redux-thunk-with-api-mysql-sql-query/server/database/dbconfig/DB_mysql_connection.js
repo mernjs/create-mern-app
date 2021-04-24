@@ -11,7 +11,7 @@ var db = mysql.createConnection({
 db.connect(err => {
     if (err) {
         console.log('')
-        console.log(`********** \x1b[31mDB error ${err.message}\x1b[0m ***********`)
+        console.log(`********** \x1b[31mMissing DB Connection\x1b[0m ***********`)
         console.log('')
         return;
     }

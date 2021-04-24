@@ -1,11 +1,15 @@
+require('dotenv').config()
+global.Sequelize    = require('sequelize');
+const Helpers       = require('./server/helpers/Helpers')
 const bodyParser    = require('body-parser')
 const express       = require('express')
 const cors          = require('cors')
+const path          = require('path')
+const fs            = require('fs')
 const next          = require("next");
 const dev           = process.env.NODE_ENV !== "production";
 const nextApp       = next({ dev });
 const handle        = nextApp.getRequestHandler();
-require('./server/helpers')
 
 nextApp.prepare().then(() => {
 

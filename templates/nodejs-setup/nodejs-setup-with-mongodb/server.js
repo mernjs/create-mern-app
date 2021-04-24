@@ -1,8 +1,12 @@
+require('dotenv').config()
+require('./src/database/dbconfig/DB_mongodb_connection');
+const Helpers       = require('./src/helpers/Helpers')
 const bodyParser 	= require('body-parser')
 const express 		= require('express')
 const logger 		= require('morgan')
 const cors 		    = require('cors')
-require('./src/helpers')
+const path          = require('path')
+const fs            = require('fs')
 
 const app 	= express();
 
@@ -22,7 +26,7 @@ fs.readdirSync(path.join(__dirname, `./src/routes`)).forEach(function(file) {
 });
 
 app.use(logger('dev'));
-app.use(send404)
+app.use(Helpers.send404)
 
 let server = app.listen(process.env.PORT || process.env.APP_PORT, () => {
     console.log(" ");

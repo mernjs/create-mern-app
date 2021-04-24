@@ -1,11 +1,17 @@
+require('dotenv').config()
+global.bookshelf    = require('./server/database/dbconfig/DB_bookshelf_connection');
+global.knex         = require('./server/database/dbconfig/DB_knex_connection')
+global.db           = require('./server/database/dbconfig/DB_mysql_connection');
+const Helpers       = require('./server/helpers/Helpers')
 const bodyParser    = require('body-parser')
 const express       = require('express')
 const cors          = require('cors')
+const path          = require('path')
+const fs            = require('fs')
 const next          = require("next");
 const dev           = process.env.NODE_ENV !== "production";
 const nextApp       = next({ dev });
 const handle        = nextApp.getRequestHandler();
-require('./server/helpers')
 
 nextApp.prepare().then(() => {
 

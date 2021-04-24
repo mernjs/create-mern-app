@@ -1,16 +1,13 @@
-const { User }              = require('../../../models');
+const Helpers = require('../../../helpers/Helpers')
+const User = require('../../../models')
 
 class WelcomeController {
 
-    constructor () {
-
-    }
-
     users(req, res){
         try {
-            apiResponse(res, 200, 'User Listing Successfully', [])
+            Helpers.apiResponse(res, 200, 'User Listing Successfully', [])
         } catch (error) {
-            apiResponse(res, 500, error)
+            Helpers.apiResponse(res, 500, error)
         }
     }
 

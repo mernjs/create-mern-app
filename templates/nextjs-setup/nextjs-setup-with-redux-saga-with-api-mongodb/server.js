@@ -1,11 +1,15 @@
-const bodyParser 	= require('body-parser')
-const express 		= require('express')
-const cors 		    = require('cors')
+require('dotenv').config()
+require('./server/database/dbconfig/DB_mongodb_connection');
+const Helpers       = require('./server/helpers/Helpers')
+const bodyParser    = require('body-parser')
+const express       = require('express')
+const cors          = require('cors')
+const path          = require('path')
+const fs            = require('fs')
 const next          = require("next");
 const dev           = process.env.NODE_ENV !== "production";
 const nextApp       = next({ dev });
 const handle        = nextApp.getRequestHandler();
-require('./server/helpers')
 
 nextApp.prepare().then(() => {
 
@@ -32,7 +36,7 @@ nextApp.prepare().then(() => {
 
     let server = app.listen(process.env.PORT || process.env.APP_PORT, () => {
         console.log(" ");
-        console.log(`********** Server is running on  http://localhost/${server.address().port}  **********`)
+        console.log(`********** Server is running on  http://localhost:${server.address().port}  **********`)
         console.log(" ");
     }).on('error', (error) => {
         console.log(" ");

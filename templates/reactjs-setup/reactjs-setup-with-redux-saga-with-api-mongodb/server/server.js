@@ -1,8 +1,12 @@
-const bodyParser 	= require('body-parser')
-const express 		= require('express')
-const logger 		= require('morgan')
-const cors 		    = require('cors')
-require('./src/helpers')
+require('dotenv').config()
+require('./src/database/dbconfig/DB_mongodb_connection');
+const Helpers       = require('./src/helpers/Helpers')
+const bodyParser    = require('body-parser')
+const express       = require('express')
+const logger        = require('morgan')
+const cors          = require('cors')
+const path          = require('path')
+const fs            = require('fs')
 
 const app 	= express();
 
@@ -31,7 +35,7 @@ if(isProduction){
     })
 }else{
     app.get('/', (req, res) => {
-        return apiResponse(res, 200, 'Welcome')
+        return Helpers.apiResponse(res, 200, 'Welcome')
     })
 } 
 
