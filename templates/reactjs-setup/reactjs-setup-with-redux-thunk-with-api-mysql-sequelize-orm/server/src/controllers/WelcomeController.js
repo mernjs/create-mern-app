@@ -1,4 +1,5 @@
 const Helpers = require('../helpers/Helpers')
+const User = require('../models/User')
 
 class WelcomeController {
 
