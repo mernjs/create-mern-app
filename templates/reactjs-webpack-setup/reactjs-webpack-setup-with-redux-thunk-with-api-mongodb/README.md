@@ -56,9 +56,6 @@ create-mernjs-app --help
 ### Sample Apps
 We are working on sample apps [click here](https://mernjs.org/sample-apps).
 
-### Youtube Videos
-We are working on youtube vidoes [click here](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists).
-
 ### Documentation
 Follow [our installing guide](https://mernjs.org/installation) for more information.
 
