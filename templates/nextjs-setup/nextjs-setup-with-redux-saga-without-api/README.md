@@ -6,7 +6,7 @@ MERN.JS is a super simple boilerplates and starter kits for building web and mob
 ### Before You Begin 
 Before we begin, recommend to read about the basic building blocks that assemble a MERN.JS application:
 
-Go over the official documentation of [NodeJs](https://nodejs.org/), [ExpressJs](http://expressjs.com/), [ReactJs](https://reactjs.org/), [React Native](https://reactnative.dev/), and [MongoDB](http://mongodb.org/), then continue with the [MernJs](https://mernjs.org/installation).
+Go over the official documentation of [NodeJs](https://nodejs.org/), [ExpressJs](http://expressjs.com/), [ReactJs](https://reactjs.org/), [React Native](https://reactnative.dev/), and [MongoDB](http://mongodb.org/), then continue with the [MernJs](https://mernjs.org).
 
 ### Installation
 You can either use npx or install the package globally on your machine.
@@ -55,9 +55,6 @@ create-mernjs-app --help
 
 ### Sample Apps
 We are working on sample apps [click here](https://mernjs.org/sample-apps).
-
-### Documentation
-Follow [our installing guide](https://mernjs.org/installation) for more information.
 
 ### Support
 If you have any issues or bugs, report in our [Github](https://github.com/mernjs/create-mernjs-app/issues).
