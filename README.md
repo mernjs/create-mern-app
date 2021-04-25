@@ -72,6 +72,12 @@ Follow us on [Facebook](https://www.facebook.com/mernjs), [Twitter](https://twit
 
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for support, discussion, security concerns and suggestions.
 
+### Our Team Members
+| Vijay Pratap Singh | Ram Prakash Singh | Ritesh Singh | Avadesh Singh | Amar Pal Singh | 
+| ------ | ------ | ------ | ------ | ------ |
+| ![Vijay Pratap Singh](https://2.gravatar.com/avatar/bd913f88dce5db0cc64d85d9c486ccfd?s=110&d=mm)  | ![Ram Prakash Singh](https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=110&f=y)  | ![Ritesh Singh](https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=110&f=y)  | ![Avadesh Singh](https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=110&f=y)  | ![Amar Pal Singh](https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=110&f=y)  |
+| CEO & Co-Founder | Technology Leader | Core Developer | Core Developer | Core Developer | 
+
 ### License
 [MIT License](https://github.com/mernjs/create-mernjs-app/blob/master/LICENSE) Copyright (c) 2021 MernJs Community.
 
