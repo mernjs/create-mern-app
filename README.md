@@ -53,11 +53,8 @@ create-mernjs-app --version
 create-mernjs-app --help
 ```
 
-### Installation Guide Videos
-Follow [our installing guide](https://www.youtube.com/watch?v=6GFQ_lLbCy4&list=PLdb4nm44DkLrI2fVujfIDEnYCPPx7GxcW) for more information.
-
-### Deployment Guide Videos
-Follow [our deployment guide](https://www.youtube.com/watch?v=-dk3tNlNFuE&list=PLdb4nm44DkLp5fP_ALbbqTuDEmrHj1Vwt) for more information.
+### Installation & Deployment Guide Videos
+Follow [our installing & deployment guide](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists) for more information.
 
 ### Sample Apps
 We are working on sample apps [click here](https://mernjs.org/sample-apps).
