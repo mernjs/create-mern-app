@@ -9,7 +9,8 @@
     "start": "npm run start --prefix server",
     "forever-start": "npm run forever-start --prefix server",
     "forever-restart": "npm run forever-restart --prefix server",
-    "forever-stop": "npm run forever-stop --prefix server"
+    "forever-stop": "npm run forever-stop --prefix server",
+    "migration": "npm run migration --prefix server"
   },
   "author": "author_email",
   "dependencies": {
