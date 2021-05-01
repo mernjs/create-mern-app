@@ -53,9 +53,6 @@ create-mernjs-app --version
 create-mernjs-app --help
 ```
 
-### Sample Apps
-We are working on sample apps [click here](https://mernjs.org/sample-apps).
-
 ### Support
 If you have any issues or bugs, report in our [Github](https://github.com/mernjs/create-mernjs-app/issues).
 
