@@ -23,7 +23,6 @@ class WelcomePage extends Component {
                 <View style={styles.instructions}>
                     <Text onPress={()=> this.onOpen('http://mernjs.org')} style={{marginRight: 10}}>Website</Text>
                     <Text onPress={()=> this.onOpen('https://mernjs.org/installation')} style={{marginRight: 10}}>Docs</Text>
-                    <Text onPress={()=> this.onOpen('https://mernjs.org/sample-apps')} style={{marginRight: 10}}>Sample Apps</Text>
                     <Text onPress={()=> this.onOpen('https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists')} style={{marginRight: 10}}>Youtube</Text>
                     <Text onPress={()=> this.onOpen('https://github.com/mernjs/create-mernjs-app')} >GitHub</Text>
                 </View>
