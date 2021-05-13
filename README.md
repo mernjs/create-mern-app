@@ -47,11 +47,26 @@ cd my_project
 npm run dev
 ```
 
-### Help and Version   
+### Version   
+```
+npx create-mernjs-app --version 
+```
+OR
 ```
 create-mernjs-app --version 
+```
+
+### Help   
+``` 
+npx create-mernjs-app --help
+```
+OR
+``` 
 create-mernjs-app --help
 ```
+
+### Installation & Deployment Videos
+We are working on youtube vidoes [click here](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists).
 
 ### Support
 If you have any issues or bugs, report in our [Github](https://github.com/mernjs/create-mernjs-app/issues).
