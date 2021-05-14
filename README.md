@@ -74,8 +74,8 @@ Follow us on [Facebook](https://www.facebook.com/mernjs), [Twitter](https://twit
 
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for support, discussion, security concerns and suggestions.
 
-### Author
-[Vijay Pratap Singh](https://www.linkedin.com/in/vprtsingh) - MERN Stack Developer.
+<!-- ### Author
+[Vijay Pratap Singh](https://www.linkedin.com/in/vprtsingh) - Application Developer. -->
 
 ### License
 [MIT License](https://github.com/mernjs/create-mernjs-app/blob/master/LICENSE) Copyright (c) 2021 MernJs Community.
