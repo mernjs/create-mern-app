@@ -61,11 +61,11 @@ npx create-mernjs-app --help
 create-mernjs-app --help
 ```
 
-### Installation & Deployment Videos
-We are working on installation & deployment videos [click here](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists).
+### Installation & Deployment Guide
+We are working on installation & deployment guide videos [click here](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists).
 
-### MernJs Code Snippets
-We are working on code snaippets [click here](https://mernjs-code-snippets.herokuapp.com)
+### Code Snippets
+We are working on code snaippets [click here](https://mernjs-code-snippets.herokuapp.com).
 
 ### Support
 If you have any issues or bugs, report in our [Github](https://github.com/mernjs/create-mernjs-app/issues).
