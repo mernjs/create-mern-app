@@ -50,14 +50,14 @@ npm run dev
 ### Version   
 ```
 npx create-mernjs-app --version
-OR
+        OR
 create-mernjs-app --version 
 ```
 
 ### Help   
 ``` 
 npx create-mernjs-app --help
-OR
+        OR
 create-mernjs-app --help
 ```
 
