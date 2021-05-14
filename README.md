@@ -86,8 +86,6 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for sup
 ### Links
 [Website](https://mernjs.org)
 
-[Code Snippets](https://mernjs-code-snippets.herokuapp.com)
-
 [Twitter](https://twitter.com/mernjs)
 
 [LinkedIn](https://www.linkedin.com/in/mernjs-community-269551191/)
