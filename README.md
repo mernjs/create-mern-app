@@ -64,6 +64,9 @@ create-mernjs-app --help
 ### Installation & Deployment Videos
 We are working on installation & deployment videos [click here](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists).
 
+### MernJs Code Snippets
+We are working on code snaippets [click here](https://mernjs-code-snippets.herokuapp.com)
+
 ### Support
 If you have any issues or bugs, report in our [Github](https://github.com/mernjs/create-mernjs-app/issues).
 
@@ -83,12 +86,10 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for sup
 ### Links
 [Website](https://mernjs.org)
 
-[Blog](https://mernjs-blog.herokuapp.com/)
-
-[Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists)
-
-[Facebook](https://www.facebook.com/mernjs)
+[Code Snippets](https://mernjs-code-snippets.herokuapp.com)
 
 [Twitter](https://twitter.com/mernjs)
 
 [LinkedIn](https://www.linkedin.com/in/mernjs-community-269551191/)
+
+[Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists)
