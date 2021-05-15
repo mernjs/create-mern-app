@@ -1,6 +1,6 @@
 {
   "name": "create-mernjs-app",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "MERN.JS is a super simple boilerplate for building web and mobile apps in pure JavaScript, released as free and open-source software under the MIT License.",
   "main": "index.js",
   "scripts": {
