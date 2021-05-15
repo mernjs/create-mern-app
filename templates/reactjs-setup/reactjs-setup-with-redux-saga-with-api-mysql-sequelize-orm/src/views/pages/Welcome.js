@@ -22,6 +22,7 @@ class WelcomePage extends Component {
                         <div className="links">
                             <a target="_blank" without rel="noopener noreferrer" href="http://mernjs.org">Website</a>
                             <a target="_blank" without rel="noopener noreferrer" href="https://mernjs.org/installation">Docs</a>
+                            <a target="_blank" without rel="noopener noreferrer" href="https://mernjs-code-snippets.herokuapp.com">Code Snippets</a>
                             <a target="_blank" without rel="noopener noreferrer" href="https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists">Youtube</a>
                             <a target="_blank" without rel="noopener noreferrer" href="https://github.com/mernjs/create-mernjs-app">GitHub</a>
                         </div>
