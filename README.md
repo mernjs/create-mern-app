@@ -74,7 +74,7 @@ Follow us on [Twitter](https://twitter.com/mernjs), [LinkedIn](https://www.linke
 
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for support, discussion, security concerns and suggestions.
 
-### Author
+<!-- ### Author
 
 <table>
   <tr>
@@ -86,7 +86,7 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for sup
       <a href="https://www.linkedin.com/in/vprtsingh">MERN Stack Developer</a><br />
     </td>
   </tr>
-</table>
+</table> -->
 
 ### License
 [MIT License](https://github.com/mernjs/create-mernjs-app/blob/master/LICENSE) Copyright (c) 2021 MernJs Community.
