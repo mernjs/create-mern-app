@@ -75,6 +75,7 @@ Follow us on [Twitter](https://twitter.com/mernjs), [LinkedIn](https://www.linke
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for support, discussion, security concerns and suggestions.
 
 ### Author
+
 <table>
   <tr>
     <td>
