@@ -74,9 +74,7 @@ Follow us on [Twitter](https://twitter.com/mernjs), [LinkedIn](https://www.linke
 
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for support, discussion, security concerns and suggestions.
 
-
 ### Author
-
 <table>
   <tr>
     <td>
@@ -88,9 +86,6 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for sup
     </td>
   </tr>
 </table>
-
-<!-- ### Author
-[Vijay Pratap Singh](https://www.linkedin.com/in/vprtsingh) - Application Developer. -->
 
 ### License
 [MIT License](https://github.com/mernjs/create-mernjs-app/blob/master/LICENSE) Copyright (c) 2021 MernJs Community.
