@@ -74,6 +74,21 @@ Follow us on [Twitter](https://twitter.com/mernjs), [LinkedIn](https://www.linke
 
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for support, discussion, security concerns and suggestions.
 
+
+## Author
+
+<table>
+  <tr>
+    <td>
+      <img src="https://2.gravatar.com/avatar/bd913f88dce5db0cc64d85d9c486ccfd?s=100&d=mm" width="100">
+    </td>
+    <td>
+      Vijay Pratap Singh<br />
+      <a href="https://www.linkedin.com/in/vprtsingh">Application Developer</a><br />
+    </td>
+  </tr>
+</table>
+
 <!-- ### Author
 [Vijay Pratap Singh](https://www.linkedin.com/in/vprtsingh) - Application Developer. -->
 
