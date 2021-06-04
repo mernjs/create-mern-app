@@ -25,40 +25,14 @@ cd my_project
 npm run dev
 ```
 
-OR
-
-#### 1. Install globally   
-```
-npm i -g create-mernjs-app
-```
-
-#### 2. Create mernjs app using globally
-```
-create-mernjs-app my_project
-```
-
-#### 3. CD into newly created project directory   
-```
-cd my_project
-```
-
-#### 4. Run newly created application   
-```
-npm run dev
-```
-
 ### Version   
 ```
 npx create-mernjs-app --version
-        OR
-create-mernjs-app --version 
 ```
 
 ### Help   
 ``` 
 npx create-mernjs-app --help
-        OR
-create-mernjs-app --help
 ```
 
 ### Code Snippets
