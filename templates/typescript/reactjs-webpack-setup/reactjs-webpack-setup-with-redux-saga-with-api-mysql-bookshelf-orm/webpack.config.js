@@ -12,7 +12,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 module.exports = {
   devtool: 'inline-source-map',
   mode: 'production',
-  entry: './src/engine/index.js',
+  entry: './src/engine/index.tsx',
   output: {
     path: path.resolve(__dirname, 'build'), // change this
     filename: 'bundle.js'
@@ -21,6 +21,9 @@ module.exports = {
     contentBase: path.join(__dirname, 'public'),
     compress: true,
     port: 3000,
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
   },
   module: {
     rules: [
@@ -37,9 +40,9 @@ module.exports = {
         use: "babel-loader"
       }, 
       {
-        test: /\.jsx?$/,
+        test: /\.tsx?$/,
+        use: 'ts-loader',
         exclude: /node_modules/,
-        use: "babel-loader"
       },
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
