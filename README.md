@@ -20,13 +20,8 @@ OR
 npx create-mernjs-app my_project --template typescript
 ```
 
-### Help   
-``` 
-npx create-mernjs-app --help
-```
-
-### Code Snippets
-MernJs code snaippets [click here](https://mernjs-code-snippets.herokuapp.com).
+### Documentation
+Follow [our installing guide](https://mernjs.org/installation) for more information.
 
 ### Support
 If you have any issues or bugs, report in our [Github](https://github.com/mernjs/create-mernjs-app/issues).
