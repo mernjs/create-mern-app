@@ -13,6 +13,11 @@
   },
   "author": "author_email",
   "dependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/node": "^12.20.15",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.7",
+    "@types/redux-logger": "^3.0.8",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
@@ -30,9 +35,13 @@
     "redux": "^4.0.5",
     "redux-form": "^8.3.7",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "typescript": "^4.3.2"
   },
   "devDependencies": {
+    "@types/next-redux-wrapper": "^3.0.0",
+    "@types/react-redux": "^7.1.16",
+    "@types/redux-form": "^8.3.1",
     "nodemon": "^1.19.1"
   }
 }
