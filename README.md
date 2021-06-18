@@ -6,7 +6,7 @@ MERN.JS is a super simple boilerplates and starter kits for building web and mob
 ### Before You Begin 
 Before we begin, recommend to read about the basic building blocks that assemble a MERN.JS application:
 
-Go over the official documentation of [NodeJs](https://nodejs.org/), [ExpressJs](http://expressjs.com/), [ReactJs](https://reactjs.org/), [NextJs](https://redux.js.org/), [Redux](https://redux.js.org/), [React Native](https://reactnative.dev/), [MySql](https://www.mysql.com/), and [MongoDB](http://mongodb.org/), then continue with the [MernJs](https://mernjs.org).
+Go over the official documentation of [NodeJs](https://nodejs.org/), [ExpressJs](http://expressjs.com/), [ReactJs](https://reactjs.org/), [NextJs](https://redux.js.org/), [Redux](https://redux.js.org/), [React Native](https://reactnative.dev/), [TypeScript](https://www.typescriptlang.org/), [MySql](https://www.mysql.com/), and [MongoDB](http://mongodb.org/), then continue with the [MernJs](https://mernjs.org).
 
 ### Installation
 You can either use npx or install the package globally on your machine.
@@ -15,19 +15,9 @@ You can either use npx or install the package globally on your machine.
 ```
 npx create-mernjs-app my_project
 ```
-#### 2. CD into newly created project directory   
+OR   
 ```
-cd my_project
-```
-
-#### 3. Run newly created application   
-```
-npm run dev
-```
-
-### Version   
-```
-npx create-mernjs-app --version
+npx create-mernjs-app my_project --template typescript
 ```
 
 ### Help   
