@@ -1,14 +1,12 @@
 # [![mit license](https://img.shields.io/github/license/mernjs/create-mernjs-app)](https://github.com/mernjs/create-mernjs-app/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/create-mernjs-app)](https://www.npmjs.com/package/create-mernjs-app) [![Gitter](https://badges.gitter.im/mernjs/mernjs.svg)](https://gitter.im/mernjs/mernjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![npm downloads](https://img.shields.io/npm/dy/create-mernjs-app)](https://www.npmjs.com/package/create-mernjs-app)
 
 ### MERN.JS Super Simple Boilerplate
-MERN.JS is a super simple boilerplates and starter kits for building web and mobile apps in pure JavaScript, released as free and open-source software under the MIT License.
+MERN.JS is a super simple boilerplates and starter kits for building web and mobile apps in pure JavaScript.
 
 ### Before You Begin 
-Before we begin, recommend to read about the basic building blocks that assemble a MERN.JS application:
-
 Go over the official documentation of [NodeJs](https://nodejs.org/), [ExpressJs](http://expressjs.com/), [ReactJs](https://reactjs.org/), [NextJs](https://redux.js.org/), [Redux](https://redux.js.org/), [React Native](https://reactnative.dev/), [TypeScript](https://www.typescriptlang.org/), [MySql](https://www.mysql.com/), and [MongoDB](http://mongodb.org/), then continue with the [MernJs](https://mernjs.org).
 
-### Create mern app
+### Create new mern app
 ```
 npx create-mernjs-app my_project
 ```
