@@ -8,10 +8,7 @@ Before we begin, recommend to read about the basic building blocks that assemble
 
 Go over the official documentation of [NodeJs](https://nodejs.org/), [ExpressJs](http://expressjs.com/), [ReactJs](https://reactjs.org/), [NextJs](https://redux.js.org/), [Redux](https://redux.js.org/), [React Native](https://reactnative.dev/), [TypeScript](https://www.typescriptlang.org/), [MySql](https://www.mysql.com/), and [MongoDB](http://mongodb.org/), then continue with the [MernJs](https://mernjs.org).
 
-### Installation
-You can either use npx or install the package globally on your machine.
-
-#### 1. Create mernjs app using npx
+### Create mern app
 ```
 npx create-mernjs-app my_project
 ```
