@@ -15,7 +15,6 @@ OR
 npx create-mernjs-app my_project --template typescript
 ```
 
-### Documentation
 Follow [our installing guide](https://mernjs.org/installation) for more information.
 
 ### Community
