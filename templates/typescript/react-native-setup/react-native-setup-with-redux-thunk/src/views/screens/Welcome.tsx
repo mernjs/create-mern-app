@@ -1,25 +1,27 @@
 import React, { Component } from 'react';
 import {View, Text, StyleSheet, Linking } from 'react-native';
 import { connect } from 'react-redux'
-import * as WelcomeActions from 'src/actions/WelcomeActions'
+import * as WelcomeActions from '../../actions/WelcomeActions'
+import { WelcomeStates } from '../../types/WelcomeTypes';
 
-class WelcomePage extends Component {
+class WelcomePage extends Component<any, WelcomeStates> {
 
-    login = () => {
-        let values = {}
-        values.email = "mernjscommunity"
-        values.password = "mernjscommunity"
-        this.props.dispatch(WelcomeActions.test(values))
+    componentDidMount(){
+      this.props.dispatch(WelcomeActions.setUser({name: 'MernJs', id: 22}))
     }
 
-    onOpen = (url) => {
+    test = () => {
+        this.props.dispatch(WelcomeActions.resetUser({}))
+    }
+
+    onOpen = (url: string) => {
         Linking.openURL(url)
     }
 
     render() { 
         return (
             <View style={styles.container}>
-                <Text style={styles.welcome}  onPress={this.login}>Welcome to MernJs</Text>
+                <Text style={styles.welcome}  onPress={this.test}>Welcome to MernJs</Text>
                 <View style={styles.instructions}>
                     <Text onPress={()=> this.onOpen('http://mernjs.org')} style={{marginRight: 10}}>Website</Text>
                     <Text onPress={()=> this.onOpen('https://mernjs.org/installation')} style={{marginRight: 10}}>Docs</Text>

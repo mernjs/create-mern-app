@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 
-import store from 'src/engine/store';
-import Routes from 'src/engine/routes';
+import store from '../engine/store';
+import Routes from '../engine/routes';
 
 export default class App extends Component {
     render() {

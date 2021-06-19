@@ -4,7 +4,7 @@ import { NavigationContainer } 	from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { StatusBar } 			from 'react-native';
 
-import Welcome from 'src/views/screens/Welcome'
+import Welcome from '../views/screens/Welcome'
 
 const Stack = createStackNavigator();
 const config = {
@@ -19,7 +19,7 @@ const config = {
   	},
 };
 
-class Routes extends Component {
+class Routes extends Component<any> {
   	render(){
 		return (
 			<NavigationContainer>
