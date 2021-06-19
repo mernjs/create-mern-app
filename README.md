@@ -18,7 +18,7 @@ npx create-mernjs-app my_project --template typescript
 ### Documentation
 Follow [our installing guide](https://mernjs.org/installation) for more information.
 
-### Community & Support
+### Community
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for support, discussion, security concerns and suggestions.
 
 <!-- ### Author
