@@ -24,8 +24,6 @@ If you have any issues or bugs, report in our [Github](https://github.com/mernjs
 Please email us, If you have any query or security concerns via mernjscommunity@gmail.com.
 
 ### Community
-Follow us on [Twitter](https://twitter.com/mernjs), [LinkedIn](https://www.linkedin.com/in/mernjs-community-269551191/) and [Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists) for updates, news, and information on the MERN stack.
-
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for support, discussion, security concerns and suggestions.
 
 <!-- ### Author
