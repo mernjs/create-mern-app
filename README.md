@@ -25,7 +25,7 @@ Please email us, If you have any query or security concerns via mernjscommunity@
 
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for support, discussion, security concerns and suggestions.
 
-### Author
+<!-- ### Author
 
 <table>
   <tr>
@@ -37,7 +37,7 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for sup
       <a href="https://www.linkedin.com/in/vprtsingh">MERN | React Native Developer</a><br />
     </td>
   </tr>
-</table>
+</table> -->
 
 ### License
 [MIT License](https://github.com/mernjs/create-mernjs-app/blob/master/LICENSE) Copyright (c) 2021 MernJs Community.
