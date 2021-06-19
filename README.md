@@ -34,7 +34,7 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for sup
     </td>
     <td>
       Vijay Pratap Singh<br />
-      <a href="https://www.linkedin.com/in/vprtsingh">MERN Stack Developer</a><br />
+      <a href="https://www.linkedin.com/in/vprtsingh">MERN | React Native Developer</a><br />
     </td>
   </tr>
 </table> -->
