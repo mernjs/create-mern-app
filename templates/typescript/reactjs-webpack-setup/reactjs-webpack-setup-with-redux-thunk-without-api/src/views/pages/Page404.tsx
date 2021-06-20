@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import '../assets/css/404.css'
+import '../../assets/css/404.css'
 
 class Page404 extends Component {
 

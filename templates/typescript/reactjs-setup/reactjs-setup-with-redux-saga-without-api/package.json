@@ -1,13 +1,13 @@
 {
-  "name": "tssaga",
+  "name": "project_name",
   "version": "0.1.0",
   "private": true,
-  "appId": "GCDqFqkvOYRWsb3vEjYkObdp46bjmXOa",
+  "appId": "mernjs_app_id",
   "scripts": {
     "dev": "react-app-rewired  start",
     "build": "react-app-rewired build"
   },
-  "author": "tssaga@getnada.com",
+  "author": "author_email",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",

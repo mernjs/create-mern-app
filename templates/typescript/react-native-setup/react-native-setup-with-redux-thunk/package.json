@@ -1,8 +1,8 @@
 {
-  "name": "nativeapp",
+  "name": "project_name",
   "version": "0.0.1",
   "private": true,
-  "appId": "BJABrmhe96T9p51dKF37uAELXH9LrsME",
+  "appId": "mernjs_app_id",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -10,7 +10,7 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
-  "author": "nativeapp@getnada.com",
+  "author": "author_email",
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/native": "^5.7.4",
