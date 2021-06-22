@@ -3,7 +3,7 @@
 ### MERN Simple Boilerplate
 MERN is a simple boilerplates and starter kits for building web and mobile apps in pure JavaScript [MERN Documentation](https://mernjs.org).
 
-### Create new MERN app
+### Create New MERN App
 ```
 npx create-mernjs-app my_project
 ```
