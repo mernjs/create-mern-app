@@ -1254,9 +1254,10 @@ a:hover{
 }
 
 .landing-page .branding .logo {
-  font-size: 38px;
+  font-size: 22px;
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: bold;
 }
 
 .landing-page .branding .text-bold {
