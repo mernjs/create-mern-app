@@ -1,5 +1,5 @@
 import * as Helpers from '../../../helpers/Helpers'
-import User from '../../../models/User'
+// import User from '../../../models/User'
 
 class WelcomeController {
 
