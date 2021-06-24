@@ -1,9 +1,9 @@
 # [![mit license](https://img.shields.io/github/license/mernjs/create-mernjs-app)](https://github.com/mernjs/create-mernjs-app/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/create-mernjs-app)](https://www.npmjs.com/package/create-mernjs-app) [![Gitter](https://badges.gitter.im/mernjs/mernjs.svg)](https://gitter.im/mernjs/mernjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![npm downloads](https://img.shields.io/npm/dy/create-mernjs-app)](https://www.npmjs.com/package/create-mernjs-app)
 
-### MERN.JS Super Simple Boilerplate
-MERN.JS is a super simple boilerplates and starter kits for building web and mobile apps in pure JavaScript [MERN.JS Documentation](https://mernjs.org).
+### MERN Stack Boilerplate
+MERN Stack simple boilerplates and starter kits for building web and mobile apps in pure JavaScript [MERN Documentation](https://mernjs.org).
 
-### Create new mern app
+### Create New MERN App
 ```
 npx create-mernjs-app my_project
 ```
@@ -13,9 +13,6 @@ npx create-mernjs-app my_project --template typescript
 ```
 
 Follow [our installing guide](https://mernjs.org/installation) for more information.
-
-### Community
-Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) for support, discussion, security concerns and suggestions.
 
 ### License
 [MIT License](https://github.com/mernjs/create-mernjs-app/blob/master/LICENSE) Copyright (c) 2021 MernJs Community.
