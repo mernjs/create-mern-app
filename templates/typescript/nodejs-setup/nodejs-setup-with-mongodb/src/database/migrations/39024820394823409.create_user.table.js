@@ -1,4 +1,4 @@
-module.exports = {
+const userTable = {
     up(db) {
         return db.collection('users').insertMany([
             { name: "ABC1", email: 'abc1@getnada.com' },
@@ -11,3 +11,5 @@ module.exports = {
         return db.collection('users').drop()
     }
 }
+
+export default userTable
