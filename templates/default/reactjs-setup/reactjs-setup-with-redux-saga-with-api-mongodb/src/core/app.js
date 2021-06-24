@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import store from "./store";
 import * as Helpers from '../helpers/helpers';
 import Routes from './routes';
-import '../views/assets/css/app.css'
+import '../assets/css/app.css'
 
 class App extends Component {
   	render() {

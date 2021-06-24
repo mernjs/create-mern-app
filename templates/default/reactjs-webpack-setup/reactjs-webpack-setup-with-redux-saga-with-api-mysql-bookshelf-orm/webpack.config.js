@@ -12,7 +12,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 module.exports = {
   devtool: 'inline-source-map',
   mode: 'production',
-  entry: './src/engine/index.js',
+  entry: './src/core/index.js',
   output: {
     path: path.resolve(__dirname, 'build'), // change this
     filename: 'bundle.js'
