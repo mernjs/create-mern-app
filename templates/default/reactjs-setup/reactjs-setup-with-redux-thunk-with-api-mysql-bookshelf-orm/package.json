@@ -4,8 +4,8 @@
   "private": true,
   "appId": "mernjs_app_id",
   "scripts": {
-    "dev": "concurrently \"npm run dev --prefix server\" \"react-app-rewired start\"",
-    "build": "react-app-rewired build",
+    "dev": "concurrently \"npm run dev --prefix server\" \"react-scripts start\"",
+    "build": "react-scripts build",
     "start": "npm run start --prefix server",
     "forever-start": "npm run forever-start --prefix server",
     "forever-restart": "npm run forever-restart --prefix server",
@@ -21,7 +21,6 @@
     "concurrently": "^6.0.0",
     "history": "^5.0.0",
     "react": "^16.13.1",
-    "react-app-rewired": "^2.1.8",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
