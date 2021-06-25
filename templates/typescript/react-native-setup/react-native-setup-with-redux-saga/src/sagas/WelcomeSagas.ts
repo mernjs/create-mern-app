@@ -1,5 +1,5 @@
 import { takeLatest, put, all } from "redux-saga/effects";
-import { WelcomeTypes, SetUserAction, ResetUserAction, ResetUserActionSuccess, SetUserActionSuccess } from '../types/WelcomeTypes';
+import { WelcomeTypes, SetUserAction, ResetUserAction } from '../types/WelcomeTypes';
 
 export function* setUser(data: SetUserAction) {
     try{
