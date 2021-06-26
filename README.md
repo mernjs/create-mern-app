@@ -3,6 +3,8 @@
 ### MERN Stack Boilerplate
 MERN Stack simple boilerplates and starter kits for building web and mobile apps in pure JavaScript [MERN Documentation](https://mernjs.org).
 
+36 types of templates available [click here](https://mernjs.org/introduction) for more information.
+
 ### Create New MERN App
 ```
 npx create-mernjs-app my_project
