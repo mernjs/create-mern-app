@@ -20,7 +20,7 @@ nextApp.prepare().then(() => {
     app.use(bodyParser.urlencoded({limit: '10mb', extended: true}))
 
     app.set('view engine', 'ejs');
-    app.set('views', path.join(__dirname, './server/views'));
+    app.set('views', path.join(__dirname, './server/templates'));
     app.use(express.static(path.join(__dirname, './public')));
 
     fs.readdirSync(path.join(__dirname, `./server/routes`)).forEach(function(file) {
