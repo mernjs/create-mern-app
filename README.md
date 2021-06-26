@@ -16,7 +16,7 @@ npx create-mernjs-app my_project --template typescript
 
 Follow [our installation guide](https://mernjs.org/installation) for more information.
 
-See [our installation guide](https://www.youtube.com/watch?v=-dk3tNlNFuE&list=PLdb4nm44DkLp5fP_ALbbqTuDEmrHj1Vwt) and [our deployment guide](https://www.youtube.com/watch?v=SpUnvIaW2GI&list=PLdb4nm44DkLrI2fVujfIDEnYCPPx7GxcW) Videos.
+See our [installation](https://www.youtube.com/watch?v=-dk3tNlNFuE&list=PLdb4nm44DkLp5fP_ALbbqTuDEmrHj1Vwt) and [deployment](https://www.youtube.com/watch?v=SpUnvIaW2GI&list=PLdb4nm44DkLrI2fVujfIDEnYCPPx7GxcW) guide videos.
 
 ### License
 [MIT License](https://github.com/mernjs/create-mernjs-app/blob/master/LICENSE) Copyright (c) 2021 MernJs Community.
