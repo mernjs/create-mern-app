@@ -1,6 +1,6 @@
 {
   "name": "create-mernjs-app",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "MERN Stack simple boilerplates and starter kits for building web and mobile apps in pure JavaScript.",
   "main": "index.js",
   "scripts": {
