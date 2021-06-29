@@ -21,7 +21,7 @@ See [our installation guide](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFY
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to discuss features, questions, and suggestions.
 
 ### License
-[MIT License](https://github.com/mernjs/create-mernjs-app/blob/master/LICENSE) Copyright (c) 2021 MernJs Community.
+[MIT License](https://github.com/mernjs/create-mernjs-app/blob/master/LICENSE) ©2021 MERN Stack Boilerplate.
 
 ### Links
 [Website](https://mernjs.org)
