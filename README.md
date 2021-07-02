@@ -3,8 +3,6 @@
 ### MERN Stack Boilerplate
 MERN Stack Boilerplate provides 36 types of starter kits along with typescript for building web and mobile apps in pure JavaScript, released as free and open-source software under the MIT License.
 
-Read official [docs](https://mernjs.org) for more information.
-
 ### Create New MERN App
 ```
 npx create-mernjs-app my_project
@@ -13,6 +11,8 @@ OR
 ```
 npx create-mernjs-app my_project --template typescript
 ```
+
+Read official [docs](https://mernjs.org) for more information.
 
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to discuss features, questions, and suggestions.
 
