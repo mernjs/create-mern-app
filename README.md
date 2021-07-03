@@ -14,8 +14,6 @@ npx create-mernjs-app my_project --template typescript
 
 Read official [docs](https://mernjs.org) for more information.
 
-Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to discuss features, questions, and suggestions.
-
 ### License
 [MIT License](https://github.com/mernjs/create-mernjs-app/blob/master/LICENSE) ©2021 MERN Stack Boilerplate.
 
