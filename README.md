@@ -20,6 +20,8 @@ Read official [docs](https://mernjs.org) for more information.
 ### Links
 [Website](https://mernjs.org)
 
+[Gitter](https://gitter.im/mernjs/mernjs-community)
+
 [Twitter](https://twitter.com/mernjs)
 
 [LinkedIn](https://www.linkedin.com/in/mernjs-community-269551191/)
