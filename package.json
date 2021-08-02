@@ -1,6 +1,6 @@
 {
   "name": "create-mernjs-app",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "MERN Stack Boilerplate provides 36 types of starter kits along with typescript for building web and mobile apps in pure JavaScript, released as free and open-source software under the MIT License.",
   "main": "index.js",
   "scripts": {
