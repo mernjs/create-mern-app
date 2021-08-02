@@ -1,5 +1,5 @@
 {
-  "name": "React Electron App",
+  "name": "project_name",
   "version": "0.1.0",
   "description": "Simple boilerplate for developing an Electron app with React",
   "main": "src/electron.js",
@@ -11,9 +11,9 @@
     "eject-react": "react-scripts eject",
     "build-electron": "electron-builder",
     "build": "npm run build-react && npm run build-electron -wml",
-    "start": "concurrently \"cross-env BROWSER=none npm run start-react\" \"wait-on http://localhost:3000 && nodemon --exec electron .\""
+    "dev": "concurrently \"cross-env BROWSER=none npm run start-react\" \"wait-on http://localhost:3000 && nodemon --exec electron .\""
   },
-  "author": "mernjscommunity@gmail.com",
+  "author": "author_email",
   "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -51,7 +51,7 @@
       "category": "Utils",
       "icon": "build/icon.png",
       "packageCategory": "utils",
-      "maintainer": "MernJs Community <mernjscommunity@gmail.com>",
+      "maintainer": "author_email",
       "asar": true,
       "target": [
         "deb",

@@ -1,12 +1,13 @@
 {
-  "name": "VueJs",
+  "name": "project_name",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "author": "author_email",
   "dependencies": {
     "axios": "^0.19.2",
     "core-js": "^3.6.4",
