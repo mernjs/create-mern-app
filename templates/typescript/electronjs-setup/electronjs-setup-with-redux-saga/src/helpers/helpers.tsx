@@ -5,7 +5,7 @@ import { createBrowserHistory as createHistory } from 'history'
 
 export const history = typeof window === 'undefined'? createMemoryHistory() : createHistory();
 
-export const PrivateRoute = ({ component: Component, ...rest }) => (
+export const PrivateRoute = ({ component: Component, ...rest }: any) => (
     <Route {...rest} render={props => (
         localStorage.getItem('user')
             ? <Component {...props} />

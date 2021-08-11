@@ -14,9 +14,9 @@ function createWindow() {
     mainWindow.loadURL(
         isDev ? "http://localhost:3000" : `file://${path.join(__dirname, "../build/index.html")}`
     )
-    if (isDev) {
-        mainWindow.webContents.openDevTools({ mode: 'right' });
-    }
+    // if (isDev) {
+    //     mainWindow.webContents.openDevTools({ mode: 'right' });
+    // }
     mainWindow.on("closed", () => (mainWindow = null))
 }
 

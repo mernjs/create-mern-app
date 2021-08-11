@@ -1,3 +1,5 @@
-export function test(data){
-    return { type: 'TEST/ACTION/REQUEST', payload: data }
+export function test(args){
+    return dispatch => {
+        dispatch({ type: 'TEST/ACTION/SUCCESS', payload: args })
+    }
 }

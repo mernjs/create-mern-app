@@ -6,7 +6,7 @@ import * as Helpers from '../helpers/helpers';
 import Routes from './routes';
 import '../assets/css/app.css'
 
-class App extends Component {
+class App extends Component<any> {
   	render() {
     	return (
 			<Suspense fallback={<div>Loading...</div>}>
