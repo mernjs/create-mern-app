@@ -15,7 +15,7 @@ npx create-mernjs-app my_project --template typescript
 
 ### Templates
 
-|  Technology | No of Templates |
+| Technology | No of Templates |
 | ------ | ------ |
 | NodeJs | 4 |
 | NextJs | 10 |
