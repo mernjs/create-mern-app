@@ -12,6 +12,18 @@ OR
 npx create-mernjs-app my_project --template typescript
 ```
 
+
+### Templates
+
+| Technology | No of Templates |
+| ------ | ------ |
+| NodeJs | 4 |
+| NextJs | 10 |
+| ReactJs | 10 |
+| ElectronJs | 2 |
+| React Native | 2 |
+| ReactJs Webpack | 2 |
+
 Read official [docs](https://mernjs.github.io/create-mernjs-app) for more information.
 
 ### License
