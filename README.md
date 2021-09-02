@@ -22,7 +22,7 @@ npx create-mernjs-app my_project --template typescript
 | ReactJs | 10 |
 | ElectronJs | 2 |
 | React Native | 2 |
-| ReactJs Webpack | 2 |
+| ReactJs Webpack | 10 |
 
 Read official [docs](https://mernjs.github.io/create-mernjs-app) for more information.
 
