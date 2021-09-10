@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "main": "src/server.ts",
-  "appId": "mernjs_app_id",
   "scripts": {
     "dev": "ts-node & nodemon src/server.ts",
     "start": "ts-node build/server.js",

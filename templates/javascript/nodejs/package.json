@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "main": "server.js",
-  "appId": "mernjs_app_id",
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",

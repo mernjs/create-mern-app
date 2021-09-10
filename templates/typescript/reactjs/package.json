@@ -2,7 +2,6 @@
   "name": "project_name",
   "version": "0.1.0",
   "private": true,
-  "appId": "mernjs_app_id",
   "scripts": {
     "dev": "react-scripts start",
     "build": "react-scriptsbuild"
