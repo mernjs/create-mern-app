@@ -6,10 +6,7 @@ import * as WelcomeActions from 'src/actions/WelcomeActions'
 class WelcomePage extends Component {
 
     login = () => {
-        let values = {}
-        values.email = "mernjscommunity"
-        values.password = "mernjscommunity"
-        this.props.dispatch(WelcomeActions.test(values))
+        this.props.dispatch(WelcomeActions.test({name: 'React Native'}))
     }
 
     onOpen = (url) => {
@@ -19,10 +16,10 @@ class WelcomePage extends Component {
     render() { 
         return (
             <View style={styles.container}>
-                <Text style={styles.welcome}  onPress={this.login}>Welcome to MernJs</Text>
+                <Text style={styles.welcome}  onPress={this.login}>React Native</Text>
                 <View style={styles.instructions}>
-                    <Text onPress={()=> this.onOpen('http://mernjs.org')} style={{marginRight: 10}}>Website</Text>
-                    <Text onPress={()=> this.onOpen('https://mernjs.org/installation')} style={{marginRight: 10}}>Docs</Text>
+                    <Text onPress={()=> this.onOpen('https://mernjs.github.io/create-mernjs-app')} style={{marginRight: 10}}>Website</Text>
+                    <Text onPress={()=> this.onOpen('https://mernjs.github.io/create-mernjs-app/installation')} style={{marginRight: 10}}>Docs</Text>
                     <Text onPress={()=> this.onOpen('https://github.com/mernjs/create-mernjs-app')} >GitHub</Text>
                 </View>
             </View>

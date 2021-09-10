@@ -6,7 +6,7 @@ import * as WelcomeActions from '../../actions/WelcomeActions'
 class WelcomePage extends Component {
 
     test = () => {
-        this.props.dispatch(WelcomeActions.test({name: 'MERN.JS'}))
+        this.props.dispatch(WelcomeActions.test({name: 'ElectronJs'}))
     }
 
     render() { 
@@ -16,14 +16,12 @@ class WelcomePage extends Component {
             
                     <div className="content">
                         <div onClick={this.test} className="title m-b-md">
-                            MernJs
+                            ElectronJs
                         </div>
 
                         <div className="links">
-                            <a target="_blank" without rel="noopener noreferrer" href="http://mernjs.org">Website</a>
-                            <a target="_blank" without rel="noopener noreferrer" href="https://mernjs.org/installation">Docs</a>
-                            <a target="_blank" without rel="noopener noreferrer" href="https://mernjs-code-snippets.herokuapp.com">Code Snippets</a>
-                            <a target="_blank" without rel="noopener noreferrer" href="https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists">Youtube</a>
+                            <a target="_blank" without rel="noopener noreferrer" href="https://mernjs.github.io/create-mernjs-app">Website</a>
+                            <a target="_blank" without rel="noopener noreferrer" href="https://mernjs.github.io/create-mernjs-app/installation">Docs</a>
                             <a target="_blank" without rel="noopener noreferrer" href="https://github.com/mernjs/create-mernjs-app">GitHub</a>
                         </div>
                     </div>

@@ -7,7 +7,7 @@ import { WelcomeStates } from '../../types/WelcomeTypes';
 class WelcomePage extends Component<any, WelcomeStates> {
 
     componentDidMount(){
-      this.props.dispatch(WelcomeActions.setUser({name: 'MernJs', id: 22}))
+      this.props.dispatch(WelcomeActions.setUser({name: 'React Native', id: 22}))
     }
 
     test = () => {
@@ -21,10 +21,10 @@ class WelcomePage extends Component<any, WelcomeStates> {
     render() { 
         return (
             <View style={styles.container}>
-                <Text style={styles.welcome}  onPress={this.test}>Welcome to MernJs</Text>
+                <Text style={styles.welcome}  onPress={this.test}>React Native</Text>
                 <View style={styles.instructions}>
-                    <Text onPress={()=> this.onOpen('http://mernjs.org')} style={{marginRight: 10}}>Website</Text>
-                    <Text onPress={()=> this.onOpen('https://mernjs.org/installation')} style={{marginRight: 10}}>Docs</Text>
+                    <Text onPress={()=> this.onOpen('https://mernjs.github.io/create-mernjs-app')} style={{marginRight: 10}}>Website</Text>
+                    <Text onPress={()=> this.onOpen('https://mernjs.github.io/create-mernjs-app/installation')} style={{marginRight: 10}}>Docs</Text>
                     <Text onPress={()=> this.onOpen('https://github.com/mernjs/create-mernjs-app')} >GitHub</Text>
                 </View>
             </View>

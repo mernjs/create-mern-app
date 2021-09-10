@@ -6,7 +6,7 @@ import { WelcomeStates } from '../types/WelcomeTypes';
 class WelcomePage extends Component<any, WelcomeStates> {
 
     componentDidMount(){
-        this.props.dispatch(WelcomeActions.setUser({name: 'MernJs', id: 22}))
+        this.props.dispatch(WelcomeActions.setUser({name: 'NextJs', id: 22}))
     }
 
     test = () => {
@@ -20,12 +20,12 @@ class WelcomePage extends Component<any, WelcomeStates> {
             
                     <div className="content">
                         <div onClick={this.test} className="title m-b-md">
-                            MernJs
+                            NextJs
                         </div>
 
                         <div className="links">
-                            <a target="_blank" rel="noopener noreferrer" href="http://mernjs.org">Website</a>
-                            <a target="_blank" rel="noopener noreferrer" href="https://mernjs.org/installation">Docs</a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://mernjs.github.io/create-mernjs-app">Website</a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://mernjs.github.io/create-mernjs-app/installation">Docs</a>
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/mernjs/create-mernjs-app">GitHub</a>
                         </div>
                     </div>
