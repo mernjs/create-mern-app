@@ -13,16 +13,15 @@ npx create-mernjs-app my_project --template typescript
 ```
 
 
-### Templates
+### Available Templates
 
-| Technology | No of Templates |
+| Technology | Dependencies |
 | ------ | ------ |
-| NodeJs | 4 |
-| NextJs | 10 |
-| ReactJs | 10 |
-| ElectronJs | 2 |
-| React Native | 2 |
-| ReactJs Webpack | 10 |
+| NodeJs | body-parser cors dotenv ejs express faker fs-extra lodash mongoose morgan |
+| NextJs | next next-redux-wrapper react react-dom react-redux redux redux-form redux-logger redux-saga |
+| ReactJs | @testing-library/jest-dom @testing-library/react @testing-library/user-event history react react-dom react-redux react-router-dom react-scripts redux redux-form redux-logger redux-saga |
+| ElectronJs | @testing-library/jest-dom @testing-library/react @testing-library/user-event cross-env electron-is-dev history react react-dom react-redux react-router-dom react-scripts redux redux-form redux-logger redux-saga |
+| React Native | @react-native-community/masked-view @react-navigation/native @react-navigation/stack native-base react react-native react-native-gesture-handler react-native-safe-area-context react-native-screens react-redux redux redux-form redux-logger redux-saga |
 
 Read official [docs](https://mernjs.github.io/create-mernjs-app) for more information.
 
