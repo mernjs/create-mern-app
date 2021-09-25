@@ -16,7 +16,7 @@ npx create-mernjs-app my_project --template typescript
 
 | Technology | Dependencies |
 | ------ | ------ |
-| NodeJs | body-parser, cors, dotenv, ejs, express, faker, fs-extra, lodash, mongoose, morgan |
+| NodeJs | body-parser, cors, dotenv, ejs, express, faker, lodash, mongoose, morgan |
 | NextJs | next, next-redux-wrapper, react, react-dom, react-redux, redux, redux-form, redux-logger, redux-saga |
 | ReactJs | @testing-library/jest-dom, @testing-library/react, @testing-library/user-event, history, react, react-dom, react-redux, react-router-dom, react-scripts, redux, redux-form, redux-logger, redux-saga |
 | ElectronJs | @testing-library/jest-dom, @testing-library/react, @testing-library/user-event, cross-env, electron-is-dev, history, react, react-dom, react-redux, react-router-dom, react-scripts, redux, redux-form, redux-logger, redux-saga |
