@@ -2,8 +2,8 @@ import React from "react";
 import App from "next/app";
 import { Provider } from "react-redux";
 import withRedux from "next-redux-wrapper";
-import { makeStore } from "../core/store";
-import '../assets/css/app.css'
+import { makeStore } from "../Store";
+import '../App.css'
 
 class MyApp extends App {
     
