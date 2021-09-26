@@ -4,11 +4,10 @@
   "main": "electron.js",
   "private": true,
   "scripts": {
-    "web:start": "react-scripts start",
-    "web:build": "react-scripts build",
-    "desktop:build": "electron-builder",
-    "build": "npm run web:build && npm run desktop:build -wml",
-    "dev": "concurrently \"cross-env BROWSER=none npm run web:start\" \"wait-on http://localhost:3000 && nodemon --exec electron .\""
+    "web:dev": "react-scripts start",
+    "build": "react-scripts build",
+    "electron:build": "npm run build && electron-builder build -wml",
+    "dev": "concurrently \"cross-env BROWSER=none npm run web:dev\" \"wait-on http://localhost:3000 && nodemon --exec electron .\""
   },
   "author": "author_email",
   "homepage": "./",
@@ -16,8 +15,6 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "cross-env": "^7.0.3",
-    "electron-is-dev": "^2.0.0",
     "history": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -31,8 +28,10 @@
   },
   "devDependencies": {
     "concurrently": "^6.2.0",
+    "cross-env": "^7.0.3",
     "electron": "^13.1.7",
     "electron-builder": "^22.11.7",
+    "electron-is-dev": "^2.0.0",
     "nodemon": "^2.0.12",
     "wait-on": "^6.0.0"
   },
