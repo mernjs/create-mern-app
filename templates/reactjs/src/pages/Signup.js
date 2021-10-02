@@ -37,7 +37,7 @@ const Signup = (props) => {
         	<ScrollView>
 				<Header />
 				<Container>
-					<H2>Sign In</H2>
+					<H2>Sign Up</H2>
 					<form onSubmit={handleSubmit( (values) => signup(values))}>
 						<Field
 							name="name"
@@ -63,7 +63,7 @@ const Signup = (props) => {
 							component={TextInput}
 							placeholder="Enter Your Confirm Password"
 						/>
-						<Button className="btn btn-secondary" type="submit">Login</Button>
+						<Button className="btn btn-secondary" type="submit">Sign Up</Button>
 						<div>Don't have an account? <Link to="/login"> Login</Link></div>
 					</form>
 				</Container>

@@ -45,7 +45,7 @@ const Login = (props) => {
 							component={TextInput}
 							placeholder="Enter Your Password"
 						/>
-						<Button className="btn btn-secondary" type="submit">Login</Button>
+						<Button className="btn btn-secondary" type="submit">Log In</Button>
 						<div>Don't have an account? <Link to="/signup"> Signup</Link></div>
 					</form>
 				</Container>

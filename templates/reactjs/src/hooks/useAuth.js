@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux'
-import { apiRequest, formSubmitStart, formSubmitSuccess, formSubmitError, forwardTo} from 'Utilities'
+import { apiRequest, formSubmitStart, formSubmitSuccess, formSubmitError, forwardTo } from 'Utilities'
 import { AuthActions } from 'reducers/AuthReducer'
 
 const useAuth = (data) => {
@@ -11,14 +11,11 @@ const useAuth = (data) => {
             formSubmitStart('login')
             const response = await apiRequest({
                 method: 'POST',
-                url: `user/login`,
+                url: `auth/login`,
                 data: payload
             })
-            console.log('response', response)
-            let data = response.data.data
-            dispatch(AuthActions.setAuth(data))
+            dispatch(AuthActions.setAuth(response.data.data))
             formSubmitSuccess('login', response.data.message)
-            forwardTo('/dashboard')
         } catch (error) {
             formSubmitError('login', error)
         }
@@ -29,7 +26,7 @@ const useAuth = (data) => {
             formSubmitStart('signup')
             const response = await apiRequest({
                 method: 'POST',
-                url: `user/signup`,
+                url: `auth/signup`,
                 data: payload
             })
             formSubmitSuccess('signup', response.data.message)
@@ -42,7 +39,6 @@ const useAuth = (data) => {
     const logout = () => {
         dispatch(AuthActions.logout())
     }
-
 
     return {
         login,
