@@ -4,10 +4,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { StatusBar } from 'react-native';
 import { Provider } from 'react-redux';
-import { Root } from 'native-base'
-import store from 'src/Store';
+import { store } from 'app/Store';
+import ThemeProvider from 'app/Theme'
+import Toast from 'react-native-toast-message'
 
-import Welcome from 'src/screens/Welcome'
+import Dashboard from 'app/pages/Dashboard'
 
 const Stack = createStackNavigator();
 const config = {
@@ -22,19 +23,18 @@ const config = {
   	},
 };
 
-class Routes extends Component {
-  	render(){
+const App = () => {
 		return (
-			<Provider store={store}> 
-	            <Root> 
+			<Provider store={store}>
+				<ThemeProvider> 
 					<NavigationContainer>
-						<StatusBar translucent backgroundColor={'#EA5395'} barStyle="light-content" />
-						<Stack.Navigator initialRouteName="Welcome">
+						<StatusBar translucent backgroundColor={'#4c84ff'} barStyle="light-content" />
+						<Stack.Navigator initialRouteName="Dashboard">
 							<Stack.Screen 
-								name="Welcome" 
-								component={Welcome} 
+								name="Dashboard" 
+								component={Dashboard} 
 								options={({ navigation, route }) => ({
-									title: 'Welcome',
+									title: 'Dashboard',
 									headerShown: false,
 									headerTintColor: 'white',
 									transitionSpec: {
@@ -44,11 +44,11 @@ class Routes extends Component {
 								})}
 							/>
 						</Stack.Navigator>
+						<Toast ref={(ref) => Toast.setRef(ref)} />
 					</NavigationContainer>
-				</Root> 
+				</ThemeProvider>
           	</Provider>
 		)
-  	}
 }
 
-export default Routes
+export default App

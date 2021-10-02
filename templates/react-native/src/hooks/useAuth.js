@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux'
-import { apiRequest, formSubmitStart, formSubmitSuccess, formSubmitError, forwardTo } from 'Utilities'
-import { AuthActions } from 'reducers/AuthReducer'
+import { apiRequest, formSubmitStart, formSubmitSuccess, formSubmitError } from 'app/Utilities'
+import { AuthActions } from 'app/reducers/AuthReducer'
 
 const useAuth = (data) => {
 
@@ -30,7 +30,6 @@ const useAuth = (data) => {
                 data: payload
             })
             formSubmitSuccess('signup', response.data.message)
-            forwardTo('/login')
         } catch (error) {
             formSubmitError('signup', error)
         }
