@@ -1,6 +1,6 @@
 {
   "name": "create-mernjs-app",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "MERN Stack Boilerplate provides starter kits for building web, desktop and mobile apps in pure JavaScript.",
   "main": "index.js",
   "scripts": {
