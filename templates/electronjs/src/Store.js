@@ -1,31 +1,47 @@
-import { createStore, applyMiddleware, combineReducers } from 'redux';
-import createSagaMiddleware from 'redux-saga';
+import { combineReducers } from 'redux';
 import { createLogger } from 'redux-logger';
-import { all } from "redux-saga/effects";
+import { persistStore, persistReducer } from 'redux-persist'
+import { configureStore  } from '@reduxjs/toolkit'
+import storage from 'redux-persist/lib/storage' 
 import { reducer as formReducer } from "redux-form";
 
-//reducers
-import WelcomeReducer from './reducers/WelcomeReducer';
+import CoreReducer from 'reducers/CoreReducer'
+import AuthReducer from 'reducers/AuthReducer'
 
-
-//sagas
-import WelcomeSagas from './sagas/WelcomeSagas';
-
-function* rootSaga() {
-	yield all([WelcomeSagas()])
-}
-
-const rootReducer = combineReducers({
-	form : formReducer,
-	welcome : WelcomeReducer
+const appReducer = combineReducers({
+	form: formReducer,
+	core: CoreReducer,
+	auth: AuthReducer
 })
 
+const rootReducer = (state, action) => {
+    if (action.type === 'AuthReducer/logout') {
+        storage.removeItem('persist:root')
+        return appReducer(undefined, action);
+    }
+    return appReducer(state, action);
+}
 
-const reduxLogger = createLogger();
-const sagaMiddleware = createSagaMiddleware()
+const persistConfig = {
+    key: 'root',
+    version: 1,
+    storage: storage,
+}
 
-const store = createStore(rootReducer, applyMiddleware(sagaMiddleware, reduxLogger))
+const persistedReducer  = persistReducer(persistConfig, rootReducer)
+const reduxLogger       = createLogger();
+const middleware        = [reduxLogger]
 
-sagaMiddleware.run(rootSaga)
+const configureCustomStore = () => {
+    let store = configureStore({
+        reducer: persistedReducer,
+        middleware: [...middleware],
+        devTools: process.env.NODE_ENV !== 'production',
+    })
+    const persistor = persistStore(store)
+    return { store, persistor }
+}
 
-export default store
+export default configureCustomStore();
+
+export const { store, persistor } = configureCustomStore();

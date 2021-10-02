@@ -4,7 +4,7 @@ class WelcomeController {
 
     home(req, res){
         try {
-            Utilities.view(res, 'welcome', 'Welcome', '', [])
+            Utilities.apiResponse(res, 200, 'Welcome NodeJs')
         } catch (error) {
             Utilities.apiResponse(res, 500, error)
         }
