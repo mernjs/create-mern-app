@@ -1,32 +1,46 @@
-import { createStore, applyMiddleware, combineReducers } from 'redux';
-import createSagaMiddleware from 'redux-saga';
+import { combineReducers } from 'redux';
 import { createLogger } from 'redux-logger';
-import { all } from "redux-saga/effects";
+import { persistStore, persistReducer } from 'redux-persist'
+import { configureStore  } from '@reduxjs/toolkit'
+import storage from 'redux-persist/lib/storage' 
 import { reducer as formReducer } from "redux-form";
 
-//reducers
-import WelcomeReducer from './reducers/WelcomeReducer';
+import CoreReducer from './reducers/CoreReducer'
+import AuthReducer from './reducers/AuthReducer'
 
-
-//sagas
-import WelcomeSagas from './sagas/WelcomeSagas';
-
-function* rootSaga() {
-	yield all([WelcomeSagas()])
-}
-
-const rootReducer = combineReducers({
-	form : formReducer,
-	welcome : WelcomeReducer
+const appReducer = combineReducers({
+	form: formReducer,
+	core: CoreReducer,
+	auth: AuthReducer
 })
 
-const reduxLogger = createLogger();
-const sagaMiddleware = createSagaMiddleware()
-
-const middleware = applyMiddleware(sagaMiddleware, reduxLogger)
-
-export const makeStore = initialState => {
-	let store =  createStore(rootReducer, initialState, middleware)
-	sagaMiddleware.run(rootSaga)
-	return store
+const rootReducer = (state, action) => {
+    if (action.type === 'AuthReducer/logout') {
+        storage.removeItem('persist:root')
+        return appReducer(undefined, action);
+    }
+    return appReducer(state, action);
 }
+
+const persistConfig = {
+    key: 'root',
+    version: 1,
+    storage: storage,
+}
+
+const persistedReducer  = persistReducer(persistConfig, rootReducer)
+const reduxLogger       = createLogger();
+const middleware        = [reduxLogger]
+
+export const makeStore = (initialState) => {
+    let store = configureStore({
+        reducer: persistedReducer,
+        initialState: initialState,
+        middleware: [...middleware],
+        devTools: process.env.NODE_ENV !== 'production',
+    })
+    store.__PERSISTOR = persistStore(store);
+    return store
+}
+
+export default makeStore();

@@ -2,8 +2,11 @@ import React from "react";
 import App from "next/app";
 import { Provider } from "react-redux";
 import withRedux from "next-redux-wrapper";
+import { PersistGate } from 'redux-persist/integration/react'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { makeStore } from "../Store";
-import '../App.css'
+import ThemeProvider from '../Theme'
 
 class MyApp extends App {
     
@@ -16,7 +19,12 @@ class MyApp extends App {
         const { Component, pageProps, store, router } = this.props;
         return (
             <Provider store={store}>
-                <Component {...pageProps} router={router} />
+                <PersistGate loading={null} persistor={store.__PERSISTOR}>
+                    <ThemeProvider>
+                        <Component {...pageProps} router={router} />
+                        <ToastContainer />
+                    </ThemeProvider>
+                </PersistGate>
             </Provider>
         )
     }
