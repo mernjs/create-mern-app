@@ -27,12 +27,12 @@ export default (props) => {
                             <>
                                 <li>
                                     <Link to="/login">
-                                        LogIn
+                                        Login
                                     </Link> 
                                 </li>
                                 <li>
                                     <Link to="/signup">
-                                        SignUp
+                                        Signup
                                     </Link>
                                 </li> 
                             </>
