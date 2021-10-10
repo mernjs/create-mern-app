@@ -1,8 +1,10 @@
 import React from "react";
-import Fonts from "Fonts";
-import Styles from "Styles";
+import Fonts from "./Fonts";
+import Styles from "./Styles";
 import { useSelector } from 'react-redux'
 import { ThemeProvider } from "styled-components";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const themes = {
 	defaultTheme: {
@@ -41,5 +43,6 @@ export default ({ children }) => {
 	  	<Fonts/>
 		<Styles />
 	  	{children}
+	  	<ToastContainer />
 	</ThemeProvider>
 }

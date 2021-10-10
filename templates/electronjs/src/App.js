@@ -2,11 +2,9 @@ import React from 'react';
 import {  BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import { Provider } from "react-redux";
 import { PersistGate } from 'redux-persist/integration/react'
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { store, persistor } from "Store";
 import { history } from 'Utilities';
-import ThemeProvider from 'Theme'
+import ThemeProvider from 'theme'
 import { useSelector } from 'react-redux'
 
 import Home from 'pages/Home'
@@ -47,7 +45,6 @@ const App = () => {
 							<Route path="*" component={NotFound} />
 						</Switch>
 					</Router>
-					 <ToastContainer />
 				</ThemeProvider>
 			</PersistGate>
 		</Provider>

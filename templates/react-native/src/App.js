@@ -5,7 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { StatusBar } from 'react-native';
 import { Provider } from 'react-redux';
 import { store } from 'app/Store';
-import ThemeProvider from 'app/Theme'
+import ThemeProvider from 'app/theme'
 import Toast from 'react-native-toast-message'
 
 import Dashboard from 'app/pages/Dashboard'

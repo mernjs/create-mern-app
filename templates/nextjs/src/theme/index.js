@@ -2,6 +2,8 @@ import React from "react";
 import Styles from "./Styles";
 import { useSelector } from 'react-redux'
 import { ThemeProvider } from "styled-components";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const themes = {
 	defaultTheme: {
@@ -39,5 +41,6 @@ export default ({ children }) => {
   	return <ThemeProvider theme={themes[is_dark_theme ? 'darkTheme' : 'defaultTheme'] || themes.defaultTheme}>
 		<Styles />
 	  	{children}
+	  	<ToastContainer />
 	</ThemeProvider>
 }

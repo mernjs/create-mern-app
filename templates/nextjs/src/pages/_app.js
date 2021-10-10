@@ -3,10 +3,8 @@ import App from "next/app";
 import { Provider } from "react-redux";
 import withRedux from "next-redux-wrapper";
 import { PersistGate } from 'redux-persist/integration/react'
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { makeStore } from "../Store";
-import ThemeProvider from '../Theme'
+import ThemeProvider from '../theme'
 
 class MyApp extends App {
     
@@ -22,7 +20,6 @@ class MyApp extends App {
                 <PersistGate loading={null} persistor={store.__PERSISTOR}>
                     <ThemeProvider>
                         <Component {...pageProps} router={router} />
-                        <ToastContainer />
                     </ThemeProvider>
                 </PersistGate>
             </Provider>
