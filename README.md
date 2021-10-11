@@ -10,13 +10,13 @@ npx create-mernjs-app my_project
 
 ### Available Templates
 
-| Technology | Dependencies |
+| Technology | Dependencies | Live Demo |
 | ------ | ------ |
-| NodeJs | body-parser cors dotenv ejs express faker lodash mongoose morgan |
-| NextJs | @reduxjs/toolkit axios history lodash next next-redux-wrapper react react-dom react-icons react-redux react-toastify redux redux-form redux-logger redux-persist redux-saga styled-components |
-| ReactJs | @reduxjs/toolkit @testing-library/jest-dom @testing-library/react @testing-library/user-event axios history react react-dom react-icons react-redux react-router-dom react-scripts react-toastify redux redux-form redux-logger redux-persist styled-components |
-| ElectronJs | @reduxjs/toolkit @testing-library/jest-dom @testing-library/react @testing-library/user-event axios history react react-dom react-icons react-redux react-router-dom react-scripts react-toastify redux redux-form redux-logger redux-persist styled-components |
-| React Native | @react-native-async-storage/async-storage @react-native-community/masked-view @react-navigation/native @react-navigation/stack @reduxjs/toolkit axios lodash native-base react react-native react-native-gesture-handler react-native-safe-area-context react-native-screens react-native-toast-message react-redux redux redux-form redux-logger redux-persist styled-components |
+| NodeJs | body-parser cors dotenv ejs express faker lodash mongoose morgan | [Click Here](https://mernjs-nodejs.herokuapp.com) |
+| NextJs | @reduxjs/toolkit axios history lodash next next-redux-wrapper react react-dom react-icons react-redux react-toastify redux redux-form redux-logger redux-persist redux-saga styled-components | [Click Here](https://mernjs-nextjs.herokuapp.com) |
+| ReactJs | @reduxjs/toolkit @testing-library/jest-dom @testing-library/react @testing-library/user-event axios history react react-dom react-icons react-redux react-router-dom react-scripts react-toastify redux redux-form redux-logger redux-persist styled-components | [Click Here](https://mernjs-reactjs.herokuapp.com) |
+| ElectronJs | @reduxjs/toolkit @testing-library/jest-dom @testing-library/react @testing-library/user-event axios history react react-dom react-icons react-redux react-router-dom react-scripts react-toastify redux redux-form redux-logger redux-persist styled-components | [Click Here](https://mernjs-electronjs.herokuapp.com) |
+| React Native | @react-native-async-storage/async-storage @react-native-community/masked-view @react-navigation/native @react-navigation/stack @reduxjs/toolkit axios lodash native-base react react-native react-native-gesture-handler react-native-safe-area-context react-native-screens react-native-toast-message react-redux redux redux-form redux-logger redux-persist styled-components | [Click Here]() |
 
 
 Read official [docs](https://mernjs.github.io/create-mernjs-app) for more information.
