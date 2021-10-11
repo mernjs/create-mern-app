@@ -11,7 +11,7 @@ npx create-mernjs-app my_project
 ### Available Templates
 
 | Technology | Dependencies | Live Demo |
-| ------ | ------ |
+| ------ | ------ | ------ |
 | NodeJs | body-parser cors dotenv ejs express faker lodash mongoose morgan | [Click Here](https://mernjs-nodejs.herokuapp.com) |
 | NextJs | @reduxjs/toolkit axios history lodash next next-redux-wrapper react react-dom react-icons react-redux react-toastify redux redux-form redux-logger redux-persist redux-saga styled-components | [Click Here](https://mernjs-nextjs.herokuapp.com) |
 | ReactJs | @reduxjs/toolkit @testing-library/jest-dom @testing-library/react @testing-library/user-event axios history react react-dom react-icons react-redux react-router-dom react-scripts react-toastify redux redux-form redux-logger redux-persist styled-components | [Click Here](https://mernjs-reactjs.herokuapp.com) |
