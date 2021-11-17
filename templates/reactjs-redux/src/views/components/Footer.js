@@ -6,7 +6,7 @@ export default (props) => {
         <Footer>
             <div className="container">
                 <div className="row">
-                    <p style={{textAlign: 'center', lineHeight: '60px'}}>Powered By MERN Stack Boilerplate</p>
+                    <p style={{textAlign: 'center', lineHeight: '60px'}}>Powered By MERN Micro Framework</p>
                 </div>
             </div>
         </Footer>
