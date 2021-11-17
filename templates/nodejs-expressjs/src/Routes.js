@@ -7,7 +7,7 @@ const AuthController = require('./controllers/AuthController')
  * APIs V1 Routes
  */
 Route.route('/')
-	.get((req, res) => Utilities.apiResponse(res, 200, 'Welcome NodeJs'))
+	.get((req, res) => Utilities.apiResponse(res, 200, 'MERN Micro Framework'))
 	.all(Utilities.send405);
 
 Route.route('/api')
