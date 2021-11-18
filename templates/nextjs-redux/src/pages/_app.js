@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import withRedux from "next-redux-wrapper";
 import { PersistGate } from 'redux-persist/integration/react'
 import { makeStore } from "../Store";
-import ThemeProvider from '../theme'
+import ThemeProvider from '../Theme'
 
 class MyApp extends App {
     
