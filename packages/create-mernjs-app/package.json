@@ -1,0 +1,50 @@
+{
+  "name": "create-mernjs-app",
+  "version": "7.0.1",
+  "description": "MERN Micro Framework provides starter kits for building web, desktop and mobile apps in pure JavaScript.",
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "create-mernjs-app": "./index.js"
+  },
+  "preferGlobal": true,
+  "author": "MernJs Community <mernjscommunity@gmail.com> (https://mernjs.github.io/create-mernjs-app)",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "fs-extra": "^8.1.0",
+    "inquirer": "^6.5.0",
+    "mernjs": "github:mernjs/create-mernjs-app#b335a9012a56e02996bf96bb916d40aaf0385466",
+    "network": "^0.4.1",
+    "path": "^0.12.7",
+    "shelljs": "^0.8.3",
+    "validate-npm-package-name": "^3.0.0",
+    "yosay": "^2.0.2"
+  },
+  "keywords": [
+    "create-mernjs-app",
+    "mern",
+    "mernjs",
+    "isomorphic",
+    "boilerplate",
+    "react",
+    "redux",
+    "express",
+    "mongo",
+    "mongodb",
+    "nodejs",
+    "react-native"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mernjs/create-mernjs-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mernjs/create-mernjs-app/issues"
+  },
+  "homepage": "https://mernjs.github.io/create-mernjs-app"
+}
