@@ -3,7 +3,6 @@
 #NextJs
 rm -rf templates/nextjs-redux
 heroku git:clone -a mernjs-nextjs templates/nextjs-redux
-cd templates/nextjs-redux
 
 
 #NodeJs
