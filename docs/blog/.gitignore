@@ -1,0 +1,11 @@
+/build
+/production
+# dependencies
+/node_modules
+/public/uploads/**/
+package-lock.json
+.DS_Store
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
