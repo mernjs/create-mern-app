@@ -104,6 +104,9 @@ module.exports = async (projectname, {project_type, email}) => {
             process.exit(0);
         })
     }).catch(error => {
+        console.log(destinationPath)
+        console.log(error)
+        fs.rmdirSync(destinationPath, { recursive: true, force: true })
         console.log(chalk.red.bold('Unexpected error occurred.'));
         process.exit(0);
     });
