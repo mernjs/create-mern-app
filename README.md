@@ -7,6 +7,15 @@ MERN Micro Framework provides starter kits for building web, desktop and mobile 
 ```
 npx create-mernjs-app my_project
 ```
+OR
+```
+npm i create-mernjs-app -g 
+```
+
+```
+create-mernjs-app my_project 
+```
+
 
 ### Available Templates
 
@@ -19,7 +28,9 @@ npx create-mernjs-app my_project
 | React Context | @testing-library/jest-dom @testing-library/react @testing-library/user-event axios history react react-dom react-icons react-router-dom react-scripts react-toastify styled-components use-reducer-logger web-vitals workbox-background-sync workbox-broadcast-update workbox-cacheable-response workbox-core workbox-expiration workbox-google-analytics workbox-navigation-preload workbox-precaching workbox-range-requests workbox-routing workbox-strategies workbox-streams | [Click Here](https://mernjs-react-context.herokuapp.com) | 
 | React Native | @react-native-async-storage/async-storage @react-native-community/masked-view @react-navigation/native @react-navigation/stack @reduxjs/toolkit axios lodash native-base react react-native react-native-gesture-handler react-native-safe-area-context react-native-screens react-native-toast-message react-redux redux redux-form redux-logger redux-persist styled-components | [Click Here](#) |
 
+
 Read official [docs](https://mernjs.github.io/create-mernjs-app) for more information.
+
 
 ### Links
 [Website](https://mernjs.github.io/create-mernjs-app)
