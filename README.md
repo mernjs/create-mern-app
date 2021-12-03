@@ -38,7 +38,7 @@ Read official [docs](https://mernjs.github.io/create-mernjs-app) for more inform
       <img src="https://2.gravatar.com/avatar/bd913f88dce5db0cc64d85d9c486ccfd?s=100&d=mm" width="100">
     </td>
     <td>
-      Vijay Pratap Singh<br />
+      <b>Vijay Pratap Singh</b><br />
       <a href="https://www.linkedin.com/in/vprtsingh">JavaScript Developer</a><br />
     </td>
   </tr>
