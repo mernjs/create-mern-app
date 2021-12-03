@@ -39,7 +39,7 @@ Read official [docs](https://mernjs.github.io/create-mernjs-app) for more inform
     </td>
     <td>
       <b>Vijay Pratap Singh</b><br />
-      JavaScript Developer<br />
+      <span style="font-size: 12px;">JavaScript Developer</span><br />
     </td>
   </tr>
 </table>
