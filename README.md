@@ -42,7 +42,7 @@ Read official [docs](https://mernjs.github.io/create-mernjs-app) for more inform
       <a href="https://www.linkedin.com/in/vprtsingh">JavaScript Developer</a><br />
     </td>
   </tr>
-</table> -->
+</table>
 
 ### Links
 [Website](https://mernjs.github.io/create-mernjs-app)
