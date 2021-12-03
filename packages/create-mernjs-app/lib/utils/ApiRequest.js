@@ -55,7 +55,7 @@ exports.version = async () => {
     }).then(success => {
         if(Constants.package.version < success.data.data.cli_version){
             let message1 = `New ${chalk.yellow('minor')} version of mernjs available ${chalk.red(Constants.package.version)} -> ${chalk.green(success.data.data.cli_version)}`
-            let message2 = `${chalk.yellow('Changelog')} ${chalk.cyan('https://mernjs.org/versions')}`
+            let message2 = `${chalk.yellow('Changelog')} ${chalk.cyan('https://mernjs.github.io/create-mernjs-app')}`
             let message3 = `Run ${chalk.green('npm i -g create-mernjs-app')} to update!`
             console.log(yosay(`${chalk.bold.green(' ** Update available ** ')} \n ${chalk.green(' ')} \n ${message1} \n ${message2} \n ${message3} \n ${chalk.green(' ')} \n `, {maxLength: 55}));
         }
