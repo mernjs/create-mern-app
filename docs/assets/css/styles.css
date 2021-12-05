@@ -439,6 +439,7 @@ select {
 .doc-wrapper {
   padding: 20px 0;
   background: #f9f9fb;
+  min-height: 90vh;
 }
 
 .doc-body {
