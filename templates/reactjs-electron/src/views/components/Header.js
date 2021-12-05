@@ -17,7 +17,7 @@ export default (props) => {
         <Header>
             <div className="container">
                 <Logo>
-                    <a style={{marginLeft: '9px'}} href="https://mernjs.github.io/create-mernjs-app/"><b>MERN Micro Framework</b></a> 
+                    <Link to="/"><b>MERN Micro Framework</b></Link>
                 </Logo>
                 <Navbar>
                     <ul>
