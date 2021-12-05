@@ -6,7 +6,7 @@ export default (props) => {
         <Footer>
             <div className="container">
                 <div className="row">
-                    <p style={{textAlign: 'center', lineHeight: '60px'}}>©2021 MERN Micro Framework</p>
+                <p style={{marginLeft: '30px', marginRight: '30px'}}><span style={{textAlign: 'left', lineHeight: '60px'}}>©2021 MERN Micro Framework</span><span style={{float: 'right', lineHeight: '60px'}}><b>Developed by:</b> Vijay Pratap Singh</span></p>
                 </div>
             </div>
         </Footer>
