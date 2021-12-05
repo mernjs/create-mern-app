@@ -1,6 +1,6 @@
 {
   "name": "create-mernjs-app",
-  "version": "8.0.3",
+  "version": "8.0.4",
   "description": "MERN Micro Framework provides starter kits for building web, desktop and mobile apps in pure JavaScript.",
   "main": "./index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "commander": "^2.20.0",
     "fs-extra": "^8.1.0",
     "inquirer": "^6.5.0",
-    "mernjs": "github:mernjs/create-mernjs-app#32a0214510f66327a35eec93ca51d93b880148ad",
+    "mernjs": "github:mernjs/create-mernjs-app#65fa5d6c9f6d10bae63fb340609bfe2c527bfed8",
     "network": "^0.4.1",
     "path": "^0.12.7",
     "shelljs": "^0.8.3",
