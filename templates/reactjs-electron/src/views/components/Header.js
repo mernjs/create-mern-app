@@ -16,6 +16,9 @@ export default (props) => {
     return (
         <Header>
             <div className="container">
+                <Logo>
+                    <a style={{marginLeft: '9px'}} href="https://mernjs.github.io/create-mernjs-app/"><b>MERN Micro Framework</b></a> 
+                </Logo>
                 <Navbar>
                     <ul>
                         <li>
@@ -67,6 +70,12 @@ const Header = styled.header`
     width: 100%;
     border-top: 5px solid #4c84ff;
     box-shadow: 0 2px 10px 0 #00000017;
+`;
+
+const Logo = styled.div`
+    flex:6;
+    display: flex;
+    justify-content: flex-start;
 `;
 
 const Navbar = styled.nav`
