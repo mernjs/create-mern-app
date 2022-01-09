@@ -8,7 +8,7 @@ import { store } from 'app/Store';
 import ThemeProvider from 'app/Theme'
 import Toast from 'react-native-toast-message'
 
-import Dashboard from 'app/pages/Dashboard'
+import Dashboard from 'app/views/pages/Dashboard'
 
 const Stack = createStackNavigator();
 const config = {
