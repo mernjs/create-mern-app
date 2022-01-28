@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Footer } from 'views/components'
+import { Header, Footer } from 'components'
 import styled from "styled-components";
 import { useStore } from "Store"
 

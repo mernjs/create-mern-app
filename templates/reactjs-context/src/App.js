@@ -4,11 +4,11 @@ import Provider, { useStore } from "Store";
 import { history } from 'Utilities';
 import ThemeProvider from 'Theme'
 
-import Home from 'views/pages/Home'
-import Login from 'views/pages/Login'
-import Signup from 'views/pages/Signup'
-import Dashboard from 'views/pages/Dashboard'
-import NotFound from 'views/pages/NotFound'
+import Home from 'pages/Home'
+import Login from 'pages/Login'
+import Signup from 'pages/Signup'
+import Dashboard from 'pages/Dashboard'
+import NotFound from 'pages/NotFound'
 
 const AuthRoute = ({ component: Component, ...rest }) => {
 	const [state, dispatch] = useStore();

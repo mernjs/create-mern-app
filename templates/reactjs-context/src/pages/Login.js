@@ -1,33 +1,27 @@
 import React from 'react'
-import { Header, Footer, TextInput, H2, Button } from 'views/components'
+import { Header, Footer, TextInput, H2, Button } from 'components'
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 import useAuth  from 'hooks/useAuth'
 
 const validate = values => {
 	const errors = {}
-	if (!values.name) {
-	  	errors.name = 'Name is Required'
-	}
 	if (!values.email) {
 	  	errors.email = 'Email is Required'
 	}
 	if (!values.password) {
 	  	errors.password = 'Password is Required'
 	}
-	if (!values.confirm_password) {
-	  	errors.confirm_password = 'Confirm Password is Required'
-	}
 	return errors
 }
 
-const Signup = (props) => {
+const Login = (props) => {
 
-	let { signup } = useAuth()
+	let { login } = useAuth()
 
-	const handleSignup = (event) => {
+	const handleLogin = (event) => {
 		event.preventDefault();
-		signup(event.target.value)
+		login(event.target.value)
 	}
     
     return (
@@ -35,11 +29,11 @@ const Signup = (props) => {
         	<ScrollView>
 				<Header />
 				<Container>
-					<H2>Sign Up</H2>
-					<form onSubmit={handleSignup}>
+					<H2>Sign In</H2>
+					<form onSubmit={handleLogin}>
 						<TextInput/>
-						<Button className="btn btn-secondary" type="submit">Sign Up</Button>
-						<div>Don't have an account? <Link to="/login"> Login</Link></div>
+						<Button className="btn btn-secondary" type="submit">Log In</Button>
+						<div>Don't have an account? <Link to="/signup"> Signup</Link></div>
 					</form>
 				</Container>
 			</ScrollView>
@@ -48,7 +42,7 @@ const Signup = (props) => {
     )
 }
 
-export default Signup
+export default Login
 
 const ScrollView = styled.div`
 	min-height: calc(100vh - 80px);

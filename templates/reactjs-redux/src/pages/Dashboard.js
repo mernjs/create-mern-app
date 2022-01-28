@@ -1,15 +1,18 @@
 import React from 'react';
-import Header from 'views/components/Header'
-import Footer from 'views/components/Footer'
+import { Header, Footer } from 'components'
 import styled from "styled-components";
+import { useSelector } from 'react-redux'
 
-const NotFound = () => {
+const Dashboard = () => {
+    const user = useSelector(state => state.auth.user)
     return (
         <>
             <ScrollView>
                 <Header />
                 <Container>
-                    <h1>404 - Page Not Found</h1>
+                    <h1>Dashboard</h1>
+                    <p><b>Name</b>: {user.name}</p>
+                    <p><b>Email</b>: {user.email}</p>
                 </Container>
             </ScrollView>
             <Footer/>
@@ -17,7 +20,7 @@ const NotFound = () => {
     )
 }
 
-export default NotFound
+export default Dashboard
 
 const ScrollView = styled.div`
     min-height: calc(100vh - 80px);
@@ -26,4 +29,7 @@ const ScrollView = styled.div`
 const Container = styled.div`
     text-align: center;
     padding-top: 50px;
+    h1, p{
+        color: ${props => props.theme.colors.textColor};
+    }
 `;
