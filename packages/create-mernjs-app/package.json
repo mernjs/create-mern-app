@@ -1,7 +1,7 @@
 {
   "name": "create-mernjs-app",
   "version": "8.0.9",
-  "description": "MERN Micro Framework provides starter kits for building web, desktop and mobile apps in pure JavaScript.",
+  "description": "Create MERN App provides PWA starter kits for building web, desktop and mobile apps in pure JavaScript.",
   "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

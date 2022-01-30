@@ -81,7 +81,7 @@ function init() {
         })
     })
     .on(Constants.help, () => {
-        let message = `   MERN Micro Framework provides starter kits for building web, desktop and mobile apps in pure JavaScript. ${chalk.cyan('https://mernjs.github.io/create-mernjs-app')}`;
+        let message = `   Create MERN App provides PWA starter kits for building web, desktop and mobile apps in pure JavaScript. ${chalk.cyan('https://mernjs.github.io/create-mernjs-app')}`;
         console.log(yosay(`${chalk.bold.green(' ** Welcom To MERN Stack Boilerplate ** ')} \n ${chalk.green(' ')} \n ${message} \n ${chalk.green(' ')} `, {maxLength: 55}));  
     })
     .parse(process.argv);

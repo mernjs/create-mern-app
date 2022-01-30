@@ -18,7 +18,7 @@ export default (props) => {
             <div className="container">
                 <Navbar>
                     <Logo>
-                        <Link href="/"><b>MERN Micro Framework</b></Link> 
+                        <Link href="/"><b>Create MERN App</b></Link> 
                     </Logo>
                     <ul>
                         <li>
