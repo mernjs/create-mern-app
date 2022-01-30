@@ -3,7 +3,7 @@
 ### Create MERN App
 Create MERN App provides PWA starter kits for building web, desktop and mobile apps in pure JavaScript.
 
-### Create New App
+### New App
 ```
 npx create-mernjs-app my_project
 ```
