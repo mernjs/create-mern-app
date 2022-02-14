@@ -1,7 +1,7 @@
 # [![mit license](https://img.shields.io/github/license/mernjs/create-mern-app)](https://github.com/mernjs/create-mern-app/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/create-mern-app)](https://www.npmjs.com/package/create-mern-app) [![Gitter](https://badges.gitter.im/mernjs/mernjs.svg)](https://gitter.im/mernjs/mernjs-community) [![npm downloads](https://img.shields.io/npm/dy/create-mern-app)](https://www.npmjs.com/package/create-mern-app)
 
 ### Create MERN App
-Create MERN App provides PWA starter kits for building web, desktop and mobile apps in pure JavaScript.
+Create MERN App provides PWA architecture for building web, mobile and desktop apps in pure JavaScript.
 
 ### Creating an App
 ```

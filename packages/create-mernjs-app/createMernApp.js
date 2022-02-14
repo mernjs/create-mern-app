@@ -81,7 +81,7 @@ function init() {
         })
     })
     .on(Constants.help, () => {
-        let message = `   Create MERN App provides PWA starter kits for building web, desktop and mobile apps in pure JavaScript. ${chalk.cyan('https://mernjs.github.io/create-mern-app')}`;
+        let message = `   Create MERN App provides PWA architecture for building web, mobile and desktop apps in pure JavaScript. ${chalk.cyan('https://mernjs.github.io/create-mern-app')}`;
         console.log(yosay(`${chalk.bold.green(' ** Welcom To MERN Stack Boilerplate ** ')} \n ${chalk.green(' ')} \n ${message} \n ${chalk.green(' ')} `, {maxLength: 55}));  
     })
     .parse(process.argv);
