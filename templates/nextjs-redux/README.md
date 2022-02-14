@@ -1,22 +1,22 @@
-# [![mit license](https://img.shields.io/github/license/mernjs/create-mernjs-app)](https://github.com/mernjs/create-mern-app/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/create-mernjs-app)](https://www.npmjs.com/package/create-mernjs-app) [![Gitter](https://badges.gitter.im/mernjs/mernjs.svg)](https://gitter.im/mernjs/mernjs-community) [![npm downloads](https://img.shields.io/npm/dy/create-mernjs-app)](https://www.npmjs.com/package/create-mernjs-app)
+# [![mit license](https://img.shields.io/github/license/mernjs/create-mern-app)](https://github.com/mernjs/create-mern-app/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/create-mern-app)](https://www.npmjs.com/package/create-mern-app) [![Gitter](https://badges.gitter.im/mernjs/mernjs.svg)](https://gitter.im/mernjs/mernjs-community) [![npm downloads](https://img.shields.io/npm/dy/create-mern-app)](https://www.npmjs.com/package/create-mern-app)
 
 ### Create MERN App
 Create MERN App provides PWA starter kits for building web, desktop and mobile apps in pure JavaScript.
 
 ### New App
 ```
-npx create-mernjs-app my_project
+npx create-mern-app my_project
 ```
 OR
 ```
-npm i create-mernjs-app -g 
+npm i create-mern-app -g 
 ```
 
 ```
-create-mernjs-app my_project 
+create-mern-app my_project 
 ```
 
-Read official [docs](https://mernjs.github.io/create-mernjs-app) for more information.
+Read official [docs](https://mernjs.github.io/create-mern-app) for more information.
 
 ### Templates
 
@@ -44,7 +44,7 @@ Read official [docs](https://mernjs.github.io/create-mernjs-app) for more inform
 </table>
 
 ### Links
-[Website](https://mernjs.github.io/create-mernjs-app)
+[Website](https://mernjs.github.io/create-mern-app)
 
 [Gitter](https://gitter.im/mernjs/mernjs-community)
 

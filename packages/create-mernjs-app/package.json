@@ -1,5 +1,5 @@
 {
-  "name": "create-mernjs-app",
+  "name": "create-mern-app",
   "version": "9.0.4",
   "description": "Create MERN App provides PWA starter kits for building web, desktop and mobile apps in pure JavaScript.",
   "main": "./index.js",
@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "create-mernjs-app": "./index.js"
+    "create-mern-app": "./index.js"
   },
   "preferGlobal": true,
-  "author": "Vijay Pratap Singh <vijaypratap218@gmail.com> (https://mernjs.github.io/create-mernjs-app)",
+  "author": "Vijay Pratap Singh <vijaypratap218@gmail.com> (https://mernjs.github.io/create-mern-app)",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
@@ -18,7 +18,7 @@
     "commander": "^2.20.0",
     "fs-extra": "^8.1.0",
     "inquirer": "^6.5.0",
-    "mernjs": "github:mernjs/create-mernjs-app#dac061e6df2599a3b7df98ce97c567925a9811fc",
+    "mernjs": "github:mernjs/create-mern-app#dac061e6df2599a3b7df98ce97c567925a9811fc",
     "network": "^0.4.1",
     "path": "^0.12.7",
     "shelljs": "^0.8.3",
@@ -26,7 +26,7 @@
     "yosay": "^2.0.2"
   },
   "keywords": [
-    "create-mernjs-app",
+    "create-mern-app",
     "mern",
     "mernjs",
     "isomorphic",
@@ -46,5 +46,5 @@
   "bugs": {
     "url": "https://github.com/mernjs/create-mern-app/issues"
   },
-  "homepage": "https://mernjs.github.io/create-mernjs-app"
+  "homepage": "https://mernjs.github.io/create-mern-app"
 }

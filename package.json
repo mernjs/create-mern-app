@@ -1,5 +1,5 @@
 {
-  "name": "create-mernjs-app",
+  "name": "create-mern-app",
   "version": "9.0.4",
   "description": "Create MERN App provides PWA starter kits for building web, desktop and mobile apps in pure JavaScript.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "dependencies": {},
   "keywords": [
-    "create-mernjs-app",
+    "create-mern-app",
     "mern",
     "mernjs",
     "isomorphic",
@@ -21,7 +21,7 @@
     "nodejs",
     "react-native"
   ],
-  "author": "Vijay Pratap Singh <vijaypratap218@gmail.com> (https://mernjs.github.io/create-mernjs-app)",
+  "author": "Vijay Pratap Singh <vijaypratap218@gmail.com> (https://mernjs.github.io/create-mern-app)",
   "license": "MIT",
   "repository": {
     "type": "git",
