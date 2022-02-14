@@ -1,6 +1,6 @@
 {
   "name": "create-mern-app",
-  "version": "9.0.4",
+  "version": "9.0.5",
   "description": "Create MERN App provides PWA starter kits for building web, desktop and mobile apps in pure JavaScript.",
   "main": "index.js",
   "scripts": {
