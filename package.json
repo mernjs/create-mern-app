@@ -25,10 +25,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mernjs/create-mernjs-app.git"
+    "url": "https://github.com/mernjs/create-mern-app.git"
   },
   "bugs": {
-    "url": "https://github.com/mernjs/create-mernjs-app/issues"
+    "url": "https://github.com/mernjs/create-mern-app/issues"
   },
-  "homepage": "https://github.com/mernjs/create-mernjs-app#readme"
+  "homepage": "https://github.com/mernjs/create-mern-app#readme"
 }
