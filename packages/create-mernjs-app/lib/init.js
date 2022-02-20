@@ -22,7 +22,7 @@ module.exports = async (projectname, {project_type, email}) => {
 
     ApiRequest.init({project_name: projectname, project_path: currentWorkingDir, project_type: project_typ, email, app_id: appID})
 
-    if(project_typ === 'react-native-redux'){
+    if(project_typ === 'react-native-cli'){
         let command = `npx react-native init ${projectname} --version 0.66.0`
         const child = spawn(command, { stdio: "inherit", shell: true });
         child.on("close", code => {
@@ -82,6 +82,8 @@ module.exports = async (projectname, {project_type, email}) => {
 
         process.chdir(destinationPath)
         Helpers.rewritePackageName(`${destinationPath}/package.json`, projectname, appID, email)
+
+        if(project_typ === 'react-native-expo') Helpers.rewritePackageName(`${destinationPath}/app.json`, projectname, appID, email)
 
         console.log(" ")
         console.log(chalk.hex('#4c84ff').bold("Installing dependencies... This might take a couple of minutes."));

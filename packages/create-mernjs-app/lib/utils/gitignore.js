@@ -35,3 +35,14 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+.expo/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
