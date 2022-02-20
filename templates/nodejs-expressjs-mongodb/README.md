@@ -38,7 +38,7 @@ Read official [docs](https://mernjs.github.io/create-mern-app) for more informat
     </td>
     <td>
       <a href="https://www.linkedin.com/in/vprtsingh" target="_blank"><b>Vijay Pratap Singh</b><br /></a>
-      <span style="font-size: 8px;">JavaScript Programmer</span><br />
+      <span style="font-size: 8px;">Software Developer</span><br />
     </td>
   </tr>
 </table>
