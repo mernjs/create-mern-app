@@ -18,7 +18,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.project_name.app",
+      "bundleIdentifier": "com.example.app",
       "buildNumber": "1.0.0"
     },
     "android": {
@@ -26,7 +26,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.project_name.app",
+      "package": "com.example.app",
       "versionCode": 1
     },
     "web": {
