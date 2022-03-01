@@ -23,6 +23,13 @@ create-mernjs-app my_project
 
 Read official [docs](https://mernjs.github.io/create-mern-app) for more information.
 
+### What is MERN?
+
+- **M**ongoDB - [MongoDB](https://www.mongodb.com/) - Database
+- **E**xpressJS - [ExpressJS](https://expressjs.com/) - BackEnd
+- **R**eact - [React](https://reactjs.org/) - FrontEnd
+- **N**ode - [Node](https://nodejs.org/) - Runtime Environment
+
 ### Templates
 
 | Technology | Dependencies | Live Demo |
