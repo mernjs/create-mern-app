@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://mernjs.github.io/create-mern-app" rel="noopener">
- <img width=400px height=400px src="https://mernjs.github.io/create-mern-app/assets/logo1.png" alt="Logo"></a>
+ <img src="https://mernjs.github.io/create-mern-app/assets/logo1.png" alt="Logo"></a>
 </p>
 
 ### Create MERN App
