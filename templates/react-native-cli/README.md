@@ -60,9 +60,9 @@ Read official [docs](https://mernjs.github.io/create-mern-app) for more informat
 
 [GitHub](https://github.com/mernjs/create-mern-app)
 
-[Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw)
+[Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists)
 
-[NPM](https://github.com/mernjs/create-mern-app)
+[NPM](https://www.npmjs.com/package/create-mernjs-app)
 
 [Gitter](https://gitter.im/mernjs/mernjs-community)
 
