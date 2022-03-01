@@ -1,6 +1,6 @@
 {
   "name": "create-mernjs-app",
-  "version": "10.0.3",
+  "version": "10.0.4",
   "description": "Create MERN App provides PWA architecture for building web, mobile and desktop apps in pure JavaScript.",
   "main": "./index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "commander": "^2.20.0",
     "fs-extra": "^8.1.0",
     "inquirer": "^6.5.0",
-    "mernjs": "github:mernjs/create-mern-app#846d2c464330e98ae355262211e260e584819b61",
+    "mernjs": "github:mernjs/create-mern-app#851cceb50b5d07473b294d298d1bd0a6af6e39aa",
     "network": "^0.4.1",
     "path": "^0.12.7",
     "shelljs": "^0.8.3",
