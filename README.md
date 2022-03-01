@@ -55,4 +55,4 @@ Read official [docs](https://mernjs.github.io/create-mern-app) for more informat
 
 [LinkedIn](https://www.linkedin.com/in/vprtsingh)
 
-[Youtube]https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw)
+[Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw)
