@@ -1,6 +1,9 @@
-# [![mit license](https://img.shields.io/github/license/mernjs/create-mern-app)](https://github.com/mernjs/create-mern-app/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/create-mernjs-app)](https://www.npmjs.com/package/create-mernjs-app) [![Gitter](https://badges.gitter.im/mernjs/mernjs.svg)](https://gitter.im/mernjs/mernjs-community) [![npm downloads](https://img.shields.io/npm/dy/create-mernjs-app)](https://www.npmjs.com/package/create-mernjs-app)
+<p align="center">
+  <a href="https://mernjs.github.io/create-mern-app" rel="noopener">
+ <img width=256px height=256px src="https://mernjs.github.io/create-mern-app/assets/logo.png" alt="Logo"></a>
+</p>
 
-<a href="https://mernjs.github.io/create-mern-app" target="_blank"><img src="https://mernjs.github.io/create-mern-app/assets/logo.png" width="500"></a>
+# [![mit license](https://img.shields.io/github/license/mernjs/create-mern-app)](https://github.com/mernjs/create-mern-app/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/create-mernjs-app)](https://www.npmjs.com/package/create-mernjs-app) [![Gitter](https://badges.gitter.im/mernjs/mernjs.svg)](https://gitter.im/mernjs/mernjs-community) [![npm downloads](https://img.shields.io/npm/dy/create-mernjs-app)](https://www.npmjs.com/package/create-mernjs-app)
 
 ### Create MERN App
 Create MERN App provides PWA architecture for building web, mobile and desktop apps in pure JavaScript.
