@@ -26,9 +26,9 @@ Read official [docs](https://mernjs.github.io/create-mern-app) for more informat
 ### What is MERN?
 
 - **M**ongoDB - [MongoDB](https://www.mongodb.com/) - Database
-- **E**xpressJS - [ExpressJS](https://expressjs.com/) - BackEnd
-- **R**eact - [React](https://reactjs.org/) - FrontEnd
-- **N**ode - [Node](https://nodejs.org/) - Runtime Environment
+- **E**xpressJS - [ExpressJS](https://expressjs.com/) - Backend
+- **R**eactJS - [React](https://reactjs.org/) - Frontend
+- **N**odeJS - [Node](https://nodejs.org/) - Runtime Environment
 
 ### Templates
 
