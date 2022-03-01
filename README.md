@@ -58,6 +58,8 @@ Read official [docs](https://mernjs.github.io/create-mern-app) for more informat
 ### Links
 [Website](https://mernjs.github.io/create-mern-app)
 
+[GitHub](https://github.com/mernjs/create-mern-app)
+
 [Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw)
 
 [NPM](https://github.com/mernjs/create-mern-app)
@@ -65,3 +67,5 @@ Read official [docs](https://mernjs.github.io/create-mern-app) for more informat
 [Gitter](https://gitter.im/mernjs/mernjs-community)
 
 [LinkedIn](https://www.linkedin.com/in/vprtsingh)
+
+[Support](https://tawk.to/chat/600c5cbba9a34e36b96f905e/1eso4ml15)
