@@ -56,16 +56,11 @@ Read official [docs](https://mernjs.github.io/create-mern-app) for more informat
 </table>
 
 ### Links
-[Website](https://mernjs.github.io/create-mern-app)
-
-[GitHub](https://github.com/mernjs/create-mern-app)
-
-[Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists)
-
-[NPM](https://www.npmjs.com/package/create-mernjs-app)
-
-[Gitter](https://gitter.im/mernjs/mernjs-community)
-
-[LinkedIn](https://www.linkedin.com/in/vprtsingh)
-
-[Support](https://tawk.to/chat/600c5cbba9a34e36b96f905e/1eso4ml15)
+Website URL  		:    [https://mernjs.github.io/create-mern-app](https://mernjs.github.io/create-mern-app)
+NPM URL  		:    [https://www.npmjs.com/package/create-mernjs-app](https://www.npmjs.com/package/create-mernjs-app)
+Github URL 		:    [https://github.com/mernjs](https://github.com/mernjs) 
+Snack URL 		:    [https://expo.dev/@mernjs?tab=snacks](https://expo.dev/@mernjs?tab=snacks) 
+Sandbox URL 		:    [https://codesandbox.io/u/mernjs](https://codesandbox.io/u/mernjs) 
+LinkedIn URL 		:    [https://www.linkedin.com/in/create-mern-app-269551191](https://www.linkedin.com/in/create-mern-app-269551191)
+Youtube URL 		:    [https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists)
+Gitter  URL 		:    [https://gitter.im/mernjs/mernjs-community](https://gitter.im/mernjs/mernjs-community) 
