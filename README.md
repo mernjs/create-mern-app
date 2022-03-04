@@ -51,6 +51,7 @@ Read official [docs](https://mernjs.github.io/create-mern-app) for more informat
 - Youtube URL 		:    [https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists)
 - Gitter  URL 		:    [https://gitter.im/mernjs/mernjs-community](https://gitter.im/mernjs/mernjs-community) 
 
+### Developer
 <table>
   <tr>
     <td>
