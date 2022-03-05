@@ -10,6 +10,7 @@
 <h5>Create MERN App provides PWA architecture for building web, mobile and desktop apps in pure JavaScript.</h5>
 
 <h4>Creating an App</h4>
+
 ```
 npx create-mernjs-app my_project
 ```
