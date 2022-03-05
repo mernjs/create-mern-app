@@ -9,7 +9,7 @@
 <h4>Create MERN App</h4>
 <h5>Create MERN App provides PWA architecture for building web, mobile and desktop apps in pure JavaScript.</h5>
 
-### Creating an App
+<h4>Creating an App</h4>
 ```
 npx create-mernjs-app my_project
 ```
@@ -24,7 +24,7 @@ create-mernjs-app my_project
 
 Read official [docs](https://mernjs.github.io/create-mern-app) for more information.
 
-### Templates
+<h4>Templates</h4>
 
 | Technology | Dependencies | Live Demo |
 | ------ | ------ | ------ |
@@ -35,17 +35,17 @@ Read official [docs](https://mernjs.github.io/create-mern-app) for more informat
 | ElectronJs | @reduxjs/toolkit @testing-library/jest-dom @testing-library/react @testing-library/user-event axios history react react-dom react-icons react-redux react-router-dom react-scripts react-toastify redux redux-form redux-logger redux-persist styled-components web-vitals workbox-background-sync workbox-broadcast-update workbox-cacheable-response workbox-core workbox-expiration workbox-google-analytics workbox-navigation-preload workbox-precaching workbox-range-requests workbox-routing workbox-strategies workbox-streams | [Click Here](https://electronjs-redux-app.herokuapp.com/) |
 | React Native | @react-native-async-storage/async-storage @react-native-community/masked-view @react-navigation/native @react-navigation/stack @reduxjs/toolkit axios lodash native-base react react-native react-native-gesture-handler react-native-safe-area-context react-native-screens react-native-toast-message react-redux redux redux-form redux-logger redux-persist styled-components | [Click Here](https://play.google.com/store/apps/details?id=com.mernapp) |
 
-### Support
+<h4>Support</h4>
 If you have any issues or bugs, report in our [GitHub](https://github.com/mernjs/create-mern-app/issues)
 
 Please email us, If you have any query or security concerns via mernjscommunity@gmail.com
 
-### Community
+<h4>Community</h4>
 Follow us on [LinkedIn](https://www.linkedin.com/in/create-mern-app-269551191) for updates, news, and information on the Create MERN App.
 
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to discuss features, questions, and suggestions.
 
-### Creator
+<h4>Creator</h4>
 <table>
   <tr>
     <td>
@@ -58,7 +58,7 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to disc
   </tr>
 </table>
 
-### Links
+<h4>Links</h4>
 [Website](https://mernjs.github.io/create-mern-app) &nbsp; &nbsp; &nbsp;
 [NPM](https://www.npmjs.com/package/create-mernjs-app) &nbsp; &nbsp; &nbsp;
 [Github](https://github.com/mernjs) &nbsp; &nbsp; &nbsp;
