@@ -51,17 +51,6 @@ Follow us on [LinkedIn](https://www.linkedin.com/in/create-mern-app-269551191) f
 
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to discuss features, questions, and suggestions.
 
-### Links
-[Website](https://mernjs.github.io/create-mern-app) &nbsp; &nbsp; &nbsp;
-[NPM](https://www.npmjs.com/package/create-mernjs-app) &nbsp; &nbsp; &nbsp;
-[Github](https://github.com/mernjs) &nbsp; &nbsp; &nbsp;
-[Snack](https://expo.dev/@mernjs?tab=snacks) &nbsp; &nbsp; &nbsp;
-[Sandbox](https://codesandbox.io/u/mernjs) &nbsp; &nbsp; &nbsp;
-[JSFiddle](https://jsfiddle.net/user/mernjs/fiddles/) &nbsp; &nbsp; &nbsp;
-[LinkedIn](https://www.linkedin.com/in/create-mern-app-269551191) &nbsp; &nbsp; &nbsp;
-[Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists) &nbsp; &nbsp; &nbsp;
-[Gitter](https://gitter.im/mernjs/mernjs-community) &nbsp; &nbsp; &nbsp;
-
 ### Creator
 <table>
   <tr>
@@ -74,3 +63,14 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to disc
     </td>
   </tr>
 </table>
+
+### Links
+[Website](https://mernjs.github.io/create-mern-app) &nbsp; &nbsp; &nbsp;
+[NPM](https://www.npmjs.com/package/create-mernjs-app) &nbsp; &nbsp; &nbsp;
+[Github](https://github.com/mernjs) &nbsp; &nbsp; &nbsp;
+[Snack](https://expo.dev/@mernjs?tab=snacks) &nbsp; &nbsp; &nbsp;
+[Sandbox](https://codesandbox.io/u/mernjs) &nbsp; &nbsp; &nbsp;
+[JSFiddle](https://jsfiddle.net/user/mernjs/fiddles/) &nbsp; &nbsp; &nbsp;
+[LinkedIn](https://www.linkedin.com/in/create-mern-app-269551191) &nbsp; &nbsp; &nbsp;
+[Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists) &nbsp; &nbsp; &nbsp;
+[Gitter](https://gitter.im/mernjs/mernjs-community) &nbsp; &nbsp; &nbsp;
