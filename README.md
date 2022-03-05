@@ -7,7 +7,7 @@
 <h5 align="center">Set up a modern web, mobile and desktop app by running one command.</h5>
 
 <h4>Create MERN App</h4>
-Create MERN App provides PWA architecture for building web, mobile and desktop apps in pure JavaScript.
+<p>Create MERN App provides PWA architecture for building web, mobile and desktop apps in pure JavaScript.</p>
 
 ### Creating an App
 ```
