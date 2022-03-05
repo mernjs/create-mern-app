@@ -3,8 +3,8 @@
 <p align="center">
   <a href="https://mernjs.github.io/create-mern-app" rel="noopener">
  <img src="https://mernjs.github.io/create-mern-app/assets/logo1.png" alt="Logo"></a>
- <p align="center">Set up a modern web, mobile and desktop app by running one command.</p>
 </p>
+<h6 align="center">Set up a modern web, mobile and desktop app by running one command.</h6>
 
 ### Create MERN App
 Create MERN App provides PWA architecture for building web, mobile and desktop apps in pure JavaScript.
