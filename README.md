@@ -6,10 +6,10 @@
 </p>
 <h5 align="center">Set up a modern web, mobile and desktop app by running one command.</h5>
 
-<h3>Create MERN App</h3>
+<h4>Create MERN App</h4>
 <p>Create MERN App provides PWA architecture for building web, mobile and desktop apps in pure JavaScript.</p>
 
-<h3>Creating an App</h3>
+<h4>Creating an App</h4>
 
 ```
 npx create-mernjs-app my_project
@@ -25,7 +25,7 @@ create-mernjs-app my_project
 
 Read official [docs](https://mernjs.github.io/create-mern-app) for more information.
 
-<h3>Templates</h3>
+<h4>Templates</h4>
 
 | Technology | Dependencies | Live Demo |
 | ------ | ------ | ------ |
@@ -36,19 +36,19 @@ Read official [docs](https://mernjs.github.io/create-mern-app) for more informat
 | ElectronJs | @reduxjs/toolkit @testing-library/jest-dom @testing-library/react @testing-library/user-event axios history react react-dom react-icons react-redux react-router-dom react-scripts react-toastify redux redux-form redux-logger redux-persist styled-components web-vitals workbox-background-sync workbox-broadcast-update workbox-cacheable-response workbox-core workbox-expiration workbox-google-analytics workbox-navigation-preload workbox-precaching workbox-range-requests workbox-routing workbox-strategies workbox-streams | [Click Here](https://electronjs-redux-app.herokuapp.com/) |
 | React Native | @react-native-async-storage/async-storage @react-native-community/masked-view @react-navigation/native @react-navigation/stack @reduxjs/toolkit axios lodash native-base react react-native react-native-gesture-handler react-native-safe-area-context react-native-screens react-native-toast-message react-redux redux redux-form redux-logger redux-persist styled-components | [Click Here](https://play.google.com/store/apps/details?id=com.mernapp) |
 
-<h3>Support</h3>
+<h4>Support</h4>
 
 If you have any issues or bugs, report in our [GitHub](https://github.com/mernjs/create-mern-app/issues)
 
 Please email us, If you have any query or security concerns via mernjscommunity@gmail.com
 
-<h3>Community</h3>
+<h4>Community</h4>
 
 Follow us on [LinkedIn](https://www.linkedin.com/in/create-mern-app-269551191) for updates, news, and information on the Create MERN App.
 
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to discuss features, questions, and suggestions.
 
-<h3>Creator</h3>
+<h4>Creator</h4>
 
 <table>
   <tr>
@@ -62,7 +62,7 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to disc
   </tr>
 </table>
 
-<h3>Links</h3>
+<h4>Links</h4>
 
 [Website](https://mernjs.github.io/create-mern-app) &nbsp; &nbsp; &nbsp;
 [NPM](https://www.npmjs.com/package/create-mernjs-app) &nbsp; &nbsp; &nbsp;
