@@ -41,18 +41,28 @@ Read official [docs](https://mernjs.github.io/create-mern-app) for more informat
 | ElectronJs | @reduxjs/toolkit @testing-library/jest-dom @testing-library/react @testing-library/user-event axios history react react-dom react-icons react-redux react-router-dom react-scripts react-toastify redux redux-form redux-logger redux-persist styled-components web-vitals workbox-background-sync workbox-broadcast-update workbox-cacheable-response workbox-core workbox-expiration workbox-google-analytics workbox-navigation-preload workbox-precaching workbox-range-requests workbox-routing workbox-strategies workbox-streams | [Click Here](https://electronjs-redux-app.herokuapp.com/) |
 | React Native | @react-native-async-storage/async-storage @react-native-community/masked-view @react-navigation/native @react-navigation/stack @reduxjs/toolkit axios lodash native-base react react-native react-native-gesture-handler react-native-safe-area-context react-native-screens react-native-toast-message react-redux redux redux-form redux-logger redux-persist styled-components | [Click Here](https://play.google.com/store/apps/details?id=com.mernapp) |
 
-### Links
-[Website](https://mernjs.github.io/create-mern-app)
-[NPM](https://www.npmjs.com/package/create-mernjs-app)
-[Github](https://github.com/mernjs) 
-[Snack](https://expo.dev/@mernjs?tab=snacks) 
-[Sandbox](https://codesandbox.io/u/mernjs)
-[JSFiddle](https://jsfiddle.net/user/mernjs/fiddles/) 
-[LinkedIn](https://www.linkedin.com/in/create-mern-app-269551191)
-[Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists)
-[Gitter](https://gitter.im/mernjs/mernjs-community) 
+### Support
+If you have any issues or bugs, report in our [GitHub](https://github.com/mernjs/create-mern-app/issues)
 
-### Developer
+Please email us, If you have any query or security concerns via mernjscommunity@gmail.com
+
+### Community
+Follow us on [LinkedIn](https://www.linkedin.com/in/create-mern-app-269551191) for updates, news, and information on the Create MERN App.
+
+Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to discuss features, questions, and suggestions.
+
+### Links
+[Website](https://mernjs.github.io/create-mern-app) &nbsp; &nbsp; &nbsp;
+[NPM](https://www.npmjs.com/package/create-mernjs-app) &nbsp; &nbsp; &nbsp;
+[Github](https://github.com/mernjs) &nbsp; &nbsp; &nbsp;
+[Snack](https://expo.dev/@mernjs?tab=snacks) &nbsp; &nbsp; &nbsp;
+[Sandbox](https://codesandbox.io/u/mernjs) &nbsp; &nbsp; &nbsp;
+[JSFiddle](https://jsfiddle.net/user/mernjs/fiddles/) &nbsp; &nbsp; &nbsp;
+[LinkedIn](https://www.linkedin.com/in/create-mern-app-269551191) &nbsp; &nbsp; &nbsp;
+[Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists) &nbsp; &nbsp; &nbsp;
+[Gitter](https://gitter.im/mernjs/mernjs-community) &nbsp; &nbsp; &nbsp;
+
+### Creator
 <table>
   <tr>
     <td>
