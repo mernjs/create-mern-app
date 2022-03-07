@@ -22,7 +22,7 @@ nextApp.prepare().then(() => {
     app.set('views', path.join(__dirname, './api/views'));
     app.use(express.static(path.join(__dirname, './public')));
 
-    app.use(require(`./api/routes/api`));
+    app.use(require(`./api/App`));
 
     app.get("*", (req, res) => {
         return handle(req, res);

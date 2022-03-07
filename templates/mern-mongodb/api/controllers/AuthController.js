@@ -1,4 +1,4 @@
-const Utilities = require('../../Utilities')
+const Utilities = require('../Utilities')
 
 class AuthController {
 
