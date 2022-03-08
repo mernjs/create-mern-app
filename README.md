@@ -74,4 +74,3 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to disc
 [Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists) &nbsp; &nbsp; &nbsp;
 [Gitter](https://gitter.im/mernjs/mernjs-community) &nbsp; &nbsp; &nbsp;
 [Medium](https://medium.com/@mernjs) &nbsp; &nbsp; &nbsp;
-[Medium](https://medium.com/@mernjs) &nbsp; &nbsp; &nbsp;
