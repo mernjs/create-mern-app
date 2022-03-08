@@ -64,14 +64,14 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to disc
 
 <h4>Links</h4>
 
-[Website](https://mernjs.github.io/create-mern-app) &nbsp; &nbsp;
-[NPM](https://www.npmjs.com/package/create-mernjs-app) &nbsp; &nbsp;
-[Github](https://github.com/mernjs) &nbsp; &nbsp;
-[Snack](https://expo.dev/@mernjs?tab=snacks) &nbsp; &nbsp;
-[Sandbox](https://codesandbox.io/u/mernjs) &nbsp; &nbsp;
-[JSFiddle](https://jsfiddle.net/user/mernjs/fiddles/) &nbsp; &nbsp;
-[LinkedIn](https://www.linkedin.com/in/create-mern-app-269551191) &nbsp; &nbsp;
-[Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists) &nbsp; &nbsp;
-[Gitter](https://gitter.im/mernjs/mernjs-community) &nbsp; &nbsp;
-[Medium](https://medium.com/@mernjs) &nbsp; &nbsp;
-[Stack Overflow](https://stackoverflow.com/users/11881111/create-mern-app?tab=profile) &nbsp; &nbsp;
+[Website](https://mernjs.github.io/create-mern-app) &nbsp;
+[NPM](https://www.npmjs.com/package/create-mernjs-app) &nbsp;
+[Github](https://github.com/mernjs) &nbsp;
+[Snack](https://expo.dev/@mernjs?tab=snacks) &nbsp;
+[Sandbox](https://codesandbox.io/u/mernjs) &nbsp;
+[JSFiddle](https://jsfiddle.net/user/mernjs/fiddles/) &nbsp;
+[LinkedIn](https://www.linkedin.com/in/create-mern-app-269551191) &nbsp;
+[Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists) &nbsp;
+[Gitter](https://gitter.im/mernjs/mernjs-community) &nbsp;
+[Medium](https://medium.com/@mernjs) &nbsp;
+[Stack Overflow](https://stackoverflow.com/users/11881111/create-mern-app?tab=profile) &nbsp;
