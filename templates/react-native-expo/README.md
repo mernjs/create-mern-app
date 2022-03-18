@@ -53,10 +53,10 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to disc
 <table>
   <tr>
     <td>
-      <a href="https://www.linkedin.com/in/vprtsingh" target="_blank"><img src="https://s.gravatar.com/avatar/bd913f88dce5db0cc64d85d9c486ccfd?s=100&d=mm" width="100"></a>
+      <a href="https://vijay-pratap-singh.netlify.app" target="_blank"><img src="https://s.gravatar.com/avatar/bd913f88dce5db0cc64d85d9c486ccfd?s=100&d=mm" width="100"></a>
     </td>
     <td>
-      <a href="https://www.linkedin.com/in/vprtsingh" target="_blank"><b>Vijay Pratap Singh</b><br /></a>
+      <a href="https://vijay-pratap-singh.netlify.app" target="_blank"><b>Vijay Pratap Singh</b><br /></a>
       <span style="font-size: 8px;">Software Developer</span><br />
     </td>
   </tr>
@@ -70,8 +70,7 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to disc
 [Snack](https://expo.dev/@mernjs?tab=snacks) &nbsp;
 [Sandbox](https://codesandbox.io/u/mernjs) &nbsp;
 [JSFiddle](https://jsfiddle.net/user/mernjs/fiddles/) &nbsp;
-[LinkedIn](https://www.linkedin.com/in/create-mern-app-269551191) &nbsp;
-[Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists) &nbsp;
-[Gitter](https://gitter.im/mernjs/mernjs-community) &nbsp;
+[MySQL](https://www.mycompiler.io/@mernjs) &nbsp;
 [Medium](https://medium.com/@mernjs) &nbsp;
+[Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists) &nbsp;
 [Stack Overflow](https://stackoverflow.com/users/11881111/create-mern-app?tab=profile) &nbsp;
