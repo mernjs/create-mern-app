@@ -48,7 +48,7 @@ Follow us on [LinkedIn](https://www.linkedin.com/in/vprtsingh) for updates, news
 
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to discuss features, questions, and suggestions.
 
-<h4>Creator</h4>
+<h4>Created By</h4>
 
 <table>
   <tr>
