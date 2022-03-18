@@ -44,7 +44,7 @@ Please email us, If you have any query or security concerns via mernjscommunity@
 
 <h4>Community</h4>
 
-Follow us on [LinkedIn](https://www.linkedin.com/in/create-mern-app-269551191) for updates, news, and information on the Create MERN App.
+Follow us on [LinkedIn](https://www.linkedin.com/in/vprtsingh) for updates, news, and information on the Create MERN App.
 
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to discuss features, questions, and suggestions.
 
