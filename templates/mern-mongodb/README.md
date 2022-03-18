@@ -70,7 +70,7 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to disc
 [Snack](https://expo.dev/@mernjs?tab=snacks) &nbsp;
 [Sandbox](https://codesandbox.io/u/mernjs) &nbsp;
 [JSFiddle](https://jsfiddle.net/user/mernjs/fiddles/) &nbsp;
-[MySQL](https://www.mycompiler.io/@mernjs) &nbsp;
+[MyCompiler](https://www.mycompiler.io/@mernjs) &nbsp;
 [Medium](https://medium.com/@mernjs) &nbsp;
 [Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists) &nbsp;
 [Stack Overflow](https://stackoverflow.com/users/11881111/create-mern-app?tab=profile) &nbsp;
