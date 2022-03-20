@@ -48,7 +48,7 @@ Follow us on [LinkedIn](https://www.linkedin.com/in/vprtsingh) for updates, news
 
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to discuss features, questions, and suggestions.
 
-<p style="margin-left: '30px', margin-right: '30px'"><span style="text-align: 'left'">©2021 <a href="https://github.com/mernjs/create-mern-app/blob/master/LICENSE" target="_blank"> Create MERN App</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="float: 'right'"><b>By: </b> <a href="https://vijay-pratap-singh.netlify.app" target="_blank"> Vijay Pratap Singh</a></span></p>
+<p style="margin-left: '30px', margin-right: '30px'"><span style="text-align: 'left'">©2021 <a href="https://github.com/mernjs/create-mern-app/blob/master/LICENSE" target="_blank"> Create MERN App</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="float: 'right'"><b>By: </b> <a href="https://vijay-pratap-singh.netlify.app" target="_blank"> Vijay Pratap Singh</a></span></p>
 
 <h4>Links</h4>
 
