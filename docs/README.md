@@ -48,10 +48,10 @@ Follow us on [LinkedIn](https://www.linkedin.com/in/vprtsingh) for updates, news
 
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to discuss features, questions, and suggestions.
 
-<h4>Created By</h4>
+<br/><br/>
 
 <p>
-  <a href="https://vijay-pratap-singh.netlify.app" target="_blank"><b>Vijay Pratap Singh</b></a>
+  <b>By<a href="https://vijay-pratap-singh.netlify.app" target="_blank"><b>Vijay Pratap Singh</b></a>
   <span style="font-size: 8px;"> - Software Developer</span>
 </p>
 
