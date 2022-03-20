@@ -48,13 +48,6 @@ Follow us on [LinkedIn](https://www.linkedin.com/in/vprtsingh) for updates, news
 
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to discuss features, questions, and suggestions.
 
-<br/><br/>
-
-<p>
-  <b>By<a href="https://vijay-pratap-singh.netlify.app" target="_blank"><b>Vijay Pratap Singh</b></a>
-  <span style="font-size: 8px;"> - Software Developer</span>
-</p>
-
 <h4>Links</h4>
 
 [Website](https://mernjs.github.io/create-mern-app) &nbsp;
@@ -68,3 +61,7 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to disc
 [Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists) &nbsp;
 [Stack Overflow](https://stackoverflow.com/users/11881111/create-mern-app?tab=profile) &nbsp;
 
+<p align="center">
+  <b>By </b><a href="https://vijay-pratap-singh.netlify.app" target="_blank"><b> Vijay Pratap Singh</b></a>
+  <span style="font-size: 8px;"> - Software Developer</span>
+</p>
