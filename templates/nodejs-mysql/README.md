@@ -50,17 +50,10 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to disc
 
 <h4>Created By</h4>
 
-<table>
-  <tr>
-    <td>
-      <a href="https://vijay-pratap-singh.netlify.app" target="_blank"><img src="https://s.gravatar.com/avatar/bd913f88dce5db0cc64d85d9c486ccfd?s=100&d=mm" width="100"></a>
-    </td>
-    <td>
-      <a href="https://vijay-pratap-singh.netlify.app" target="_blank"><b>Vijay Pratap Singh</b><br /></a>
-      <span style="font-size: 8px;">Software Developer</span><br />
-    </td>
-  </tr>
-</table>
+<p>
+  <a href="https://vijay-pratap-singh.netlify.app" target="_blank"><b>Vijay Pratap Singh</b></a>
+  <span style="font-size: 8px;">Software Developer</span>
+</p>
 
 <h4>Links</h4>
 
@@ -74,3 +67,4 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to disc
 [Medium](https://medium.com/@mernjs) &nbsp;
 [Youtube](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists) &nbsp;
 [Stack Overflow](https://stackoverflow.com/users/11881111/create-mern-app?tab=profile) &nbsp;
+
