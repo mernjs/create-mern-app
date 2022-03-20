@@ -62,6 +62,6 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to disc
 [Stack Overflow](https://stackoverflow.com/users/11881111/create-mern-app?tab=profile) &nbsp;
 
 <p align="center">
-  <b>By </b><a href="https://vijay-pratap-singh.netlify.app" target="_blank"><b> Vijay Pratap Singh</b></a>
+  <b>By </b><a href="https://vijay-pratap-singh.netlify.app" target="_blank">Vijay Pratap Singh</a>
   <span style="font-size: 8px;"> - Software Developer</span>
 </p>
