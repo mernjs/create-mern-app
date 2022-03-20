@@ -52,7 +52,7 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to disc
 
 <p>
   <a href="https://vijay-pratap-singh.netlify.app" target="_blank"><b>Vijay Pratap Singh</b></a>
-  <span style="font-size: 8px;">Software Developer</span>
+  <span style="font-size: 8px;"> - Software Developer</span>
 </p>
 
 <h4>Links</h4>
