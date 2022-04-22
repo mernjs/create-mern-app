@@ -57,6 +57,3 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to disc
 [Github](https://github.com/mernjs) &nbsp; &nbsp;
 [Snack](https://expo.dev/@mernjs?tab=snacks) &nbsp; &nbsp;
 [Sandbox](https://codesandbox.io/u/mernjs) &nbsp; &nbsp;
-[JSFiddle](https://jsfiddle.net/user/mernjs/fiddles/) &nbsp; &nbsp;
-[Youtube](https://www.youtube.com/channel/UC2Hpj5MNVL4oOAEWtGD-M8g) &nbsp; &nbsp;
-
