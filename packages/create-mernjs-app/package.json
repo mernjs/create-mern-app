@@ -18,7 +18,7 @@
     "commander": "^2.20.0",
     "fs-extra": "^8.1.0",
     "inquirer": "^6.5.0",
-    "mernjs": "github:mernjs/create-mern-app#23dc024a00d8e44d12b1864290256197fb4a19fe",
+    "mernjs": "github:mernjs/create-mern-app#cf6c852edc13190fd45f2d876dce318f3f78a38e",
     "network": "^0.4.1",
     "path": "^0.12.7",
     "shelljs": "^0.8.3",
@@ -26,8 +26,7 @@
     "yosay": "^2.0.2"
   },
   "keywords": [
-    "create-mernjs-app",
-    "boilerplate"
+    "create-mernjs-app"
   ],
   "repository": {
     "type": "git",
