@@ -13,14 +13,14 @@
   },
   "author": "author_email",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.0",
     "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "faker": "^5.5.3",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "faker": "^6.6.6",
     "lodash": "^4.17.21",
-    "mongoose": "^6.0.8",
+    "mongoose": "^6.3.4",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
