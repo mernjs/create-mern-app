@@ -31,4 +31,8 @@ Route.route('/api/v1/auth/users')
 	.post(AuthController.users)
 	.all(Utilities.send405);
 
+Route.route('/api/v1/auth/user')
+	.get(AuthController.getUserByID)
+	.all(Utilities.send405);
+
 module.exports = Route
