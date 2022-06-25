@@ -9,8 +9,9 @@ class AuthController {
             if (!user) return Utilities.apiResponse(res, 422, 'User Not Registered', [])
             const isMatch = await user.isValidPassword(req.body.password)
             if (!isMatch) return Utilities.apiResponse(res, 422, 'Email or Password not valid', [])
-            const accessToken = await Utilities.signAccessToken(user.id)
             delete user._doc.password
+            delete user._doc.__v
+            const accessToken = await Utilities.signAccessToken(user._doc)
             Utilities.apiResponse(res, 200, 'User Loggedin Successfully!', {...user._doc, accessToken})
         } catch (error) {
             Utilities.apiResponse(res, 500, error)
@@ -42,7 +43,7 @@ class AuthController {
     async getUserByID(req, res){
         try {
             const user = await User.findOne({_id: req.query.user_id})
-            Utilities.apiResponse(res, 200, 'Get Users Successfully', user)
+            Utilities.apiResponse(res, 200, 'Get User Details Successfully', user)
         } catch (error) {
             Utilities.apiResponse(res, 500, error)
         }

@@ -55,41 +55,43 @@ module.exports.apiKeyValidate = (req, res, next) => {
     }  
 }
 
-module.exports.apiResponse = apiResponse
-
-module.exports.signAccessToken = (userId) => {
-    const JWT = require('jsonwebtoken')
-    return new Promise((resolve, reject) => {
-        const payload = {}
-        const secret = process.env.JWT_SECRET
-        const options = {
-            expiresIn: '1h',
-            issuer: 'pickurpage.com',
-            audience: userId,
-        }
-        JWT.sign(payload, secret, options, (error, token) => {
-            if (error) {
-                reject(error)
-                return
+module.exports.signAccessToken = (payload) => { 
+    try {
+        const JWT = require('jsonwebtoken')
+        return new Promise((resolve, reject) => {
+            const options = {
+                expiresIn: '7d',
+                issuer: 'pickurpage.com',
+                audience: payload._id.valueOf()
             }
-            resolve(token)
+            JWT.sign(payload, process.env.JWT_SECRET, options, (error, token) => {
+                if (error) {
+                    reject(error)
+                    return
+                }
+                resolve(token)
+            })
         })
-    })
+    } catch (error) {
+        apiResponse(res, 500, err)
+    }
 }
 
 module.exports.verifyAccessToken = (req, res, next) => {
-    const JWT = require('jsonwebtoken')
-    if (!req.headers['authorization'])  return apiResponse(res, 401, 'No Authorization Key Provided', [])
-    const authHeader = req.headers['authorization']
-    const bearerToken = authHeader.split(' ')
-    const token = bearerToken[1]
-    JWT.verify(token, process.env.JWT_SECRET, (err, payload) => {
-        if (err) {
-            const message = err.name === 'JsonWebTokenError' ? 'Unauthorized' : err.message
-            reject(err)
-            return
-        }
-        req.payload = payload
-        next()
-    })
+   try {
+        const JWT = require('jsonwebtoken')
+        if (!req.headers['authorization'])  return apiResponse(res, 401, 'No Authorization Key Provided', [])
+        const token = req.headers['authorization']
+        JWT.verify(token, process.env.JWT_SECRET, (err, payload) => {
+            if (err) {
+                return apiResponse(res, 401, 'Invalid Authorization Token', [])
+            }
+            req.payload = payload
+            next()
+        })
+    } catch (error) {
+        apiResponse(res, 500, err)
+    }
 }
+
+module.exports.apiResponse = apiResponse
