@@ -16,10 +16,10 @@ export default (props) => {
     return (
         <Header>
             <div className="container">
-                <Logo>
-                    <Link to="/"><b>Create MERN App</b></Link>
-                </Logo>
                 <Navbar>
+                    <Logo>
+                        <Link to="/"><b>Create MERN App</b></Link> 
+                    </Logo>
                     <ul>
                         <li>
                             <Link to="/">

@@ -24,8 +24,13 @@ class AuthController {
             if (doesExist) return Utilities.apiResponse(res, 422, 'Email is already been registered')
             const user = new User(req.body)
             const savedUser = await user.save()
-            delete savedUser.password
-            Utilities.apiResponse(res, 200, 'User Created Successfully!', savedUser)
+            let data = {
+                _id: savedUser._id,
+                name: savedUser.name,
+                email: savedUser.email
+            }
+            const accessToken = await Utilities.signAccessToken(data)
+            Utilities.apiResponse(res, 200, 'User Created Successfully!', {...data, accessToken})
         } catch (error) {
             Utilities.apiResponse(res, 500, error)
         }

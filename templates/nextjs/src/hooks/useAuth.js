@@ -12,7 +12,7 @@ const useAuth = (data) => {
             formSubmitStart('login')
             const response = await apiRequest({
                 method: 'POST',
-                url: `user/login`,
+                url: `auth/login`,
                 data: payload
             })
             dispatch(AuthActions.setAuth(response.data.data))
@@ -28,11 +28,12 @@ const useAuth = (data) => {
             formSubmitStart('signup')
             const response = await apiRequest({
                 method: 'POST',
-                url: `user/signup`,
+                url: `auth/signup`,
                 data: payload
             })
+            dispatch(AuthActions.setAuth(response.data.data))
             formSubmitSuccess('signup', response.data.message)
-            Router.push('/login')
+            Router.push('/dashboard')
         } catch (error) {
             formSubmitError('signup', error)
         }

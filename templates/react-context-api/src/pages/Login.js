@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Header, Footer, TextInput, H2, Button } from 'components'
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
@@ -18,11 +18,14 @@ const validate = values => {
 const Login = (props) => {
 
 	let { login } = useAuth()
+	const [inputs, setInputs] = useState({});
 
 	const handleLogin = (event) => {
 		event.preventDefault();
-		login(event.target.value)
+		login(inputs)
 	}
+	
+	const handleChange = e => setInputs(prevState => ({ ...prevState, [e.target.name]: e.target.value }));
     
     return (
         <>
@@ -31,7 +34,18 @@ const Login = (props) => {
 				<Container>
 					<H2>Sign In</H2>
 					<form onSubmit={handleLogin}>
-						<TextInput/>
+						<TextInput
+							name="email"
+							placeholder="Enter Your Email"
+							type="text"
+							onChange={handleChange}
+						/>
+						<TextInput 
+							name="password"
+							placeholder="Enter Your Password"
+							type="password"
+							onChange={handleChange}
+						/>
 						<Button className="btn btn-secondary" type="submit">Log In</Button>
 						<div>Don't have an account? <Link to="/signup"> Signup</Link></div>
 					</form>

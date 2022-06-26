@@ -2,10 +2,10 @@ import React from 'react'
 import styled from "styled-components";
 
 export default (props) => {
-	let { input, label, type, placeholder, error} = props
+	let { onChange, label, type, placeholder, name, error} = props
 	return <TextInput>
 		{label && <label>{label}</label> }
-		<input {...input} placeholder={placeholder} className="text-input" type={type} />
+		<input name={name} onChange={onChange} placeholder={placeholder} className="text-input" type={type} />
 		{error && <span className="error_show">{error}</span>}
 	</TextInput>
 }

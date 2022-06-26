@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Header, Footer, TextInput, H2, Button } from 'components'
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
@@ -24,11 +24,14 @@ const validate = values => {
 const Signup = (props) => {
 
 	let { signup } = useAuth()
+	const [inputs, setInputs] = useState({});
 
 	const handleSignup = (event) => {
 		event.preventDefault();
-		signup(event.target.value)
+		signup(inputs)
 	}
+
+	const handleChange = e => setInputs(prevState => ({ ...prevState, [e.target.name]: e.target.value }));
     
     return (
         <>
@@ -37,7 +40,30 @@ const Signup = (props) => {
 				<Container>
 					<H2>Sign Up</H2>
 					<form onSubmit={handleSignup}>
-						<TextInput/>
+						<TextInput
+							name="name"
+							placeholder="Enter Your Name"
+							type="text"
+							onChange={handleChange}
+						/>
+						<TextInput
+							name="email"
+							placeholder="Enter Your Email ID"
+							type="text"
+							onChange={handleChange}
+						/>
+						<TextInput
+							name="password"
+							placeholder="Enter Your Password"
+							type="text"
+							onChange={handleChange}
+						/>
+						<TextInput
+							name="confirm_password"
+							placeholder="Enter Your Confirm Password"
+							type="text"
+							onChange={handleChange}
+						/>
 						<Button className="btn btn-secondary" type="submit">Sign Up</Button>
 						<div>Don't have an account? <Link to="/login"> Login</Link></div>
 					</form>

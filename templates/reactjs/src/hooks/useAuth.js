@@ -29,8 +29,8 @@ const useAuth = (data) => {
                 url: `auth/signup`,
                 data: payload
             })
+            dispatch(AuthActions.setAuth(response.data.data))
             formSubmitSuccess('signup', response.data.message)
-            forwardTo('/login')
         } catch (error) {
             formSubmitError('signup', error)
         }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {  BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import {  BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Provider } from "react-redux";
 import { PersistGate } from 'redux-persist/integration/react'
 import { store, persistor } from "Store";
@@ -13,22 +13,14 @@ import Signup from 'pages/Signup'
 import Dashboard from 'pages/Dashboard'
 import NotFound from 'pages/NotFound'
 
-const AuthRoute = ({ component: Component, ...rest }) => {
+const AuthRoute = ({ children }) => {
 	const user = useSelector(state => state.auth.user)
-    return <Route {...rest} render={(props) => (
-        (user !== null)
-        	? <Redirect to='/dashboard' />
-            : <Component {...props}/>
-    )} />
+    return (user !== null) ? <Navigate to='/dashboard' /> : children
 }
 
-const PrivateRoute = ({ component: Component, ...rest }) => {
+const PrivateRoute = ({ children }) => {
 	const user = useSelector(state => state.auth.user)
-    return <Route {...rest} render={props => (
-        (user !== null)
-            ? <Component {...props} />
-            : <Redirect to={{ pathname: '/login', state: { from: props.location } }} />
-    )} />
+    return (user !== null) ? children : <Navigate to={{ pathname: '/login' }} />
 }
 
 const App = () => {
@@ -37,13 +29,25 @@ const App = () => {
 			<PersistGate loading={null} persistor={persistor}>
 				<ThemeProvider>
 					<Router history={history}>
-						<Switch>
-							<Route exact={true} path="/" component={Home} />
-							<AuthRoute exact={true} path="/login" component={Login} />
-							<AuthRoute exact={true} path="/signup" component={Signup} />
-							<PrivateRoute exact={true} path="/dashboard" component={Dashboard} />
-							<Route path="*" component={NotFound} />
-						</Switch>
+						<Routes>
+							<Route exact={true} path="/" element={<Home/>} />
+							<Route exact={true} path="/login" element={
+								<AuthRoute>
+									<Login/>
+								</AuthRoute>
+							} />
+							<Route exact={true} path="/signup" element={
+								<AuthRoute>
+									<Signup/>
+								</AuthRoute>
+							} />
+							<Route exact={true} path="/dashboard" element={
+								<PrivateRoute>
+									<Dashboard/>
+								</PrivateRoute>
+							} />
+							<Route path="*" element={<NotFound/>} />
+						</Routes>
 					</Router>
 				</ThemeProvider>
 			</PersistGate>

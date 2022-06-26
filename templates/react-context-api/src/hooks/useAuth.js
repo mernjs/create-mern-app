@@ -16,7 +16,6 @@ const useAuth = (data) => {
             })
             dispatch({type: 'AUTH/SET', payload: response.data.data})
             formSubmitSuccess('login', response.data.message)
-            forwardTo('/dashboard')
         } catch (error) {
             formSubmitError('login', error)
         }
@@ -30,8 +29,8 @@ const useAuth = (data) => {
                 url: `auth/signup`,
                 data: payload
             })
+            dispatch({type: 'AUTH/SET', payload: response.data.data})
             formSubmitSuccess('signup', response.data.message)
-            forwardTo('/login')
         } catch (error) {
             formSubmitError('signup', error)
         }

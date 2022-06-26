@@ -1,13 +1,13 @@
 {
-  "name": "newapp",
+  "name": "project_name",
   "version": "0.1.0",
   "private": true,
-  "appId": "mO8aVj720QP6r68E8Y0CQN4v1P8zNTHC",
+  "appId": "mernjs_app_id",
   "scripts": {
     "dev": "react-scripts  start",
     "build": "react-scripts build"
   },
-  "author": "y@rr.fff",
+  "author": "author_email",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.1",
@@ -17,7 +17,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
-    "react-router-dom": "^5.3.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "^4.0.3",
     "react-toastify": "^8.0.3",
     "styled-components": "^5.3.1",
