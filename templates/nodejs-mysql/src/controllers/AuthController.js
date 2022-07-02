@@ -6,42 +6,40 @@ class AuthController {
 
     async login(req, res){
         try {
-            const user = await User.findOne({ email: req.body.email })
+            let user = await User.findOne({where: { email: req.body.email }})
+            user = user.toJSON()
             if (!user) return Utilities.apiResponse(res, 422, 'User Not Registered', [])
             const isMatch = await bcrypt.compare(req.body.password, user.password)
             if (!isMatch) return Utilities.apiResponse(res, 422, 'Email or Password not valid', [])
-            delete user._doc.password
-            delete user._doc.__v
-            const accessToken = await Utilities.signAccessToken(user._doc)
-            Utilities.apiResponse(res, 200, 'User Loggedin Successfully!', {...user._doc, accessToken})
+            delete user.password
+            const accessToken = await Utilities.signAccessToken(user)
+           return Utilities.apiResponse(res, 200, 'User Loggedin Successfully!', {...user, accessToken})
         } catch (error) {
-            Utilities.apiResponse(res, 500, error)
+            res.send(error.message)
+            return Utilities.apiResponse(res, 500, error)
         }
     }
 
     async signup(req, res){
         try {
-            const doesExist = await User.findOne({ email: req.body.email })
+            const doesExist = await User.findOne({where: { email: req.body.email }})
             if (doesExist) return Utilities.apiResponse(res, 422, 'Email is already been registered')
             const salt = await bcrypt.genSalt(10)
-            const hashedPassword = await bcrypt.hash(this.password, salt)
-            const user = new User({...req.body, password: hashedPassword})
-            const savedUser = await user.save()
-            let data = {
-                _id: savedUser._id,
-                name: savedUser.name,
-                email: savedUser.email
-            }
-            const accessToken = await Utilities.signAccessToken(data)
-            Utilities.apiResponse(res, 200, 'User Created Successfully!', {...data, accessToken})
+            const hashedPassword = await bcrypt.hash(req.body.password, salt)
+            let savedUser = await User.create({...req.body, password: hashedPassword})
+            savedUser = savedUser.toJSON()
+            delete savedUser.password
+            const accessToken = await Utilities.signAccessToken(savedUser)
+            return Utilities.apiResponse(res, 200, 'User Created Successfully!', {...savedUser, accessToken})
         } catch (error) {
+            res.send(error.message)
             Utilities.apiResponse(res, 500, error)
         }
     }
 
     async users(req, res){
         try {
-            const users = await User.find()
+            const users = await User.findAll()
             Utilities.apiResponse(res, 200, 'Get Users Successfully', users)
         } catch (error) {
             Utilities.apiResponse(res, 500, error)
@@ -50,7 +48,7 @@ class AuthController {
 
     async getUserByID(req, res){
         try {
-            const user = await User.findOne({_id: req.query.user_id})
+            const user = await User.findOne({where: {id: req.query.user_id}})
             Utilities.apiResponse(res, 200, 'Get User Details Successfully', user)
         } catch (error) {
             Utilities.apiResponse(res, 500, error)

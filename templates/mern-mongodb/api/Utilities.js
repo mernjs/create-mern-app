@@ -62,7 +62,7 @@ module.exports.signAccessToken = (payload) => {
         return new Promise((resolve, reject) => {
             const options = {
                 expiresIn: '7d',
-                issuer: 'pickurpage.com',
+                issuer: 'https://mernjs.github.io/create-mern-app',
                 audience: payload._id.valueOf()
             }
             JWT.sign(payload, process.env.JWT_SECRET, options, (error, token) => {
@@ -74,7 +74,7 @@ module.exports.signAccessToken = (payload) => {
             })
         })
     } catch (error) {
-        apiResponse(res, 500, err)
+        apiResponse(res, 500, error)
     }
 }
 
@@ -91,7 +91,7 @@ module.exports.verifyAccessToken = (req, res, next) => {
             next()
         })
     } catch (error) {
-        apiResponse(res, 500, err)
+        apiResponse(res, 500, error)
     }
 }
 
