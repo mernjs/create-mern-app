@@ -37,7 +37,8 @@ Read official [docs](https://mernjs.github.io/create-mern-app) for more informat
 | React Native | @react-native-async-storage/async-storage @react-native-community/masked-view @react-navigation/native @react-navigation/stack @reduxjs/toolkit axios lodash native-base react react-native react-native-gesture-handler react-native-safe-area-context react-native-screens react-native-toast-message react-redux redux redux-form redux-logger redux-persist styled-components | [Click Here](https://play.google.com/store/apps/details?id=com.mernapp) |
 
 <h4>APIs Docs</h4>
-Read ours rest api docs [click](https://documenter.getpostman.com/view/9986684/UzJFuJBi) for more information.
+
+Read our rest api docs [click](https://documenter.getpostman.com/view/9986684/UzJFuJBi).
 
 <h4>Support</h4>
 
