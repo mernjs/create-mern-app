@@ -1,13 +1,19 @@
 # [![mit license](https://img.shields.io/github/license/mernjs/create-mern-app)](https://github.com/mernjs/create-mern-app/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/create-mernjs-app)](https://www.npmjs.com/package/create-mernjs-app) [![Gitter](https://badges.gitter.im/mernjs/mernjs.svg)](https://gitter.im/mernjs/mernjs-community) [![npm downloads](https://img.shields.io/npm/dy/create-mernjs-app)](https://www.npmjs.com/package/create-mernjs-app)
 
 <p align="center">
-  <a href="https://mernjs.github.io/create-mern-app" rel="noopener">
+  <a target="_blank" href="https://mernjs.github.io/create-mern-app" rel="noopener">
  <img src="https://mernjs.github.io/create-mern-app/assets/logo1.png" alt="Logo"></a>
 </p>
 <h5 align="center">Set up a modern web, mobile and desktop app by running one command.</h5>
 
 <h4>Create MERN App</h4>
 <p>Create MERN App provides PWA architecture for building web, mobile and desktop apps in JavaScript.</p>
+
+<blockquote>
+<h5>
+Before downloading the source code, go over the official documentation of <a target="_blank" href="https://mernjs.github.io/create-mern-app/mern-roadmap" rel="noopener">MERN</a>  then continue with the Create MERN App.
+</h5>
+</blockquote>
 
 <h4>Creating an App</h4>
 
@@ -36,9 +42,7 @@ Read official [docs](https://mernjs.github.io/create-mern-app) for more informat
 | ElectronJS | @reduxjs/toolkit @testing-library/jest-dom @testing-library/react @testing-library/user-event axios history react react-dom react-icons react-redux react-router-dom react-scripts react-toastify redux redux-form redux-logger redux-persist styled-components web-vitals workbox-background-sync workbox-broadcast-update workbox-cacheable-response workbox-core workbox-expiration workbox-google-analytics workbox-navigation-preload workbox-precaching workbox-range-requests workbox-routing workbox-strategies workbox-streams  | [Click Here](https://mernjs-reactjs.herokuapp.com) |
 | React Native | @react-native-async-storage/async-storage @react-native-community/masked-view @react-navigation/native @react-navigation/stack @reduxjs/toolkit axios lodash native-base react react-native react-native-gesture-handler react-native-safe-area-context react-native-screens react-native-toast-message react-redux redux redux-form redux-logger redux-persist styled-components | [Click Here](https://play.google.com/store/apps/details?id=com.mernapp) |
 
-<h4>Restful APIs For Learning Purpose</h4>
-
-[Click here](https://documenter.getpostman.com/view/9986684/UzJFuJBi) to read rest api docs.
+Read rest API docs [Click here](https://documenter.getpostman.com/view/9986684/UzJFuJBi) for learning purpose.
 
 <h4>Support</h4>
 
