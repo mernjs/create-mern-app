@@ -1,13 +1,17 @@
 # [![mit license](https://img.shields.io/github/license/mernjs/create-mern-app)](https://github.com/mernjs/create-mern-app/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/create-mernjs-app)](https://www.npmjs.com/package/create-mernjs-app) [![Gitter](https://badges.gitter.im/mernjs/mernjs.svg)](https://gitter.im/mernjs/mernjs-community) [![npm downloads](https://img.shields.io/npm/dy/create-mernjs-app)](https://www.npmjs.com/package/create-mernjs-app)
 
 <p align="center">
-  <a href="https://mernjs.github.io/create-mern-app" rel="noopener">
+  <a target="_blank" href="https://mernjs.github.io/create-mern-app" rel="noopener">
  <img src="https://mernjs.github.io/create-mern-app/assets/logo1.png" alt="Logo"></a>
 </p>
 <h5 align="center">Set up a modern web, mobile and desktop app by running one command.</h5>
 
 <h4>Create MERN App</h4>
 <p>Create MERN App provides PWA architecture for building web, mobile and desktop apps in JavaScript.</p>
+
+<p>
+Before downloading the source code, go over the official documentation of <a target="_blank" href="https://mernjs.github.io/create-mern-app" rel="noopener">MERN</a>  then continue with the Create MERN App.
+</p>
 
 <h4>Creating an App</h4>
 
