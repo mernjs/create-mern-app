@@ -9,9 +9,11 @@
 <h4>Create MERN App</h4>
 <p>Create MERN App provides PWA architecture for building web, mobile and desktop apps in JavaScript.</p>
 
+<blockquote>
 <h5>
 Before downloading the source code, go over the official documentation of <a target="_blank" href="https://mernjs.github.io/create-mern-app/mern-roadmap" rel="noopener">MERN</a>  then continue with the Create MERN App.
 </h5>
+</blockquote>
 
 <h4>Creating an App</h4>
 
