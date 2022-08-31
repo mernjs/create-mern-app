@@ -42,8 +42,6 @@ Read official [docs](https://mernjs.github.io/create-mern-app) for more informat
 | ElectronJS | @reduxjs/toolkit @testing-library/jest-dom @testing-library/react @testing-library/user-event axios history react react-dom react-icons react-redux react-router-dom react-scripts react-toastify redux redux-form redux-logger redux-persist styled-components web-vitals workbox-background-sync workbox-broadcast-update workbox-cacheable-response workbox-core workbox-expiration workbox-google-analytics workbox-navigation-preload workbox-precaching workbox-range-requests workbox-routing workbox-strategies workbox-streams  | [Click Here](https://mernjs-reactjs.herokuapp.com) |
 | React Native | @react-native-async-storage/async-storage @react-native-community/masked-view @react-navigation/native @react-navigation/stack @reduxjs/toolkit axios lodash native-base react react-native react-native-gesture-handler react-native-safe-area-context react-native-screens react-native-toast-message react-redux redux redux-form redux-logger redux-persist styled-components | [Click Here](https://play.google.com/store/apps/details?id=com.mernapp) |
 
-Read rest API docs [Click here](https://documenter.getpostman.com/view/9986684/UzJFuJBi) for learning purpose.
-
 <h4>Support</h4>
 
 If you have any issues or bugs, report in our [GitHub](https://github.com/mernjs/create-mern-app/issues)
@@ -53,9 +51,6 @@ Please email us, If you have any query or security concerns via mernjscommunity@
 <h4>Community</h4>
 
 Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to discuss features, questions, and suggestions.
-
-<p style="margin-left: '30px', margin-right: '30px'"><span style="text-align: 'left'">©2021 <a href="https://github.com/mernjs/create-mern-app/blob/master/LICENSE" target="_blank"> Create MERN App</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="float: 'right'"><b>By: </b> <a href="https://vijay-pratap-singh.netlify.app" target="_blank"> Vijay Pratap Singh</a></span></p>
-
 
 <h4>Author</h4>
 <table>
@@ -69,3 +64,5 @@ Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to disc
     </td>
   </tr>
 </table>
+
+<p style="margin-left: '30px', margin-right: '30px'"><span style="text-align: 'left'">©2021 <a href="https://github.com/mernjs/create-mern-app/blob/master/LICENSE" target="_blank"> Create MERN App</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="float: 'right'"><b>By: </b> <a href="https://vijay-pratap-singh.netlify.app" target="_blank"> Vijay Pratap Singh</a></span></p>
