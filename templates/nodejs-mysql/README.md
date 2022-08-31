@@ -29,7 +29,7 @@ npm i create-mernjs-app -g
 create-mernjs-app my_project 
 ```
 
-Read official [docs](https://mernjs.github.io/create-mern-app) & watch youtube [videos](https://mernjs.github.io/create-mern-app) for more information.
+Read official [docs](https://mernjs.github.io/create-mern-app) & watch youtube [videos](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists) for more information.
 
 <h4>Templates</h4>
 
