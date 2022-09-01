@@ -22,7 +22,7 @@ module.exports = async (projectname, {project_type, email}) => {
 
     ApiRequest.init({project_name: projectname, project_path: currentWorkingDir, project_type: project_typ, email, app_id: appID})
 
-    if(project_typ === 'react-native-cli'){
+    if(project_typ === 'react-native-with-cli'){
         let command = `npx react-native init ${projectname} --version 0.66.0`
         const child = spawn(command, { stdio: "inherit", shell: true });
         child.on("close", code => {
@@ -38,7 +38,7 @@ module.exports = async (projectname, {project_type, email}) => {
                 process.chdir(destinationPath)
                 Helpers.rewritePackageName(`${destinationPath}/package.json`, projectname, appID, email)
 
-                let command = 'npm install'
+                let command = 'npm install --legacy-peer-deps'
                 const child = spawn(command, { stdio: "inherit", shell: true });
                 child.on("close", code2 => {
                     if(code2 !== 0) return  console.log({message: `${command}`});
@@ -83,12 +83,12 @@ module.exports = async (projectname, {project_type, email}) => {
         process.chdir(destinationPath)
         Helpers.rewritePackageName(`${destinationPath}/package.json`, projectname, appID, email)
 
-        if(project_typ === 'react-native-expo') Helpers.rewritePackageName(`${destinationPath}/app.json`, projectname, appID, email)
+        if(project_typ === 'react-native-with-expo') Helpers.rewritePackageName(`${destinationPath}/app.json`, projectname, appID, email)
 
         console.log(" ")
         console.log(chalk.hex('#4c84ff').bold("Installing dependencies... This might take a couple of minutes."));
         console.log(" ")
-        let command = 'npm install'
+        let command = 'npm install --legacy-peer-deps'
         const child = spawn(command, { stdio: "inherit", shell: true });
         child.on("close", code => {
             if(code !== 0) return  console.log({message: `${command}`});
