@@ -18,7 +18,7 @@
     "commander": "^2.20.0",
     "fs-extra": "^8.1.0",
     "inquirer": "^6.5.0",
-    "mernjs": "github:mernjs/create-mern-app#48b49db36929bf381766116f3712165933b83488",
+    "mernjs": "github:mernjs/create-mern-app#b79263eaafda4b5ce898ab23f6bdfc1e82105fa5",
     "network": "^0.4.1",
     "path": "^0.12.7",
     "shelljs": "^0.8.3",
