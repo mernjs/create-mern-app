@@ -33,7 +33,7 @@ Read official [docs](https://mernjs.github.io/create-mern-app) & watch youtube [
 
 <h4>Templates</h4>
 
-| SN. | Technology | Dependencies | Demo | Youtube | Article |
+| SN. | Technology | Dependencies | Article | Youtube | Demo |
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | 1 | MERN With MongoDB | @reduxjs/toolkit axios body-parser cors dotenv ejs express faker history lodash mongoose next next-pwa next-redux-wrapper react react-dom react-icons react-redux react-toastify redux redux-form redux-logger redux-persist redux-saga styled-components | [Read](http://mernjs-blog.herokuapp.com/?cat=1) | [Watch](https://www.youtube.com/playlist?list=PLdb4nm44DkLpdb1Oj60C-G2AegIsOCYhU) | [View](https://mern-with-mongodb.herokuapp.com) |
 | 2 | MERN With MySQL | @reduxjs/toolkit axios body-parser cors dotenv ejs express faker history lodash mysql sequelize next next-pwa next-redux-wrapper react react-dom react-icons react-redux react-toastify redux redux-form redux-logger redux-persist redux-saga styled-components | [Read](http://mernjs-blog.herokuapp.com/?cat=6) | [Watch](https://www.youtube.com/playlist?list=PLdb4nm44DkLonYF_tXGbw1uD7SYEjUtlS) | [View](https://mern-with-mysql.herokuapp.com) |
