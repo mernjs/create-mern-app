@@ -15,6 +15,9 @@ Before downloading the source code, go over the official documentation of <a tar
 </h5>
 </blockquote>
 
+<h5>
+If you find this code useful, don't forget to <a target="_blank" href="https://github.com/mernjs/create-mern-app" rel="noopener">⭐ star the repo ⭐</a> 
+</h5>
 <h4>Creating an App</h4>
 
 ```
