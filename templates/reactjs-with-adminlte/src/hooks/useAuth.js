@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux'
-import { apiRequest, formSubmitStart, formSubmitSuccess, formSubmitError } from 'Utilities'
+import { apiRequest, formSubmitStart, formSubmitSuccess, formSubmitError, forwardTo } from 'Utilities'
 import { AuthActions } from 'reducers/AuthReducer'
 
 const useAuth = (data) => {
@@ -50,6 +50,7 @@ const useAuth = (data) => {
 
     const logout = () => {
         dispatch(AuthActions.logout())
+        forwardTo('/login')
     }
 
     return {

@@ -1,8 +1,9 @@
 import React from 'react'
 import { Field, reduxForm } from 'redux-form'
-import TextInput from 'components/TextInput'
+import { Header, Footer, TextInput, H2, Button } from 'components'
+import styled from "styled-components";
+import { Link } from 'react-router-dom';
 import useAuth  from 'hooks/useAuth'
-import { Content, Row, Col, Box, Button } from 'adminlte-2-react';
 
 const validate = values => {
 	const errors = {}
@@ -16,24 +17,18 @@ const validate = values => {
 }
 
 const Login = (props) => {
-	const { login } = useAuth()
+
+	let { login } = useAuth()
+
 	const { handleSubmit } = props
+    
     return (
-		
-       	<Content title="Login">
-			<Row>
-				<Col md={12}>
-					<Box
-						type="info"
-						title="Login Form"
-						bodyClassName="form-horizontal"
-						footer={(
-							<React.Fragment>
-								<Button text="SignIn" onClick={handleSubmit( (values) => login(values))} type="primary" pullRight />
-							</React.Fragment>
-						)}
-						border
-					>
+        <>
+        	<ScrollView>
+				<Header />
+				<Container>
+					<H2>Sign In</H2>
+					<form onSubmit={handleSubmit( (values) => login(values))}>
 						<Field
 							name="email"
 							type="text"
@@ -46,10 +41,13 @@ const Login = (props) => {
 							component={TextInput}
 							placeholder="Enter Your Password"
 						/>
-					</Box>
-				</Col>
-			</Row>
-		</Content>
+						<Button className="btn btn-secondary" type="submit">Log In</Button>
+						<div>Don't have an account? <Link to="/signup"> Signup</Link></div>
+					</form>
+				</Container>
+			</ScrollView>
+			<Footer/>
+		</>
     )
 }
 
@@ -57,3 +55,16 @@ export default reduxForm({
 	validate,
     form: 'login'
 })(Login)
+
+const ScrollView = styled.div`
+	min-height: calc(100vh - 80px);
+`;
+
+const Container = styled.div`
+	align-content: center;
+	padding-top: 50px;
+	min-height: 100%;
+	margin: auto;
+	width: 400px;
+	max-width: 100%;
+`;

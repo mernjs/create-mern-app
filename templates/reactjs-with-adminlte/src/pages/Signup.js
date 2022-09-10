@@ -1,17 +1,18 @@
 import React from 'react'
 import { Field, reduxForm } from 'redux-form'
-import TextInput from 'components/TextInput'
+import { Header, Footer, TextInput, H2, Button } from 'components'
+import styled from "styled-components";
+import { Link } from 'react-router-dom';
 import useAuth  from 'hooks/useAuth'
-import { Content, Row, Col, Box, Button } from 'adminlte-2-react';
-  
+
 const validate = values => {
 	const errors = {}
 	if (!values.name) {
 	  	errors.name = 'Name is Required'
 	}
 	if (!values.email) {
-		errors.email = 'Email is Required'
-  	}
+	  	errors.email = 'Email is Required'
+	}
 	if (!values.password) {
 	  	errors.password = 'Password is Required'
 	}
@@ -22,32 +23,24 @@ const validate = values => {
 }
 
 const Signup = (props) => {
-	
-	const { signup } = useAuth()
+
+	let { signup } = useAuth()
+
 	const { handleSubmit } = props
     
     return (
-		<Content title="Signup">
-			<Row>
-				<Col md={12}>
-					<Box
-						type="info"
-						title="Signup Form"
-						bodyClassName="form-horizontal"
-						footer={(
-							<React.Fragment>
-								<Button text="SignUp" onClick={handleSubmit( (values) => signup(values))} type="primary" pullRight />
-							</React.Fragment>
-						)}
-						border
-					>
+        <>
+        	<ScrollView>
+				<Header />
+				<Container>
+					<H2>Sign Up</H2>
+					<form onSubmit={handleSubmit( (values) => signup(values))}>
 						<Field
 							name="name"
 							type="text"
 							component={TextInput}
 							placeholder="Enter Your Name"
 						/>
-
 						<Field
 							name="email"
 							type="text"
@@ -66,10 +59,13 @@ const Signup = (props) => {
 							component={TextInput}
 							placeholder="Enter Your Confirm Password"
 						/>
-					</Box>
-				</Col>
-			</Row>
-		</Content>
+						<Button className="btn btn-secondary" type="submit">Sign Up</Button>
+						<div>Don't have an account? <Link to="/login"> Login</Link></div>
+					</form>
+				</Container>
+			</ScrollView>
+			<Footer/>
+		</>
     )
 }
 
@@ -77,3 +73,16 @@ export default reduxForm({
 	validate,
     form: 'signup'
 })(Signup)
+
+const ScrollView = styled.div`
+	min-height: calc(100vh - 80px);
+`;
+
+const Container = styled.div`
+	align-content: center;
+	padding-top: 50px;
+	min-height: 100%;
+	margin: auto;
+	width: 400px;
+	max-width: 100%;
+`;
