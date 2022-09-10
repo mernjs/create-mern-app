@@ -81,8 +81,8 @@ function init() {
         })
     })
     .on(Constants.help, () => {
-        let message = `   Create MERN App provides Boilerplate for building web, mobile and desktop apps in JavaScript. ${chalk.cyan('https://mernjs.github.io/create-mern-app')}`;
-        console.log(yosay(`${chalk.bold.green(' ** Welcom To MERN Stack Boilerplate ** ')} \n ${chalk.green(' ')} \n ${message} \n ${chalk.green(' ')} `, {maxLength: 55}));  
+        let message = `   Create MERN App provides boilerplate for building web, mobile and desktop apps in JavaScript. ${chalk.cyan('https://mernjs.github.io/create-mern-app')}`;
+        console.log(yosay(`${chalk.bold.green(' ** Welcom To MERN Stack boilerplate ** ')} \n ${chalk.green(' ')} \n ${message} \n ${chalk.green(' ')} `, {maxLength: 55}));  
     })
     .parse(process.argv);
 
