@@ -1,0 +1,46 @@
+{
+  "name": "project_name",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "react-scripts  start",
+    "build": "react-scripts build"
+  },
+  "author": "author_email",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.2",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.1",
+    "@testing-library/user-event": "^13.2.1",
+    "adminlte-2-react": "^0.2.0",
+    "axios": "^0.27.2",
+    "history": "^5.3.0",
+    "moment": "^2.29.4",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-redux": "^7.2.8",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^5.0.1",
+    "react-toastify": "^9.0.1",
+    "redux": "^4.2.0",
+    "redux-form": "^8.3.8",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "styled-components": "^5.3.5",
+    "web-vitals": "^2.1.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

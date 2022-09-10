@@ -1,8 +1,0 @@
-var path = require('path');
-
-module.exports = {
-  'config': path.resolve('api/database', 'dbconfig/sequelize-connection.js'),
-  'migrations-path': path.resolve('api/database', 'migrations'),
-  'seeders-path': path.resolve('api/database', 'seeders'),
-  'models-path': path.resolve('api', 'models')
-}

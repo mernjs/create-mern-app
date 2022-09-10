@@ -22,9 +22,8 @@ Constants.select_form = [
 		type: "list",
 		name: "project_type",
 		message: "Choose your favourite technology",
-		// choices: ['MERN App','NextJS','ReactJS','NodeJS','React Native'],
-		choices: ['MERN With MongoDB','MERN With MySQL','NextJS With Redux','ReactJS With Redux','React With Context API','NodeJS With MySQL','NodeJS With MongoDB','React Native With CLI','React Native With Expo','ElectronJS With Redux'],
-		// choices: ['NextJs Redux','ReactJs Redux','ReactJs Context','ReactJs Electron','React Native Redux','NodeJs ExpressJs MySQL','NodeJs ExpressJs MongoDB'],
+		choices: ['MERN With MongoDB','NextJS With Redux','ReactJS With Redux','NodeJS With MongoDB','React Native With Expo','ElectronJS With Redux','React With AdminLTE'],
+		// choices: ['MERN With MongoDB','MERN With MySQL','NextJS With Redux','ReactJS With Redux','React With Context API','NodeJS With MySQL','NodeJS With MongoDB','React Native With CLI','React Native With Expo','ElectronJS With Redux'],
 	}
 ]
 
