@@ -21,15 +21,11 @@ If you find this code useful, don't forget to <a target="_blank" href="https://g
 <h4>Creating an App</h4>
 
 ```
-npx create-mernjs-app my_project
-```
-OR
-```
 npm i create-mernjs-app -g 
 ```
 
 ```
-create-mernjs-app my_project 
+npx create-mernjs-app my_project 
 ```
 
 Read official [docs](https://mernjs.github.io/create-mern-app) & watch youtube [videos](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw/playlists) for more information.
