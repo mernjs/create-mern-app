@@ -18,7 +18,7 @@ export default (props) => {
             <div className="container">
                 <Navbar>
                     <Logo>
-                        <Link to="/"><b>Chrome</b></Link> 
+                        <Link to="/"><b>Create MERN App</b></Link> 
                     </Logo>
                     <ul>
                         {user === null &&
@@ -69,6 +69,7 @@ const Header = styled.header`
 
 const Logo = styled.div`
     flex:6;
+    width: 300px;
     display: flex;
     justify-content: flex-start;
 `;

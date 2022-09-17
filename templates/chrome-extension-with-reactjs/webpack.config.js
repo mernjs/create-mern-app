@@ -120,7 +120,7 @@ var options = {
 		new CopyWebpackPlugin({
 			patterns: [
 				{
-					from: 'src/assets/img/icon-128.png',
+					from: 'public/assets/icons/icon-128x128.png',
 					to: path.join(__dirname, 'build'),
 					force: true,
 				}
@@ -129,7 +129,7 @@ var options = {
 		new CopyWebpackPlugin({
 			patterns: [
 				{
-					from: 'src/assets/img/icon-34.png',
+					from: 'public/assets/icons/icon-48x48.png',
 					to: path.join(__dirname, 'build'),
 					force: true,
 				},
