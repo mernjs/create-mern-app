@@ -1,7 +1,7 @@
 {
   "name": "create-mern-app",
   "version": "14.0.1",
-  "description": "Create MERN App provides boilerplate for building web, mobile and desktop apps in JavaScript.",
+  "description": "Create MERN App provides boilerplate for building Web App, Mobile App, Desktop App & Chrome Extension in JavaScript.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -7,7 +7,7 @@
 <h5 align="center">Set up a modern web, mobile and desktop app by running one command.</h5>
 
 <h4>Create MERN App</h4>
-<h5>Create MERN App provides boilerplate for building web, mobile and desktop apps in JavaScript.</h5>
+<h5>Create MERN App provides boilerplate for building Web App, Mobile App, Desktop App & Chrome Extension in JavaScript.</h5>
 
 <blockquote>
 <h5>
