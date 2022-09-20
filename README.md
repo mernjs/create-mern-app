@@ -7,7 +7,7 @@
 <h5 align="center">Set up a modern web, mobile and desktop app by running one command.</h5>
 
 <br/>
-<h5 align="center>
+<h5 align="center">
 If you find this code useful, don't forget to <a target="_blank" href="https://github.com/mernjs/create-mern-app" rel="noopener">⭐ star the repo ⭐</a> 
 </h5>
 <br/>
