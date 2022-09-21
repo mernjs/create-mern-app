@@ -14,7 +14,7 @@ export const forwardTo = (path) => {
 
 export const apiRequest = async (args = {}) => {
     console.log('auth', store.getState().auth)
-	args.url = `${'https://mern-developer-api.herokuapp.com/api/v1'}/${args.url}`
+	args.url = `${process.env.REACT_APP_API_URL}/${args.url}`
     return axios({
         ...args, 
         headers: {
