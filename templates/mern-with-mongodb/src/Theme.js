@@ -13,7 +13,6 @@ const themes = {
 			textColor: "#494d55",
 			buttonTextColor: '#fff',
 		},
-		fonts: ["Montserrat"],
 		fontSizes: {
 			small: "1em",
 			medium: "2em",
@@ -27,7 +26,6 @@ const themes = {
 			textColor: "#fff",
 			buttonTextColor: '#494d55',
 		},
-		fonts: ["Montserrat"],
 		fontSizes: {
 			small: "1em",
 			medium: "2em",
