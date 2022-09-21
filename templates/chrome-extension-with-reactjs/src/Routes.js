@@ -3,7 +3,6 @@ import {  BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-
 import { history } from './Utilities';
 import { useSelector } from 'react-redux'
 
-import Home from './pages/Home'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Dashboard from './pages/Dashboard'
@@ -23,13 +22,12 @@ const Routing = () => {
 	return (
         <Router history={history}>
             <Routes>
-                <Route exact={true} path="/*" element={user ? <Dashboard/> : <Home/>} />
-                  {/* <Route exact={true} path="/" element={
+                <Route exact={true} path="/*" element={user ? <Dashboard/> : <Login/>} />
+                  <Route exact={true} path="/" element={
                     <PrivateRoute>
                         <Dashboard/>
                     </PrivateRoute>
-                } /> */}
-                <Route exact={true} path="/" element={<Home/>}/>
+                } />
                 <Route exact={true} path="/login" element={
                     <AuthRoute>
                         <Login/>

@@ -8,8 +8,9 @@ import { store } from './Store';
 import ThemeProvider from './Theme'
 import Toast from 'react-native-toast-message'
 
+import Login from './pages/Login'
+import Signup from './pages/Signup'
 import Dashboard from './pages/Dashboard'
-import Home from './pages/Home'
 
 const Stack = createStackNavigator();
 const config = {
@@ -50,10 +51,23 @@ const App = () => {
 								})}
 							/>
 							<Stack.Screen 
-								name="Home" 
-								component={Home} 
+								name="Login" 
+								component={Login} 
 								options={({ navigation, route }) => ({
-									title: 'Home',
+									title: 'Login',
+									headerShown: false,
+									headerTintColor: 'white',
+									transitionSpec: {
+								      	open: config,
+								      	close: config,
+								    }
+								})}
+							/>
+							<Stack.Screen 
+								name="Signup" 
+								component={Signup} 
+								options={({ navigation, route }) => ({
+									title: 'Signup',
 									headerShown: false,
 									headerTintColor: 'white',
 									transitionSpec: {

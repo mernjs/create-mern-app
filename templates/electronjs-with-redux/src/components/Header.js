@@ -21,11 +21,6 @@ export default (props) => {
                         <Link to="/"><b>Create MERN App</b></Link> 
                     </Logo>
                     <ul>
-                        <li>
-                            <Link to="/">
-                                Home
-                            </Link> 
-                        </li>
                         {user === null &&
                             <>
                                 <li>
@@ -43,7 +38,7 @@ export default (props) => {
                          {user !== null &&
                             <>
                                 <li>
-                                    <Link to="/dashboard">
+                                    <Link to="/">
                                         Dashboard
                                     </Link> 
                                 </li>

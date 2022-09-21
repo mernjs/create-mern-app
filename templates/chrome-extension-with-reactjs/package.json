@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node utils/webserver.js",
-    "build": "node utils/build.js"
+    "dev": "node config/dev.js",
+    "build": "node config/prod.js"
   },
   "author": "author_email",
   "dependencies": {

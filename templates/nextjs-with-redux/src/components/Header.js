@@ -21,11 +21,6 @@ export default (props) => {
                         <Link href="/"><b>Create MERN App</b></Link> 
                     </Logo>
                     <ul>
-                        <li>
-                            <Link href="/">
-                                Home
-                            </Link> 
-                        </li>
                         {user === null &&
                             <>
                                 <li>

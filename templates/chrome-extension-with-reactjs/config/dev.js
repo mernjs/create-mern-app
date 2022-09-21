@@ -34,7 +34,7 @@ const server = new WebpackDevServer(
 		hot: false,
 		client: false,
 		host: 'localhost',
-		port: env.PORT,
+		port: process.env.PORT,
 		static: {
 			directory: path.join(__dirname, '../build'),
 		},

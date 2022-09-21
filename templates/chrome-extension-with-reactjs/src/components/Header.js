@@ -38,7 +38,7 @@ export default (props) => {
                          {user !== null &&
                             <>
                                 <li>
-                                    <Link to="/dashboard">
+                                    <Link to="/">
                                         Dashboard
                                     </Link> 
                                 </li>

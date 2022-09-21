@@ -5,20 +5,20 @@ import { H2 } from '../components'
 import useCore from '../hooks/useCore'
 import { useNavigation } from '@react-navigation/native';
 
-const Home = () => {
+const Signup = () => {
     let { switchTheme } = useCore()
     const navigation = useNavigation();
     return (
         <ScrollView>
             <Container>
-                <H2 onPress={() => navigation.push('Dashboard')}>Home</H2>
-                <Text onPress={switchTheme}>Welcome Home Page</Text>
+                <H2 onPress={() => navigation.push('Dashboard')}>Signup</H2>
+                <Text onPress={switchTheme}>Welcome Signup Page</Text>
             </Container>
         </ScrollView>
     )
 }
 
-export default Home
+export default Signup
 
 const ScrollView = styled.ScrollView`
     padding: 20px;
