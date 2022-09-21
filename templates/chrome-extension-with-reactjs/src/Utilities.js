@@ -13,12 +13,11 @@ export const forwardTo = (path) => {
 }
 
 export const apiRequest = async (args = {}) => {
-    console.log('auth', store.getState().auth)
 	args.url = `${process.env.REACT_APP_API_URL}/${args.url}`
     return axios({
         ...args, 
         headers: {
-            'token': 'token'
+            'authorization': store.getState()?.auth?.user?.accessToken || ''
         }
     })
 }
