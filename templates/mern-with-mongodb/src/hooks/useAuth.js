@@ -17,7 +17,7 @@ const useAuth = (data) => {
             })
             dispatch(AuthActions.setAuth(response.data.data))
             formSubmitSuccess('login', response.data.message)
-            Router.push('/dashboard')
+            Router.push('/')
         } catch (error) {
             formSubmitError('login', error)
         }
@@ -33,7 +33,7 @@ const useAuth = (data) => {
             })
             dispatch(AuthActions.setAuth(response.data.data))
             formSubmitSuccess('signup', response.data.message)
-            Router.push('/dashboard')
+            Router.push('/')
         } catch (error) {
             formSubmitError('signup', error)
         }

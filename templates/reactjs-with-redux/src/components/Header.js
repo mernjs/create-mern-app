@@ -38,11 +38,6 @@ export default (props) => {
                          {user !== null &&
                             <>
                                 <li>
-                                    <Link to="/">
-                                        Dashboard
-                                    </Link> 
-                                </li>
-                                <li>
                                     <a onClick={logout} href="javaScript:void(0)">
                                         Logout
                                     </a> 

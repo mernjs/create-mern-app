@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export default (props) => {
     return (
-        <Button className={props.className} type={props.type}>
+        <Button className={props.className} type={props.type} disabled={props.disabled}>
             {props.children}
         </Button>      
     )
@@ -20,7 +20,7 @@ const Button = styled.button`
     line-height: 28px;
     text-align: center;
     border-radius:25px;
-    background-color:${props => props.theme.colors.primaryColor};
+    background-color:${props => props.disabled ? 'gray' : props.theme.colors.primaryColor};
     border:none;
     margin-bottom: 16px;
 `;

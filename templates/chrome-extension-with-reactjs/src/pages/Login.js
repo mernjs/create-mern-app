@@ -20,7 +20,7 @@ const Login = (props) => {
 
 	let { login } = useAuth()
 
-	const { handleSubmit } = props
+	const { handleSubmit, submitting } = props
     
     return (
         <>
@@ -41,7 +41,7 @@ const Login = (props) => {
 							component={TextInput}
 							placeholder="Enter Your Password"
 						/>
-						<Button className="btn btn-secondary" type="submit">Log In</Button>
+						<Button disabled={submitting} className="btn btn-secondary" type="submit">{submitting ? 'Submitting...' : 'Log In'}</Button>
 						<div>Don't have an account? <Link to="/signup"> Signup</Link></div>
 					</form>
 				</Container>

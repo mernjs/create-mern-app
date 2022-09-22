@@ -1,9 +1,9 @@
 import React from 'react'
 import { Field, reduxForm } from 'redux-form'
-import { Header, Footer, TextInput, H2, Button } from 'components'
+import { Header, Footer, TextInput, H2, Button } from '../components'
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
-import useAuth  from 'hooks/useAuth'
+import useAuth  from '../hooks/useAuth'
 
 const validate = values => {
 	const errors = {}
@@ -26,7 +26,7 @@ const Signup = (props) => {
 
 	let { signup } = useAuth()
 
-	const { handleSubmit } = props
+	const { handleSubmit, submitting } = props
     
     return (
         <>
@@ -59,8 +59,8 @@ const Signup = (props) => {
 							component={TextInput}
 							placeholder="Enter Your Confirm Password"
 						/>
-						<Button className="btn btn-secondary" type="submit">Sign Up</Button>
-						<div>Don't have an account? <Link to="/login"> Login</Link></div>
+						<Button className="btn btn-secondary" type="submit" disabled={submitting}>{submitting ? 'Submitting...' : 'Sign Up'}</Button>
+						<div>Don't have an account? <Link to="/login">Login</Link></div>
 					</form>
 				</Container>
 			</ScrollView>
