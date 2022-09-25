@@ -4,7 +4,7 @@
   <a target="_blank" href="https://mernjs.github.io/create-mern-app" rel="noopener">
  <img src="https://mernjs.github.io/create-mern-app/assets/logo1.png" alt="Logo"></a>
 </p>
-<h5 align="center">Set up a modern web, mobile and desktop app by running one command.</h5>
+<h5 align="center">Set up a modern web, mobile, AR/VR and desktop app by running one command.</h5>
 
 <h5 align="center">
 If you find this code useful, don't forget to <a target="_blank" href="https://github.com/mernjs/create-mern-app" rel="noopener">⭐ star the repo ⭐</a> 
@@ -43,6 +43,7 @@ Read official [docs](https://mernjs.github.io/create-mern-app) for more informat
 | 6 | [React Native Expo](https://github.com/mernjs/create-mern-app/tree/master/templates/react-native-with-expo) | @react-native-async-storage/async-storage @react-native-community/masked-view @react-navigation/native @react-navigation/stack @reduxjs/toolkit axios lodash native-base react react-native react-native-gesture-handler react-native-safe-area-context react-native-screens react-native-toast-message react-redux redux redux-form redux-logger redux-persist styled-components | [Demo](https://play.google.com/store/apps/details?id=com.mernapp) |
 | 7 | [ReactJS With AdminLTE](https://github.com/mernjs/create-mern-app/tree/master/templates/reactjs-with-adminlte) | @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom react-scripts react-toastify styled-components web-vitals | [Demo](https://reactjs-with-adminlte.herokuapp.com) |
 | 8 | [Chrome Extension With ReactJS](https://github.com/mernjs/create-mern-app/tree/master/templates/chrome-extension-with-reactjs) | @hot-loader/react-dom @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom webpack react-toastify styled-components | [Demo](https://reactjs-with-redux.herokuapp.com) |
+| 9 | [ThreeJS With Redux](https://github.com/mernjs/create-mern-app/tree/master/templates/threejs-ar-vr-with-redux) | @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom Three react-toastify styled-components | [Demo](https://threejs-with-redux.herokuapp.com/) |
 
 <h4>Support</h4>
 
