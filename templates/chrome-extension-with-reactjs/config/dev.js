@@ -8,10 +8,10 @@ const config = require('../webpack.config')
 const env = require('./env')
 const path = require('path')
 
-var options = config.chromeExtensionBoilerplate || {};
-var excludeEntriesToHotReload = options.notHotReload || [];
+let options = config.chromeExtensionBoilerplate || {};
+let excludeEntriesToHotReload = options.notHotReload || [];
 
-for (var entryName in config.entry) {
+for (let entryName in config.entry) {
   	if (excludeEntriesToHotReload.indexOf(entryName) === -1) {
     	config.entry[entryName] = [
       		'webpack/hot/dev-server',
