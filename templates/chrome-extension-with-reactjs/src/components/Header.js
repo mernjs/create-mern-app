@@ -1,16 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from 'react-router-dom'
-import { AiFillAlert } from 'react-icons/ai';
-import useCore  from '../hooks/useCore'
 import useAuth  from '../hooks/useAuth'
 import { useSelector } from 'react-redux'
 
 export default (props) => {
 
     const user = useSelector(state => state.auth.user)
-
-    let { switchTheme } = useCore()
     let { logout } = useAuth()
     
     return (
@@ -44,9 +40,6 @@ export default (props) => {
                                 </li>
                             </>
                         }
-                        <li> 
-                            <AiFillAlert style={{cursor: 'pointer', fontSize: '20px', marginTop: '3px'}} onClick={switchTheme} />
-                        </li>
                     </ul>
                 </Navbar>
             </div>

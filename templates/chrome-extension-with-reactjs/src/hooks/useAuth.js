@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux'
-import { apiRequest, formSubmitStart, formSubmitSuccess, formSubmitError, forwardTo } from '../Utilities'
+import { apiRequest, formSubmitStart, formSubmitSuccess, formSubmitError } from '../Utilities'
 import { AuthActions } from '../reducers/AuthReducer'
 
 const useAuth = (data) => {

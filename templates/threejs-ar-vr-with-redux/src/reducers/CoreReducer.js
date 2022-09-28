@@ -4,8 +4,7 @@ const CoreReducer = createSlice({
     name: 'CoreReducer',
 
     initialState: {
-        loaders: {},
-        is_dark_theme: false,
+        loaders: {}
     },
   
     reducers: {
@@ -24,10 +23,6 @@ const CoreReducer = createSlice({
                 [action.payload]: false
             };
             state.loaders = deactivate_loaders
-        },
-        switchTheme: (state, action) => {
-            let toggle = !state.is_dark_theme
-            state.is_dark_theme = toggle
         }
     }
 })

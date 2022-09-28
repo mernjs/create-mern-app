@@ -29,7 +29,4 @@ const ScrollView = styled.div`
 const Container = styled.div`
     text-align: center;
     padding-top: 50px;
-    h1, p{
-        color: ${props => props.theme.colors.textColor};
-    }
 `;

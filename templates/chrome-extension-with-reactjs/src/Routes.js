@@ -23,7 +23,7 @@ const Routing = () => {
         <Router history={history}>
             <Routes>
                 <Route exact={true} path="/*" element={user ? <Dashboard/> : <Login/>} />
-                  <Route exact={true} path="/" element={
+                <Route exact={true} path="/" element={
                     <PrivateRoute>
                         <Dashboard/>
                     </PrivateRoute>

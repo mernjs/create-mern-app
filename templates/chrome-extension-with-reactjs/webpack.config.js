@@ -26,8 +26,8 @@ const options = {
   	mode: process.env.NODE_ENV || 'development',
   	entry: {
 		popup: path.join(__dirname, 'src', 'index.js'),
-		background: path.join(__dirname, 'src', 'Background.js'),
-		contentScript: path.join(__dirname, 'src', 'ContentScript.js'),
+		background: path.join(__dirname, 'Background.js'),
+		contentScript: path.join(__dirname, 'ContentScript.js'),
   	},
   	chromeExtensionBoilerplate: {
     	notHotReload: ['background', 'contentScript'],

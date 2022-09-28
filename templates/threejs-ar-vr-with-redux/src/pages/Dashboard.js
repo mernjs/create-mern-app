@@ -1,15 +1,17 @@
 import React from 'react';
 import { Header, Footer } from 'components'
-import JSMOrbitControls from 'components/scenes/JSMOrbitControls'
 import styled from "styled-components";
+import { useSelector } from 'react-redux'
+import JSMOrbitControls from 'components/JSMOrbitControls'
 
 const Dashboard = () => {
+    const user = useSelector(state => state.auth.user)
     return (
         <>
             <ScrollView>
                 <Header />
                 <Container>
-                   <JSMOrbitControls/>
+                    <JSMOrbitControls/>
                 </Container>
             </ScrollView>
             <Footer/>
