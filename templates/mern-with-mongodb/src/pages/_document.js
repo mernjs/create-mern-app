@@ -13,7 +13,7 @@ class MyDocument extends Document {
             <Html lang="en">
                 <Head>
                     <meta charSet="utf-8" />
-                    <link rel="shortcut icon" href="/favicon.ico" />
+                    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta name="theme-color" content="#000000" />
                     <meta name="description" content="Create MERN App provides starter kits for building web, desktop and mobile apps in pure JavaScript."/>
