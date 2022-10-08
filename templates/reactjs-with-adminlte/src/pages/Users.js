@@ -6,8 +6,7 @@ import { useSelector } from 'react-redux';
 const columns = [
     { title: 'ID', data: '_id', },
     { title: 'Name', data: 'name' },
-    { title: 'Email', data: 'email' },
-    { title: 'Date', data: 'createdAt'},
+    { title: 'Email', data: 'email' }
 ]
 
 const Users = () => {

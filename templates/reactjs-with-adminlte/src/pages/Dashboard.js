@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {
-    Content, Col, Row, Box, Chatbox, Memberbox,
-    ProductList, ProductListItem, Infobox, DescriptionBlock, ProgressGroup,
+    Content, Col, Row, Box, DescriptionBlock, ProgressGroup,
     Alert,
   } from 'adminlte-2-react';
 import UpperInfoBoxes from 'components/UpperInfoBoxes';

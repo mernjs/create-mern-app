@@ -40,7 +40,7 @@ const useAuth = (data) => {
         try {
             const response = await apiRequest({
                 method: 'GET',
-                url: `auth/users`,
+                url: `crud/users`,
             })
             dispatch(AuthActions.setUsers(response.data.data))
         } catch (error) {

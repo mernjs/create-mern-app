@@ -1,17 +1,13 @@
 {
-  "name": "nextjs",
+  "name": "project_name",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "NODE_ENV=development nodemon server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "forever-start": "forever start server.js",
-    "forever-restart": "forever restart server.js",
-    "forever-stop": "forever stop server.js",
     "migration": "migrate-mongo"
   },
-  "author": "nextjs@getnada.com",
+  "author": "author_email",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
     "axios": "^0.27.2",

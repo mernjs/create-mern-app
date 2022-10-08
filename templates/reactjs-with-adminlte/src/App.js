@@ -2,16 +2,16 @@ import React from 'react';
 import { Provider } from "react-redux";
 import { PersistGate } from 'redux-persist/integration/react'
 import { store, persistor } from "Store";
-import ThemeProvider from 'Theme'
-import AdminLTELayout from 'AdminLTELayout';
+import Routes from 'Routes';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
 	return (
 		<Provider store={store}>
 			<PersistGate loading={null} persistor={persistor}>
-				<ThemeProvider>
-					<AdminLTELayout/>
-				</ThemeProvider>
+				<Routes/>
+				<ToastContainer />
 			</PersistGate>
 		</Provider>
 	)
