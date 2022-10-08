@@ -82,7 +82,7 @@ function init() {
     })
     .on(Constants.help, () => {
         let message = `   Create MERN App provides boilerplate for building Web App, Mobile App, Desktop App, AR/VR App & Chrome Extension in JavaScript. ${chalk.cyan('https://mernjs.github.io/create-mern-app')}`;
-        console.log(yosay(`${chalk.bold.green(' ** Welcom To MERN Stack boilerplate ** ')} \n ${chalk.green(' ')} \n ${message} \n ${chalk.green(' ')} `, {maxLength: 55}));  
+        console.log(yosay(`${chalk.bold.green(' ** Welcom To Create MERN App ** ')} \n ${chalk.green(' ')} \n ${message} \n\n ${chalk.bold.blue(' By: Vijay Pratap Singh ')} \n ${chalk.green(' ')} `, {maxLength: 55}));  
     })
     .parse(process.argv);
 
@@ -92,16 +92,16 @@ function init() {
     console.error('Please specify the project directory:');
     console.log()
     console.log(
-      `  ${chalk.cyan(`npx ${program.name()}`)} ${chalk.green('<project-directory>')}`
+      `  ${chalk.cyan(`${program.name()}`)} ${chalk.green('<project-directory>')}`
     );
     console.log();
     console.log('For example:');
     console.log(
-      `  ${chalk.cyan(`npx ${program.name()}`)} ${chalk.green('my-mern-app')}`
+      `  ${chalk.cyan(`${program.name()}`)} ${chalk.green('my_project')}`
     );
     console.log();
     console.log(
-      `Run ${chalk.cyan(`npx ${program.name()} --help`)} to see all options.`
+      `Run ${chalk.cyan(`${program.name()} --help`)} to see all options.`
     );
     console.log()
     process.exit(1);

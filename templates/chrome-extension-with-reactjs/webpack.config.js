@@ -26,7 +26,7 @@ const options = {
   	mode: process.env.NODE_ENV || 'development',
   	entry: {
 		popup: path.join(__dirname, 'src', 'index.js'),
-		background: path.join(__dirname, 'background.js')
+		background: path.join(__dirname, 'Background.js')
   	},
   	output: {
 		filename: '[name].bundle.js',
