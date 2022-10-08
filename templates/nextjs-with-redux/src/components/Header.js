@@ -1,14 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import Link from 'next/link'
-import useAuth  from '../hooks/useAuth'
-import { useSelector } from 'react-redux'
+import Router from 'next/router'
+import { useSelector, useDispatch } from 'react-redux'
+import { AuthActions } from '../reducers/AuthReducer'
 
 export default (props) => {
-
+    const dispatch = useDispatch()
     const user = useSelector(state => state.auth.user)
 
-    let { logout } = useAuth()
+    const logout = () => {
+        Router.push('/login')
+        dispatch(AuthActions.logout())
+    }
     
     return (
         <Header>

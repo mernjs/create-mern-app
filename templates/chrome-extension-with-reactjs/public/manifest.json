@@ -20,7 +20,7 @@
     ],
     "web_accessible_resources": [
       	{
-        	"resources": ["icon-128x128.png", "icon-48x48"],
+        	"resources": ["icon-128x128.png", "icon-48x48.png"],
         	"matches": []
       	}
     ]

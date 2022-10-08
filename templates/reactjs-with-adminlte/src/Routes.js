@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import AdminLTE, { Sidebar, Navbar } from 'adminlte-2-react';
 import {
     BrowserRouter as Router,
@@ -7,8 +7,8 @@ import {
     Route,
     Redirect
 } from "react-router-dom";
-import useAuth  from 'hooks/useAuth'
 import Footer from 'components/Footer';
+import { AuthActions } from 'reducers/AuthReducer'
 
 import Login from 'pages/Login';
 import Dashboard from 'pages/Dashboard';
@@ -33,9 +33,12 @@ const AuthRoute = ({ component: Component, ...rest }) => {
 }
 
 const AdminLTELayout = () => {
-	const user = useSelector(state => state.auth.user)
-    let { logout } = useAuth()
+	const dispatch = useDispatch()
+    const user = useSelector(state => state.auth.user)
     
+    const logout = () => {
+        dispatch(AuthActions.logout())
+    }
 	return (
         <>
             {user === null ?

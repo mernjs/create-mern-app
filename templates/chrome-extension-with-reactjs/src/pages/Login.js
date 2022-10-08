@@ -3,7 +3,10 @@ import { Field, reduxForm } from 'redux-form'
 import { Header, Footer, TextInput, H2, Button } from '../components'
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
-import useAuth  from '../hooks/useAuth'
+import { useDispatch } from 'react-redux'
+import { formSubmitStart, formSubmitSuccess, formSubmitError } from '../Utilities'
+import { AuthActions } from '../reducers/AuthReducer'
+import apiRequest from '../apiRequest';
 
 const validate = values => {
 	const errors = {}
@@ -18,7 +21,18 @@ const validate = values => {
 
 const Login = (props) => {
 
-	let { login } = useAuth()
+	const dispatch = useDispatch()
+
+	const login = async (payload) => {
+        try {
+            formSubmitStart('login')
+            const response = await apiRequest.post(`auth/login`, payload)
+            dispatch(AuthActions.setAuth(response.data.data))
+            formSubmitSuccess('login', response.data.message)
+        } catch (error) {
+            formSubmitError('login', error)
+        }
+    }
 
 	const { handleSubmit, submitting } = props
     

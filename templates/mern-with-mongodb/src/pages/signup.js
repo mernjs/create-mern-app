@@ -3,7 +3,11 @@ import { Field, reduxForm } from 'redux-form'
 import { Header, Footer, TextInput, H2, Button } from '../components'
 import styled from "styled-components";
 import Link from 'next/link'
-import useAuth  from '../hooks/useAuth'
+import { useDispatch } from 'react-redux'
+import { formSubmitStart, formSubmitSuccess, formSubmitError } from '../Utilities'
+import { AuthActions } from '../reducers/AuthReducer'
+import apiRequest from '../apiRequest';
+import Router from 'next/router'
 
 const validate = values => {
 	const errors = {}
@@ -23,8 +27,20 @@ const validate = values => {
 }
 
 const Signup = (props) => {
+	
+	const dispatch = useDispatch()
 
-	let { signup } = useAuth()
+	const signup = async (payload) => {
+        try {
+            formSubmitStart('signup')
+            const response = await apiRequest.post(`auth/signup`, payload)
+            dispatch(AuthActions.setAuth(response.data.data))
+            formSubmitSuccess('signup', response.data.message)
+			Router.push('/')
+        } catch (error) {
+            formSubmitError('signup', error)
+        }
+    }
 
 	const { handleSubmit, submitting } = props
     

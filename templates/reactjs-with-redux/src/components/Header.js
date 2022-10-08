@@ -1,14 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from 'react-router-dom'
-import useAuth  from 'hooks/useAuth'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+import { AuthActions } from 'reducers/AuthReducer'
 
 export default (props) => {
 
+    const dispatch = useDispatch()
     const user = useSelector(state => state.auth.user)
-    let { logout } = useAuth()
     
+    const logout = () => {
+        dispatch(AuthActions.logout())
+    }
+
     return (
         <Header>
             <div className="container">

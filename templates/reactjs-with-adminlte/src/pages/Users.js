@@ -1,7 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Content, Row, Box, SimpleTable, Col } from 'adminlte-2-react';
-import useAuth from 'hooks/useAuth';
-import { useSelector } from 'react-redux';
 
 const columns = [
     { title: 'ID', data: '_id', },
@@ -10,14 +8,64 @@ const columns = [
 ]
 
 const Users = () => {
-   
-    const { getUsers } = useAuth()
-    const users = useSelector(state => state.auth.users)
-   
-    useEffect(() => {
-        getUsers()
-    }, [])
-   
+    
+    const users = [{
+        _id: '12345',
+        name: 'Vijay',
+        email: 'vijay@getnada.com'
+    },{
+        _id: '12345',
+        name: 'Vijay',
+        email: 'vijay@getnada.com'
+    },{
+        _id: '12345',
+        name: 'Vijay',
+        email: 'vijay@getnada.com'
+    },{
+        _id: '12345',
+        name: 'Vijay',
+        email: 'vijay@getnada.com'
+    },{
+        _id: '12345',
+        name: 'Vijay',
+        email: 'vijay@getnada.com'
+    },{
+        _id: '12345',
+        name: 'Vijay',
+        email: 'vijay@getnada.com'
+    },{
+        _id: '12345',
+        name: 'Vijay',
+        email: 'vijay@getnada.com'
+    },{
+        _id: '12345',
+        name: 'Vijay',
+        email: 'vijay@getnada.com'
+    },{
+        _id: '12345',
+        name: 'Vijay',
+        email: 'vijay@getnada.com'
+    },{
+        _id: '12345',
+        name: 'Vijay',
+        email: 'vijay@getnada.com'
+    },{
+        _id: '12345',
+        name: 'Vijay',
+        email: 'vijay@getnada.com'
+    },{
+        _id: '12345',
+        name: 'Vijay',
+        email: 'vijay@getnada.com'
+    },{
+        _id: '12345',
+        name: 'Vijay',
+        email: 'vijay@getnada.com'
+    },{
+        _id: '12345',
+        name: 'Vijay',
+        email: 'vijay@getnada.com'
+    },]
 
     return (
         <Content title="Users">
