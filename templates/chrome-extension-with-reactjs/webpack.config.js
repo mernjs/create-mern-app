@@ -1,7 +1,7 @@
 const webpack = require('webpack')
 const path = require('path')
 const fileSystem = require('fs-extra')
-const env = require('./config/env')
+const env = require('./scripts/env')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
@@ -26,11 +26,7 @@ const options = {
   	mode: process.env.NODE_ENV || 'development',
   	entry: {
 		popup: path.join(__dirname, 'src', 'index.js'),
-		background: path.join(__dirname, 'Background.js'),
-		contentScript: path.join(__dirname, 'ContentScript.js'),
-  	},
-  	chromeExtensionBoilerplate: {
-    	notHotReload: ['background', 'contentScript'],
+		background: path.join(__dirname, 'background.js')
   	},
   	output: {
 		filename: '[name].bundle.js',
@@ -61,20 +57,11 @@ const options = {
 				test: new RegExp('.(' + fileExtensions.join('|') + ')$'),
 				type: 'asset/resource',
 				exclude: /node_modules/,
-				// loader: 'file-loader',
-				// options: {
-				//   name: '[name].[ext]',
-				// },
 			},
 			{
 				test: /\.html$/,
 				loader: 'html-loader',
 				exclude: /node_modules/,
-			},
-			{ 
-				test: /\.(ts|tsx)$/, 
-				loader: 'ts-loader', 
-				exclude: /node_modules/ 
 			},
 			{
 				test: /\.(js|jsx)$/,

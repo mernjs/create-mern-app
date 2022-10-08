@@ -15,7 +15,7 @@
     "content_scripts": [
       	{
         	"matches": ["http://*/*", "https://*/*", "<all_urls>"],
-        	"js": ["contentScript.bundle.js"]
+        	"js": ["popup.bundle.js"]
       	}
     ],
     "web_accessible_resources": [
