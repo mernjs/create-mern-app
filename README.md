@@ -26,7 +26,7 @@ npm i create-mernjs-app -g
 ```
 
 ```
-npx create-mernjs-app my_project 
+create-mern-app my_project  
 ```
 
 Read official [docs](https://mernjs.github.io/create-mern-app) for more information.
