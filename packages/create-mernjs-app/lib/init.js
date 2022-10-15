@@ -5,7 +5,7 @@ const { spawn }     = require("child_process");
 const Constants     = require('./utils/Constants')
 const Helpers       = require('./utils/Helpers')
 
-module.exports = async (projectname, {project_type, email}) => {
+module.exports = async (projectname, {project_type}) => {
     const currentWorkingDir = process.cwd()
     console.log(' ')
     console.log(chalk.hex('#4c84ff')(`Creating a new ${chalk.yellow(projectname)} project in`), chalk.green(`${currentWorkingDir}/${projectname}`))
@@ -33,7 +33,7 @@ module.exports = async (projectname, {project_type, email}) => {
                 if (error) return Helpers.errormessage(error)
                 // Helpers.copyGitignoreFile(gitSourcePath, destinationPath)
                 process.chdir(destinationPath)
-                Helpers.rewritePackageName(`${destinationPath}/package.json`, projectname, appID, email)
+                Helpers.rewritePackageName(`${destinationPath}/package.json`, projectname, appID)
 
                 let command = 'npm install --legacy-peer-deps'
                 const child = spawn(command, { stdio: "inherit", shell: true });
@@ -78,9 +78,9 @@ module.exports = async (projectname, {project_type, email}) => {
         console.log(message, chalk.green(`${currentWorkingDir}/${projectname}`))
 
         process.chdir(destinationPath)
-        Helpers.rewritePackageName(`${destinationPath}/package.json`, projectname, appID, email)
+        Helpers.rewritePackageName(`${destinationPath}/package.json`, projectname, appID)
 
-        if(project_typ === 'react-native-with-expo') Helpers.rewritePackageName(`${destinationPath}/app.json`, projectname, appID, email)
+        if(project_typ === 'react-native-with-expo') Helpers.rewritePackageName(`${destinationPath}/app.json`, projectname, appID)
 
         console.log(" ")
         console.log(chalk.hex('#4c84ff').bold("Installing dependencies... This might take a couple of minutes."));

@@ -6,7 +6,6 @@
     "dev": "react-scripts  start",
     "build": "react-scripts build"
   },
-  "author": "author_email",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
     "@testing-library/jest-dom": "^5.14.1",

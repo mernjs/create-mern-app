@@ -49,18 +49,16 @@ function init() {
         
         console.log('Press ^C at any time to quit.')
         prompt(Constants.select_form)
-        .then( async data => {
-            prompt(Constants.emailFiled)
-            .then(email => {  
+        .then( async data => { 
                 let project_type = `${data.project_type}`
                 if(cmd_obj.yes){
-                    require('./lib/init')(project_name, {project_type, ...email})
+                    require('./lib/init')(project_name, {project_type})
                     return;
                 }else{
                     prompt(Constants.confirm)
                     .then(confirm =>{
                         if(confirm.confirm === true){
-                            require('./lib/init')(project_name, {project_type, ...email})
+                            require('./lib/init')(project_name, {project_type})
                         }else{
                             console.log('Aborted.')
                             process.exit(0);
@@ -70,10 +68,7 @@ function init() {
                         process.exit(0);  
                     })
                 }
-            }).catch(error => { 
-                console.log(error)
-                process.exit(0);  
-            })
+            
         }).catch(error => { 
             console.log(error)
             process.exit(0);  

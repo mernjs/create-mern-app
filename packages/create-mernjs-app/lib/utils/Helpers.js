@@ -24,7 +24,7 @@ exports.createDirAndCopy = (sourcePath, destinationPath) => {
 exports.rewritePackageName = (file, name, mernjs_app_id, author_email) => {
     fs.readFile(file, 'utf8', function (err, data) {
         if (err) errorMessaage(err)
-        let result = data.replace(/project_name/g, `${name}`).replace(/mernjs_app_id/g, `${mernjs_app_id}`).replace(/author_email/g, `${author_email}`);
+        let result = data.replace(/project_name/g, `${name}`);
         fs.writeFile(file, result, 'utf8', function (err) {
             if (err) errorMessaage(err)
         })

@@ -9,7 +9,6 @@
     "production": "npm run build && electron-builder build -wml",
     "dev": "concurrently \"cross-env BROWSER=none npm run web\" \"wait-on http://localhost:3000 && nodemon --exec electron .\""
   },
-  "author": "author_email",
   "homepage": "./",
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.1",
