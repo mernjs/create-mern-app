@@ -12,7 +12,8 @@ Constants.init = {
 Constants.help = '--help'
 
 Constants.package = {
-	name		: pkg.name,
+	// name		: pkg.name,
+	name		: 'create-mern-app',
 	version		: pkg.version,
 	description	: pkg.description
 }
