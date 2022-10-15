@@ -13,13 +13,11 @@
   "author": "Vijay Pratap Singh <vijaypratap218@gmail.com> (https://mernjs.github.io/create-mern-app)",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.21.1",
     "chalk": "^2.4.2",
     "commander": "^2.20.0",
     "fs-extra": "^8.1.0",
     "inquirer": "^6.5.0",
     "mernjs": "github:mernjs/create-mern-app#89aa45a8ce7f2399d8d166c575db56ab39f36d99",
-    "network": "^0.4.1",
     "path": "^0.12.7",
     "shelljs": "^0.8.3",
     "validate-npm-package-name": "^3.0.0",

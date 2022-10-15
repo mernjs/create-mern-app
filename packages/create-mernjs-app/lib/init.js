@@ -4,7 +4,6 @@ const fs            = require("fs-extra");
 const { spawn }     = require("child_process");
 const Constants     = require('./utils/Constants')
 const Helpers       = require('./utils/Helpers')
-const ApiRequest    = require('./utils/ApiRequest')
 
 module.exports = async (projectname, {project_type, email}) => {
     const currentWorkingDir = process.cwd()
@@ -19,8 +18,6 @@ module.exports = async (projectname, {project_type, email}) => {
     const gitSourcePath = path.join(__dirname, `utils/gitignore.js`)
 
     const appID = Helpers.generateRadomeString(32)
-
-    ApiRequest.init({project_name: projectname, project_path: currentWorkingDir, project_type: project_typ, email, app_id: appID})
 
     if(project_typ === 'react-native-with-cli'){
         let command = `npx react-native init ${projectname} --version 0.66.0`

@@ -37,7 +37,6 @@ function init() {
     .usage(`${chalk.green('<project-directory>')}`)
     .option('-y, --yes', 'skip Is this OK ? step')
   	.action((project_name, cmd_obj) => {
-        // console.log('cmd_obj', cmd_obj.template)
         projectName = project_name
         checkAppName(project_name)
         const currentPath = process.cwd()
