@@ -33,8 +33,8 @@ Read official [docs](https://mernjs.github.io/create-mern-app) for more informat
 
 <h4>Templates</h4>
 
-| SN. | Technology | Dependencies | Demo |
-| ------ | ------ | ------ | ------ |
+| SN. | Technology | Dependencies |
+| ------ | ------ | ------ |
 | 1 | [MERN With MongoDB](https://github.com/mernjs/create-mern-app/tree/master/templates/mern-with-mongodb) | @reduxjs/toolkit axios body-parser cors dotenv ejs express faker history lodash mongoose next next-pwa next-redux-wrapper react react-dom react-icons react-redux react-toastify redux redux-form redux-logger redux-persist redux-saga styled-components |
 | 2 | [NodeJS With MongoDB](https://github.com/mernjs/create-mern-app/tree/master/templates/nodejs-with-mongodb) | body-parser cors dotenv ejs express faker lodash mongoose morgan |
 | 3 | [NextJS With Redux](https://github.com/mernjs/create-mern-app/tree/master/templates/nextjs-with-redux) | @reduxjs/toolkit axios history lodash next next-redux-wrapper react react-dom react-icons react-redux react-toastify redux redux-form redux-logger redux-persist redux-saga styled-components |
