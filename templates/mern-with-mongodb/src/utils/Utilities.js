@@ -5,7 +5,7 @@ import { stopSubmit, startSubmit, reset } from 'redux-form';
 import store   from "./Store";
 import _ from 'lodash'
 import { toast } from 'react-toastify';
-import { CoreActions } from './reducers/CoreReducer'
+import { CoreActions } from '../reducers/CoreReducer'
 
 export const history = typeof window === 'undefined'? createMemoryHistory() : createHistory();
 

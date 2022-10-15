@@ -2,8 +2,8 @@ import React from 'react';
 import {  BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Provider, useSelector } from "react-redux";
 import { PersistGate } from 'redux-persist/integration/react'
-import { store, persistor } from "Store";
-import { history } from 'Utilities';
+import { store, persistor } from "utils/Store";
+import { history } from 'utils/Utilities';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 

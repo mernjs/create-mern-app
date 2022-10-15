@@ -5,8 +5,8 @@ import { configureStore  } from '@reduxjs/toolkit'
 import storage from 'redux-persist/lib/storage' 
 import { reducer as formReducer } from "redux-form";
 
-import CoreReducer from './reducers/CoreReducer'
-import AuthReducer from './reducers/AuthReducer'
+import CoreReducer from '../reducers/CoreReducer'
+import AuthReducer from '../reducers/AuthReducer'
 
 const appReducer = combineReducers({
 	form: formReducer,

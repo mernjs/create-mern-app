@@ -1,7 +1,7 @@
 import { createBrowserHistory } from 'history';
 import axios from "axios";
 import { stopSubmit, startSubmit, reset } from 'redux-form';
-import { store }  from "Store";
+import { store }  from "utils/Store";
 import _ from 'lodash'
 import { toast } from 'react-toastify';
 import { CoreActions } from 'reducers/CoreReducer'

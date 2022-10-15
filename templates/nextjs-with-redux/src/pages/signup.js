@@ -4,9 +4,9 @@ import { Header, Footer, TextInput, H2, Button } from '../components'
 import styled from "styled-components";
 import Link from 'next/link'
 import { useDispatch } from 'react-redux'
-import { formSubmitStart, formSubmitSuccess, formSubmitError } from '../Utilities'
+import { formSubmitStart, formSubmitSuccess, formSubmitError } from '../utils/Utilities'
 import { AuthActions } from '../reducers/AuthReducer'
-import apiRequest from '../apiRequest';
+import apiRequest from '../utils/apiRequest';
 import Router from 'next/router'
 
 const validate = values => {
