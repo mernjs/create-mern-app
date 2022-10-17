@@ -8,17 +8,11 @@ const config = require('../webpack.config')
 const env = require('./env')
 const path = require('path')
 
-let options = config.chromeExtensionBoilerplate || {};
-let excludeEntriesToHotReload = options.notHotReload || [];
-
-for (let entryName in config.entry) {
-  	if (excludeEntriesToHotReload.indexOf(entryName) === -1) {
-    	config.entry[entryName] = [
-      		'webpack/hot/dev-server',
-      		`webpack-dev-server/client?hot=true&hostname=localhost&port=${env.PORT}`,
-    	].concat(config.entry[entryName]);
-  	}
-}
+config.entry = [
+	'webpack/hot/dev-server',
+	`webpack-dev-server/client?hot=true&live-reload=true&hostname=localhost&port=${env.PORT}`,
+	config.entry
+];
 
 config.plugins = [new webpack.HotModuleReplacementPlugin()].concat(
   	config.plugins || []
@@ -29,10 +23,11 @@ const compiler = webpack(config);
 const server = new WebpackDevServer(
   	{
 		https: false,
-		hot: false,
+		hot: true,
 		client: false,
 		host: 'localhost',
-		port: process.env.PORT,
+		port: env.PORT,
+		historyApiFallback: true,
 		static: {
 			directory: path.join(__dirname, '../build'),
 		},

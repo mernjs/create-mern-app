@@ -4,7 +4,6 @@ const env = require('./scripts/env')
 const TerserPlugin = require('terser-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const Dotenv = require('dotenv-webpack');
-const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const fileExtensions = ['jpg','jpeg','png','gif','eot','otf','svg','ttf','woff','woff2'];
@@ -40,6 +39,9 @@ const options = {
 				test: /\.(js|jsx)$/,
 				use: [
 					{
+						loader: 'source-map-loader',
+					},
+					{
 						loader: 'babel-loader',
 					},
 				],
@@ -69,13 +71,17 @@ const options = {
   	},
 }
 
-options.optimization = {
-	minimize: true,
-	minimizer: [
+if (env.NODE_ENV === 'development') {
+	options.devtool = 'cheap-module-source-map';
+  } else {
+	options.optimization = {
+	  minimize: true,
+	  minimizer: [
 		new TerserPlugin({
-			extractComments: false,
-		})
-	]
-}
+		  extractComments: false,
+		}),
+	  ],
+	};
+  }
 
 module.exports = options;
