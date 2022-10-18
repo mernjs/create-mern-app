@@ -23,7 +23,8 @@ const compiler = webpack(config);
 const server = new WebpackDevServer(
   	{
 		https: false,
-		hot: true,
+		hot: false,
+		open: true,
 		client: false,
 		host: 'localhost',
 		port: env.PORT,
