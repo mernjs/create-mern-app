@@ -43,7 +43,8 @@ Read official [docs](https://mernjs.github.io/create-mern-app) for more informat
 | 6 | [React Native Expo](https://github.com/mernjs/create-mern-app/tree/master/templates/react-native-with-expo) | @react-native-async-storage/async-storage @react-native-community/masked-view @react-navigation/native @react-navigation/stack @reduxjs/toolkit axios lodash native-base react react-native react-native-gesture-handler react-native-safe-area-context react-native-screens react-native-toast-message react-redux redux redux-form redux-logger redux-persist styled-components |
 | 7 | [ReactJS With AdminLTE](https://github.com/mernjs/create-mern-app/tree/master/templates/reactjs-with-adminlte) | @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom react-scripts react-toastify styled-components web-vitals |
 | 8 | [Chrome Extension With ReactJS](https://github.com/mernjs/create-mern-app/tree/master/templates/chrome-extension-with-reactjs) | @hot-loader/react-dom @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom webpack react-toastify styled-components |
-| 9 | [ThreeJS With Redux](https://github.com/mernjs/create-mern-app/tree/master/templates/threejs-ar-vr-with-redux) | @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom Three react-toastify styled-components |
+| 9 | [ThreeJS With Redux](https://github.com/mernjs/create-mern-app/tree/master/templates/threejs-ar-vr-with-redux) | @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom three react-toastify styled-components |
+| 10 | [React Webpack With Redux](https://github.com/mernjs/create-mern-app/tree/master/templates/react-webpack-with-redux) | @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom webpack react-toastify styled-components |
 
 <h4>Support</h4>
 
