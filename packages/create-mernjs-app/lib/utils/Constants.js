@@ -92,7 +92,7 @@ Constants.emailFiled = [
 
 Constants.templatepath 		= path.join(__dirname, `../node_modules/@mernjs/generate/lib`)
 
-Constants.message		= 'MernJs'
+Constants.message		= 'Create MERN App'
 
 Constants.errormessage = 'An Unexpected Error Occurred'
 
