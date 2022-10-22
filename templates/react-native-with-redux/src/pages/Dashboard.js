@@ -1,17 +1,25 @@
 import React from 'react';
 import styled from "styled-components/native";
 import { Text } from 'react-native'
-import { H2 } from '../components'
-import useCore from '../hooks/useCore'
 import { useNavigation } from '@react-navigation/native';
+import { H2 } from '../components'
+import { useDispatch } from 'react-redux'
+import { CoreActions } from '../reducers/CoreReducer'
+import { showToast } from '../utils/Utilities'
 
 const Dashboard = () => {
-    let { switchTheme } = useCore()
     const navigation = useNavigation();
+    const dispatch = useDispatch()
+    
+    const switchTheme = async (payload) => {
+        dispatch(CoreActions.switchTheme(payload))
+        showToast('Theme Switch Successfully!', 'success')
+    }
+    
     return (
         <ScrollView>
             <Container>
-                <H2 onPress={() => navigation.push('Home')}>Dashboard</H2>
+                <H2 onPress={() => navigation.push('Login')}>Dashboard</H2>
                 <Text onPress={switchTheme}>Welcome Dashboard Page</Text>
             </Container>
         </ScrollView>

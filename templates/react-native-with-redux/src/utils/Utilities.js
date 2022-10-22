@@ -3,7 +3,7 @@ import { stopSubmit, startSubmit, reset } from 'redux-form';
 import { store }  from "./Store";
 import _ from 'lodash'
 import Toast from 'react-native-toast-message';
-import { CoreActions } from './reducers/CoreReducer'
+import { CoreActions } from '../reducers/CoreReducer'
 
 export const apiRequest = async (args = {}) => {
     console.log('auth', store.getState().auth)

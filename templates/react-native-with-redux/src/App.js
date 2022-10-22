@@ -4,8 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
 import { StatusBar } from 'react-native';
 import { Provider } from 'react-redux';
-import { store } from './Store';
-import ThemeProvider from './Theme'
+import { store } from './utils/Store';
+import ThemeProvider from './utils/Theme'
 import Toast from 'react-native-toast-message'
 
 import Login from './pages/Login'
