@@ -19,7 +19,7 @@
     "inquirer": "^6.5.0",
     "mernjs": "github:mernjs/create-mern-app#5aa9b2d10539e8254e6521ee331987eb335064e3",
     "path": "^0.12.7",
-    "shelljs": "^0.8.3",
+    "shelljs": "^0.8.5",
     "validate-npm-package-name": "^3.0.0",
     "yosay": "^2.0.2"
   },
