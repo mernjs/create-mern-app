@@ -14,62 +14,11 @@ module.exports = async (projectname, {project_type}) => {
     project_key = `${Helpers.generateRadomeString(32)}_${project_typ}`
     
     const destinationPath = `${currentWorkingDir}/${projectname}`
-    const sourcePath = path.join(__dirname, `../node_modules/mernjs/templates/${project_typ}/`)
+    const sourcePath = path.join(__dirname, `../node_modules/mernjs/templates/boilerplates/${project_typ}/`)
     const gitSourcePath = path.join(__dirname, `utils/gitignore.js`)
 
     const appID = Helpers.generateRadomeString(32)
 
-    if(project_typ === 'react-native-with-cli'){
-        let command = `npx react-native init ${projectname} --version 0.66.0`
-        const child = spawn(command, { stdio: "inherit", shell: true });
-        child.on("close", code => {
-            if(code !== 0) return Helpers.errormessage({message: `${command}`});
-            console.log(" ");
-            console.log(chalk.cyan(`Installing mernjs dependencies... This might take a couple of minutes.`))
-            fs.unlinkSync(`${destinationPath}/App.js`)
-            fs.unlinkSync(`${destinationPath}/index.js`)
-            fs.unlinkSync(`${destinationPath}/package.json`)
-            fs.copy(sourcePath, destinationPath, error => {
-                if (error) return Helpers.errormessage(error)
-                // Helpers.copyGitignoreFile(gitSourcePath, destinationPath)
-                process.chdir(destinationPath)
-                Helpers.rewritePackageName(`${destinationPath}/package.json`, projectname, appID)
-
-                let command = 'npm install --legacy-peer-deps'
-                const child = spawn(command, { stdio: "inherit", shell: true });
-                child.on("close", code2 => {
-                    if(code2 !== 0) return  console.log({message: `${command}`});
-                    process.chdir(`${destinationPath}/ios`)
-                    let command = 'pod install'
-                    const child = spawn(command, { stdio: "inherit", shell: true });
-                    child.on("close", code3 => {
-                        if(code3 !== 0) return  console.log({message: `${command}`});
-                        console.log(" ");
-                        console.log(" ");
-                        let message = `Congratulations! Your ${chalk.yellow(projectname)} project has been Created at`
-                        console.log(message, chalk.green(`${currentWorkingDir}/${projectname}`))
-                        console.log(" ");
-                        console.log(chalk.hex('#008000').bold('  We suggest that you begin by typing:'))
-                        console.log(" ");
-                        console.log(chalk.hex('#4c84ff')(`    cd ${projectname}`))
-                        console.log(`       Go to your project directory`)
-                        console.log(" ");
-                        console.log(chalk.hex('#4c84ff')(`    npm run ios`))
-                        console.log(`       Run instruction for iOS.`)
-                        console.log(" ");
-                        console.log(chalk.hex('#4c84ff')(`    npm run android`))
-                        console.log(`       Run instruction for Android.`)
-                        console.log(" ");
-                        console.log(" ");
-                        console.log("All Done!");
-                        process.exit(0);
-                    })
-                })
-            });
-            console.log(" ");
-        });
-        return false
-    }
     Helpers.createDirAndCopy(sourcePath, destinationPath)
     .then((success) => {
         Helpers.copyGitignoreFile(gitSourcePath, destinationPath)
@@ -80,7 +29,7 @@ module.exports = async (projectname, {project_type}) => {
         process.chdir(destinationPath)
         Helpers.rewritePackageName(`${destinationPath}/package.json`, projectname, appID)
 
-        if(project_typ === 'react-native-with-expo') Helpers.rewritePackageName(`${destinationPath}/app.json`, projectname, appID)
+        if(project_typ === 'react-native-boilerplate') Helpers.rewritePackageName(`${destinationPath}/app.json`, projectname, appID)
 
         console.log(" ")
         console.log(chalk.hex('#4c84ff').bold("Installing dependencies... This might take a couple of minutes."));
@@ -100,6 +49,8 @@ module.exports = async (projectname, {project_type}) => {
             console.log(" ");
             console.log(" ");
             console.log("All Done!");
+            console.log(" ");
+            console.log(" ");
             process.exit(0);
         })
     }).catch(error => {
