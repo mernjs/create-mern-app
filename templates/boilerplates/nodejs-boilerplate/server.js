@@ -1,27 +1,52 @@
 require('dotenv').config()
 require('./src/database/dbconfig/DB_mongodb_connection');
-const Utilities     = require('./src/Utilities')
-const bodyParser 	= require('body-parser')
-const express 		= require('express')
-const logger 		= require('morgan')
-const cors 		    = require('cors')
-const path          = require('path')
+const http = require('http')
+const Router = require('router')
+const finalhandler = require('finalhandler')
+const Utilities = require('./src/Utilities')
+const bodyParser   = require('body-parser')
+const url = require('url');
+const router = Router()
 
-const app 	= express();
+let app = http.createServer((req, res) => {
+	req.query = url.parse(req.url, true).query
+  	router(req, res, finalhandler(req, res))
+})
+  
+let Routes = Router()
+router.use('/', Routes)
+Routes.use(bodyParser.json())
 
-app.use(cors())
-app.use(bodyParser.json({limit: '10mb', extended: true}))
-app.use(bodyParser.urlencoded({limit: '10mb', extended: true}))
+const AuthController = require('./src/controllers/AuthController')
 
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, './src/views'));
-app.use(express.static(path.join(__dirname, './public')));
+Routes.route('/')
+	.get((req, res) => Utilities.apiResponse(res, 200, 'Create MERN App', {By: "Vijay Pratap Singh"}))
+	.all(Utilities.send405);
 
-app.use(require(`./src/App`));
+Routes.route('/api')
+	.get((req, res) => Utilities.apiResponse(res, 200, 'Welcome API'))
+	.all(Utilities.send405);
 
-app.use(logger('dev'));
-app.use(Utilities.send404)
+Routes.route('/api/v1')
+	.get((req, res) => Utilities.apiResponse(res, 200, 'APIs V1'))
+	.all(Utilities.send405);
 
+Routes.route('/api/v1/auth/login')
+	.post(AuthController.login)
+	.all(Utilities.send405);
+
+Routes.route('/api/v1/auth/signup')
+	.post(AuthController.signup)
+	.all(Utilities.send405);
+
+Routes.route('/api/v1/auth/users')
+	.get(Utilities.verifyAccessToken, AuthController.users)
+	.all(Utilities.send405);
+
+Routes.route('/api/v1/auth/user')
+	.get(Utilities.verifyAccessToken, AuthController.getUserByID)
+	.all(Utilities.send405);
+	
 let server = app.listen(process.env.PORT || process.env.APP_PORT, () => {
     console.log(`********** Server is running on  http://localhost:${server.address().port}  **********`)
 }).on('error', (error) => {

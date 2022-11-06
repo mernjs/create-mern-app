@@ -1,6 +1,6 @@
 
 const apiResponse = (res, status, message = '', data) => {
-    let new_message = ''
+    var new_message = ''
     if(process.env.APP_DEBUG === "true"){
         new_message =  message.message || message
     }else{
@@ -10,14 +10,19 @@ const apiResponse = (res, status, message = '', data) => {
             new_message = message
         }
     }
-    res.statusCode = status
-	res.end(
-		JSON.stringify({
-            data    : data  || [],
-            status  : status,
-            message : new_message
-        })
-	)
+    res.status(status).send({
+        data    : data  || [],
+        status  : status,
+        message : new_message
+    });
+}
+
+module.exports.view = (res, file_name, title, message = '', data) => {
+    res.render(file_name, {
+        data    : data  || [] ,
+        title   : title || '',
+        message :  message.message || message
+    });
 }
 
 module.exports.send404 = (req, res) => {
