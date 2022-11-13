@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from "styled-components";
+import { ErrorMessage } from '@hookform/error-message';
 
 export default (props) => {
-	let { input, label, type, placeholder, meta: { touched, error }} = props
+	let { field, label, type, placeholder, errors } = props
 	return <TextInput>
 		{label && <label>{label}</label> }
-		<input {...input} placeholder={placeholder} className="text-input" type={type} />
-		{touched && (error && <span className="error_show">{error}</span>)}
+		<input placeholder={placeholder} className="text-input" type={type} {...field}/>
+		{errors && <ErrorMessage errors={errors} name={field.name} /> }
 	</TextInput>
 }
 
