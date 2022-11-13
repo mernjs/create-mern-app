@@ -1,11 +1,10 @@
 import React from 'react';
-import { Provider } from "react-redux";
 import { PersistGate } from 'redux-persist/integration/react'
-import { store, persistor } from "utils/Store";
+import { store, persistor } from "Store";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { useSelector, useDispatch } from "react-redux";
+import { Provider, useSelector, useDispatch } from "react-redux";
 import AdminLTE, { Sidebar, Navbar } from 'adminlte-2-react';
 import {
     BrowserRouter as Router,
@@ -53,6 +52,7 @@ const AppRoutes = () => {
                         <PrivateRoute path={"/"} exact component={Dashboard} /> 
                         <AuthRoute path={"/login"} exact component={Login} />
                         <AuthRoute path={"/signup"} exact component={Signup} /> 
+                        <PrivateRoute path={"/users"} exact component={Users} />
                     </Switch>
                 </Router>
                 :

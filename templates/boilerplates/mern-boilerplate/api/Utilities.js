@@ -1,8 +1,8 @@
 
-const apiResponse = (res, status, message = '', data) => {
-    var new_message = ''
+const apiResponse = (res, status, message, data) => {
+    let new_message = ''
     if(process.env.APP_DEBUG === "true"){
-        new_message =  message.message || message
+        new_message =  message?.message || message
     }else{
         if(message.message){
             new_message = 'somthing went wroung please try again later'
@@ -17,11 +17,11 @@ const apiResponse = (res, status, message = '', data) => {
     });
 }
 
-module.exports.view = (res, file_name, title, message = '', data) => {
+module.exports.view = (res, file_name, title, message, data) => {
     res.render(file_name, {
         data    : data  || [] ,
         title   : title || '',
-        message :  message.message || message
+        message :  message?.message || message
     });
 }
 
@@ -62,7 +62,7 @@ module.exports.signAccessToken = (payload) => {
         return new Promise((resolve, reject) => {
             const options = {
                 expiresIn: '7d',
-                issuer: 'https://mernjs.github.io/create-mern-app',
+                issuer: 'pickurpage.com',
                 audience: payload._id.valueOf()
             }
             JWT.sign(payload, process.env.JWT_SECRET, options, (error, token) => {
@@ -74,7 +74,7 @@ module.exports.signAccessToken = (payload) => {
             })
         })
     } catch (error) {
-        apiResponse(res, 500, error)
+        apiResponse(res, 500, err)
     }
 }
 
@@ -91,7 +91,7 @@ module.exports.verifyAccessToken = (req, res, next) => {
             next()
         })
     } catch (error) {
-        apiResponse(res, 500, error)
+        apiResponse(res, 500, err)
     }
 }
 

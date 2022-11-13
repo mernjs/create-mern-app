@@ -3,7 +3,7 @@ import App from "next/app";
 import { Provider } from "react-redux";
 import withRedux from "next-redux-wrapper";
 import { PersistGate } from 'redux-persist/integration/react'
-import { makeStore } from "../utils/Store";
+import { makeStore } from "../Store";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../App.css'

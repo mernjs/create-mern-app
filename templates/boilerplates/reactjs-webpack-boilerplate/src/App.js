@@ -1,21 +1,21 @@
 import React from 'react';
-import { Provider } from "react-redux";
+import { Provider, useSelector } from "react-redux";
 import { PersistGate } from 'redux-persist/integration/react'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { store, persistor } from "./utils/Store";
 
 import {  BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { history } from './utils/Utilities';
-import { useSelector } from 'react-redux'
+import { history } from './Utilities';
+import { store, persistor } from "./Store";
 
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Dashboard from './pages/Dashboard'
+import NotFound from './pages/NotFound';
 
 const AuthRoute = ({ children }) => {
 	const user = useSelector(state => state.auth.user)
-    return (user !== null) ? <Navigate to='/dashboard' /> : children
+    return (user !== null) ? <Navigate to='/' /> : children
 }
 
 const PrivateRoute = ({ children }) => {
@@ -24,7 +24,6 @@ const PrivateRoute = ({ children }) => {
 }
 
 const AppRoutes = () => {
-    const user = useSelector(state => state.auth.user)
 	return (
         <Router history={history}>
             <Routes>
@@ -42,6 +41,9 @@ const AppRoutes = () => {
                     <AuthRoute>
                         <Signup/>
                     </AuthRoute>
+                } />
+                <Route exact={true} path="*" element={
+                    <NotFound/>
                 } />
             </Routes>
         </Router>

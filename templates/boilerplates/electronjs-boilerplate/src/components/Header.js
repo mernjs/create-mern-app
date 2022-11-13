@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { AuthActions } from 'reducers/AuthReducer'
+import { AuthActions } from '../reducers/AuthReducer'
 
 export default (props) => {
 
@@ -61,6 +61,7 @@ const Header = styled.header`
 
 const Logo = styled.div`
     flex:6;
+    width: 300px;
     display: flex;
     justify-content: flex-start;
 `;

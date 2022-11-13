@@ -23,7 +23,7 @@ Constants.select_form = [
 		type: "list",
 		name: "project_type",
 		message: "Choose your favourite technology",
-		choices: ['MERN Boilerplate','NodeJS Boilerplate','ExpressJS Boilerplate','NextJS Boilerplate','ReactJS Boilerplate','ThreeJS Boilerplate','ElectronJS Boilerplate','React Native Boilerplate', 'ReactJS Webpack Boilerplate','ReactJS AdminLTE Boilerplate','ReactJS Chrome Extension Boilerplate']
+		choices: ['MERN Boilerplate','NodeJS Boilerplate','NextJS Boilerplate','ReactJS Boilerplate','ElectronJS Boilerplate','React Native Boilerplate', 'ReactJS Webpack Boilerplate','ReactJS AdminLTE Boilerplate','ReactJS Chrome Extension Boilerplate']
 		// choices: ['MERN With MongoDB','MERN With MySQL','NextJS With Redux','ReactJS With Redux','React With Context API','NodeJS With MySQL','NodeJS With MongoDB','React Native With CLI','React Native With Expo','ElectronJS With Redux'],
 	}
 ]
