@@ -7,8 +7,10 @@ import apiRequest from '../Utilities'
 import { AuthActions } from '../reducers/AuthReducer'
 import { useForm, Controller } from "react-hook-form";
 
-const Login = (props) => {
+const Login = () => {
 
+	const { handleSubmit, control, formState: { isSubmitting, errors } } = useForm({ mode: "onChange" });
+	
 	const dispatch = useDispatch()
 
 	const login = async (payload) => {
@@ -19,8 +21,6 @@ const Login = (props) => {
             console.log('login', error)
         }
     }
-
-	const { handleSubmit, control, formState: { isSubmitting, errors } } = useForm({ mode: "onChange" });
     
     return (
         <>

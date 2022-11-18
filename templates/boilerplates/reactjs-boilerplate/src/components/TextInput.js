@@ -7,7 +7,7 @@ export default (props) => {
 	return <TextInput>
 		{label && <label>{label}</label> }
 		<input placeholder={placeholder} className="text-input" type={type} {...field}/>
-		{errors && <ErrorMessage errors={errors} name={field.name} /> }
+		{errors && <ErrorMessage errors={errors} name={field.name}  render={({ message }) => <span style={{color: 'red'}}>{message}</span>}/> }
 	</TextInput>
 }
 

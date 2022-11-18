@@ -1,6 +1,5 @@
 import { createBrowserHistory } from 'history';
 import axios from "axios";
-import { stopSubmit, startSubmit, reset } from 'redux-form';
 import { store }  from "./Store";
 import _ from 'lodash'
 import { toast } from 'react-toastify';
@@ -22,31 +21,6 @@ export default instance;
 
 export const history = createBrowserHistory();
 
-export const forwardTo = (path) => {
-    history.push(path)
-}
-
-export const formSubmitStart = (formName) => {
-    store.dispatch(startSubmit(formName))
-}
-
-export const formSubmitError = (formName, error) => {
-    if(!_.isEmpty(error) && !_.isEmpty(error.response)){
-        if(!_.isEmpty(error.response.data.data)){
-            store.dispatch(stopSubmit(formName, error.response.data.data))
-        }else{
-            toast.error(error.response.data.message)
-        }
-    }else{
-        toast.error(error.message)
-    }
-}
-
-export const formSubmitSuccess = (formName, message) => {
-    store.dispatch(reset(formName))
-    toast.success(message)
-}
-
 export const requestStart = (loaderName) => {
     store.dispatch(CoreActions.loaderActivate(loaderName))
 }
@@ -62,11 +36,6 @@ export const requestSuccess = (loaderName, message) => {
 }
 
 export const showToast = (message, type) => {
-    if(type === 'error'){
-        toast.error(message)    
-    }
-    if(type === 'success'){
-        toast.success(message)    
-    }
-    
+    if(type === 'error') toast.error(message)    
+    if(type === 'success') toast.success(message)    
 }

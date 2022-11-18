@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Header, Footer, TextInput, H2, Button } from '../components'
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
@@ -7,8 +7,9 @@ import apiRequest from '../Utilities'
 import { AuthActions } from '../reducers/AuthReducer'
 import { useForm, Controller } from "react-hook-form";
 
-const Signup = (props) => {
-	const { handleSubmit, control, setError, formState: { isSubmitting, errors } } = useForm({ mode: "onChange" });
+const Signup = () => {
+	
+	const { handleSubmit, control, formState: { isSubmitting, errors } } = useForm({ mode: "onChange" });
 	
 	const dispatch = useDispatch()
 
