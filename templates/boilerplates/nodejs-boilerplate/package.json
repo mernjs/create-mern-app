@@ -10,7 +10,8 @@
     "forever-restart": "forever restart server.js",
     "forever-stop": "forever stop server.js",
     "migration": "migrate-mongo",
-    "lint": "eslint src/**/*.js"
+    "lint": "eslint src/**/*.js",
+    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -27,6 +28,7 @@
   "devDependencies": {
     "eslint": "^8.28.0",
     "eslint-config-google": "^0.14.0",
-    "nodemon": "^2.0.13"
+    "nodemon": "^2.0.13",
+    "prettier": "^2.7.1"
   }
 }

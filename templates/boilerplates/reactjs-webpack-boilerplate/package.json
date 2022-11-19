@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "node scripts/dev.js",
     "build": "node scripts/build.js",
-    "lint": "eslint src/**/*.js"
+    "lint": "eslint src/**/*.js",
+    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'"
   },
   "dependencies": {
     "@hookform/error-message": "^2.0.1",
@@ -39,6 +40,7 @@
     "eslint-plugin-react": "^7.31.11",
     "html-webpack-plugin": "^5.5.0",
     "node-sass": "^8.0.0",
+    "prettier": "^2.7.1",
     "sass-loader": "^13.2.0",
     "source-map-loader": "^4.0.1",
     "style-loader": "^3.3.1",

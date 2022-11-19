@@ -1,25 +1,24 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: rgb(245, 245, 245);
+  margin: 0;
+  padding: 0;
+  background: rgb(245, 245, 245);
 }
 
 * {
-    font-family: "Montserrat";
-    font-display: swap; 
+  font-family: 'Montserrat';
+  font-display: swap;
 }
 
-a{
-    cursor: pointer;
-    color: #4c84ff;
-    font-size: 18px;
-    letter-spacing: .1px;
-    line-height: 25px;
-    padding: 0;
-    text-decoration: none;
-    
+a {
+  cursor: pointer;
+  color: #4c84ff;
+  font-size: 18px;
+  letter-spacing: 0.1px;
+  line-height: 25px;
+  padding: 0;
+  text-decoration: none;
 }
-a:hover{
-    text-decoration:none;
-    color: #494d55;
+a:hover {
+  text-decoration: none;
+  color: #494d55;
 }

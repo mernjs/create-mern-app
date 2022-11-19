@@ -1,32 +1,32 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const CoreReducer = createSlice({
-    name: 'CoreReducer',
+  name: 'CoreReducer',
 
-    initialState: {
-        loaders: {}
+  initialState: {
+    loaders: {}
+  },
+
+  reducers: {
+    loaderActivate: (state, action) => {
+      let activate_loaders = state.loaders || {};
+      activate_loaders = {
+        ...activate_loaders,
+        [action.payload]: true
+      };
+      state.loaders = activate_loaders;
     },
-  
-    reducers: {
-        loaderActivate: (state, action) => {
-            let activate_loaders = state.loaders || {}
-            activate_loaders = {
-                ...activate_loaders,
-                [action.payload]: true
-            };
-            state.loaders = activate_loaders
-        },
-        loaderDeactivate: (state, action) => {
-            let deactivate_loaders = state.loaders || {}
-            deactivate_loaders = {
-                ...deactivate_loaders,
-                [action.payload]: false
-            };
-            state.loaders = deactivate_loaders
-        }
+    loaderDeactivate: (state, action) => {
+      let deactivate_loaders = state.loaders || {};
+      deactivate_loaders = {
+        ...deactivate_loaders,
+        [action.payload]: false
+      };
+      state.loaders = deactivate_loaders;
     }
-})
+  }
+});
 
-export const CoreActions = CoreReducer.actions
+export const CoreActions = CoreReducer.actions;
 
-export default CoreReducer.reducer
+export default CoreReducer.reducer;
