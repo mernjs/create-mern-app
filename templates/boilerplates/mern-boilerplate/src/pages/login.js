@@ -1,41 +1,28 @@
 import React from 'react'
-import { Field, reduxForm } from 'redux-form'
 import { Header, Footer, TextInput, H2, Button } from '../components'
 import styled from "styled-components";
 import Link from 'next/link'
 import { useDispatch } from 'react-redux'
-import apiRequest, { formSubmitStart, formSubmitSuccess, formSubmitError } from '../Utilities'
+import apiRequest from '../Utilities'
 import { AuthActions } from '../reducers/AuthReducer'
+import { useForm, Controller } from "react-hook-form";
 import Router from 'next/router'
 
-const validate = values => {
-	const errors = {}
-	if (!values.email) {
-	  	errors.email = 'Email is Required'
-	}
-	if (!values.password) {
-	  	errors.password = 'Password is Required'
-	}
-	return errors
-}
+const Login = () => {
 
-const Login = (props) => {
-
+	const { handleSubmit, control, formState: { isSubmitting, errors } } = useForm({ mode: "onChange" });
+	
 	const dispatch = useDispatch()
 
 	const login = async (payload) => {
         try {
-            formSubmitStart('login')
             const response = await apiRequest.post(`auth/login`, payload)
             dispatch(AuthActions.setAuth(response.data.data))
-            formSubmitSuccess('login', response.data.message)
 			Router.push('/')
         } catch (error) {
-            formSubmitError('login', error)
+            console.log('login', error)
         }
     }
-
-	const { handleSubmit, submitting } = props
     
     return (
         <>
@@ -44,19 +31,19 @@ const Login = (props) => {
 				<Container>
 					<H2>Sign In</H2>
 					<form onSubmit={handleSubmit( (values) => login(values))}>
-						<Field
+						<Controller
 							name="email"
-							type="text"
-							component={TextInput}
-							placeholder="Enter Your Email"
+							control={control}
+							render={(field) => <TextInput {...field} type="text" placeholder="Enter Your Email"  errors={errors}/>}
+							rules={{ required: "Email is required." }}
 						/>
-						<Field
+						<Controller
 							name="password"
-							type="password"
-							component={TextInput}
-							placeholder="Enter Your Password"
+							control={control}
+							render={(field) => <TextInput {...field} type="password" placeholder="Enter Your Password"  errors={errors}/>}
+							rules={{ required: "Password is required." }}
 						/>
-						<Button disabled={submitting} className="btn btn-secondary" type="submit">{submitting ? 'Submitting...' : 'Log In'}</Button>
+						<Button disabled={isSubmitting} className="btn btn-secondary" type="submit">{isSubmitting ? 'Submitting...' : 'Log In'}</Button>
 						<div>Don't have an account? <Link href="/signup"> Signup</Link></div>
 					</form>
 				</Container>
@@ -66,10 +53,7 @@ const Login = (props) => {
     )
 }
 
-export default reduxForm({
-	validate,
-    form: 'login'
-})(Login)
+export default Login
 
 const ScrollView = styled.div`
 	min-height: calc(100vh - 80px);

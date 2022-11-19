@@ -6,7 +6,6 @@ const express 		= require('express')
 const logger 		= require('morgan')
 const cors 		    = require('cors')
 const path          = require('path')
-
 const app 	= express();
 
 app.use(cors())
@@ -21,6 +20,7 @@ app.use(require(`./src/App`));
 
 app.use(logger('dev'));
 app.use(Utilities.send404)
+app.disable('x-powered-by');
 
 let server = app.listen(process.env.PORT || process.env.APP_PORT, () => {
     console.log(`********** Server is running on  http://localhost:${server.address().port}  **********`)

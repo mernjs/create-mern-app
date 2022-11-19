@@ -1,48 +1,29 @@
 import React from 'react'
-import { Field, reduxForm } from 'redux-form'
 import { Header, Footer, TextInput, H2, Button } from '../components'
 import styled from "styled-components";
 import Link from 'next/link'
 import { useDispatch } from 'react-redux'
-import apiRequest, { formSubmitStart, formSubmitSuccess, formSubmitError } from '../Utilities'
+import apiRequest from '../Utilities'
 import { AuthActions } from '../reducers/AuthReducer'
+import { useForm, Controller } from "react-hook-form";
 import Router from 'next/router'
 
-const validate = values => {
-	const errors = {}
-	if (!values.name) {
-	  	errors.name = 'Name is Required'
-	}
-	if (!values.email) {
-	  	errors.email = 'Email is Required'
-	}
-	if (!values.password) {
-	  	errors.password = 'Password is Required'
-	}
-	if (!values.confirm_password) {
-	  	errors.confirm_password = 'Confirm Password is Required'
-	}
-	return errors
-}
-
-const Signup = (props) => {
+const Signup = () => {
+	
+	const { handleSubmit, control, formState: { isSubmitting, errors } } = useForm({ mode: "onChange" });
 	
 	const dispatch = useDispatch()
 
 	const signup = async (payload) => {
         try {
-            formSubmitStart('signup')
             const response = await apiRequest.post(`auth/signup`, payload)
             dispatch(AuthActions.setAuth(response.data.data))
-            formSubmitSuccess('signup', response.data.message)
 			Router.push('/')
         } catch (error) {
-            formSubmitError('signup', error)
+            console.log('signup', error)
         }
     }
 
-	const { handleSubmit, submitting } = props
-    
     return (
         <>
         	<ScrollView>
@@ -50,31 +31,37 @@ const Signup = (props) => {
 				<Container>
 					<H2>Sign Up</H2>
 					<form onSubmit={handleSubmit( (values) => signup(values))}>
-						<Field
+					    <Controller
 							name="name"
-							type="text"
-							component={TextInput}
-							placeholder="Enter Your Name"
+							control={control}
+							render={(field) => <TextInput {...field} type="text" placeholder="Enter Your Name" errors={errors}/>}
+							rules={{ 
+								required: "Name is required.",
+								maxLength: {
+									value: 20,
+									message: 'This input exceed maxLength.',
+								},
+							}}
 						/>
-						<Field
+						<Controller
 							name="email"
-							type="text"
-							component={TextInput}
-							placeholder="Enter Your Email ID"
+							control={control}
+							render={(field) => <TextInput {...field} type="text" placeholder="Enter Your Email" errors={errors}/>}
+							rules={{ required: "Email is required." }}
 						/>
-						<Field
+						<Controller
 							name="password"
-							type="password"
-							component={TextInput}
-							placeholder="Enter Your Password"
+							control={control}
+							render={(field) => <TextInput {...field} type="password" placeholder="Enter Your Password" errors={errors}/>}
+							rules={{ required: "Password is required." }}
 						/>
-						<Field
+						<Controller
 							name="confirm_password"
-							type="password"
-							component={TextInput}
-							placeholder="Enter Your Confirm Password"
+							control={control}
+							render={(field) => <TextInput {...field} type="password" placeholder="Enter Your Confirm Password"  errors={errors}/>}
+							rules={{ required: "Comfirm Password is required." }}
 						/>
-						<Button className="btn btn-secondary" type="submit" disabled={submitting}>{submitting ? 'Submitting...' : 'Sign Up'}</Button>
+						<Button className="btn btn-secondary" type="submit" disabled={isSubmitting}>{isSubmitting ? 'Submitting...' : 'Sign Up'}</Button>
 						<div>Don't have an account? <Link href="/login">Login</Link></div>
 					</form>
 				</Container>
@@ -84,10 +71,7 @@ const Signup = (props) => {
     )
 }
 
-export default reduxForm({
-	validate,
-    form: 'signup'
-})(Signup)
+export default Signup
 
 const ScrollView = styled.div`
 	min-height: calc(100vh - 80px);

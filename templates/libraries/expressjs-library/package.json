@@ -2,27 +2,14 @@
   "name": "project_name",
   "version": "0.1.0",
   "private": true,
-  "main": "server.js",
+  "main": "src/index.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "start": "node server.js",
-    "forever-start": "forever start server.js",
-    "forever-restart": "forever restart server.js",
-    "forever-stop": "forever stop server.js",
-    "migration": "migrate-mongo"
+    "start": "node server.js"
   },
   "dependencies": {
-    "bcrypt": "^5.0.1",
-    "body-parser": "^1.20.0",
-    "cors": "^2.8.5",
     "dotenv": "^16.0.1",
-    "ejs": "^3.1.8",
-    "express": "^4.18.1",
-    "faker": "^6.6.6",
-    "jsonwebtoken": "^8.5.1",
-    "lodash": "^4.17.21",
-    "mongoose": "^6.3.4",
-    "morgan": "^1.10.0"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "nodemon": "^2.0.13"

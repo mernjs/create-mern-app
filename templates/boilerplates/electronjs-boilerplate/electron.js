@@ -1,22 +1,26 @@
 const {app, BrowserWindow} = require("electron")
 const path = require("path")
 const isDev = require("electron-is-dev")
+const START_URL = "http://localhost:3000"
 
 function createWindow() {
-    const mainWindow = new BrowserWindow({ 
+    let mainWindow = new BrowserWindow({ 
         width: 1200, 
         height: 800,
         icon: "",
         webPreferences: {
-          nodeIntegration: true,
+          nodeIntegration: false,
         },
     })
-    mainWindow.loadURL(
-        isDev ? "http://localhost:3000" : `file://${path.join(__dirname, "../build/index.html")}`
-    )
-    // if (isDev) {
-    //     mainWindow.webContents.openDevTools({ mode: 'right' });
-    // }
+    const startUrl = isDev ? START_URL : url.format({
+        pathname: path.join(__dirname, '/../build/index.html'),
+        protocol: 'file:',
+        slashes: true
+    });
+    mainWindow.loadURL(startUrl)
+    if (isDev) {
+        mainWindow.webContents.openDevTools({ mode: 'right' });
+    }
     mainWindow.on("closed", () => (mainWindow = null))
 }
 
