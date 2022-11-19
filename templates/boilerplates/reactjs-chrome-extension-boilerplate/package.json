@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "node scripts/dev.js",
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js",
+    "lint": "eslint src/**/*.js"
   },
   "dependencies": {
     "@hookform/error-message": "^2.0.1",
@@ -26,6 +27,7 @@
     "@babel/core": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "@hot-loader/react-dom": "^17.0.2",
+    "ajv": "^7.2.4",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^9.1.0",
     "babel-preset-react-app": "^10.0.1",
@@ -33,6 +35,14 @@
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.2",
     "dotenv-webpack": "^8.0.1",
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-react": "^1.1.7",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "fs-extra": "^10.1.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",

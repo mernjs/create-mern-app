@@ -9,7 +9,8 @@
     "forever-start": "forever start server.js",
     "forever-restart": "forever restart server.js",
     "forever-stop": "forever stop server.js",
-    "migration": "migrate-mongo"
+    "migration": "migrate-mongo",
+    "lint": "eslint src/**/*.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -24,6 +25,8 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-config-google": "^0.14.0",
     "nodemon": "^2.0.13"
   }
 }

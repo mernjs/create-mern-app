@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT"
+    "start": "next start -p $PORT",
+    "lint": "eslint src/**/*.js"
   },
   "dependencies": {
     "@hookform/error-message": "^2.0.1",
@@ -24,5 +25,13 @@
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
     "styled-components": "^5.3.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.31.11"
   }
 }
