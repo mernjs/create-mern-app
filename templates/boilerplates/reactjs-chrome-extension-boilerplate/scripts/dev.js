@@ -8,20 +8,20 @@ const config = require('../webpack.config');
 const env = require('./env');
 const path = require('path');
 
-let options = config.chromeExtensionBoilerplate || {};
-let excludeEntriesToHotReload = options.notHotReload || [];
+const options = config.chromeExtensionBoilerplate || {};
+const excludeEntriesToHotReload = options.notHotReload || [];
 
-for (let entryName in config.entry) {
+for (const entryName in config.entry) {
   if (excludeEntriesToHotReload.indexOf(entryName) === -1) {
     config.entry[entryName] = [
       'webpack/hot/dev-server',
-      `webpack-dev-server/client?hot=true&hostname=localhost&port=${env.PORT}`
+      `webpack-dev-server/client?hot=true&hostname=localhost&port=${env.PORT}`,
     ].concat(config.entry[entryName]);
   }
 }
 
 config.plugins = [new webpack.HotModuleReplacementPlugin()].concat(
-  config.plugins || []
+  config.plugins || [],
 );
 
 const compiler = webpack(config);
@@ -35,18 +35,18 @@ const server = new WebpackDevServer(
     port: env.PORT,
     historyApiFallback: true,
     static: {
-      directory: path.join(__dirname, '../build')
+      directory: path.join(__dirname, '../build'),
     },
     devMiddleware: {
       publicPath: `http://localhost:${env.PORT}/`,
-      writeToDisk: true
+      writeToDisk: true,
     },
     headers: {
-      'Access-Control-Allow-Origin': '*'
+      'Access-Control-Allow-Origin': '*',
     },
-    allowedHosts: 'all'
+    allowedHosts: 'all',
   },
-  compiler
+  compiler,
 );
 
 if (process.env.NODE_ENV === 'development' && module.hot) {

@@ -12,7 +12,7 @@ const Login = () => {
   const {
     handleSubmit,
     control,
-    formState: { isSubmitting, errors }
+    formState: { isSubmitting, errors },
   } = useForm({ mode: 'onChange' });
 
   const dispatch = useDispatch();

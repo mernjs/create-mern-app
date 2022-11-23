@@ -12,7 +12,7 @@ const Signup = () => {
   const {
     handleSubmit,
     control,
-    formState: { isSubmitting, errors }
+    formState: { isSubmitting, errors },
   } = useForm({ mode: 'onChange' });
 
   const dispatch = useDispatch();
@@ -49,8 +49,8 @@ const Signup = () => {
                 required: 'Name is required.',
                 maxLength: {
                   value: 20,
-                  message: 'This input exceed maxLength.'
-                }
+                  message: 'This input exceed maxLength.',
+                },
               }}
             />
             <Controller

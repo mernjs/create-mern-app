@@ -8,7 +8,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "lint": "eslint src/**/*.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix --ext .js,.jsx .",
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'"
   },
   "author": "author_email",

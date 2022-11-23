@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ErrorMessage } from '@hookform/error-message';
+import PropTypes from 'prop-types';
 
-export default (props) => {
-  let { field, label, type, placeholder, errors } = props;
+const Input = (props) => {
+  const { field, label, type, placeholder, errors } = props;
   return (
     <TextInput>
       {label && <label>{label}</label>}
@@ -25,6 +26,17 @@ export default (props) => {
     </TextInput>
   );
 };
+
+Input.propTypes = {
+  name: PropTypes.string,
+  field: PropTypes.object,
+  label: PropTypes.string,
+  type: PropTypes.string,
+  placeholder: PropTypes.string,
+  errors: PropTypes.object,
+};
+
+export default Input;
 
 const TextInput = styled.div`
   margin-bottom: 16px;

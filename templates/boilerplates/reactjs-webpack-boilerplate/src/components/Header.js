@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { AuthActions } from '../reducers/AuthReducer';
 
-export default (props) => {
+const Header = () => {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.auth.user);
 
@@ -13,7 +13,7 @@ export default (props) => {
   };
 
   return (
-    <Header>
+    <HeaderWrapper>
       <div className="container">
         <Navbar>
           <Logo>
@@ -44,11 +44,13 @@ export default (props) => {
           </ul>
         </Navbar>
       </div>
-    </Header>
+    </HeaderWrapper>
   );
 };
 
-const Header = styled.header`
+export default Header;
+
+const HeaderWrapper = styled.header`
   padding: 20px 0;
   background-color: #fff;
   width: 100%;

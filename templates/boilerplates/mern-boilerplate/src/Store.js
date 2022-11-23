@@ -9,7 +9,7 @@ import AuthReducer from './reducers/AuthReducer';
 
 const appReducer = combineReducers({
   core: CoreReducer,
-  auth: AuthReducer
+  auth: AuthReducer,
 });
 
 const rootReducer = (state, action) => {
@@ -23,7 +23,7 @@ const rootReducer = (state, action) => {
 const persistConfig = {
   key: 'root',
   version: 1,
-  storage: storage
+  storage: storage,
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
@@ -31,11 +31,11 @@ const reduxLogger = createLogger();
 const middleware = [reduxLogger];
 
 export const makeStore = (initialState) => {
-  let store = configureStore({
+  const store = configureStore({
     reducer: persistedReducer,
     initialState: initialState,
     middleware: [...middleware],
-    devTools: process.env.NODE_ENV !== 'production'
+    devTools: process.env.NODE_ENV !== 'production',
   });
   store.__PERSISTOR = persistStore(store);
   return store;

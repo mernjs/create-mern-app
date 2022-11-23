@@ -3,10 +3,10 @@ process.env.NODE_ENV = 'production';
 process.env.ASSET_PATH = '/';
 
 const webpack = require('webpack');
-let config = require('../webpack.config');
+const config = require('../webpack.config');
 
 config.mode = 'production';
 
-webpack(config, function (err) {
+webpack(config, function(err) {
   if (err) throw err;
 });

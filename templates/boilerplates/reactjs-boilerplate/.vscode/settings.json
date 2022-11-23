@@ -10,5 +10,6 @@
   "editor.letterSpacing": 0,
   "editor.lineHeight": 26,
   "editor.lineNumbers": "on",
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "prettier.bracketSpacing": false
 }

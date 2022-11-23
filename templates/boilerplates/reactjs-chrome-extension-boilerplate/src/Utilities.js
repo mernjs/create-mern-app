@@ -1,11 +1,10 @@
 import { createBrowserHistory } from 'history';
 import axios from 'axios';
 import { store } from './Store';
-import _ from 'lodash';
 import { toast } from 'react-toastify';
 
 const instance = axios.create({
-  baseURL: process.env.REACT_APP_API_URL
+  baseURL: process.env.REACT_APP_API_URL,
 });
 
 instance.interceptors.request.use(
@@ -16,7 +15,7 @@ instance.interceptors.request.use(
   },
   (err) => {
     return Promise.reject(err);
-  }
+  },
 );
 
 export default instance;

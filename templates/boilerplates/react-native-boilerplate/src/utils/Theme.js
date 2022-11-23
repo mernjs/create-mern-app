@@ -8,29 +8,29 @@ const themes = {
       primaryColor: '#4c84ff',
       bgColor: 'rgb(245, 245, 245)',
       textColor: '#494d55',
-      buttonTextColor: '#fff'
+      buttonTextColor: '#fff',
     },
     fonts: ['Montserrat'],
     fontSizes: {
       small: '1em',
       medium: '2em',
-      large: '3em'
-    }
+      large: '3em',
+    },
   },
   darkTheme: {
     colors: {
       primaryColor: 'rgba(0,0,0,0.87)',
       bgColor: '#272828',
       textColor: '#fff',
-      buttonTextColor: '#494d55'
+      buttonTextColor: '#494d55',
     },
     fonts: ['Montserrat'],
     fontSizes: {
       small: '1em',
       medium: '2em',
-      large: '3em'
-    }
-  }
+      large: '3em',
+    },
+  },
 };
 
 export default ({ children }) => {

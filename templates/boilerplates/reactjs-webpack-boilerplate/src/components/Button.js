@@ -1,19 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-export default (props) => {
+const Button = (props) => {
   return (
-    <Button
+    <BTN
       className={props.className}
       type={props.type}
       disabled={props.disabled}
     >
       {props.children}
-    </Button>
+    </BTN>
   );
 };
 
-const Button = styled.button`
+Button.propTypes = {
+  className: PropTypes.string,
+  type: PropTypes.string,
+  disabled: PropTypes.bool,
+  children: PropTypes.element,
+};
+
+export default Button;
+
+const BTN = styled.button`
   width: 100%;
   padding: 10px;
   cursor: pointer;

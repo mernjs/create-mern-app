@@ -4,7 +4,7 @@ import { Content, Row, Box, SimpleTable, Col } from 'adminlte-2-react';
 const columns = [
   { title: 'ID', data: '_id' },
   { title: 'Name', data: 'name' },
-  { title: 'Email', data: 'email' }
+  { title: 'Email', data: 'email' },
 ];
 
 const Users = () => {
@@ -12,73 +12,73 @@ const Users = () => {
     {
       _id: '12345',
       name: 'Vijay',
-      email: 'vijay@getnada.com'
+      email: 'vijay@getnada.com',
     },
     {
       _id: '12345',
       name: 'Vijay',
-      email: 'vijay@getnada.com'
+      email: 'vijay@getnada.com',
     },
     {
       _id: '12345',
       name: 'Vijay',
-      email: 'vijay@getnada.com'
+      email: 'vijay@getnada.com',
     },
     {
       _id: '12345',
       name: 'Vijay',
-      email: 'vijay@getnada.com'
+      email: 'vijay@getnada.com',
     },
     {
       _id: '12345',
       name: 'Vijay',
-      email: 'vijay@getnada.com'
+      email: 'vijay@getnada.com',
     },
     {
       _id: '12345',
       name: 'Vijay',
-      email: 'vijay@getnada.com'
+      email: 'vijay@getnada.com',
     },
     {
       _id: '12345',
       name: 'Vijay',
-      email: 'vijay@getnada.com'
+      email: 'vijay@getnada.com',
     },
     {
       _id: '12345',
       name: 'Vijay',
-      email: 'vijay@getnada.com'
+      email: 'vijay@getnada.com',
     },
     {
       _id: '12345',
       name: 'Vijay',
-      email: 'vijay@getnada.com'
+      email: 'vijay@getnada.com',
     },
     {
       _id: '12345',
       name: 'Vijay',
-      email: 'vijay@getnada.com'
+      email: 'vijay@getnada.com',
     },
     {
       _id: '12345',
       name: 'Vijay',
-      email: 'vijay@getnada.com'
+      email: 'vijay@getnada.com',
     },
     {
       _id: '12345',
       name: 'Vijay',
-      email: 'vijay@getnada.com'
+      email: 'vijay@getnada.com',
     },
     {
       _id: '12345',
       name: 'Vijay',
-      email: 'vijay@getnada.com'
+      email: 'vijay@getnada.com',
     },
     {
       _id: '12345',
       name: 'Vijay',
-      email: 'vijay@getnada.com'
-    }
+      email: 'vijay@getnada.com',
+    },
   ];
 
   return (

@@ -11,7 +11,7 @@ export default () => {
               ©2021{' '}
               <a
                 href="https://mernjs.github.io/create-mern-app"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 {' '}
                 Create MERN App
@@ -19,7 +19,7 @@ export default () => {
             </span>
             <span style={{ float: 'right', lineHeight: '60px' }}>
               <b>By:</b>{' '}
-              <a href="https://vijay-pratap-singh.netlify.app" target="_blank">
+              <a href="https://vijay-pratap-singh.netlify.app" target="_blank" rel="noreferrer">
                 {' '}
                 Vijay Pratap Singh
               </a>

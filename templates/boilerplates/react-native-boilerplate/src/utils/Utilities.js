@@ -7,13 +7,13 @@ import { CoreActions } from '../reducers/CoreReducer';
 
 export const apiRequest = async (args = {}) => {
   console.log('auth', store.getState().auth);
-  let API_URL = 'https://mernjs-nodejs.herokuapp.com/api/v1';
+  const API_URL = 'https://mernjs-nodejs.herokuapp.com/api/v1';
   args.url = `${API_URL}/${args.url}`;
   return axios({
     ...args,
     headers: {
-      token: 'token'
-    }
+      token: 'token',
+    },
   });
 };
 
@@ -30,7 +30,7 @@ export const formSubmitError = (formName, error) => {
         type: 'error',
         text1: 'Error',
         position: 'bottom',
-        text2: error.response.data.message
+        text2: error.response.data.message,
       });
     }
   } else {
@@ -38,7 +38,7 @@ export const formSubmitError = (formName, error) => {
       type: 'error',
       text1: 'Error',
       position: 'bottom',
-      text2: error.message
+      text2: error.message,
     });
   }
 };
@@ -49,7 +49,7 @@ export const formSubmitSuccess = (formName, message) => {
     type: 'success',
     text1: 'Success',
     position: 'bottom',
-    text2: message
+    text2: message,
   });
 };
 
@@ -64,7 +64,7 @@ export const requestError = (loaderName, message) => {
       type: 'error',
       text1: 'Error',
       position: 'bottom',
-      text2: message
+      text2: message,
     });
   }
 };
@@ -76,7 +76,7 @@ export const requestSuccess = (loaderName, message) => {
       type: 'success',
       text1: 'Success',
       position: 'bottom',
-      text2: message
+      text2: message,
     });
   }
 };
@@ -87,7 +87,7 @@ export const showToast = (message, type) => {
       type: 'error',
       text1: 'Error',
       position: 'bottom',
-      text2: message
+      text2: message,
     });
   }
   if (type === 'success') {
@@ -95,7 +95,7 @@ export const showToast = (message, type) => {
       type: 'success',
       text1: 'Success',
       position: 'bottom',
-      text2: message
+      text2: message,
     });
   }
 };

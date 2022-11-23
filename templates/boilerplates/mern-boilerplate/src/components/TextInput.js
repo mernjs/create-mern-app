@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { ErrorMessage } from '@hookform/error-message';
 
 export default (props) => {
-  let { field, label, type, placeholder, errors } = props;
+  const { field, label, type, placeholder, errors } = props;
   return (
     <TextInput>
       {label && <label>{label}</label>}

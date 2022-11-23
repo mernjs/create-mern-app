@@ -6,7 +6,7 @@ import _ from 'lodash';
 import { toast } from 'react-toastify';
 
 const instance = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL
+  baseURL: process.env.NEXT_PUBLIC_API_URL,
 });
 
 instance.interceptors.request.use(
@@ -17,7 +17,7 @@ instance.interceptors.request.use(
   },
   (err) => {
     return Promise.reject(err);
-  }
+  },
 );
 
 export default instance;

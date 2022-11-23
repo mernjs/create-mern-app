@@ -10,9 +10,9 @@ import '../App.css';
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
-    const pageProps = Component.getInitialProps
-      ? await Component.getInitialProps(ctx)
-      : {};
+    const pageProps = Component.getInitialProps ?
+      await Component.getInitialProps(ctx) :
+      {};
     return { pageProps };
   }
 

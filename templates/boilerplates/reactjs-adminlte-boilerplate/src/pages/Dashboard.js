@@ -6,7 +6,7 @@ import {
   Box,
   DescriptionBlock,
   ProgressGroup,
-  Alert
+  Alert,
 } from 'adminlte-2-react';
 import UpperInfoBoxes from 'components/UpperInfoBoxes';
 

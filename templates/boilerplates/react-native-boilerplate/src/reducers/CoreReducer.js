@@ -5,31 +5,26 @@ const CoreReducer = createSlice({
 
   initialState: {
     loaders: {},
-    is_dark_theme: false
   },
 
   reducers: {
     loaderActivate: (state, action) => {
-      let activate_loaders = state.loaders || {};
-      activate_loaders = {
-        ...activate_loaders,
-        [action.payload]: true
+      let loaders = state.loaders || {};
+      loaders = {
+        ...loaders,
+        [action.payload]: true,
       };
-      state.loaders = activate_loaders;
+      state.loaders = loaders;
     },
     loaderDeactivate: (state, action) => {
-      let deactivate_loaders = state.loaders || {};
-      deactivate_loaders = {
-        ...deactivate_loaders,
-        [action.payload]: false
+      let loaders = state.loaders || {};
+      loaders = {
+        ...loaders,
+        [action.payload]: false,
       };
-      state.loaders = deactivate_loaders;
+      state.loaders = loaders;
     },
-    switchTheme: (state, action) => {
-      let toggle = !state.is_dark_theme;
-      state.is_dark_theme = toggle;
-    }
-  }
+  },
 });
 
 export const CoreActions = CoreReducer.actions;

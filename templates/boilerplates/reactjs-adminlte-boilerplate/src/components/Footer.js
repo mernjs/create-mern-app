@@ -12,6 +12,7 @@ export default (props) => {
               <a
                 href="https://mernjs.github.io/create-mern-app"
                 target="_blank"
+                rel="noreferrer"
               >
                 {' '}
                 Create MERN App
@@ -19,7 +20,11 @@ export default (props) => {
             </span>
             <span style={{ float: 'right', lineHeight: '60px' }}>
               <b>By:</b>{' '}
-              <a href="https://vijay-pratap-singh.netlify.app" target="_blank">
+              <a
+                href="https://vijay-pratap-singh.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {' '}
                 Vijay Pratap Singh
               </a>

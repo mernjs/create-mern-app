@@ -6,26 +6,26 @@ const data = [
     icon: 'ion-ios-gear-outline',
     color: 'aqua',
     number: [90, <small key="temp">%</small>],
-    text: 'CPU TRAFFIC'
+    text: 'CPU TRAFFIC',
   },
   {
     icon: 'fab-google-plus-g',
     color: 'red',
     number: '41,410',
-    text: 'Likes'
+    text: 'Likes',
   },
   {
     icon: 'ion-ios-cart-outline',
     color: 'green',
     number: '760',
-    text: 'Sales'
+    text: 'Sales',
   },
   {
     icon: 'ion-ios-people-outline',
     color: 'yellow',
     number: '2,000',
-    text: 'New Members'
-  }
+    text: 'New Members',
+  },
 ];
 
 const UpperInfoBoxes = () =>

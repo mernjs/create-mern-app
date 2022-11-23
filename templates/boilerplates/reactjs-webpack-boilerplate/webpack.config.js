@@ -16,7 +16,7 @@ const fileExtensions = [
   'svg',
   'ttf',
   'woff',
-  'woff2'
+  'woff2',
 ];
 
 const options = {
@@ -25,7 +25,7 @@ const options = {
   output: {
     filename: 'app.bundle.js',
     path: path.resolve(__dirname, 'build'),
-    clean: true
+    clean: true,
   },
   module: {
     rules: [
@@ -33,37 +33,37 @@ const options = {
         test: /\.(css|scss)$/,
         use: [
           {
-            loader: 'style-loader'
+            loader: 'style-loader',
           },
           {
-            loader: 'css-loader'
+            loader: 'css-loader',
           },
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true
-            }
-          }
-        ]
+              sourceMap: true,
+            },
+          },
+        ],
       },
       {
         test: /\.(js|jsx)$/,
         use: [
           {
-            loader: 'source-map-loader'
+            loader: 'source-map-loader',
           },
           {
-            loader: 'babel-loader'
-          }
+            loader: 'babel-loader',
+          },
         ],
-        exclude: /node_modules/
-      }
-    ]
+        exclude: /node_modules/,
+      },
+    ],
   },
   resolve: {
     extensions: fileExtensions
       .map((extension) => '.' + extension)
-      .concat(['.js', '.jsx', '.ts', '.tsx', '.css'])
+      .concat(['.js', '.jsx', '.ts', '.tsx', '.css']),
   },
   plugins: [
     new Dotenv(),
@@ -74,12 +74,12 @@ const options = {
       template: path.join(__dirname, 'public', 'index.html'),
       filename: 'index.html',
       chunks: ['index'],
-      cache: false
-    })
+      cache: false,
+    }),
   ],
   infrastructureLogging: {
-    level: 'info'
-  }
+    level: 'info',
+  },
 };
 
 if (env.NODE_ENV === 'development') {
@@ -89,9 +89,9 @@ if (env.NODE_ENV === 'development') {
     minimize: true,
     minimizer: [
       new TerserPlugin({
-        extractComments: false
-      })
-    ]
+        extractComments: false,
+      }),
+    ],
   };
 }
 

@@ -6,8 +6,8 @@ const AuthReducer = createSlice({
   initialState: {
     user: {
       name: 'vijay',
-      email: 'vijay@gmail.com'
-    }
+      email: 'vijay@gmail.com',
+    },
   },
 
   reducers: {
@@ -16,8 +16,8 @@ const AuthReducer = createSlice({
     },
     logout: (state, action) => {
       state.user = null;
-    }
-  }
+    },
+  },
 });
 
 export const AuthActions = AuthReducer.actions;

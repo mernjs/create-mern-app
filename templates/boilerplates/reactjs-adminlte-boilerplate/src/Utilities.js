@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 import { CoreActions } from './reducers/CoreReducer';
 
 const instance = axios.create({
-  baseURL: process.env.REACT_APP_API_URL
+  baseURL: process.env.REACT_APP_API_URL,
 });
 
 instance.interceptors.request.use(
@@ -18,7 +18,7 @@ instance.interceptors.request.use(
   },
   (err) => {
     return Promise.reject(err);
-  }
+  },
 );
 
 export default instance;

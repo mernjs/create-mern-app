@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "react-scripts  start",
     "build": "react-scripts build",
-    "lint": "eslint src/**/*.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix --ext .js,.jsx .",
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'"
   },
   "dependencies": {

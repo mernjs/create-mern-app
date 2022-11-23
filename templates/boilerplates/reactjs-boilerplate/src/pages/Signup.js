@@ -11,7 +11,7 @@ const Signup = () => {
   const {
     handleSubmit,
     control,
-    formState: { isSubmitting, errors }
+    formState: { isSubmitting, errors },
   } = useForm({ mode: 'onChange' });
 
   const dispatch = useDispatch();
@@ -47,8 +47,8 @@ const Signup = () => {
                 required: 'Name is required.',
                 maxLength: {
                   value: 20,
-                  message: 'This input exceed maxLength.'
-                }
+                  message: 'This input exceed maxLength.',
+                },
               }}
             />
             <Controller
@@ -89,7 +89,7 @@ const Signup = () => {
                 />
               )}
               rules={{
-                required: 'Comfirm Password is required.'
+                required: 'Comfirm Password is required.',
               }}
             />
             <Button
@@ -100,7 +100,7 @@ const Signup = () => {
               {isSubmitting ? 'Submitting...' : 'Sign Up'}
             </Button>
             <div>
-              Don't have an account? <Link to="/login">Login</Link>
+              Don&apos;t have an account? <Link to="/login">Login</Link>
             </div>
           </form>
         </Container>

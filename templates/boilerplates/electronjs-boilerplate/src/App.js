@@ -3,12 +3,12 @@ import { Provider, useSelector } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import PropTypes from 'prop-types';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate
+  Navigate,
 } from 'react-router-dom';
 import { history } from './Utilities';
 import { store, persistor } from './Store';
@@ -22,10 +22,16 @@ const AuthRoute = ({ children }) => {
   const user = useSelector((state) => state.auth.user);
   return user !== null ? <Navigate to="/" /> : children;
 };
+AuthRoute.propTypes = {
+  children: PropTypes.element,
+};
 
 const PrivateRoute = ({ children }) => {
   const user = useSelector((state) => state.auth.user);
   return user !== null ? children : <Navigate to={{ pathname: '/login' }} />;
+};
+PrivateRoute.propTypes = {
+  children: PropTypes.element,
 };
 
 const AppRoutes = () => {

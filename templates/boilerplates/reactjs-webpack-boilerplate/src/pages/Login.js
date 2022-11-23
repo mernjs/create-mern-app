@@ -11,7 +11,7 @@ const Login = () => {
   const {
     handleSubmit,
     control,
-    formState: { isSubmitting, errors }
+    formState: { isSubmitting, errors },
   } = useForm({ mode: 'onChange' });
 
   const dispatch = useDispatch();
@@ -66,7 +66,7 @@ const Login = () => {
               {isSubmitting ? 'Submitting...' : 'Log In'}
             </Button>
             <div>
-              Don't have an account? <Link to="/signup"> Signup</Link>
+              Don&apos;t have an account? <Link to="/signup"> Signup</Link>
             </div>
           </form>
         </Container>

@@ -11,11 +11,11 @@ const path = require('path');
 config.entry = [
   'webpack/hot/dev-server',
   `webpack-dev-server/client?hot=true&live-reload=true&hostname=localhost&port=${env.PORT}`,
-  config.entry
+  config.entry,
 ];
 
 config.plugins = [new webpack.HotModuleReplacementPlugin()].concat(
-  config.plugins || []
+  config.plugins || [],
 );
 
 const compiler = webpack(config);
@@ -30,18 +30,18 @@ const server = new WebpackDevServer(
     port: env.PORT,
     historyApiFallback: true,
     static: {
-      directory: path.join(__dirname, '../build')
+      directory: path.join(__dirname, '../build'),
     },
     devMiddleware: {
       publicPath: `http://localhost:${env.PORT}/`,
-      writeToDisk: true
+      writeToDisk: true,
     },
     headers: {
-      'Access-Control-Allow-Origin': '*'
+      'Access-Control-Allow-Origin': '*',
     },
-    allowedHosts: 'all'
+    allowedHosts: 'all',
   },
-  compiler
+  compiler,
 );
 
 if (process.env.NODE_ENV === 'development' && module.hot) {

@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 import apiRequest, {
   formSubmitStart,
   formSubmitSuccess,
-  formSubmitError
+  formSubmitError,
 } from '../Utilities';
 import { AuthActions } from '../reducers/AuthReducer';
 
@@ -77,7 +77,7 @@ const Login = (props) => {
 
 export default reduxForm({
   validate,
-  form: 'login'
+  form: 'login',
 })(Login);
 
 const ScrollView = styled.div`

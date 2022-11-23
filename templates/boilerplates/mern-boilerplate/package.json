@@ -6,7 +6,8 @@
     "dev": "NODE_ENV=development nodemon server.js",
     "build": "next build",
     "migration": "migrate-mongo",
-    "lint": "eslint src/**/*.js api/**/*.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix --ext .js,.jsx .",
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'"
   },
   "dependencies": {

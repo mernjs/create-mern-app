@@ -2,7 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import {
   createStackNavigator,
-  CardStyleInterpolators
+  CardStyleInterpolators,
 } from '@react-navigation/stack';
 import { StatusBar } from 'react-native';
 import Toast from 'react-native-toast-message';
@@ -20,8 +20,8 @@ const config = {
     mass: 3,
     overshootClamping: true,
     restDisplacementThreshold: 0.01,
-    restSpeedThreshold: 0.01
-  }
+    restSpeedThreshold: 0.01,
+  },
 };
 
 const App = () => {
@@ -35,7 +35,7 @@ const App = () => {
       <Stack.Navigator
         initialRouteName="Dashboard"
         screenOptions={{
-          cardStyleInterpolator: CardStyleInterpolators.forNoAnimation
+          cardStyleInterpolator: CardStyleInterpolators.forNoAnimation,
         }}
       >
         <Stack.Screen
@@ -47,8 +47,8 @@ const App = () => {
             headerTintColor: 'white',
             transitionSpec: {
               open: config,
-              close: config
-            }
+              close: config,
+            },
           })}
         />
         <Stack.Screen
@@ -60,8 +60,8 @@ const App = () => {
             headerTintColor: 'white',
             transitionSpec: {
               open: config,
-              close: config
-            }
+              close: config,
+            },
           })}
         />
         <Stack.Screen
@@ -73,8 +73,8 @@ const App = () => {
             headerTintColor: 'white',
             transitionSpec: {
               open: config,
-              close: config
-            }
+              close: config,
+            },
           })}
         />
       </Stack.Navigator>

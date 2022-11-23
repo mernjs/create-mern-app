@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 export default (props) => {
-  let {
+  const {
     input,
     label,
     type,
     placeholder,
-    meta: { touched, error }
+    meta: { touched, error },
   } = props;
   return (
     <TextInput>

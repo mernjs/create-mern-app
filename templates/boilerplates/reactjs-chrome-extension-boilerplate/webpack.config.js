@@ -11,7 +11,7 @@ const Dotenv = require('dotenv-webpack');
 const ASSET_PATH = process.env.ASSET_PATH || '/';
 
 const alias = {
-  'react-dom': '@hot-loader/react-dom'
+  'react-dom': '@hot-loader/react-dom',
 };
 
 const secretsPath = path.join(__dirname, 'secrets.' + env.NODE_ENV + '.js');
@@ -26,7 +26,7 @@ const fileExtensions = [
   'svg',
   'ttf',
   'woff',
-  'woff2'
+  'woff2',
 ];
 
 if (fileSystem.existsSync(secretsPath)) {
@@ -38,13 +38,13 @@ const options = {
   entry: {
     popup: path.join(__dirname, 'src', 'index.js'),
     background: path.join(__dirname, 'Background.js'),
-    contentScript: path.join(__dirname, 'ContentScript.js')
+    contentScript: path.join(__dirname, 'ContentScript.js'),
   },
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'build'),
     clean: true,
-    publicPath: ASSET_PATH
+    publicPath: ASSET_PATH,
   },
   module: {
     rules: [
@@ -52,48 +52,48 @@ const options = {
         test: /\.(css|scss)$/,
         use: [
           {
-            loader: 'style-loader'
+            loader: 'style-loader',
           },
           {
-            loader: 'css-loader'
+            loader: 'css-loader',
           },
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true
-            }
-          }
-        ]
+              sourceMap: true,
+            },
+          },
+        ],
       },
       {
         test: new RegExp('.(' + fileExtensions.join('|') + ')$'),
         type: 'asset/resource',
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.html$/,
         loader: 'html-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.(js|jsx)$/,
         use: [
           {
-            loader: 'source-map-loader'
+            loader: 'source-map-loader',
           },
           {
-            loader: 'babel-loader'
-          }
+            loader: 'babel-loader',
+          },
         ],
-        exclude: /node_modules/
-      }
-    ]
+        exclude: /node_modules/,
+      },
+    ],
   },
   resolve: {
     alias: alias,
     extensions: fileExtensions
       .map((extension) => '.' + extension)
-      .concat(['.js', '.jsx', '.ts', '.tsx', '.css'])
+      .concat(['.js', '.jsx', '.ts', '.tsx', '.css']),
   },
   plugins: [
     new Dotenv(),
@@ -106,46 +106,46 @@ const options = {
           from: 'public/manifest.json',
           to: path.join(__dirname, 'build'),
           force: true,
-          transform: function (content, path) {
+          transform: function(content, path) {
             return Buffer.from(
               JSON.stringify({
                 description: process.env.npm_package_description,
                 version: process.env.npm_package_version,
-                ...JSON.parse(content.toString())
-              })
+                ...JSON.parse(content.toString()),
+              }),
             );
-          }
-        }
-      ]
+          },
+        },
+      ],
     }),
     new CopyWebpackPlugin({
       patterns: [
         {
           from: 'public/assets/icons/icon-128x128.png',
           to: path.join(__dirname, 'build'),
-          force: true
-        }
-      ]
+          force: true,
+        },
+      ],
     }),
     new CopyWebpackPlugin({
       patterns: [
         {
           from: 'public/assets/icons/icon-48x48.png',
           to: path.join(__dirname, 'build'),
-          force: true
-        }
-      ]
+          force: true,
+        },
+      ],
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'public', 'index.html'),
       filename: 'popup.html',
       chunks: ['popup'],
-      cache: false
-    })
+      cache: false,
+    }),
   ],
   infrastructureLogging: {
-    level: 'info'
-  }
+    level: 'info',
+  },
 };
 
 if (env.NODE_ENV === 'development') {
@@ -155,9 +155,9 @@ if (env.NODE_ENV === 'development') {
     minimize: true,
     minimizer: [
       new TerserPlugin({
-        extractComments: false
-      })
-    ]
+        extractComments: false,
+      }),
+    ],
   };
 }
 

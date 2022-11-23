@@ -10,7 +10,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect
+  Redirect,
 } from 'react-router-dom';
 import Footer from 'components/Footer';
 import { AuthActions } from 'reducers/AuthReducer';
