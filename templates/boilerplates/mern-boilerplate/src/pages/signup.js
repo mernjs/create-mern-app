@@ -100,7 +100,7 @@ const Signup = () => {
               {isSubmitting ? 'Submitting...' : 'Sign Up'}
             </Button>
             <div>
-              Don't have an account? <Link href="/login">Login</Link>
+              Don&apos;t have an account? <Link href="/login">Login</Link>
             </div>
           </form>
         </Container>

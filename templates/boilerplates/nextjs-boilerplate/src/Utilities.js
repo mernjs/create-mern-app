@@ -1,8 +1,6 @@
-import { createMemoryHistory } from 'history';
-import { createBrowserHistory as createHistory } from 'history';
+import { createMemoryHistory, createBrowserHistory as createHistory } from 'history';
 import axios from 'axios';
 import store from './Store';
-import _ from 'lodash';
 import { toast } from 'react-toastify';
 
 const instance = axios.create({

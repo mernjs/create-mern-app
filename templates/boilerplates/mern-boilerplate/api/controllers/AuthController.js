@@ -6,17 +6,17 @@ class AuthController {
     try {
       const user = await User.findOne({ email: req.body.email });
       if (!user) {
-return Utilities.apiResponse(res, 422, 'User Not Registered', []);
-}
+        return Utilities.apiResponse(res, 422, 'User Not Registered', []);
+      }
       const isMatch = await user.isValidPassword(req.body.password);
       if (!isMatch) {
-return Utilities.apiResponse(
+        return Utilities.apiResponse(
           res,
           422,
           'Email or Password not valid',
           [],
         );
-}
+      }
       delete user._doc.password;
       delete user._doc.__v;
       const accessToken = await Utilities.signAccessToken(user._doc);
@@ -33,12 +33,12 @@ return Utilities.apiResponse(
     try {
       const doesExist = await User.findOne({ email: req.body.email });
       if (doesExist) {
-return Utilities.apiResponse(
+        return Utilities.apiResponse(
           res,
           422,
           'Email is already been registered',
         );
-}
+      }
       const user = new User(req.body);
       const savedUser = await user.save();
       const data = {

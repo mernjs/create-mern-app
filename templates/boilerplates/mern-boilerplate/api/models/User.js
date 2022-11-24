@@ -19,7 +19,7 @@ const UserSchema = new Schema({
   },
 });
 
-UserSchema.pre('save', async function(next) {
+UserSchema.pre('save', async function (next) {
   try {
     if (this.isNew) {
       const salt = await bcrypt.genSalt(10);
@@ -32,11 +32,11 @@ UserSchema.pre('save', async function(next) {
   }
 });
 
-UserSchema.methods.isValidPassword = async function(password) {
+UserSchema.methods.isValidPassword = async function (password) {
   try {
     return await bcrypt.compare(password, this.password);
   } catch (error) {
-    throw error;
+    console.log(error);
   }
 };
 

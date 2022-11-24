@@ -9,12 +9,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import '../App.css';
 
 class MyApp extends App {
-  static async getInitialProps({ Component, ctx }) {
+  static getInitialProps = async ({ Component, ctx }) => {
     const pageProps = Component.getInitialProps
       ? await Component.getInitialProps(ctx)
       : {};
     return { pageProps };
-  }
+  };
 
   render() {
     const { Component, pageProps, store, router } = this.props;

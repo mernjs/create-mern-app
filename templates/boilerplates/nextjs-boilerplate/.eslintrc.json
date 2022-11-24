@@ -12,7 +12,10 @@
   "plugins": ["react"],
   "rules": {
     "object-curly-spacing": "off",
-    "indent": "off"
+    "indent": "off",
+    "require-jsdoc": "off",
+    "max-len": "off",
+    "operator-linebreak": "off"
   },
   "settings": {
     "react": {

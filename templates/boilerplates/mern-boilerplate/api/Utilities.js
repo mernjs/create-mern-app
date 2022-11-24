@@ -1,23 +1,23 @@
 const apiResponse = (res, status, message, data) => {
-  let new_message = '';
+  let newMessage = '';
   if (process.env.APP_DEBUG === 'true') {
-    new_message = message?.message || message;
+    newMessage = message?.message || message;
   } else {
     if (message.message) {
-      new_message = 'somthing went wroung please try again later';
+      newMessage = 'somthing went wroung please try again later';
     } else {
-      new_message = message;
+      newMessage = message;
     }
   }
   res.status(status).send({
     data: data || [],
     status: status,
-    message: new_message,
+    message: newMessage,
   });
 };
 
-module.exports.view = (res, file_name, title, message, data) => {
-  res.render(file_name, {
+module.exports.view = (res, fileName, title, message, data) => {
+  res.render(fileName, {
     data: data || [],
     title: title || '',
     message: message?.message || message,
@@ -81,8 +81,8 @@ module.exports.verifyAccessToken = (req, res, next) => {
   try {
     const JWT = require('jsonwebtoken');
     if (!req.headers['authorization']) {
-return apiResponse(res, 401, 'No Authorization Key Provided', []);
-}
+      return apiResponse(res, 401, 'No Authorization Key Provided', []);
+    }
     const token = req.headers['authorization'];
     JWT.verify(token, process.env.JWT_SECRET, (err, payload) => {
       if (err) {

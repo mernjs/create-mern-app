@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default () => {
+const Footer = () => {
   return (
-    <Footer>
+    <FooterWrapper>
       <div className="container">
         <div className="row">
           <p style={{ marginLeft: '30px', marginRight: '30px' }}>
@@ -11,7 +11,8 @@ export default () => {
               ©2021{' '}
               <a
                 href="https://mernjs.github.io/create-mern-app"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 {' '}
                 Create MERN App
@@ -19,7 +20,11 @@ export default () => {
             </span>
             <span style={{ float: 'right', lineHeight: '60px' }}>
               <b>By:</b>{' '}
-              <a href="https://vijay-pratap-singh.netlify.app" target="_blank" rel="noreferrer">
+              <a
+                href="https://vijay-pratap-singh.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {' '}
                 Vijay Pratap Singh
               </a>
@@ -27,11 +32,13 @@ export default () => {
           </p>
         </div>
       </div>
-    </Footer>
+    </FooterWrapper>
   );
 };
 
-const Footer = styled.footer`
+export default Footer;
+
+const FooterWrapper = styled.footer`
   background-color: #fff;
   width: 100%;
 `;

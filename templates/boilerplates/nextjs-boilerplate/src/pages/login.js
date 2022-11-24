@@ -68,7 +68,7 @@ const Login = () => {
               {isSubmitting ? 'Submitting...' : 'Log In'}
             </Button>
             <div>
-              Don't have an account? <Link href="/signup"> Signup</Link>
+              Don&apos;t have an account? <Link href="/signup"> Signup</Link>
             </div>
           </form>
         </Container>
