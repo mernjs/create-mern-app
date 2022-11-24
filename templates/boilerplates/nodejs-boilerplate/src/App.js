@@ -9,8 +9,8 @@ const AuthController = require('./controllers/AuthController');
 Route.route('/')
   .get((req, res) =>
     Utilities.apiResponse(res, 200, 'Create MERN App', {
-      By: 'Vijay Pratap Singh'
-    })
+      By: 'Vijay Pratap Singh',
+    }),
   )
   .all(Utilities.send405);
 

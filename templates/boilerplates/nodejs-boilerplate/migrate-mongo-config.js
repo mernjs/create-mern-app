@@ -4,12 +4,12 @@ const config = {
     url: ENV.MONGO_URI,
     options: {
       useNewUrlParser: true,
-      useUnifiedTopology: true
+      useUnifiedTopology: true,
       //   connectTimeoutMS: 3600000,
       //   socketTimeoutMS: 3600000,
-    }
+    },
   },
   migrationsDir: 'src/database/migrations',
-  changelogCollectionName: 'changelog'
+  changelogCollectionName: 'changelog',
 };
 module.exports = config;

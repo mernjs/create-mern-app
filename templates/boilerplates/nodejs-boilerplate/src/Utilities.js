@@ -1,26 +1,26 @@
 const apiResponse = (res, status, message, data) => {
-  let new_message = '';
+  let newMessage = '';
   if (process.env.APP_DEBUG === 'true') {
-    new_message = message?.message || message;
+    newMessage = message?.message || message;
   } else {
     if (message.message) {
-      new_message = 'somthing went wroung please try again later';
+      newMessage = 'somthing went wroung please try again later';
     } else {
-      new_message = message;
+      newMessage = message;
     }
   }
   res.status(status).send({
     data: data || [],
     status: status,
-    message: new_message
+    message: newMessage,
   });
 };
 
-module.exports.view = (res, file_name, title, message, data) => {
-  res.render(file_name, {
+module.exports.view = (res, fileName, title, message, data) => {
+  res.render(fileName, {
     data: data || [],
     title: title || '',
-    message: message?.message || message
+    message: message?.message || message,
   });
 };
 
@@ -42,7 +42,7 @@ module.exports.send405 = (req, res, next) => {
 
 module.exports.apiKeyValidate = (req, res, next) => {
   try {
-    let apiKey = req.headers.apikey;
+    const apiKey = req.headers.apikey;
     if (!apiKey) {
       return apiResponse(res, 401, 'No API Key Provided', []);
     } else if (apiKey !== process.env.API_KEY) {
@@ -62,7 +62,7 @@ module.exports.signAccessToken = (payload) => {
       const options = {
         expiresIn: '7d',
         issuer: 'pickurpage.com',
-        audience: payload._id.valueOf()
+        audience: payload._id.valueOf(),
       };
       JWT.sign(payload, process.env.JWT_SECRET, options, (error, token) => {
         if (error) {
@@ -80,8 +80,9 @@ module.exports.signAccessToken = (payload) => {
 module.exports.verifyAccessToken = (req, res, next) => {
   try {
     const JWT = require('jsonwebtoken');
-    if (!req.headers['authorization'])
+    if (!req.headers['authorization']) {
       return apiResponse(res, 401, 'No Authorization Key Provided', []);
+    }
     const token = req.headers['authorization'];
     JWT.verify(token, process.env.JWT_SECRET, (err, payload) => {
       if (err) {

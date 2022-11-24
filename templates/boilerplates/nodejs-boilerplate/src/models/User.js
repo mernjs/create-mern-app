@@ -6,20 +6,20 @@ const UserSchema = new Schema(
   {
     name: {
       type: String,
-      required: true
+      required: true,
     },
     email: {
       type: String,
       required: true,
       lowercase: true,
-      unique: true
+      unique: true,
     },
     password: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
-  { timestamps: { currentTime: () => Date.now() } }
+  { timestamps: { currentTime: () => Date.now() } },
 );
 
 UserSchema.pre('save', async function (next) {
