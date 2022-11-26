@@ -22,11 +22,7 @@ Before downloading the source code, go over the official documentation of <a tar
 <h4>Creating an App</h4>
 
 ```
-npm i create-mernjs-app -g 
-```
-
-```
-create-mern-app my_project  
+npx create-mernjs-app my_project 
 ```
 
 Read official [docs](https://mernjs.github.io/create-mern-app) for more information.

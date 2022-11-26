@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "create-mern-app": "./index.js"
+    "create-mernjs-app": "./index.js"
   },
   "preferGlobal": true,
   "author": "Vijay Pratap Singh <vijaypratap218@gmail.com> (https://mernjs.github.io/create-mern-app)",
