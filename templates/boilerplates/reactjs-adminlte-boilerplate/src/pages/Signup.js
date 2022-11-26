@@ -10,6 +10,7 @@ import apiRequest, {
   formSubmitError,
 } from '../Utilities';
 import { AuthActions } from '../reducers/AuthReducer';
+import PropTypes from 'prop-types';
 
 const validate = (values) => {
   const errors = {};

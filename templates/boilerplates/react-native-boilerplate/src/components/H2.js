@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components/native';
+import PropTypes from 'prop-types';
 
 const Heading = (props) => {
   return <H2 {...props}>{props.children}</H2>;
 };
 
 Heading.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.string,
 };
 
 export default Heading;

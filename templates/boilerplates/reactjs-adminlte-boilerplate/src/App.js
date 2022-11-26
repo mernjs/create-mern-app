@@ -39,8 +39,8 @@ const PrivateRoute = ({ component: Component, ...rest }) => {
   );
 };
 PrivateRoute.propTypes = {
-  component: PropTypes.element,
-  location: PropTypes.string,
+  component: PropTypes.any,
+  location: PropTypes.object,
 };
 
 const AuthRoute = ({ component: Component, ...rest }) => {
@@ -55,8 +55,7 @@ const AuthRoute = ({ component: Component, ...rest }) => {
   );
 };
 AuthRoute.propTypes = {
-  component: PropTypes.element,
-  location: PropTypes.string,
+  component: PropTypes.any,
 };
 
 const AppRoutes = () => {
