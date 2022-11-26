@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default (props) => {
+const Footer = () => {
   return (
-    <Footer>
+    <FooterWrapper>
       <div className="container">
         <div className="row">
-          <p style={{ marginLeft: '150px', marginRight: '30px' }}>
+          <p style={{ marginLeft: '30px', marginRight: '30px' }}>
             <span style={{ textAlign: 'left', lineHeight: '60px' }}>
               ©2021{' '}
               <a
@@ -32,11 +32,13 @@ export default (props) => {
           </p>
         </div>
       </div>
-    </Footer>
+    </FooterWrapper>
   );
 };
 
-const Footer = styled.footer`
+export default Footer;
+
+const FooterWrapper = styled.footer`
   background-color: #fff;
   width: 100%;
 `;

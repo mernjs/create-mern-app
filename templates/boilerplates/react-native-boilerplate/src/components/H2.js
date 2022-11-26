@@ -1,9 +1,15 @@
 import React from 'react';
 import styled from 'styled-components/native';
 
-export default (props) => {
+const Heading = (props) => {
   return <H2 {...props}>{props.children}</H2>;
 };
+
+Heading.propTypes = {
+  children: PropTypes.element,
+};
+
+export default Heading;
 
 const H2 = styled.Text`
   color: rgba(0, 0, 0, 0.87);

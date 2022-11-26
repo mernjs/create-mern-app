@@ -65,7 +65,7 @@ const Login = (props) => {
               {submitting ? 'Submitting...' : 'Log In'}
             </Button>
             <div>
-              Don't have an account? <Link to="/signup"> Signup</Link>
+              Don&apos;t have an account? <Link to="/signup"> Signup</Link>
             </div>
           </form>
         </Container>
@@ -73,6 +73,11 @@ const Login = (props) => {
       <Footer />
     </>
   );
+};
+
+Login.propTypes = {
+  handleSubmit: PropTypes.func,
+  submitting: PropTypes.bool,
 };
 
 export default reduxForm({

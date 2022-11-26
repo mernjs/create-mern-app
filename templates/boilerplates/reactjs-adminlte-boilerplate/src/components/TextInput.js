@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-export default (props) => {
+const Input = (props) => {
   const {
     input,
     label,
@@ -22,6 +23,18 @@ export default (props) => {
     </TextInput>
   );
 };
+
+Input.propTypes = {
+  input: PropTypes.object,
+  label: PropTypes.string,
+  type: PropTypes.string,
+  placeholder: PropTypes.string,
+  meta: PropTypes.object,
+  touched: PropTypes.bool,
+  error: PropTypes.string,
+};
+
+export default Input;
 
 const TextInput = styled.div`
   margin-bottom: 16px;

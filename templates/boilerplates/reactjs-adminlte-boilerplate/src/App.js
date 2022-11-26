@@ -3,7 +3,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from 'Store';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import PropTypes from 'prop-types';
 import { Provider, useSelector, useDispatch } from 'react-redux';
 import AdminLTE, { Sidebar, Navbar } from 'adminlte-2-react';
 import {
@@ -38,6 +38,10 @@ const PrivateRoute = ({ component: Component, ...rest }) => {
     />
   );
 };
+PrivateRoute.propTypes = {
+  component: PropTypes.element,
+  location: PropTypes.string,
+};
 
 const AuthRoute = ({ component: Component, ...rest }) => {
   const user = useSelector((state) => state.auth.user);
@@ -49,6 +53,10 @@ const AuthRoute = ({ component: Component, ...rest }) => {
       }
     />
   );
+};
+AuthRoute.propTypes = {
+  component: PropTypes.element,
+  location: PropTypes.string,
 };
 
 const AppRoutes = () => {

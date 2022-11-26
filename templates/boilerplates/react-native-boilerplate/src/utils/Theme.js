@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
+import PropTypes from 'prop-types';
 
 const themes = {
   defaultTheme: {
@@ -33,12 +34,12 @@ const themes = {
   },
 };
 
-export default ({ children }) => {
-  const is_dark_theme = useSelector((state) => state.core.is_dark_theme);
+const Theme = ({ children }) => {
+  const isDarkTheme = useSelector((state) => state.core.isDarkTheme);
   return (
     <ThemeProvider
       theme={
-        themes[is_dark_theme ? 'darkTheme' : 'defaultTheme'] ||
+        themes[isDarkTheme ? 'darkTheme' : 'defaultTheme'] ||
         themes.defaultTheme
       }
     >
@@ -46,3 +47,9 @@ export default ({ children }) => {
     </ThemeProvider>
   );
 };
+
+Theme.propTypes = {
+  children: PropTypes.element,
+};
+
+export default Theme;
