@@ -1,6 +1,6 @@
 {
   "name": "create-mern-app",
-  "version": "16.0.10",
+  "version": "17.0.0",
   "description": "Create MERN App provide boilerplates for building Web App, Mobile App, Desktop App & Chrome Extension in JavaScript.",
   "main": "index.js",
   "scripts": {
