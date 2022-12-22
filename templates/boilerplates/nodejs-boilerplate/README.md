@@ -4,20 +4,14 @@
   <a target="_blank" href="https://mernjs.github.io/create-mern-app" rel="noopener">
  <img src="https://mernjs.github.io/create-mern-app/assets/logo1.png" alt="Logo"></a>
 </p>
-<h5 align="center">Set up a modern web, mobile, AR/VR and desktop app by running one command.</h5>
+<h5 align="center">Set up a modern web, mobile and desktop app by running one command.</h5>
 
 <h5 align="center">
 If you find this code useful, don't forget to <a target="_blank" href="https://github.com/mernjs/create-mern-app" rel="noopener">⭐ star the repo ⭐</a> 
 </h5>
 
 <h4>Create MERN App</h4>
-<h5>Create MERN App provide boilerplates for building Web App, Mobile App, Desktop App & Chrome Extension in JavaScript.</h5>
-
-<blockquote>
-<h5>
-Before downloading the source code, go over the official documentation of <a target="_blank" href="https://mernjs.github.io/create-mern-app/mern-roadmap" rel="noopener">MERN</a>  then continue with the Create MERN App.
-</h5>
-</blockquote>
+<h5>Create MERN App provide boilerplates with authentication for building Web App, Mobile App, Desktop App & Chrome Extension in JavaScript.</h5>
 
 <h4>Creating an App</h4>
 
