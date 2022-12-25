@@ -13,9 +13,6 @@ If you find this code useful, don't forget to <a target="_blank" href="https://g
 <h4>Create MERN App</h4>
 <h5>Create MERN App provide boilerplates with authentication for building Web App, Mobile App, Desktop App & Chrome Extension in JavaScript.</h5>
 
-<h4>Why is Create MERN App?</h4>
-Create MERN App allows you to create a new MERN app within seconds. It is maintained by the creators of Create MERN App.
-
 <h4>Creating an App</h4>
 
 ```
@@ -35,6 +32,9 @@ npx create-mernjs-app my_project
 | 7 | [ReactJS AdminLTE Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/reactjs-adminlte-boilerplate) | Web | @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom react-scripts react-toastify styled-components web-vitals |
 | 8 | [ReactJS Chrome Extension Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/reactjs-chrome-extension-boilerplate) | Web | @hot-loader/react-dom @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom webpack react-toastify styled-components |
 | 9 | [ReactJS Webpack Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/reactjs-webpack-boilerplate) | Web | @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom webpack react-toastify styled-components |
+
+<h4>Why is Create MERN App?</h4>
+<h5>Create MERN App allows you to create a new MERN app within seconds. It is maintained by the creators of Create MERN App.</h5>
 
 <h4>Support</h4>
 
