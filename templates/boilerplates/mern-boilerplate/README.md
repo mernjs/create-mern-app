@@ -34,7 +34,7 @@ npx create-mernjs-app my_project
 | 9 | [ReactJS Webpack Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/reactjs-webpack-boilerplate) | Web | @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom webpack react-toastify styled-components |
 
 <h4>Why is Create MERN App?</h4>
-<h5>Create MERN App allows you to create a new MERN app within seconds. It is maintained by the creators of Create MERN App.</h5>
+Create MERN App allows you to create a new MERN app within seconds. It is maintained by the creators of Create MERN App.
 
 <h4>Support</h4>
 
