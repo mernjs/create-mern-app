@@ -18,7 +18,7 @@ const Login = () => {
 
   const login = async (payload) => {
     try {
-      const response = await apiRequest.post(`auth/login`, payload);
+      const response = await apiRequest.post(`login`, payload);
       dispatch(AuthActions.setAuth(response.data.data));
     } catch (error) {
       console.log('login', error);
