@@ -3,7 +3,7 @@ import { Header, Footer, TextInput, H2, Button } from '../components';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import apiRequest from '../Utilities';
+import apiRequest, { showToast } from '../Utilities';
 import { AuthActions } from '../reducers/AuthReducer';
 import { useForm, Controller } from 'react-hook-form';
 
@@ -21,7 +21,7 @@ const Login = () => {
       const response = await apiRequest.post(`login`, payload);
       dispatch(AuthActions.setAuth(response.data.data));
     } catch (error) {
-      console.log('login', error);
+      showToast(error?.response?.data?.message, 'error');
     }
   };
 
