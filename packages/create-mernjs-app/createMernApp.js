@@ -44,10 +44,11 @@ async function init() {
       Helpers.checkForLatestVersion().then(latest => {
 
         if (latest && semver.lt(Constants.package.version, latest)) {
-          const message = `You are running \`create-mernjs-app\` ${chalk.red(Constants.package.version)}, which is behind the latest release ${chalk.green(latest)}.\n\n`
-          const message2 = 'We recommend always using the latest version of create-mernjs-app.'
+          const message1 = `You are running \`create-mernjs-app\` ${chalk.bold.red(Constants.package.version)}, which is behind the latest release ${chalk.bold.green(latest)}.`
+          const message2 = 'npm install create-mernjs-app -g'
+          const message3 = 'We recommend always using the latest version of create-mernjs-app.'
           console.log('\n')
-          console.log(yosay(`${chalk.bold.green(' ** Create MERN App ** ')} \n\n ${chalk.yellow(message)} \n ${chalk.green(message2)} \n `, { maxLength: 55 }));
+          console.log(yosay(`${chalk.green(' ** Create MERN App ** ')} \n\n ${chalk.yellow(message1)} \n\n ${chalk.green(message2)} \n\n ${chalk.blue(message3)} \n `, { maxLength: 55 }));
           console.log('\n')
           process.exit(1);
         } else {
