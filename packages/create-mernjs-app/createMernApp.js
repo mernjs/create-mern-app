@@ -6,6 +6,8 @@ const fs = require("fs-extra");
 const Constants = require('./lib/utils/Constants')
 const yosay = require('yosay')
 const validateProjectName = require('validate-npm-package-name');
+const Helpers = require('./lib/utils/Helpers')
+const semver = require('semver');
 
 function checkAppName(appName) {
   const validationResult = validateProjectName(appName);
@@ -30,7 +32,7 @@ function checkAppName(appName) {
   }
 }
 
-function init() {
+async function init() {
   const program = new commander.Command(Constants.package.name)
     .version(Constants.package.version)
     .arguments('<project-directory>')
@@ -39,40 +41,54 @@ function init() {
     .action((project_name, cmd_obj) => {
       projectName = project_name
       checkAppName(project_name)
-      const currentPath = process.cwd()
-      if (fs.existsSync(`${currentPath}/${project_name}`)) {
-        console.log('')
-        console.log(chalk.red("Folder already exists"));
-        console.log('')
-        return;
-      }
+      Helpers.checkForLatestVersion().then(latest => {
 
-      console.log('Press ^C at any time to quit.')
-      prompt(Constants.select_form)
-        .then(async data => {
-          let project_type = `${data.project_type}`
-          if (cmd_obj.yes) {
-            require('./lib/init')(project_name, { project_type })
+        if (latest && semver.lt(Constants.package.version, latest)) {
+          const message = `You are running \`create-mernjs-app\` ${chalk.red(Constants.package.version)}, which is behind the latest release ${chalk.green(latest)}.\n\n`
+          const message2 = 'We recommend always using the latest version of create-mernjs-app.'
+          console.log('\n')
+          console.log(yosay(`${chalk.bold.green(' ** Create MERN App ** ')} \n\n ${chalk.yellow(message)} \n ${chalk.green(message2)} \n `, { maxLength: 55 }));
+          console.log('\n')
+          process.exit(1);
+        } else {
+          const currentPath = process.cwd()
+          if (fs.existsSync(`${currentPath}/${project_name}`)) {
+            console.log('')
+            console.log(chalk.red("Folder already exists"));
+            console.log('')
             return;
-          } else {
-            prompt(Constants.confirm)
-              .then(confirm => {
-                if (confirm.confirm === true) {
-                  require('./lib/init')(project_name, { project_type })
-                } else {
-                  console.log('Aborted.')
-                  process.exit(0);
-                }
-              }).catch(error => {
-                console.log(error)
-                process.exit(0);
-              })
           }
+          console.log('Press ^C at any time to quit.')
+          prompt(Constants.select_form)
+            .then(async data => {
+              let project_type = `${data.project_type}`
+              if (cmd_obj.yes) {
+                require('./lib/init')(project_name, { project_type })
+                return;
+              } else {
+                prompt(Constants.confirm)
+                  .then(confirm => {
+                    if (confirm.confirm === true) {
+                      require('./lib/init')(project_name, { project_type })
+                    } else {
+                      console.log('Aborted.')
+                      process.exit(0);
+                    }
+                  }).catch(error => {
+                    console.log(error)
+                    process.exit(0);
+                  })
+              }
 
-        }).catch(error => {
-          console.log(error)
-          process.exit(0);
-        })
+            }).catch(error => {
+              console.log(error)
+              process.exit(0);
+            })
+        }
+      }).catch((error) => {
+        console.log(error)
+        process.exit(1);
+      });
     })
     .on(Constants.help, () => {
       let message = `   Create MERN App provide boilerplates with authentication for building Web App, Mobile App, Desktop App & Chrome Extension in JavaScript. ${chalk.cyan('https://mernjs.github.io/create-mern-app')}`;
