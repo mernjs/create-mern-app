@@ -16,6 +16,14 @@ If you find this code useful, don't forget to <a target="_blank" href="https://g
 <h4>Creating an App</h4>
 
 ```
+npm install create-mernjs-app -g 
+
+create-mernjs-app my_project
+```
+
+OR
+
+```
 npx create-mernjs-app my_project 
 ```
 
