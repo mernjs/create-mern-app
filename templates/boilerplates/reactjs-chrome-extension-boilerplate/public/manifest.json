@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Create MERN App",
-  "description": "Create MERN App provide boilerplates with authentication for building Web App, Mobile App, Desktop App & Chrome Extension in JavaScript.",
+  "description": "Create MERN App provide boilerplates with authentication module for building Web App, Mobile App, Desktop App & Chrome Extension in JavaScript.",
   "background": {
     "service_worker": "background.bundle.js"
   },
