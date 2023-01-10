@@ -21,11 +21,11 @@ npm install create-mernjs-app -g
 create-mernjs-app my_project
 ```
 
-OR
+<!-- OR
 
 ```
 npx create-mernjs-app my_project 
-```
+``` -->
 
 <h4>Templates</h4>
 
