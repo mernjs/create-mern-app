@@ -21,7 +21,7 @@ npm install create-mernjs-app -g
 create-mernjs-app my_project
 ```
 
-Read official [Changelog](https://github.com/mernjs/create-mern-app/releases) for more information.
+Read official [changelog](https://github.com/mernjs/create-mern-app/releases) for more information.
 
 <!-- OR
 
