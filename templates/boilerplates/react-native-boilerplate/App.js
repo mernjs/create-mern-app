@@ -5,13 +5,13 @@ import { store } from './src/utils/Store';
 import ThemeProvider from './src/utils/Theme';
 
 const App = () => {
-  return (
-    <Provider store={store}>
-      <ThemeProvider>
-        <Routes />
-      </ThemeProvider>
-    </Provider>
-  );
+    return (
+        <Provider store={store}>
+            <ThemeProvider>
+                <Routes />
+            </ThemeProvider>
+        </Provider>
+    );
 };
 
 export default App;
