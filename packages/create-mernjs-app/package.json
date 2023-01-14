@@ -1,6 +1,6 @@
 {
     "name": "create-mernjs-app",
-    "version": "18.0.8",
+    "version": "18.0.9",
     "description": "Create MERN App provide boilerplates with authentication module for building Web App, Mobile App, Desktop App & Chrome Extension in JavaScript.",
     "main": "./index.js",
     "scripts": {
@@ -18,7 +18,7 @@
         "fs-extra": "^10.1.0",
         "https": "^1.0.0",
         "inquirer": "^8.0.0",
-        "mernjs": "github:mernjs/create-mern-app#c0bcc08c530bd42e4dc66ba767fff39cf5106041",
+        "mernjs": "github:mernjs/create-mern-app#24ffa01f65355428eb2db6ddab4d0697e7f74839",
         "path": "^0.12.7",
         "semver": "^7.3.8",
         "shelljs": "^0.8.5",
