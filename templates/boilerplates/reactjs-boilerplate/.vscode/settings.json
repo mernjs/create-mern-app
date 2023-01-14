@@ -2,7 +2,7 @@
     "editor.formatOnSave": true,
     "editor.cursorBlinking": "blink",
     "editor.cursorStyle": "line",
-    "editor.fontFamily": "'Roboto Mono', monospace;",
+    "editor.fontFamily": "\"'Operator Mono',  'SF Mono', Menlo, Operator Mono, Monaco, 'Courier New', monospace\"",
     "editor.fontSize": 12,
     "editor.fontWeight": "500",
     "editor.letterSpacing": 0,
