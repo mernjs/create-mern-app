@@ -14,7 +14,7 @@ module.exports = async (projectname, { project_type }) => {
   project_key = `${Helpers.generateRadomeString(32)}_${project_typ}`
 
   const destinationPath = `${currentWorkingDir}/${projectname}`
-  const sourcePath = path.join(__dirname, `../../../node_modules/mernjs/templates/boilerplates/${project_typ}/`)
+  const sourcePath = path.join(__dirname, `../../../node_modules/create-mernjs-app/node_modules/mernjs/templates/boilerplates/${project_typ}/`)
   const gitSourcePath = path.join(__dirname, `utils/gitignore.js`)
 
   const appID = Helpers.generateRadomeString(32)

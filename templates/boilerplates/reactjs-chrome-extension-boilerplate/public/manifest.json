@@ -1,27 +1,27 @@
 {
-  "manifest_version": 3,
-  "name": "Create MERN App",
-  "description": "Create MERN App provide boilerplates for building Web App, Mobile App, Desktop App & Chrome Extension in JavaScript.",
-  "background": {
-    "service_worker": "background.bundle.js"
-  },
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": "icon-48x48.png"
-  },
-  "icons": {
-    "128": "icon-128x128.png"
-  },
-  "content_scripts": [
-    {
-      "matches": ["http://*/*", "https://*/*", "<all_urls>"],
-      "js": ["contentScript.bundle.js"]
-    }
-  ],
-  "web_accessible_resources": [
-    {
-      "resources": ["icon-128x128.png", "icon-48x48.png"],
-      "matches": []
-    }
-  ]
+    "manifest_version": 3,
+    "name": "Create MERN App",
+    "description": "Create MERN App provide boilerplates with authentication module for building Web App, Mobile App, Desktop App & Chrome Extension in JavaScript.",
+    "background": {
+        "service_worker": "background.bundle.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon-48x48.png"
+    },
+    "icons": {
+        "128": "icon-128x128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+            "js": ["contentScript.bundle.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["icon-128x128.png", "icon-48x48.png"],
+            "matches": []
+        }
+    ]
 }

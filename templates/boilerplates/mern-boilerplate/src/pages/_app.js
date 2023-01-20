@@ -9,24 +9,24 @@ import 'react-toastify/dist/ReactToastify.css';
 import '../App.css';
 
 class MyApp extends App {
-  static getInitialProps = async ({ Component, ctx }) => {
-    const pageProps = Component.getInitialProps
-      ? await Component.getInitialProps(ctx)
-      : {};
-    return { pageProps };
-  };
+    static getInitialProps = async ({ Component, ctx }) => {
+        const pageProps = Component.getInitialProps
+            ? await Component.getInitialProps(ctx)
+            : {};
+        return { pageProps };
+    };
 
-  render() {
-    const { Component, pageProps, store, router } = this.props;
-    return (
-      <Provider store={store}>
-        <PersistGate loading={null} persistor={store.__PERSISTOR}>
-          <Component {...pageProps} router={router} />
-          <ToastContainer />
-        </PersistGate>
-      </Provider>
-    );
-  }
+    render() {
+        const { Component, pageProps, store, router } = this.props;
+        return (
+            <Provider store={store}>
+                <PersistGate loading={null} persistor={store.__PERSISTOR}>
+                    <Component {...pageProps} router={router} />
+                    <ToastContainer />
+                </PersistGate>
+            </Provider>
+        );
+    }
 }
 
 export default withRedux(makeStore)(MyApp);
