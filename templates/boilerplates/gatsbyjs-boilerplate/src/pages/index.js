@@ -10,13 +10,19 @@ const Dashboard = () => {
             <ScrollView>
                 <Header />
                 <Container>
-                    <h1>Dashboard</h1>
-                    <p>
-                        <b>Name</b>: {user?.name}
-                    </p>
-                    <p>
-                        <b>Email</b>: {user?.email}
-                    </p>
+                    {!user ? (
+                        <h1>Home</h1>
+                    ) : (
+                        <>
+                            <h1>Dashboard</h1>
+                            <p>
+                                <b>Name</b>: {user?.name || ''}
+                            </p>
+                            <p>
+                                <b>Email</b>: {user?.email || ''}
+                            </p>
+                        </>
+                    )}
                 </Container>
             </ScrollView>
             <Footer />
