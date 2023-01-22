@@ -63,6 +63,9 @@ const options = {
                             sourceMap: true,
                         },
                     },
+                    {
+                        loader: 'postcss-loader'
+                    }
                 ],
             },
             {

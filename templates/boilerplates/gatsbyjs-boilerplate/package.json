@@ -34,9 +34,13 @@
         "styled-components": "^5.3.6"
     },
     "devDependencies": {
+        "autoprefixer": "^10.4.13",
         "eslint": "^8.28.0",
         "eslint-config-google": "^0.14.0",
         "eslint-plugin-react": "^7.31.11",
-        "prettier": "^2.7.1"
+        "gatsby-plugin-postcss": "^6.4.0",
+        "postcss": "^8.4.21",
+        "prettier": "^2.7.1",
+        "tailwindcss": "^3.2.4"
     }
 }

@@ -42,5 +42,6 @@ module.exports = {
                 windowKey: '__PRELOADED_STATE__',
             },
         },
+        'gatsby-plugin-postcss',
     ],
 };
