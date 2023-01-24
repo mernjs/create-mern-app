@@ -51,10 +51,6 @@ Create MERN App allows you to create a new MERN app within seconds. It is mainta
 
 If you have any issues or bugs, report in our [GitHub](https://github.com/mernjs/create-mern-app/issues)
 
-Please email us, If you have any query or security concerns via mernjscommunity@gmail.com
+Please message us, If you have any query, suggestions or security concerns via [GitHub Discussions](https://github.com/mernjs/create-mern-app/discussions)
 
-<h4>Community</h4>
-
-Join us on the [Gitter Group](https://gitter.im/mernjs/mernjs-community) to discuss features, questions, and suggestions.
-
-<p style="margin-left: '30px', margin-right: '30px'"><span style="text-align: 'left'">©2021 <a href="https://github.com/mernjs/create-mern-app/blob/master/LICENSE" target="_blank"> Create MERN App</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="float: 'right'"><b>By: </b> <a href="https://vijay-pratap-singh.netlify.app" target="_blank"> Vijay Pratap Singh</a></span></p>
+<p style="margin-left: '30px', margin-right: '30px'"><span style="text-align: 'left'">©2023 <a href="https://github.com/mernjs/create-mern-app/blob/master/LICENSE" target="_blank"> Create MERN App</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="float: 'right'"><b>By: </b> <a href="https://vijay-pratap-singh.netlify.app" target="_blank"> Vijay Pratap Singh</a></span></p>
