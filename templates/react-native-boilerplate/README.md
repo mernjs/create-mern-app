@@ -38,7 +38,7 @@ npx create-mernjs-app my_project
 
 <h4>Templates</h4>
 
-| SN. | Technology | Platform | Dependencies |
+| SN. | Templates | Platform | Dependencies |
 | ------ | ------ | ------ | ------ |
 | 1 | [MERN Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/mern-boilerplate) | Web - (Frontend & Backend RestAPIs) | @reduxjs/toolkit axios body-parser cors dotenv ejs express faker history lodash mongoose next next-pwa next-redux-wrapper react react-dom react-icons react-redux react-toastify redux redux-form redux-logger redux-persist redux-saga styled-components |
 | 2 | [NodeJS MongoDB Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/nodejs-mongodb-boilerplate) | Web - (Backend RestAPIs) | body-parser cors dotenv ejs express faker lodash mongoose morgan |
