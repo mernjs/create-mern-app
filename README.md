@@ -17,8 +17,8 @@ If you find this code useful, don't forget to <a target="_blank" href="https://g
 
 | Version | Supported          |
 | ------- | ------------------ |
-| nodejs >= 18   | :white_check_mark: |
-| nodejs < 18   | :x:                |
+| nodejs version >= 18   | :white_check_mark: |
+| odejs version  < 18   | :x:                |
 
 <h4>Creating an App</h4>
 
