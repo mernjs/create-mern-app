@@ -21,6 +21,13 @@ npm install create-mernjs-app -g
 create-mernjs-app my_project
 ```
 
+<h4>NodeJS Versions </h4>
+
+| Version | Supported          |
+| ------- | ------------------ |
+| 18.0.x   | :white_check_mark: |
+| < 18   | :x:                |
+
 Read official [changelog](https://github.com/mernjs/create-mern-app/releases) for more information.
 
 <!-- OR
