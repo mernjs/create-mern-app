@@ -4,6 +4,7 @@
     "description": "Create MERN App provide boilerplates with authentication module for building Web App, Mobile App, Desktop App & Chrome Extension in JavaScript.",
     "main": "./index.js",
     "scripts": {
+        "upgrade": "npx npm-check-updates &&  npx npm-check-updates -u",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "bin": {
@@ -13,11 +14,11 @@
     "author": "Vijay Pratap Singh <vijaypratap218@gmail.com> (https://mernjs.github.io/create-mern-app)",
     "license": "MIT",
     "dependencies": {
-        "chalk": "^4.1.1",
-        "commander": "^9.4.1",
-        "fs-extra": "^10.1.0",
+        "chalk": "^5.2.0",
+        "commander": "^10.0.0",
+        "fs-extra": "^11.1.0",
         "https": "^1.0.0",
-        "inquirer": "^8.0.0",
+        "inquirer": "^9.1.4",
         "mernjs": "github:mernjs/create-mern-app#b2a2cdcb668d1f9092ee1005a305f35f2563795d",
         "path": "^0.12.7",
         "semver": "^7.3.8",
