@@ -1,0 +1,41 @@
+{
+    "name": "create-mernjs-app",
+    "version": "19.0.5-beta.0",
+    "description": "Create MERN App provide boilerplates with authentication module for building Web App, Mobile App, Desktop App & Chrome Extension in JavaScript.",
+    "main": "./index.js",
+    "scripts": {
+        "upgrade": "npx npm-check-updates &&  npx npm-check-updates -u",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "bin": {
+        "create-mernjs-app": "./index.js"
+    },
+    "preferGlobal": true,
+    "author": "Vijay Pratap Singh <vijaypratap218@gmail.com> (https://mernjs.github.io/create-mern-app)",
+    "license": "MIT",
+    "dependencies": {
+        "chalk": "^5.2.0",
+        "commander": "^10.0.0",
+        "fs-extra": "^11.1.0",
+        "https": "^1.0.0",
+        "inquirer": "^9.1.4",
+        "mernjs": "github:mernjs/create-mern-app#576f833d73531e734d4f11590dbc3a2c0b9af11f",
+        "path": "^0.12.7",
+        "semver": "^7.3.8",
+        "shelljs": "^0.8.5",
+        "validate-npm-package-name": "^5.0.0",
+        "yosay": "^2.0.2"
+    },
+    "keywords": [
+        "create-mernjs-app"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mernjs/create-mern-app.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mernjs/create-mern-app/issues"
+    },
+    "homepage": "https://mernjs.github.io/create-mern-app",
+    "gitHead": "e2f4c703bdc504d5d978cce68a01cd0a35118cce"
+}
