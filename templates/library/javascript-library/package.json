@@ -1,39 +1,48 @@
 {
-  "name": "project_name",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "node scripts/dev.js",
-    "build": "node scripts/build.js"
-  },
-  "dependencies": {
-  },
-  "devDependencies": {
-    "@babel/core": "^7.17.0",
-    "@babel/plugin-proposal-class-properties": "^7.16.7",
-    "@babel/preset-env": "^7.16.11",
-    "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.2.3",
-    "clean-webpack-plugin": "^4.0.0",
-    "copy-webpack-plugin": "^7.0.0",
-    "css-loader": "^6.6.0",
-    "eslint": "^8.8.0",
-    "eslint-plugin-flowtype": "^8.0.3",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "file-loader": "^6.2.0",
-    "fs-extra": "^10.0.0",
-    "html-loader": "^3.1.0",
-    "html-webpack-plugin": "^5.5.0",
-    "node-sass": "^6.0.1",
-    "sass-loader": "^12.4.0",
-    "source-map-loader": "^3.0.1",
-    "style-loader": "^3.3.1",
-    "terser-webpack-plugin": "^5.3.1",
-    "ts-loader": "^9.2.6",
-    "typescript": "^4.5.5",
-    "webpack": "^5.68.0",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.4"
-  }
+    "name": "npm-library",
+    "version": "0.1.0",
+    "description": "Description",
+    "scripts": {
+        "dev": "node scripts/dev.js",
+        "build": "node scripts/build.js"
+    },
+    "author": "Vijay Pratap Singh",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "@babel/core": "^7.17.0",
+        "@babel/plugin-proposal-class-properties": "^7.16.7",
+        "@babel/preset-env": "^7.16.11",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "^8.2.3",
+        "clean-webpack-plugin": "^4.0.0",
+        "copy-webpack-plugin": "^7.0.0",
+        "css-loader": "^6.6.0",
+        "eslint": "^8.8.0",
+        "eslint-plugin-flowtype": "^8.0.3",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "file-loader": "^6.2.0",
+        "fs-extra": "^10.0.0",
+        "html-loader": "^3.1.0",
+        "html-webpack-plugin": "^5.5.0",
+        "node-sass": "^6.0.1",
+        "sass-loader": "^12.4.0",
+        "source-map-loader": "^3.0.1",
+        "style-loader": "^3.3.1",
+        "terser-webpack-plugin": "^5.3.1",
+        "ts-loader": "^9.2.6",
+        "typescript": "^4.5.5",
+        "webpack": "^5.68.0",
+        "webpack-cli": "^4.9.2",
+        "webpack-dev-server": "^4.7.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mernjs/react-fb-login-button-ui.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mernjs/create-mern-app/issues"
+    },
+    "homepage": "https://github.com/mernjs/create-mern-app#readme"
 }
