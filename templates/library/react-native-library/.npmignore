@@ -1,9 +1,8 @@
-node_modules
-.storybook
-src
-*.tgz
-.gitignore
-rollup.config.js
+example
 .vscode
-.eslintrc.json
-.prettierrc
+node_modules
+scripts
+src
+tsconfig.build.json
+tsconfig.json
+babel.config.js
