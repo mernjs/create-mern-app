@@ -31,9 +31,6 @@ const Login = () => {
                 <Header />
                 <Container>
                     <H2>Sign In</H2>
-                    <p className="text-3xl font-bold underline">
-                        Hello world!
-                    </p>
                     <form onSubmit={handleSubmit((values) => login(values))}>
                         <Controller
                             name="email"

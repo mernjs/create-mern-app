@@ -1,7 +1,7 @@
 {
-    "name": "npm-library",
+    "name": "project_name",
     "version": "1.0.6",
-    "description": "Description",
+    "description": "project_name",
     "main": "dist/index.cjs.js",
     "module": "dist/index.esm.js",
     "scripts": {
@@ -39,10 +39,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/mernjs/react-fb-login-button-ui.git"
+        "url": "https://github.com/mernjs/project_name.git"
     },
     "bugs": {
-        "url": "https://github.com/mernjs/create-mern-app/issues"
+        "url": "https://github.com/mernjs/project_name/issues"
     },
-    "homepage": "https://github.com/mernjs/create-mern-app#readme"
+    "homepage": "https://github.com/mernjs/project_name#readme"
 }

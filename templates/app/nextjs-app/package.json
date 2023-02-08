@@ -18,7 +18,7 @@
         "history": "^5.3.0",
         "lodash": "^4.17.21",
         "next": "^13.1.6",
-        "next-redux-wrapper": "^8.1.0",
+        "next-redux-wrapper": "^2.1.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-hook-form": "^7.42.1",

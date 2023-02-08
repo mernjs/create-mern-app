@@ -1,7 +1,7 @@
 {
-    "name": "npm-library",
+    "name": "project_name",
     "version": "1.0.0",
-    "description": "Description",
+    "description": "project_name",
     "main": "lib/commonjs/index",
     "module": "lib/module/index",
     "types": "lib/typescript/index.d.ts",
@@ -40,5 +40,13 @@
                 }
             ]
         ]
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mernjs/project_name.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mernjs/project_name/issues"
+    },
+    "homepage": "https://github.com/mernjs/project_name#readme"
 }
