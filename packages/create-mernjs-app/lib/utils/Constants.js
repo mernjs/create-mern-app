@@ -12,8 +12,7 @@ Constants.init = {
 Constants.help = '--help'
 
 Constants.package = {
-    // name		: pkg.name,
-    name: 'create-mern-app',
+    name: pkg.name,
     version: pkg.version,
     description: pkg.description
 }
@@ -22,8 +21,17 @@ Constants.select_form = [
     {
         type: "list",
         name: "project_type",
-        message: "Choose your favourite boilerplate",
+        message: "Choose your favourite app template",
         choices: ['MERN App', 'NextJS App', 'ReactJS App', 'GatsbyJS App', 'ElectronJS App', 'React Native App', 'NodeJS MySQL App', 'NodeJS MongoDB App', 'ReactJS Webpack App', 'ReactJS Chrome Extension App']
+    }
+]
+
+Constants.select_library_form = [
+    {
+        type: "list",
+        name: "project_type",
+        message: "Choose your favourite library template",
+        choices: ['JavaScript Library', 'ReactJS Library', 'NextJS Library', 'React Native Library']
     }
 ]
 

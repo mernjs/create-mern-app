@@ -38,11 +38,29 @@ async function init() {
         .arguments('<project-directory>')
         .usage(`${chalk.green('<project-directory>')}`)
         .option('-y, --yes', 'skip Is this OK ? step')
+        .option(
+            '--template <path-to-template>',
+            'specify a template for the created project'
+        )
         .action((project_name, cmd_obj) => {
             projectName = project_name
+            if (cmd_obj?.template) {
+                if ((cmd_obj && cmd_obj?.template !== 'app') && (cmd_obj && cmd_obj?.template !== 'library')) {
+                    console.log();
+                    console.log('For example:');
+                    console.log(
+                        `  ${chalk.cyan(`${'create-mernjs-app'}`)} ${chalk.green('my_project')} --template app`
+                    );
+                    console.log("                      OR");
+                    console.log(
+                        `  ${chalk.cyan(`${'create-mernjs-app'}`)} ${chalk.green('my_project')} --template library`
+                    );
+                    console.log();
+                    process.exit(1);
+                }
+            }
             checkAppName(project_name)
             Helpers.checkForLatestVersion().then(latest => {
-
                 if (latest && semver.lt(Constants.package.version, latest)) {
                     const message1 = `You are running \`create-mernjs-app\` ${chalk.bold.red(Constants.package.version)}, which is behind the latest release ${chalk.bold.green(latest)}.`
                     const message2 = 'We recommend always using the latest version of create-mernjs-app.'
@@ -61,17 +79,18 @@ async function init() {
                         return;
                     }
                     console.log('Press ^C at any time to quit.')
-                    prompt(Constants.select_form)
+                    prompt(cmd_obj?.template === 'library' ? Constants.select_library_form : Constants.select_form)
                         .then(async data => {
                             let project_type = `${data.project_type}`
+                            let template = cmd_obj?.template
                             if (cmd_obj.yes) {
-                                require('./lib/init')(project_name, { project_type })
+                                require('./lib/init')(project_name, { project_type, template })
                                 return;
                             } else {
                                 prompt(Constants.confirm)
                                     .then(confirm => {
                                         if (confirm.confirm === true) {
-                                            require('./lib/init')(project_name, { project_type })
+                                            require('./lib/init')(project_name, { project_type, template })
                                         } else {
                                             console.log('Aborted.')
                                             process.exit(0);

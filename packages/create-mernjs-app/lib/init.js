@@ -5,15 +5,16 @@ const { spawn } = require("child_process");
 const Constants = require('./utils/Constants')
 const Helpers = require('./utils/Helpers')
 
-module.exports = async (projectname, { project_type }) => {
+module.exports = async (projectname, { project_type, template }) => {
     const currentWorkingDir = process.cwd()
+    const templates = template === 'library' ? 'library' : 'app'
     console.log(' ')
     console.log(chalk.hex('#4c84ff')(`Creating a new ${chalk.yellow(projectname)} project in`), chalk.green(`${currentWorkingDir}/${projectname}`))
     console.log(' ')
     let project_typ = project_type.replace(/ /g, '-').toLowerCase()
 
     const destinationPath = `${currentWorkingDir}/${projectname}`
-    const sourcePath = path.join(__dirname, `../../../node_modules/create-mernjs-app/node_modules/mernjs/templates/${project_typ}/`)
+    const sourcePath = path.join(__dirname, `../../../node_modules/create-mernjs-app/node_modules/mernjs/templates/${templates}/${project_typ}/`)
     const gitSourcePath = path.join(__dirname, `utils/gitignore.js`)
 
     const appID = Helpers.generateRadomeString(32)
@@ -26,9 +27,9 @@ module.exports = async (projectname, { project_type }) => {
             console.log(message, chalk.green(`${currentWorkingDir}/${projectname}`))
 
             process.chdir(destinationPath)
-            Helpers.rewritePackageName(`${destinationPath}/package.json`, projectname, appID)
+            Helpers.rewritePackageName(`${destinationPath}/package.json`, projectname)
 
-            if (project_typ === 'react-native-boilerplate') Helpers.rewritePackageName(`${destinationPath}/app.json`, projectname, appID)
+            if (project_typ === 'react-native-app') Helpers.rewritePackageName(`${destinationPath}/app.json`, projectname)
 
             console.log(" ")
             console.log(chalk.hex('#4c84ff').bold("Installing dependencies... This might take a couple of minutes."));
