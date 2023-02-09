@@ -46,7 +46,9 @@ async function init() {
             projectName = project_name
             if (cmd_obj?.template) {
                 if ((cmd_obj && cmd_obj?.template !== 'app') && (cmd_obj && cmd_obj?.template !== 'library')) {
-                    console.log();
+                    console.log()
+                    console.error('Please specify the valid template:');
+                    console.log()
                     console.log('For example:');
                     console.log(
                         `  ${chalk.cyan(`${'create-mernjs-app'}`)} ${chalk.green('my_project')} --template app`
