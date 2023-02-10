@@ -31,10 +31,6 @@ npm install create-mernjs-app -g
 ```
 create-mernjs-app my-app
 ```
-OR
-```
-create-mernjs-app my-app --template app
-```
 
 <h4>Creating a Library</h4>
 
