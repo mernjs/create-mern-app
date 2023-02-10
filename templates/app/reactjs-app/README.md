@@ -30,7 +30,9 @@ npm install create-mernjs-app -g
 
 ```
 create-mernjs-app my_project
-          OR
+```
+OR
+```
 create-mernjs-app my-app --template app
 ```
 
