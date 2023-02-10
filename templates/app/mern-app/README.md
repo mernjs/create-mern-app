@@ -13,12 +13,12 @@ If you find this code useful, don't forget to <a target="_blank" href="https://g
 <h4>Create MERN App</h4>
 <h5>Create MERN App provide boilerplates for building Web App, Mobile App, Desktop App, Chrome Extension & NPM Package Development in JavaScript.</h5>
 
-<h4>NodeJS Version </h4>
+<h4>Node Version </h4>
 
 | Version | Supported          |
 | ------- | ------------------ |
-| nodejs version >= 18   | :white_check_mark: |
-| nodejs version  < 18   | :x:  |
+| node-version >= 18   | :white_check_mark: |
+| node-version  < 18   | :x:  |
 
 <h4>Install create-mernjs-app globally</h4>
 
