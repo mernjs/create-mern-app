@@ -47,7 +47,7 @@ npx create-mernjs-app my_project
 ``` -->
 
 <h4>App Templates</h4>
-App template for building application.
+App templates for building application.
 
 | SN. | Template | Platform | Dependencies |
 | ------ | ------ | ------ | ------ |
@@ -63,7 +63,7 @@ App template for building application.
 | 10 | [ReactJS Webpack Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-webpack-app) | Web - (Frontend) | @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom webpack react-toastify styled-components |
 
 <h4>Library Templates</h4>
-Library template for building npm package.
+Library templates for building npm package.
 
 | SN. | Template | Platform | Dependencies |
 | ------ | ------ | ------ | ------ |
