@@ -114,7 +114,7 @@ async function init() {
             });
         })
         .on(Constants.help, () => {
-            let message = `   Create MERN App provide boilerplates for building Web App, Mobile App, Desktop App, Chrome Extension & NPM Package Development JavaScript. ${chalk.cyan('https://mernjs.github.io/create-mern-app')}`;
+            let message = `   Create MERN App provide boilerplates for building Web App, Mobile App, Desktop App, Chrome Extension & NPM Package Development in JavaScript. ${chalk.cyan('https://mernjs.github.io/create-mern-app')}`;
             console.log(yosay(`${chalk.bold.green(' ** Welcom To Create MERN App ** ')} \n ${chalk.green(' ')} \n ${message} \n\n ${chalk.bold.blue(' By: Vijay Pratap Singh ')} \n ${chalk.green(' ')} `, { maxLength: 55 }));
         })
         .parse(process.argv);

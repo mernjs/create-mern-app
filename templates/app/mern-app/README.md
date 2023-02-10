@@ -11,7 +11,7 @@ If you find this code useful, don't forget to <a target="_blank" href="https://g
 </h5>
 
 <h4>Create MERN App</h4>
-<h5>Create MERN App provide boilerplates for building Web App, Mobile App, Desktop App, Chrome Extension & NPM Package Development JavaScript.</h5>
+<h5>Create MERN App provide boilerplates for building Web App, Mobile App, Desktop App, Chrome Extension & NPM Package Development in JavaScript.</h5>
 
 <h4>NodeJS Version </h4>
 

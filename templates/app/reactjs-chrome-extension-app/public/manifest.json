@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Create MERN App",
-    "description": "Create MERN App provide boilerplates for building Web App, Mobile App, Desktop App, Chrome Extension & NPM Package Development JavaScript.",
+    "description": "Create MERN App provide boilerplates for building Web App, Mobile App, Desktop App, Chrome Extension & NPM Package Development in JavaScript.",
     "background": {
         "service_worker": "background.bundle.js"
     },
