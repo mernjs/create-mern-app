@@ -29,7 +29,7 @@ npm install create-mernjs-app -g
 <h4>Creating an App</h4>
 
 ```
-create-mernjs-app my_project
+create-mernjs-app my-project
 ```
 OR
 ```
