@@ -18,14 +18,24 @@ If you find this code useful, don't forget to <a target="_blank" href="https://g
 | Version | Supported          |
 | ------- | ------------------ |
 | nodejs version >= 18   | :white_check_mark: |
-| nodejs version  < 18   | :x:                |
+| nodejs version  < 18   | :x:  |
+
+<h4>Install create-mernjs-app globally</h4>
+
+```
+npm install create-mernjs-app -g 
+```
 
 <h4>Creating an App</h4>
 
 ```
-npm install create-mernjs-app -g 
-
 create-mernjs-app my_project
+```
+
+<h4>Creating a Library</h4>
+
+```
+create-mernjs-app my_project --template library
 ```
 
 Read official [changelog](https://github.com/mernjs/create-mern-app/releases) for more information.
@@ -36,20 +46,31 @@ Read official [changelog](https://github.com/mernjs/create-mern-app/releases) fo
 npx create-mernjs-app my_project 
 ``` -->
 
-<h4>Templates</h4>
+<h4>App Templates</h4>
+App template for building application.
 
 | SN. | Template | Platform | Dependencies |
 | ------ | ------ | ------ | ------ |
-| 1 | [MERN Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/mern-boilerplate) | Web - (Frontend & Backend RestAPIs) | @reduxjs/toolkit axios body-parser cors dotenv ejs express faker history lodash mongoose next next-pwa next-redux-wrapper react react-dom react-icons react-redux react-toastify redux redux-form redux-logger redux-persist redux-saga styled-components |
-| 2 | [NodeJS MongoDB Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/nodejs-mongodb-boilerplate) | Web - (Backend RestAPIs) | body-parser cors dotenv ejs express faker lodash mongoose morgan |
-| 3 | [NodeJS MySQL Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/nodejs-mysql-boilerplate) | Web - (Backend RestAPIs) | body-parser cors dotenv ejs express faker lodash mysql sequelize morgan |
-| 4 | [NextJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/nextjs-boilerplate) | Web - (Frontend) | @reduxjs/toolkit axios history lodash next next-redux-wrapper react react-dom react-icons react-redux react-toastify redux redux-form redux-logger redux-persist redux-saga styled-components |
-| 5 | [GetsbyJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/gatsbyjs-boilerplate) | Web - (Frontend) | @hookform/error-message @reduxjs/toolkit gatsby gatsby-plugin-image gatsby-plugin-manifest gatsby-plugin-react-redux gatsby-plugin-sharp gatsby-source-filesystem gatsby-transformer-sharp history react react-dom react-hook-form react-redux react-toastify redux redux-logger redux-persist styled-components |
-| 6 | [ReactJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/reactjs-boilerplate) | Web - (Frontend) | @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom react-scripts react-toastify redux redux-form redux-logger redux-persist styled-components web-vitals |
-| 7 | [ElectronJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/electronjs-boilerplate) | Desktop - (Window, Linux, Mac) | @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom react-scripts react-toastify redux redux-form redux-logger redux-persist styled-components web-vitals |
-| 8 | [React Native Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/react-native-boilerplate) | Mobile - (Android, iOS) | @react-native-async-storage/async-storage @react-native-community/masked-view @react-navigation/native @react-navigation/stack @reduxjs/toolkit axios lodash native-base react react-native react-native-gesture-handler react-native-safe-area-context react-native-screens react-native-toast-message react-redux redux redux-form redux-logger redux-persist styled-components |
-| 9 | [ReactJS Chrome Extension Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/reactjs-chrome-extension-boilerplate) | Web - (Chrome Extension) | @hot-loader/react-dom @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom webpack react-toastify styled-components |
-| 10 | [ReactJS Webpack Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/reactjs-webpack-boilerplate) | Web - (Frontend) | @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom webpack react-toastify styled-components |
+| 1 | [MERN Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/mern-app) | Web - (Frontend & Backend RestAPIs) | @reduxjs/toolkit axios body-parser cors dotenv ejs express faker history lodash mongoose next next-pwa next-redux-wrapper react react-dom react-icons react-redux react-toastify redux redux-form redux-logger redux-persist redux-saga styled-components |
+| 2 | [NodeJS MongoDB Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mongodb-app) | Web - (Backend RestAPIs) | body-parser cors dotenv ejs express faker lodash mongoose morgan |
+| 3 | [NodeJS MySQL Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mysql-app) | Web - (Backend RestAPIs) | body-parser cors dotenv ejs express faker lodash mysql sequelize morgan |
+| 4 | [NextJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nextjs-app) | Web - (Frontend) | @reduxjs/toolkit axios history lodash next next-redux-wrapper react react-dom react-icons react-redux react-toastify redux redux-form redux-logger redux-persist redux-saga styled-components |
+| 5 | [GetsbyJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/gatsbyjs-app) | Web - (Frontend) | @hookform/error-message @reduxjs/toolkit gatsby gatsby-plugin-image gatsby-plugin-manifest gatsby-plugin-react-redux gatsby-plugin-sharp gatsby-source-filesystem gatsby-transformer-sharp history react react-dom react-hook-form react-redux react-toastify redux redux-logger redux-persist styled-components |
+| 6 | [ReactJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-app) | Web - (Frontend) | @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom react-scripts react-toastify redux redux-form redux-logger redux-persist styled-components web-vitals |
+| 7 | [ElectronJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/electronjs-app) | Desktop - (Window, Linux, Mac) | @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom react-scripts react-toastify redux redux-form redux-logger redux-persist styled-components web-vitals |
+| 8 | [React Native Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/react-native-app) | Mobile - (Android, iOS) | @react-native-async-storage/async-storage @react-native-community/masked-view @react-navigation/native @react-navigation/stack @reduxjs/toolkit axios lodash native-base react react-native react-native-gesture-handler react-native-safe-area-context react-native-screens react-native-toast-message react-redux redux redux-form redux-logger redux-persist styled-components |
+| 9 | [ReactJS Chrome Extension Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-chrome-extension-app) | Web - (Chrome Extension) | @hot-loader/react-dom @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom webpack react-toastify styled-components |
+| 10 | [ReactJS Webpack Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-webpack-app) | Web - (Frontend) | @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom webpack react-toastify styled-components |
+
+<h4>Library Templates</h4>
+Library template for building npm package.
+
+| SN. | Template | Platform | Dependencies |
+| ------ | ------ | ------ | ------ |
+| 1 | [JavaScript Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/javascript-library) | Web - (Frontend & Backend RestAPIs) | @babel/core @babel/plugin-proposal-class-properties @babel/preset-env babel-eslint babel-loader clean-webpack-plugin copy-webpack-plugin css-loader eslint eslint-plugin-flowtype eslint-plugin-import eslint-plugin-jsx-a11y file-loader fs-extra html-loader html-webpack-plugin node-sass sass-loader source-map-loader style-loader terser-webpack-plugin ts-loader typescript webpack webpack-cli webpack-dev-server |
+| 2 | [ReactJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/reactjs-library) | Web - (Backend RestAPIs) | @babel/core @babel/preset-env @babel/preset-react @rollup/plugin-babel @rollup/plugin-commonjs @rollup/plugin-node-resolve @rollup/plugin-terser @storybook/react eslint eslint-config-google eslint-plugin-react prettier react react-dom rollup rollup-plugin-import-css |
+| 3 | [NextJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/nextjs-library) | Web - (Backend RestAPIs) | @babel/core @babel/preset-env @babel/preset-react @rollup/plugin-babel @rollup/plugin-commonjs @rollup/plugin-node-resolve @rollup/plugin-terser @storybook/react eslint eslint-config-google eslint-plugin-react prettier react react-dom rollup rollup-plugin-import-css |
+| 4 | [React Native Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/react-native-library) | Web - (Frontend) | @types/react @types/react-native react react-native react-native-builder-bob typescript |
 
 <h4>Why is Create MERN App?</h4>
 Create MERN App allows you to create a new MERN app within seconds. It is maintained by the creators of Create MERN App.
