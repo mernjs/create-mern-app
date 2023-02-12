@@ -40,13 +40,8 @@ create-mernjs-app my-library --template library
 
 Read official [changelog](https://github.com/mernjs/create-mern-app/releases) for more information.
 
-<!-- OR
-
-```
-npx create-mernjs-app my_project 
-``` -->
-
 <h4>App Templates</h4>
+
 App templates for building application.
 
 | SN. | Template | Type | Dependencies |
@@ -63,16 +58,20 @@ App templates for building application.
 | 10 | [ReactJS Webpack Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-webpack-app) | Web | @reduxjs/toolkit axios history react react-dom react-icons react-redux react-router-dom webpack react-toastify styled-components |
 
 <h4>Library Templates</h4>
+
 Library templates for building npm package.
 
 | SN. | Template | Type | Dependencies |
 | ------ | ------ | ------ | ------ |
 | 1 | [JavaScript Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/javascript-library) | Web | @babel/core @babel/plugin-proposal-class-properties @babel/preset-env babel-eslint babel-loader clean-webpack-plugin copy-webpack-plugin css-loader eslint eslint-plugin-flowtype eslint-plugin-import eslint-plugin-jsx-a11y file-loader fs-extra html-loader html-webpack-plugin node-sass sass-loader source-map-loader style-loader terser-webpack-plugin ts-loader typescript webpack webpack-cli webpack-dev-server |
 | 2 | [ReactJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/reactjs-library) | Web | @babel/core @babel/preset-env @babel/preset-react @rollup/plugin-babel @rollup/plugin-commonjs @rollup/plugin-node-resolve @rollup/plugin-terser @storybook/react eslint eslint-config-google eslint-plugin-react prettier react react-dom rollup rollup-plugin-import-css |
-| 3 | [NextJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/nextjs-library) | Web | @babel/core @babel/preset-env @babel/preset-react @rollup/plugin-babel @rollup/plugin-commonjs @rollup/plugin-node-resolve @rollup/plugin-terser @storybook/react eslint eslint-config-google eslint-plugin-react prettier react react-dom rollup rollup-plugin-import-css |
-| 4 | [React Native Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/react-native-library) | App | @types/react @types/react-native react react-native react-native-builder-bob typescript |
+| 3 | [NodeJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/nodejs-library) | Web | @rollup/plugin-commonjs @rollup/plugin-node-resolve @rollup/plugin-terser concurrently eslint eslint-config-google nodemon prettier rollup rollup-plugin-node |
+| 4 | [ExpressJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/expressjs-library) | Web | @rollup/plugin-commonjs @rollup/plugin-node-resolve @rollup/plugin-terser concurrently eslint eslint-config-google nodemon prettier rollup rollup-plugin-node |
+| 5 | [NextJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/nextjs-library) | Web | @babel/core @babel/preset-env @babel/preset-react @rollup/plugin-babel @rollup/plugin-commonjs @rollup/plugin-node-resolve @rollup/plugin-terser @storybook/react eslint eslint-config-google eslint-plugin-react prettier react react-dom rollup rollup-plugin-import-css |
+| 6 | [React Native Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/react-native-library) | App | @types/react @types/react-native react react-native react-native-builder-bob typescript |
 
 <h4>Why is Create MERN App?</h4>
+
 Create MERN App allows you to create a new MERN app within seconds. It is maintained by the creators of Create MERN App.
 
 <h4>Support</h4>
