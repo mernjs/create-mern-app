@@ -22,7 +22,7 @@ Constants.select_form = [
         type: "list",
         name: "project_type",
         message: "Choose your favourite app template",
-        choices: ['MERN App', 'NextJS App', 'ReactJS App', 'GatsbyJS App', 'ElectronJS App', 'React Native App', 'NodeJS MySQL App', 'NodeJS MongoDB App', 'ReactJS Webpack App', 'ReactJS Chrome Extension App']
+        choices: ['MERN App', 'NextJS App', 'ReactJS App', /*'GatsbyJS App',*/ 'ElectronJS App', 'React Native App', 'NodeJS MySQL App', 'NodeJS MongoDB App', 'ReactJS Webpack App', 'ReactJS Chrome Extension App']
     }
 ]
 
@@ -31,7 +31,7 @@ Constants.select_library_form = [
         type: "list",
         name: "project_type",
         message: "Choose your favourite library template",
-        choices: ['JavaScript Library', 'ReactJS Library', 'NextJS Library', 'React Native Library']
+        choices: ['JavaScript Library', 'ReactJS Library', 'NodeJS Library', 'ExpressJS Library', 'NextJS Library', 'React Native Library']
     }
 ]
 
