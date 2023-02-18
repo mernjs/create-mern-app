@@ -80,10 +80,6 @@ Library boilerplates for building npm package.
 | 5 | [NextJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/nextjs-library-boilerplate) | [![Download NextJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NextJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/nextjs-library-boilerplate.zip) |
 | 6 | [React Native Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/react-native-library-boilerplate) | [![Download React Native Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download React Native Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/react-native-library-boilerplate.zip) |
 
-<h4>Why is Create MERN App?</h4>
-
-Create MERN App allows you to create a new MERN app within seconds. It is maintained by the creators of Create MERN App.
-
 <h4>Support</h4>
 
 If you have any issues or bugs, report in our [GitHub](https://github.com/mernjs/create-mern-app/issues)
