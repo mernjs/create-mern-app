@@ -38,7 +38,7 @@ create-mernjs-app my-app
 create-mernjs-app my-library --template library
 ```
 
-Read official [changelog](https://github.com/mernjs/create-mern-app/releases) for more information.
+Read [changelog](https://github.com/mernjs/create-mern-app/releases) for more information.
 
 <h4>App Templates</h4>
 
@@ -47,8 +47,8 @@ App templates for building application.
 | SN. | Template | Features | Download |
 | ------ | ------ | ------ | ------ |
 | 1 | [MERN Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/mern-app) | Simple Folder Structure & Login/Signup Module | [![Download MERN Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download MERN Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/mern-app.zip) |
-| 2 | [NodeJS MongoDB Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mongodb-app) | Simple Folder Structure & Login/Signup Module | [![Download NodeJS MongoDB Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MongoDB Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nodejs-mongodb-app.zip) |
-| 3 | [NodeJS MySQL Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mysql-app) | Simple Folder Structure & Login/Signup Module | [![Download NodeJS MySQL Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MySQL Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nodejs-mysql-app.zip) |
+| 2 | [NodeJS & MongoDB Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mongodb-app) | Simple Folder Structure & Login/Signup Module | [![Download NodeJS MongoDB Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MongoDB Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nodejs-mongodb-app.zip) |
+| 3 | [NodeJS & MySQL Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mysql-app) | Simple Folder Structure & Login/Signup Module | [![Download NodeJS MySQL Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MySQL Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nodejs-mysql-app.zip) |
 | 4 | [NextJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nextjs-app) | Simple Project Structure & Login/Signup Module | [![Download NextJS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NextJS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nextjs-app.zip) |
 | 5 | [GetsbyJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/gatsbyjs-app) | Simple Folder Structure & Login/Signup Module | [![Download GetsbyJS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download GetsbyJS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/gatsbyjs-app.zip) |
 | 6 | [ReactJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-app) | Simple Folder Structure & Login/Signup Module | [![Download ReactJS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/reactjs-app.zip) |
