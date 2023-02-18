@@ -48,6 +48,11 @@ Read [changelog](https://github.com/mernjs/create-mern-app/releases) for more in
 - Auto Indentation 
 - ESLint Feature
 - Prettier Feature
+- Tailwind CSS 
+
+<h4>App Templates</h4>
+
+App templates for building application.
 
 | SN. | Templates | Download |
 | ------ | ------ | ------ |
