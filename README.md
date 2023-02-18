@@ -43,8 +43,15 @@ Read [changelog](https://github.com/mernjs/create-mern-app/releases) for more in
 <h4>App Templates</h4>
 
 App templates for building application.
+<h5>Features</h5>
+- Simple Folder Structure
+- Login/Signup Feature
+- Auto Indentation 
+- ESLint Feature
+- Prettier Feature
+- Tailwind CSS Feature
 
-| SN. | Template | Features | Download |
+| SN. | Templates | Features | Download |
 | ------ | ------ | ------ | ------ |
 | 1 | [MERN Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/mern-app) | Simple Folder Structure & Login/Signup Module | [![Download MERN Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download MERN Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/mern-app.zip) |
 | 2 | [NodeJS & MongoDB Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mongodb-app) | Simple Folder Structure & Login/Signup Module | [![Download NodeJS MongoDB Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MongoDB Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nodejs-mongodb-app.zip) |
@@ -61,7 +68,7 @@ App templates for building application.
 
 Library templates for building npm package.
 
-| SN. | Template | Features | Download |
+| SN. | Templates | Features | Download |
 | ------ | ------ | ------ | ------ |
 | 1 | [JavaScript Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/javascript-library) | Simple Folder Structure | [![Download JavaScript Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download JavaScript Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/javascript-library.zip) |
 | 2 | [ReactJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/reactjs-library) | Simple Folder Structure | [![Download ReactJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/reactjs-library.zip) |
