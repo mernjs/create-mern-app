@@ -38,9 +38,6 @@ create-mernjs-app my-app
 create-mernjs-app my-library --template library
 ```
 
-Read [changelog](https://github.com/mernjs/create-mern-app/releases) for more information.
-
-
 <h4>Features</h4>
 
 - Simple Folder Structure
@@ -81,8 +78,6 @@ Library boilerplates for building npm package.
 | 6 | [React Native Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/react-native-library-boilerplate) | [![Download React Native Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download React Native Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/react-native-library-boilerplate.zip) |
 
 <h4>Support</h4>
-
-If you have any issues or bugs, report in our [GitHub](https://github.com/mernjs/create-mern-app/issues)
 
 Please message us, If you have any query, suggestions or security concerns via [GitHub Discussions](https://github.com/mernjs/create-mern-app/discussions)
 
