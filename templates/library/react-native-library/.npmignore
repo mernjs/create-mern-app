@@ -1,8 +1,0 @@
-example
-.vscode
-node_modules
-scripts
-src
-tsconfig.build.json
-tsconfig.json
-babel.config.js

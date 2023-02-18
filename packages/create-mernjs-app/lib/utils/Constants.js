@@ -21,8 +21,8 @@ Constants.select_form = [
     {
         type: "list",
         name: "project_type",
-        message: "Choose your favourite app template",
-        choices: ['MERN App', 'NextJS App', 'ReactJS App', 'GatsbyJS App', 'ElectronJS App', 'React Native App', 'NodeJS MySQL App', 'NodeJS MongoDB App', 'ReactJS Webpack App', 'ReactJS Chrome Extension App']
+        message: "Choose your favourite boilerplate",
+        choices: ['MERN Boilerplate', 'NextJS Boilerplate', 'ReactJS Boilerplate', 'GatsbyJS Boilerplate', 'ElectronJS Boilerplate', 'React Native Boilerplate', 'NodeJS MySQL Boilerplate', 'NodeJS MongoDB Boilerplate', 'ReactJS Webpack Boilerplate', 'ReactJS Chrome Extension Boilerplate']
     }
 ]
 
@@ -30,8 +30,8 @@ Constants.select_library_form = [
     {
         type: "list",
         name: "project_type",
-        message: "Choose your favourite library template",
-        choices: ['JavaScript Library', 'ReactJS Library', 'NodeJS Library', 'ExpressJS Library', 'NextJS Library', 'React Native Library']
+        message: "Choose your favourite boilerplate",
+        choices: ['JavaScript Library Boilerplate', 'ReactJS Library Boilerplate', 'NodeJS Library Boilerplate', 'ExpressJS Library Boilerplate', 'NextJS Library Boilerplate', 'React Native Library Boilerplate']
     }
 ]
 

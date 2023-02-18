@@ -1,0 +1,41 @@
+{
+    "name": "nodejs-with-mysql",
+    "version": "0.1.0",
+    "private": true,
+    "main": "server.js",
+    "scripts": {
+        "dev": "nodemon server.js",
+        "start": "node server.js",
+        "forever-start": "forever start server.js",
+        "forever-restart": "forever restart server.js",
+        "forever-stop": "forever stop server.js",
+        "sequelize": "sequelize",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix --ext .js,.jsx .",
+        "upgrade": "npx npm-check-updates &&  npx npm-check-updates -u",
+        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'"
+    },
+    "author": "nodejs-with-mysql@getnada.com",
+    "dependencies": {
+        "bcrypt": "^5.1.0",
+        "body-parser": "^1.20.1",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "ejs": "^3.1.8",
+        "express": "^4.18.2",
+        "faker": "^6.6.6",
+        "jsonwebtoken": "^9.0.0",
+        "lodash": "^4.17.21",
+        "morgan": "^1.10.0",
+        "mysql": "^2.18.1",
+        "mysql2": "^3.0.1",
+        "sequelize": "^6.28.0",
+        "sequelize-cli": "^6.6.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.32.0",
+        "eslint-config-google": "^0.14.0",
+        "nodemon": "^2.0.20",
+        "prettier": "^2.8.3"
+    }
+}
