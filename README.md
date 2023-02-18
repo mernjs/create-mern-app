@@ -67,7 +67,7 @@ Read [changelog](https://github.com/mernjs/create-mern-app/releases) for more in
 Library templates for building npm package.
 
 | SN. | Templates | Download |
-| ------ | ------ | ------ | ------ |
+| ------ | ------ | ------ |
 | 1 | [JavaScript Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/javascript-library) | [![Download JavaScript Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download JavaScript Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/javascript-library.zip) |
 | 2 | [ReactJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/reactjs-library) | [![Download ReactJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/reactjs-library.zip) |
 | 3 | [NodeJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/nodejs-library) | [![Download NodeJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/nodejs-library.zip) |
