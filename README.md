@@ -40,16 +40,14 @@ create-mernjs-app my-library --template library
 
 Read [changelog](https://github.com/mernjs/create-mern-app/releases) for more information.
 
-<h4>App Templates</h4>
 
-App templates for building application.
-<h5>Features</h5>
+<h4>Features</h4>
+
 - Simple Folder Structure
 - Login/Signup Feature
 - Auto Indentation 
 - ESLint Feature
 - Prettier Feature
-- Tailwind CSS Feature
 
 | SN. | Templates | Features | Download |
 | ------ | ------ | ------ | ------ |
