@@ -50,11 +50,11 @@ Read [changelog](https://github.com/mernjs/create-mern-app/releases) for more in
 - Prettier Feature
 - Tailwind CSS 
 
-<h4>App Templates</h4>
+<h4>App Boilerplates</h4>
 
-App templates for building application.
+App boilerplates for building application.
 
-| SN. | Templates | Download |
+| SN. | Boilerplates | Download |
 | ------ | ------ | ------ |
 | 1 | [MERN Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/mern-boilerplate) | [![Download MERN Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download MERN Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/mern-boilerplate.zip) |
 | 2 | [NodeJS & MongoDB Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mongodb-boilerplate) | [![Download NodeJS MongoDB Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MongoDB Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nodejs-mongodb-boilerplate.zip) |
@@ -67,11 +67,11 @@ App templates for building application.
 | 9 | [ReactJS Chrome Extension Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-chrome-extension-boilerplate) | [![Download ReactJS Chrome Extension Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Chrome Extension Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/reactjs-chrome-extension-boilerplate.zip) |
 | 10 | [ReactJS Webpack Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-webpack-boilerplate) | [![Download ReactJS Webpack Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Webpack Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/reactjs-webpack-boilerplate.zip) |
 
-<h4>Library Templates</h4>
+<h4>Library Boilerplates</h4>
 
-Library templates for building npm package.
+Library boilerplates for building npm package.
 
-| SN. | Templates | Download |
+| SN. | Boilerplates | Download |
 | ------ | ------ | ------ |
 | 1 | [JavaScript Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/javascript-library-boilerplate) | [![Download JavaScript Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download JavaScript Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/javascript-library-boilerplate.zip) |
 | 2 | [ReactJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/reactjs-library-boilerplate) | [![Download ReactJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/reactjs-library-boilerplate.zip) |
