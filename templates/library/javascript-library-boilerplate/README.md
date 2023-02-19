@@ -41,6 +41,8 @@ create-mernjs-app my-library --template library
 <h4>Features</h4>
 
 - Simple Folder Structure
+- Clean code structure
+- Server & client code
 - Login/Signup Feature
 - Auto Indentation 
 - ESLint Feature
