@@ -1,11 +1,11 @@
 const express = require('express');
-const Route = express.Router();
+const Router = express.Router();
 
-Route.route('/').get((req, res, next) => {
+Router.route('/').get(async (req, res, next) => {
     console.log("Auth Details ==>>>", req.auth)
     res.status(200).send({
         message: 'success'
     })
 })
 
-module.exports = Route;
+module.exports = Router;

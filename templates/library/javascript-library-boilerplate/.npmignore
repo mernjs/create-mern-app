@@ -7,3 +7,9 @@ rollup.config.js
 .vscode
 .eslintrc.json
 .prettierrc
+example
+dist/index.html
+.babelrc
+.eslintignore
+.prettierignore
+webpack.config.js

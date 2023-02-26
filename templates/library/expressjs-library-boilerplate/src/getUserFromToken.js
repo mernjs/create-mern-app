@@ -1,5 +1,5 @@
 module.exports = function getUserFromToken(req) {
     return new Promise((resolve, reject) => {
-        resolve({ name: 'Vijay' })
+        resolve({ name: 'Vijay Pratap Singh' })
     })
 }

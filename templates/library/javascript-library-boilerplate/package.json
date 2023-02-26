@@ -1,7 +1,9 @@
 {
-    "name": "project_name",
+    "name": "experimental-javascript-library",
     "version": "0.1.0",
-    "description": "project_name",
+    "description": "experimental-javascript-library",
+    "main": "dist/my-library.min.js",
+    "module": "dist/my-library.min.js",
     "scripts": {
         "dev": "node scripts/dev.js",
         "build": "node scripts/build.js"
@@ -36,13 +38,5 @@
         "webpack": "^5.68.0",
         "webpack-cli": "^4.9.2",
         "webpack-dev-server": "^4.7.4"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/mernjs/project_name.git"
-    },
-    "bugs": {
-        "url": "https://github.com/mernjs/project_name/issues"
-    },
-    "homepage": "https://github.com/mernjs/project_name#readme"
+    }
 }

@@ -7,5 +7,5 @@ module.exports.randomStr = (length) => {
         string += characters.charAt(Math.floor(Math.random() * charactersLength));
         counter += 1;
     }
-    return string;
+    return `dddddev_${string}`;
 };

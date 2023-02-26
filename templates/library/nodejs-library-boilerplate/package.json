@@ -3,14 +3,18 @@
     "version": "0.1.0",
     "main": "libs/index.js",
     "scripts": {
-        "dev": "concurrently \"yarn --cwd example\" \"yarn start\" \"yarn node\"",
-        "start": "nodemon example/server.js",
-        "node": "nodemon src/index.js",
+        "example": "cd example && yarn dev",
+        "start": "nodemon src/index.js",
+        "watch": "rollup -c -w",
         "build": "rollup -c",
         "lint": "eslint .",
+        "dev": "npm-run-all --parallel watch start example",
         "lint:fix": "eslint --fix --ext .js,.jsx .",
         "upgrade": "npx npm-check-updates &&  npx npm-check-updates -u",
         "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'"
+    },
+    "dependencies": {
+        "npm-run-all": "^4.1.5"
     },
     "devDependencies": {
         "@rollup/plugin-commonjs": "^24.0.1",
@@ -24,7 +28,6 @@
         "rollup": "^3.15.0",
         "rollup-plugin-node": "^0.2.1"
     },
-    "dependencies": {},
     "repository": {
         "type": "git",
         "url": "https://github.com/mernjs/project_name.git"

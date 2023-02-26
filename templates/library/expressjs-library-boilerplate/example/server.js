@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const app = express();
-const { auth } = require('../src/index')
+const { auth } = require('node-library')
 
 app.use(cors());
 app.use(bodyParser.json({ limit: '10mb', extended: true }));
