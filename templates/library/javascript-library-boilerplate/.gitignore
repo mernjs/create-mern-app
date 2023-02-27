@@ -2,21 +2,14 @@
 
 # dependencies
 node_modules
-.pnp
+/.pnp
 .pnp.js
 package-lock.json
-
+yarn.lock
+dist
+*.tgz
 # testing
-coverage
-
-# next.js
-.next/
-out/
-
-# production
-build
-production
-public/uploads/**/
+/coverage
 
 # misc
 .DS_Store
@@ -32,6 +25,7 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+.dccache
 
 # vercel
 .vercel

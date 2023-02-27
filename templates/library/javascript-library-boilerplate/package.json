@@ -1,42 +1,47 @@
 {
-    "name": "experimental-javascript-library",
-    "version": "0.1.0",
-    "description": "experimental-javascript-library",
-    "main": "dist/my-library.min.js",
-    "module": "dist/my-library.min.js",
+    "name": "project_name",
+    "version": "1.0.6",
+    "description": "project_name",
+    "main": "dist/bundle.js",
+    "module": "dist/bundle.js",
     "scripts": {
-        "dev": "node scripts/dev.js",
-        "build": "node scripts/build.js"
+        "watch": "rollup -c -w",
+        "build": "rollup -c",
+        "lint": "eslint .",
+        "example": "cd example && yarn dev",
+        "dev": "npm-run-all --parallel watch example",
+        "lint:fix": "eslint --fix --ext .js,.jsx .",
+        "upgrade": "npx npm-check-updates &&  npx npm-check-updates -u",
+        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'"
     },
     "author": "Vijay Pratap Singh",
     "license": "MIT",
-    "dependencies": {},
+    "peerDependencies": {},
+    "dependencies": {
+        "@rollup/plugin-json": "^6.0.0",
+        "npm-run-all": "^4.1.5",
+        "rollup-plugin-uglify": "^6.0.4"
+    },
     "devDependencies": {
-        "@babel/core": "^7.17.0",
-        "@babel/plugin-proposal-class-properties": "^7.16.7",
-        "@babel/preset-env": "^7.16.11",
-        "babel-eslint": "^10.1.0",
-        "babel-loader": "^8.2.3",
-        "clean-webpack-plugin": "^4.0.0",
-        "copy-webpack-plugin": "^7.0.0",
-        "css-loader": "^6.6.0",
-        "eslint": "^8.8.0",
-        "eslint-plugin-flowtype": "^8.0.3",
-        "eslint-plugin-import": "^2.25.4",
-        "eslint-plugin-jsx-a11y": "^6.5.1",
-        "file-loader": "^6.2.0",
-        "fs-extra": "^10.0.0",
-        "html-loader": "^3.1.0",
-        "html-webpack-plugin": "^5.5.0",
-        "node-sass": "^6.0.1",
-        "sass-loader": "^12.4.0",
-        "source-map-loader": "^3.0.1",
-        "style-loader": "^3.3.1",
-        "terser-webpack-plugin": "^5.3.1",
-        "ts-loader": "^9.2.6",
-        "typescript": "^4.5.5",
-        "webpack": "^5.68.0",
-        "webpack-cli": "^4.9.2",
-        "webpack-dev-server": "^4.7.4"
-    }
+        "@babel/core": "^7.20.12",
+        "@babel/preset-env": "^7.20.2",
+        "@rollup/plugin-babel": "^6.0.3",
+        "@rollup/plugin-commonjs": "^24.0.0",
+        "@rollup/plugin-node-resolve": "^15.0.1",
+        "@rollup/plugin-terser": "^0.3.0",
+        "eslint": "^8.33.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-plugin-react": "^7.32.2",
+        "prettier": "^2.8.3",
+        "rollup": "^2.79.1",
+        "rollup-plugin-import-css": "^3.1.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mernjs/project_name.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mernjs/project_name/issues"
+    },
+    "homepage": "https://github.com/mernjs/project_name#readme"
 }

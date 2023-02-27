@@ -1,3 +1,4 @@
-export const addTwoNumber = (a,b, callback) => {
-    callback(parseInt(a) + parseInt(b))
+const addTwoNumber = () => {
+    console.log("add tow number")
 }
+export { addTwoNumber };
