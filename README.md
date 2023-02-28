@@ -70,8 +70,8 @@ App boilerplates for building application.
 
 Library boilerplates for building npm package.
 
-| SN. | Boilerplates | Download |
-| ------ | ------ | ------ |
+| SN. | Boilerplates | Download | Demo |
+| ------ | ------ | ------ | ------ |
 | 1 | [JavaScript Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/javascript-library-boilerplate) | [![Download JavaScript Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download JavaScript Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/javascript-library-boilerplate.zip) | [![Demo](https://custom-icon-badges.herokuapp.com/badge/-demo-red?style=for-the-badge&logo=link&logoColor=white "Click to view live demo")](https://javascript-library-boilerplates.netlify.app/)  |
 | 2 | [ReactJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/reactjs-library-boilerplate) | [![Download ReactJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/reactjs-library-boilerplate.zip) | [![Demo](https://custom-icon-badges.herokuapp.com/badge/-demo-red?style=for-the-badge&logo=link&logoColor=white "Click to view live demo")](https://reactjs-library-boilerplates.netlify.app/)  |
 | 3 | [NodeJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/nodejs-library-boilerplate) | [![Download NodeJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/nodejs-library-boilerplate.zip) | [![Demo](https://custom-icon-badges.herokuapp.com/badge/-demo-red?style=for-the-badge&logo=link&logoColor=white "Click to view live demo")](https://nodejs-library-boilerplates.netlify.app/)  |
