@@ -10,6 +10,10 @@
         "upgrade": "npx npm-check-updates &&  npx npm-check-updates -u",
         "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'"
     },
+    "engines": {
+        "node": "18.13.0",
+        "npm": "8.19.3"
+    },
     "dependencies": {
         "@hookform/error-message": "^2.0.1",
         "@reduxjs/toolkit": "^1.9.1",
