@@ -1,0 +1,6 @@
+[submodule "create-mern-app.wiki"]
+	path = create-mern-app.wiki
+	url = https://github.com/mernjs/create-mern-app.wiki.git
+[submodule "wiki"]
+	path = wiki
+	url = https://github.com/mernjs/create-mern-app.wiki.git
