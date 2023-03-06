@@ -22,19 +22,19 @@ Route.route('/api/v1')
     .get((req, res) => Utilities.apiResponse(res, 200, 'APIs V1'))
     .all(Utilities.send405);
 
-Route.route('/api/v1/auth/login')
+Route.route('/api/v1/login')
     .post(AuthController.login)
     .all(Utilities.send405);
 
-Route.route('/api/v1/auth/signup')
+Route.route('/api/v1/signup')
     .post(AuthController.signup)
     .all(Utilities.send405);
 
-Route.route('/api/v1/auth/users')
+Route.route('/api/v1/users')
     .get(AuthController.users)
     .all(Utilities.send405);
 
-Route.route('/api/v1/auth/user')
+Route.route('/api/v1/user')
     .get(Utilities.verifyAccessToken, AuthController.getUserByID)
     .all(Utilities.send405);
 

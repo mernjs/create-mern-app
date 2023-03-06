@@ -3,7 +3,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 
 const instance = axios.create({
-    baseURL: 'https://iuqkny-8080.preview.csb.app/api',
+    baseURL: 'https://create-mern-app-production.up.railway.app/api/v1',
 });
 
 instance.interceptors.request.use(
@@ -22,9 +22,9 @@ export default instance;
 
 export const history = createBrowserHistory();
 
-export const requestStart = (loaderName) => {};
+export const requestStart = (loaderName) => { };
 
-export const requestError = (loaderName, message) => {};
+export const requestError = (loaderName, message) => { };
 
 export const requestSuccess = (loaderName, message) => {
     if (message) toast.success(message);
