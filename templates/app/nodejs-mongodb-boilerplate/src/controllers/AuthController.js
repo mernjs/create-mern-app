@@ -2,6 +2,7 @@ const Utilities = require('../Utilities');
 const User = require('../models/User');
 
 class AuthController {
+
     async login(req, res) {
         try {
             const user = await User.findOne({ email: req.body.email });
@@ -56,29 +57,6 @@ class AuthController {
                 ...data,
                 accessToken,
             });
-        } catch (error) {
-            Utilities.apiResponse(res, 500, error);
-        }
-    }
-
-    async users(req, res) {
-        try {
-            const users = await User.find();
-            Utilities.apiResponse(res, 200, 'Get Users Successfully', users);
-        } catch (error) {
-            Utilities.apiResponse(res, 500, error);
-        }
-    }
-
-    async getUserByID(req, res) {
-        try {
-            const user = await User.findOne({ _id: req.query.user_id });
-            Utilities.apiResponse(
-                res,
-                200,
-                'Get User Details Successfully',
-                user,
-            );
         } catch (error) {
             Utilities.apiResponse(res, 500, error);
         }

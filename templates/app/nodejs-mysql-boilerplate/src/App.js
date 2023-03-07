@@ -3,6 +3,7 @@ const express = require('express');
 const Route = express.Router();
 
 const AuthController = require('./controllers/AuthController');
+const CrudController = require('./controllers/CrudController')
 /**
  * APIs V1 Routes
  */
@@ -31,11 +32,10 @@ Route.route('/api/v1/signup')
     .all(Utilities.send405);
 
 Route.route('/api/v1/users')
-    .get(AuthController.users)
-    .all(Utilities.send405);
-
-Route.route('/api/v1/user')
-    .get(Utilities.verifyAccessToken, AuthController.getUserByID)
+    .post(CrudController.create)
+    .get(CrudController.read)
+    .put(CrudController.update)
+    .delete(CrudController.delete)
     .all(Utilities.send405);
 
 module.exports = Route;

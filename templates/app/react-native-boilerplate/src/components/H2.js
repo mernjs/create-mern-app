@@ -17,6 +17,6 @@ const H2 = styled.Text`
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 0px;
-    line-height: 29px;
+    line-height: 60px;
     text-align: center;
 `;

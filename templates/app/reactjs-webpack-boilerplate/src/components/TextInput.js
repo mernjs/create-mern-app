@@ -41,9 +41,9 @@ export default Input;
 const TextInput = styled.div`
     margin-bottom: 16px;
     .text-input {
-        padding: 5px 15px;
+        padding: 22px 15px;
         height: 40px;
-        width: 92%;
+        width: 100%;
         border: 1px solid rgb(238, 236, 236);
         border-radius: 28px;
         background-color: rgb(255, 255, 255);
