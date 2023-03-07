@@ -32,7 +32,7 @@ class CrudController {
         try {
             const doesExist = await User.findOne({ where: { email: req.body.email } })
             if (doesExist) return Utilities.apiResponse(res, 422, 'Email is already been registered')
-            await User.update(req.body, { where: { email: req.body.email } })
+            await User.update(req.body, { where: { id: req.body.user_id } })
             Utilities.apiResponse(res, 200, 'User Has Been Updated Successfully')
         } catch (error) {
             Utilities.apiResponse(res, 500, error)
@@ -41,7 +41,7 @@ class CrudController {
 
     async delete(req, res) {
         try {
-            await User.destroy({ where: { email: req.body.email } });
+            await User.destroy({ where: { id: req.body.user_id } });
             Utilities.apiResponse(res, 200, 'User Deleted Successfully')
         } catch (error) {
             Utilities.apiResponse(res, 500, error)
