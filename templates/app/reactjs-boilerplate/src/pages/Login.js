@@ -30,7 +30,7 @@ const Login = () => {
             <ScrollView>
                 <Header />
                 <Container>
-                    <H2>Sign In...</H2>
+                    <H2>Sign In</H2>
                     <form onSubmit={handleSubmit((values) => login(values))}>
                         <Controller
                             name="email"
