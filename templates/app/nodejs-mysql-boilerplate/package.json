@@ -13,7 +13,8 @@
         "lint": "eslint .",
         "lint:fix": "eslint --fix --ext .js,.jsx .",
         "upgrade": "npx npm-check-updates &&  npx npm-check-updates -u",
-        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'"
+        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'",
+        "prepare": "husky install"
     },
     "author": "nodejs-with-mysql@getnada.com",
     "dependencies": {
@@ -35,6 +36,7 @@
     "devDependencies": {
         "eslint": "^8.32.0",
         "eslint-config-google": "^0.14.0",
+        "husky": "^8.0.3",
         "nodemon": "^2.0.20",
         "prettier": "^2.8.3"
     }

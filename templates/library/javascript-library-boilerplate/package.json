@@ -12,7 +12,8 @@
         "dev": "npm-run-all --parallel watch example",
         "lint:fix": "eslint --fix --ext .js,.jsx .",
         "upgrade": "npx npm-check-updates &&  npx npm-check-updates -u",
-        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'"
+        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'",
+        "prepare": "husky install"
     },
     "author": "Vijay Pratap Singh",
     "license": "MIT",
@@ -32,6 +33,7 @@
         "eslint": "^8.33.0",
         "eslint-config-google": "^0.14.0",
         "eslint-plugin-react": "^7.32.2",
+        "husky": "^8.0.3",
         "prettier": "^2.8.3",
         "rollup": "^2.79.1",
         "rollup-plugin-import-css": "^3.1.0"

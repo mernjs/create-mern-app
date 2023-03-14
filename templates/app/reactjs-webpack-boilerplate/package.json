@@ -8,7 +8,8 @@
         "lint": "eslint .",
         "lint:fix": "eslint --fix --ext .js,.jsx .",
         "upgrade": "npx npm-check-updates &&  npx npm-check-updates -u",
-        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'"
+        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'",
+        "prepare": "husky install"
     },
     "dependencies": {
         "@hookform/error-message": "^2.0.1",
@@ -41,6 +42,7 @@
         "eslint": "^8.32.0",
         "eslint-config-google": "^0.14.0",
         "eslint-plugin-react": "^7.32.1",
+        "husky": "^8.0.3",
         "html-webpack-plugin": "^5.5.0",
         "node-sass": "^8.0.0",
         "postcss": "^8.4.21",
