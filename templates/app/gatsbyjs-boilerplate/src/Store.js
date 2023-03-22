@@ -38,7 +38,7 @@ const rootstore = configureStore({
 
 export const persistor = persistStore(rootstore);
 
-const store = (preloadedState) => {
+const store = () => {
     return rootstore;
 };
 
