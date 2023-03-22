@@ -12,8 +12,8 @@
         "prepare": "husky install"
     },
     "engines": {
-        "node": "18.13.0",
-        "npm": "8.19.3"
+        "node": "16.17.0",
+        "npm": "8.15.3"
     },
     "dependencies": {
         "@hookform/error-message": "^2.0.1",
