@@ -1,4 +1,4 @@
-import React from 'react';
+const React = require('react');
 const App = require('./src/App');
 
 exports.onRenderBody = ({ setHtmlAttributes }) => {
