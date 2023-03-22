@@ -8,8 +8,7 @@
         "lint": "eslint .",
         "lint:fix": "eslint --fix --ext .js,.jsx .",
         "upgrade": "npx npm-check-updates &&  npx npm-check-updates -u",
-        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'",
-        "prepare": "husky install"
+        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'"
     },
     "dependencies": {
         "@hookform/error-message": "^2.0.1",
