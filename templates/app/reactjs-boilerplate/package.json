@@ -11,10 +11,6 @@
         "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'",
         "prepare": "husky install"
     },
-    "engines": {
-        "node": "16.17.0",
-        "npm": "8.15.3"
-    },
     "dependencies": {
         "@hookform/error-message": "^2.0.1",
         "@reduxjs/toolkit": "^1.9.1",
