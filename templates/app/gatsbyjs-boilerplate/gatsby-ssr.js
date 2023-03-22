@@ -1,3 +1,4 @@
+import React from 'react';
 const App = require('./src/App');
 
 exports.onRenderBody = ({ setHtmlAttributes }) => {
