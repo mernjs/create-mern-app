@@ -3,22 +3,22 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Button = (props) => {
-	return (
-		<BTN
-			className={props.className}
-			type={props.type}
-			disabled={props.disabled}
-		>
-			{props.children}
-		</BTN>
-	);
+    return (
+        <BTN
+            className={props.className}
+            type={props.type}
+            disabled={props.disabled}
+        >
+            {props.children}
+        </BTN>
+    );
 };
 
 Button.propTypes = {
-	className: PropTypes.string,
-	type: PropTypes.string,
-	disabled: PropTypes.bool,
-	children: PropTypes.element,
+    className: PropTypes.string,
+    type: PropTypes.string,
+    disabled: PropTypes.bool,
+    children: PropTypes.element,
 };
 
 export default Button;
@@ -27,7 +27,6 @@ const BTN = styled.button`
     width: 100%;
     padding: 10px;
     cursor: pointer;
-    color: #fff;
     font-size: 18px;
     letter-spacing: 0.5px;
     font-weight: 600;
