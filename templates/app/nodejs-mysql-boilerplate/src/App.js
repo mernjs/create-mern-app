@@ -32,7 +32,7 @@ Route.route('/api/v1/signup')
     .post(AuthController.signup)
     .all(Utilities.send405);
 
-Route.route('/api/v1/users')
+Route.route('/api/v1/users/:userId?')
     .post(CrudController.create)
     .get(CrudController.read)
     .put(CrudController.update)

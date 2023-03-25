@@ -1,10 +1,9 @@
-const React = require('react');
-const App = require('./src/App');
+// const App = require('./src/App');
 
-exports.onRenderBody = ({ setHtmlAttributes }) => {
-    setHtmlAttributes({ lang: `en` });
-};
+// exports.onRenderBody = ({ setHtmlAttributes }) => {
+//     setHtmlAttributes({ lang: `en` });
+// };
 
-exports.wrapPageElement = ({ element, props }) => {
-    return <App {...props}>{element}</App>;
-};
+// exports.wrapPageElement = ({ element, props }) => {
+//     return <App {...props}>{element}</App>;
+// };

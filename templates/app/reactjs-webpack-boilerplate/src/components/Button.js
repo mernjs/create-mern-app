@@ -27,7 +27,6 @@ const BTN = styled.button`
     width: 100%;
     padding: 10px;
     cursor: pointer;
-    color: #fff;
     font-size: 18px;
     letter-spacing: 0.5px;
     font-weight: 600;

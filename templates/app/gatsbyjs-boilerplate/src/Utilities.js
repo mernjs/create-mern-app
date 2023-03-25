@@ -1,4 +1,3 @@
-import { createBrowserHistory } from 'history';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
@@ -19,8 +18,6 @@ instance.interceptors.request.use(
 );
 
 export default instance;
-
-export const history = createBrowserHistory();
 
 export const requestStart = (loaderName) => { };
 

@@ -22,7 +22,12 @@ class CrudController {
 
     async read(req, res) {
         try {
-            const users = await User.find()
+            let users = []
+            if (req.params.userId) {
+                users = await User.findOne({ _id: req.params.userId })
+            } else {
+                users = await User.find()
+            }
             Utilities.apiResponse(res, 200, 'Get Users Successfully', users)
         } catch (error) {
             Utilities.apiResponse(res, 500, error)
