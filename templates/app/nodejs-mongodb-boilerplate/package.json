@@ -25,6 +25,7 @@
         "faker": "^6.6.6",
         "jsonwebtoken": "^9.0.0",
         "mongoose": "^6.9.0",
+        "mongoose-paginate-v2": "^1.7.1",
         "morgan": "^1.10.0"
     },
     "devDependencies": {

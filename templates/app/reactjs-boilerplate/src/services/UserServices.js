@@ -6,7 +6,7 @@ export const UserServices = api.injectEndpoints({
 
         getUsers: build.query({
             query: () => 'users',
-            providesTags: (result) => result.data ? result.data.map(({ _id }) => ({ type: 'Users', _id })) : [],
+            providesTags: (result) => result?.data?.docs ? result.data?.docs.map(({ _id }) => ({ type: 'Users', _id })) : [],
         }),
 
         addUser: build.mutation({

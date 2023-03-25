@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styled from 'styled-components';
 import { ErrorMessage } from '@hookform/error-message';
 import PropTypes from 'prop-types';
@@ -36,7 +36,7 @@ Input.propTypes = {
     errors: PropTypes.object,
 };
 
-export default Input;
+export default memo(Input);
 
 const TextInput = styled.div`
     margin-bottom: 16px;
