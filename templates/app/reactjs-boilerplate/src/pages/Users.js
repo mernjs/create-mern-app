@@ -12,7 +12,7 @@ const Users = () => {
     const [page, setPage] = useState(0);
     const navigate = useNavigate();
 
-    const { data, isFetching } = useGetUsersQuery(page);
+    const { data, isFetching } = useGetUsersQuery(page + 1);
     console.log('data', page);
     // const getUsers = () => {
     // 	dispatch(api.endpoints.getUsers.initiate());
