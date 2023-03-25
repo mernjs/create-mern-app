@@ -5,7 +5,7 @@ export const UserServices = api.injectEndpoints({
     endpoints: (build) => ({
 
         getUsers: build.query({
-            query: () => 'users',
+            query: (page) => `users?page=${page}`,
             providesTags: (result) => result?.data?.docs ? result.data?.docs.map(({ _id }) => ({ type: 'Users', _id })) : [],
         }),
 

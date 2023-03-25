@@ -23,8 +23,8 @@ class CrudController {
     async read(req, res) {
         try {
             const options = {
-                page: 1,
-                limit: 10,
+                page: req.query?.page || 1,
+                limit: req.query?.limit || 10,
             };
             let users = []
             if (req.params.userId) {
