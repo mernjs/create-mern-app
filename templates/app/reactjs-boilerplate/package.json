@@ -18,6 +18,7 @@
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-hook-form": "^7.42.1",
+        "react-paginate": "^8.1.4",
         "react-redux": "^8.0.5",
         "react-router-dom": "^6.8.0",
         "react-scripts": "^5.0.1",
