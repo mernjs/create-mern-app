@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const bcrypt = require('bcrypt');
+const mongoosePaginate = require('mongoose-paginate-v2');
 
 const UserSchema = new Schema(
     {
@@ -21,6 +22,8 @@ const UserSchema = new Schema(
     },
     { timestamps: { currentTime: () => Date.now() } },
 );
+
+UserSchema.plugin(mongoosePaginate)
 
 UserSchema.pre('save', async function (next) {
     try {

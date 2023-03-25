@@ -22,11 +22,15 @@ class CrudController {
 
     async read(req, res) {
         try {
+            const options = {
+                page: 1,
+                limit: 10,
+            };
             let users = []
             if (req.params.userId) {
                 users = await User.findOne({ _id: req.params.userId })
             } else {
-                users = await User.find()
+                users = await User.paginate({}, options)
             }
             Utilities.apiResponse(res, 200, 'Get Users Successfully', users)
         } catch (error) {
