@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Heading = (props) => {
-    return <H2>{props.children}</H2>;
+	return <H2>{props.children}</H2>;
 };
 
 Heading.propTypes = {
-    children: PropTypes.element,
+	children: PropTypes.string,
 };
 
 export default Heading;

@@ -5,50 +5,53 @@ import { useSelector, useDispatch } from 'react-redux';
 import { AuthActions } from '../reducers/AuthReducer';
 
 const Header = () => {
-    const dispatch = useDispatch();
-    const user = useSelector((state) => state.auth.user);
+	const dispatch = useDispatch();
+	const user = useSelector((state) => state.auth.user);
 
-    const logout = () => {
-        dispatch(AuthActions.logout());
-    };
+	const logout = () => {
+		dispatch(AuthActions.logout());
+	};
 
-    return (
-        <HeaderWrapper>
-            <div className="container">
-                <Navbar>
-                    <Logo>
-                        <Link to="/">
-                            <b>Create MERN App</b>
-                        </Link>
-                    </Logo>
-                    <ul>
-                        {user === null && (
-                            <>
-                                <li>
-                                    <Link to="/login">Login</Link>
-                                </li>
-                                <li>
-                                    <Link to="/signup">Signup</Link>
-                                </li>
-                            </>
-                        )}
-                        {user !== null && (
-                            <>
-                                <li>
-                                    <a
-                                        onClick={logout}
-                                        href="javaScript:void(0)"
-                                    >
-                                        Logout
-                                    </a>
-                                </li>
-                            </>
-                        )}
-                    </ul>
-                </Navbar>
-            </div>
-        </HeaderWrapper>
-    );
+	return (
+		<HeaderWrapper>
+			<div className="container">
+				<Navbar>
+					<Logo>
+						<Link to="/">
+							<b>Create MERN App</b>
+						</Link>
+					</Logo>
+					<ul>
+						<li>
+							<Link to="/users">Users</Link>
+						</li>
+						{user === null && (
+							<>
+								<li>
+									<Link to="/login">Login</Link>
+								</li>
+								<li>
+									<Link to="/signup">Signup</Link>
+								</li>
+							</>
+						)}
+						{user !== null && (
+							<>
+								<li>
+									<a
+										onClick={logout}
+										href="javaScript:void(0)"
+									>
+										Logout
+									</a>
+								</li>
+							</>
+						)}
+					</ul>
+				</Navbar>
+			</div>
+		</HeaderWrapper>
+	);
 };
 
 export default Header;

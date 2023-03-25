@@ -1,0 +1,70 @@
+import { api } from './api';
+
+export const UserServices = api.injectEndpoints({
+
+    endpoints: (build) => ({
+
+        getUsers: build.query({
+            query: () => 'users',
+            providesTags: (result) => result.data ? result.data.map(({ _id }) => ({ type: 'Users', _id })) : [],
+        }),
+
+        addUser: build.mutation({
+            query: (body) => ({
+                url: `users`,
+                method: 'POST',
+                body,
+            }),
+            invalidatesTags: [{ type: 'Users', id: 'LIST' }],
+        }),
+
+        getUser: build.query({
+            query: (id) => ({
+                url: `users/${id}`,
+                method: 'GET',
+            }),
+            providesTags: (result, error, id) => [{ type: 'Users', id }],
+        }),
+
+        updateUser: build.mutation({
+            query: ({ id, ...patch }) => ({
+                url: `users/${id}`,
+                method: 'PUT',
+                body: patch,
+            }),
+            async onQueryStarted({ id, ...patch }, { dispatch, queryFulfilled }) {
+                const patchResult = dispatch(
+                    api.util.updateQueryData('getUser', id, (draft) => {
+                        Object.assign(draft, patch);
+                    }),
+                );
+                try {
+                    await queryFulfilled;
+                } catch {
+                    patchResult.undo();
+                }
+            },
+            invalidatesTags: (result, error, { id }) => [{ type: 'Users', id }],
+        }),
+
+        deleteUser: build.mutation({
+            query(id) {
+                return {
+                    url: `users/${id}`,
+                    method: 'DELETE',
+                };
+            },
+            invalidatesTags: (result, error, id) => [{ type: 'Users', id }],
+        }),
+
+    }),
+
+});
+
+export const {
+    useGetUserQuery,
+    useGetUsersQuery,
+    useAddUserMutation,
+    useUpdateUserMutation,
+    useDeleteUserMutation,
+} = UserServices;

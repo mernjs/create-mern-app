@@ -11,8 +11,7 @@
         "lint": "eslint .",
         "lint:fix": "eslint --fix --ext .js,.jsx .",
         "upgrade": "npx npm-check-updates &&  npx npm-check-updates -u",
-        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'",
-        "prepare": "husky install"
+        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'"
     },
     "author": "author_email",
     "dependencies": {
@@ -48,8 +47,7 @@
         "babel-plugin-styled-components": "^2.0.7",
         "eslint": ">=8.32.0",
         "eslint-config-google": "^0.14.0",
-        "eslint-plugin-react": "^7.32.1",
-        "husky": "^8.0.3"
+        "eslint-plugin-react": "^7.32.1"
     },
     "private": true
 }
