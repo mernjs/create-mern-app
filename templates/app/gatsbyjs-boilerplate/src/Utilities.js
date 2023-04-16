@@ -2,7 +2,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 
 const instance = axios.create({
-    baseURL: 'https://create-mern-app-production.up.railway.app/api/v1',
+    baseURL: 'http://api.mern.co.in/api/v1',
 });
 
 instance.interceptors.request.use(
