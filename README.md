@@ -54,7 +54,7 @@ create-mernjs-app my-library --template library
 App boilerplates for building application.
 
 | SN. | Boilerplates | Download | Demo |
-| ------ | ------ | ------ | ------ | ------ |
+| ------ | ------ | ------ | ------ |
 | 1 | [MERN Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/mern-boilerplate) | [![Download MERN Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download MERN Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/mern-boilerplate.zip) | [![Demo](https://custom-icon-badges.herokuapp.com/badge/-demo-red?style=for-the-badge&logo=link&logoColor=white "Click to view live demo")](https://create-mern-app-reactjs.vercel.app) | 
 | 2 | [NodeJS & MongoDB Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mongodb-boilerplate) | [![Download NodeJS MongoDB Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MongoDB Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nodejs-mongodb-boilerplate.zip) | [![Demo](https://custom-icon-badges.herokuapp.com/badge/-demo-red?style=for-the-badge&logo=link&logoColor=white "Click to view live demo")](http://api.mern.co.in/api/v1) |
 | 3 | [NodeJS & MySQL Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mysql-boilerplate) | [![Download NodeJS MySQL Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MySQL Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nodejs-mysql-boilerplate.zip) | [![Demo](https://custom-icon-badges.herokuapp.com/badge/-demo-red?style=for-the-badge&logo=link&logoColor=white "Click to view live demo")](http://api.mern.co.in/api/v1) |
@@ -71,7 +71,7 @@ App boilerplates for building application.
 Library boilerplates for building npm package.
 
 | SN. | Boilerplates | Download |
-| ------ | ------ | ------ | ------ | ------ |
+| ------ | ------ | ------ |
 | 1 | [JavaScript Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/javascript-library-boilerplate) | [![Download JavaScript Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download JavaScript Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/javascript-library-boilerplate.zip) |
 | 2 | [ReactJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/reactjs-library-boilerplate) | [![Download ReactJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/reactjs-library-boilerplate.zip) |
 | 3 | [NodeJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/nodejs-library-boilerplate) | [![Download NodeJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/nodejs-library-boilerplate.zip) |
