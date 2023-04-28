@@ -29,7 +29,8 @@
         "no-var": "off",
         "quotes": "off",
         "curly": "off",
-        "semi": "off"
+        "semi": "off",
+        "eol-last": "off"
     },
     "settings": {
         "react": {
