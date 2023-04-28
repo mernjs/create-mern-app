@@ -20,9 +20,9 @@ const Home = () => {
     const queryParams = new URLSearchParams(window.location.search)
     const payload = {
         keyword: queryParams.get("keyword") || '',
-        location: queryParams.get("location") || '',
-        dateSincePosted: queryParams.get("dateSincePosted") || '',
-        jobType: queryParams.get("jobType") || '',
+        location: queryParams.get("location") || 'India',
+        dateSincePosted: queryParams.get("dateSincePosted") || 'past week',
+        jobType: queryParams.get("jobType") || 'full time',
         remoteFilter: queryParams.get("remoteFilter") || '',
         salary: queryParams.get("salary") || '',
         experienceLevel: queryParams.get("experienceLevel") || '',
