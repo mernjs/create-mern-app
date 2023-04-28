@@ -28,7 +28,8 @@
         "no-unused-vars": "off",
         "no-var": "off",
         "quotes": "off",
-        "curly": "off"
+        "curly": "off",
+        "semi": "off"
     },
     "settings": {
         "react": {
