@@ -25,15 +25,14 @@ app.disable('x-powered-by');
 const server = app
     .listen(process.env.PORT || process.env.APP_PORT, () => {
         console.log(
-            `********** Server is running on  http://localhost:${
-                server.address().port
+            `********** Server is running on  http://localhost:${server.address().port
             }  **********`,
         );
     })
     .on('error', (error) => {
         console.log(
             '********** \x1b[31mPort ' +
-                error.port +
-                ' is already in use\x1b[0m **********',
+            error.port +
+            ' is already in use\x1b[0m **********',
         );
     });
