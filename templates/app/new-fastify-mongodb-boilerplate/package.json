@@ -1,0 +1,36 @@
+{
+	"name": "project_name",
+	"version": "0.1.0",
+	"private": true,
+	"main": "server.js",
+	"scripts": {
+		"dev": "nodemon server.js",
+		"start": "node server.js",
+		"forever-start": "forever start server.js",
+		"forever-restart": "forever restart server.js",
+		"forever-stop": "forever stop server.js",
+		"migration": "migrate-mongo",
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix --ext .js,.jsx .",
+		"upgrade": "npx npm-check-updates &&  npx npm-check-updates -u",
+		"prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'"
+	},
+	"dependencies": {
+		"bcrypt": "^5.1.0",
+		"body-parser": "^1.20.1",
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.3",
+		"ejs": "^3.1.8",
+		"fastify": "^3.15.1",
+		"faker": "^6.6.6",
+		"jsonwebtoken": "^9.0.0",
+		"mongoose": "^6.9.0",
+		"mongoose-paginate-v2": "^1.7.1"
+	},
+	"devDependencies": {
+		"eslint": "^8.32.0",
+		"eslint-config-google": "^0.14.0",
+		"nodemon": "^2.0.20",
+		"prettier": "^2.8.3"
+	}
+}
