@@ -114,7 +114,7 @@ async function init() {
             });
         })
         .on(Constants.help, () => {
-            let message = `   Create MERN App provide boilerplates for building Web App, Mobile App, Desktop App, Chrome Extension & NPM Package Development in JavaScript. ${chalk.cyan('https://mernjs.github.io/create-mern-app')}`;
+            let message = `   The MERN App provides a versatile set of boilerplates that streamline the development process for various applications. Whether you're building a web app, mobile app, desktop app, Chrome extension, or an NPM package in JavaScript, our comprehensive templates will help you get started quickly and efficiently. ${chalk.cyan('https://mernjs.github.io/create-mern-app')}`;
             console.log(yosay(`${chalk.bold.green(' ** Welcom To Create MERN App ** ')} \n ${chalk.green(' ')} \n ${message} \n\n ${chalk.bold.blue(' By: Vijay Pratap Singh ')} \n ${chalk.green(' ')} `, { maxLength: 55 }));
         })
         .parse(process.argv);

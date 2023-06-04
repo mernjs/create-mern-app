@@ -11,7 +11,7 @@ If you find this code useful, don't forget to <a target="_blank" href="https://g
 </h5>
 
 <h4>Create MERN App</h4>
-<h5>Create MERN App provide boilerplates for building Web App, Mobile App, Desktop App, Chrome Extension & NPM Package Development in JavaScript.</h5>
+<h5>The MERN App provides a versatile set of boilerplates that streamline the development process for various applications. Whether you're building a web app, mobile app, desktop app, Chrome extension, or an NPM package in JavaScript, our comprehensive templates will help you get started quickly and efficiently.</h5>
 
 <h4>Node Version </h4>
 
