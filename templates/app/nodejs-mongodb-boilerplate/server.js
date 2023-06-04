@@ -11,12 +11,9 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json({ limit: '10mb', extended: true }));
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
-
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, './src/views'));
 app.use(express.static(path.join(__dirname, './public')));
 
-app.use(require(`./src/App`));
+app.use(require(`./src/Routes`));
 
 app.use(logger('dev'));
 app.use(Utilities.send404);

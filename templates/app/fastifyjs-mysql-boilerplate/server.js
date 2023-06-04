@@ -1,7 +1,7 @@
 require('dotenv').config();
 global.Sequelize = require('sequelize');
 const fastify = require('fastify')({ logger: true });
-const routes = require('./src/App');
+const routes = require('./src/Routes');
 
 routes.forEach((route) => {
     fastify.route(route);
