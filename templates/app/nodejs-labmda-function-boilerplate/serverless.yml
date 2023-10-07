@@ -1,0 +1,16 @@
+app: project_name
+service: project_name
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  api:
+    handler: server.handler
+    events:
+      - httpApi: "*"
+
+plugins:
+  - serverless-offline
