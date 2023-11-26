@@ -67,6 +67,7 @@ App boilerplates for building application.
 | 10 | [ReactJS Webpack Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-webpack-boilerplate) | [![Download ReactJS Webpack Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Webpack Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/reactjs-webpack-boilerplate.zip) |
 | 11 | [FastifyJS & MySQL Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/fastifyjs-mysql-boilerplate) | [![Download FastifyJS MySQL Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download FastifyJS MySQL Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/fastifyjs-mysql-boilerplate.zip) |
 | 12 | [FastifyJS & MongoDB Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/fastifyjs-mongodb-boilerplate) | [![Download FastifyJS MongoDB Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download FastifyJS MongoDB Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/fastifyjs-mongodb-boilerplate.zip) |
+| 13 | [T3JS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/t3js-boilerplate) | [![Download T3JS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download T3JS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/t3js-boilerplate.zip) |
 
 <h4>Library Boilerplates</h4>
 
@@ -85,4 +86,4 @@ Library boilerplates for building npm package.
 
 Please message us, If you have any query, suggestions or security concerns via [GitHub](https://github.com/mernjs/create-mern-app/discussions)
 
-<p style="margin-left: '30px', margin-right: '30px'"><span style="text-align: 'left'">©2023 <a href="https://github.com/mernjs/create-mern-app/blob/master/LICENSE" target="_blank"> Create MERN App</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="float: 'right'"><b>By: </b> <a href="https://vijay-pratap-singh.netlify.app" target="_blank"> Vijay Pratap Singh</a></span></p>
+<p style="margin-left: '30px', margin-right: '30px'"><span style="text-align: 'left'">©2023 <a href="https://github.com/mernjs/create-mern-app/blob/master/LICENSE" target="_blank"> Create MERN App</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="float: 'right'"><b>By: </b> <a href="https://linkedin.com/in/vprtsingh" target="_blank"> Vijay Pratap Singh</a></span></p>
