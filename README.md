@@ -38,16 +38,70 @@ create-mernjs-app my-app
 create-mernjs-app my-library --template library
 ```
 
-<h4>Features</h4>
+<h4>Key Features</h4>
 
-- Simple Folder Structure
-- Clean code structure
-- Server & client code
-- Login/Signup Feature
-- Auto Indentation 
-- ESLint Feature
-- Prettier Feature
-- Tailwind CSS 
+1. **Effortless Initialization:**
+   Quickly start your MERN project with a straightforward command-line interface that automates the setup process.
+
+2. **Secure Coding Practices:**
+   Adopt industry standards for resilient code. Regular reviews and best practices minimize vulnerabilities and exploits in development.
+
+3. **Well-Defined Folder Structure:**
+   Benefit from a clean and organized project structure that promotes maintainability and scalability.
+
+4. **Server & Client Code Separation:**
+   Easily manage server-side and client-side code in separate sections, ensuring modularity and ease of development.
+
+5. **Authentication Ready:**
+   Implement secure login/signup features effortlessly, following best practices to safeguard user data.
+
+6. **Automatic Indentation:**
+   Ensure consistent code formatting with automatic indentation tools, improving code readability.
+
+7. **ESLint Integration:**
+   Enhance code quality by incorporating ESLint, which identifies and helps rectify potential issues according to established coding standards.
+
+8. **Prettier Support:**
+   Utilize Prettier for automatic code formatting, maintaining a cohesive and visually appealing codebase.
+
+9. **Tailwind CSS for Styling:**
+   Harness the power of Tailwind CSS to expedite the styling process, creating responsive and visually pleasing user interfaces.
+
+10. **Data Encryption:**
+   Utilize encryption for secure data transmission and storage, safeguarding against unauthorized access and ensuring data integrity.
+
+11. **Input Validation:**
+   Apply stringent input validation to prevent injection attacks and ensure safe user input.
+
+12. **CORS:**
+   Configure Cross-Origin Resource Sharing policies to control domain access, preventing unauthorized cross-origin requests.
+
+13. **Rate Limiting:**
+   Enforce API rate limits to prevent abuse, mitigating the risk of denial-of-service attacks.
+
+14. **Error Handling:**
+   Develop secure error-handling mechanisms for developers and users, avoiding sensitive information exposure.
+
+15. **Middleware Security:**
+   Strengthen middleware components against common threats, ensuring secure core functionalities and preventing vulnerabilities.
+
+16. **Dependency Scanning:**
+    Regularly scan and update dependencies to patch known vulnerabilities, reducing the risk of exploits.
+
+17. **Secure File Uploads:**
+    Implement secure file upload mechanisms, including type and size validation for enhanced application security.
+
+18. **Environment Configuration:**
+    Securely manage environment configurations, protecting sensitive data like API keys and credentials.
+
+19. **Security Headers:**
+    Set HTTP security headers to enhance browser security, guarding against common web vulnerabilities.
+
+20. **API Versioning:**
+    Implement API versioning for backward compatibility and smooth transitions during updates.
+
+21. **Monitoring:**
+    Establish robust monitoring for prompt detection and response to security incidents, ensuring continuous application integrity.
 
 <h4>App Boilerplates</h4>
 
