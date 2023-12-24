@@ -24,7 +24,7 @@
         "semver": "^7.3.8",
         "shelljs": "^0.8.5",
         "validate-npm-package-name": "^5.0.0",
-        "yosay": "^2.0.2"
+        "yosay": "^3.0.0"
     },
     "keywords": [
         "create-mernjs-app"
