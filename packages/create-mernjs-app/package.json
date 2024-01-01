@@ -1,6 +1,6 @@
 {
     "name": "create-mernjs-app",
-    "version": "21.0.5",
+    "version": "21.0.6",
     "description": "The MERN App provides a versatile set of boilerplates that streamline the development process for various applications. Whether you're building a web app, mobile app, desktop app, Chrome extension, or an NPM package in JavaScript, our comprehensive templates will help you get started quickly and efficiently.",
     "main": "./index.js",
     "scripts": {
@@ -19,7 +19,7 @@
         "fs-extra": "^10.1.0",
         "https": "^1.0.0",
         "inquirer": "^8.0.0",
-        "mernjs": "github:mernjs/create-mern-app#576438cc8b6203ad27c18b911edb8e1ecad6a809",
+        "mernjs": "github:mernjs/create-mern-app#ed70834085294f1bba3a855f4f95f382505f9ec4",
         "path": "^0.12.7",
         "semver": "^7.3.8",
         "shelljs": "^0.8.5",
