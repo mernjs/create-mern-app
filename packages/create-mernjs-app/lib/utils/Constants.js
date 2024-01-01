@@ -22,7 +22,7 @@ Constants.select_form = [
         type: "list",
         name: "project_type",
         message: "Choose your favourite boilerplate",
-        choices: ['MERN Boilerplate', 'NextJS Boilerplate', 'ReactJS Boilerplate', 'GatsbyJS Boilerplate', 'ElectronJS Boilerplate', 'React Native Boilerplate', 'NodeJS MySQL Boilerplate', 'NodeJS MongoDB Boilerplate', 'ReactJS Webpack Boilerplate', 'ReactJS Chrome Extension Boilerplate']
+        choices: ['MERN Boilerplate', 'NextJS Boilerplate', 'ReactJS Boilerplate', 'Expo Boilerplate', 'GatsbyJS Boilerplate', 'ElectronJS Boilerplate', 'React Native Boilerplate', 'NodeJS MySQL Boilerplate', 'NodeJS MongoDB Boilerplate', 'ReactJS Webpack Boilerplate', 'ReactJS Chrome Extension Boilerplate']
     }
 ]
 
