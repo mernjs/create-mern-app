@@ -15,7 +15,7 @@
     },
     "author": "author_email",
     "dependencies": {
-        "@expo/webpack-config": "^18.0.1",
+        "@expo/webpack-config": "^19.0.1",
         "@react-native-async-storage/async-storage": "^1.17.11",
         "@react-native-community/masked-view": "^0.1.11",
         "@react-navigation/native": "^6.1.2",
