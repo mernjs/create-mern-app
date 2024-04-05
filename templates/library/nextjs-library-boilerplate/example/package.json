@@ -9,7 +9,7 @@
         "lint": "next lint"
     },
     "dependencies": {
-        "eslint": "8.34.0",
+        "eslint": "9.0.0",
         "eslint-config-next": "13.2.1",
         "next": "13.2.1",
         "next-library": "link:..",
