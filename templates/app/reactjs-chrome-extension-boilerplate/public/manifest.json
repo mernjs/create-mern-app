@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "Create MERN App",
+    "description": "The MERN App provides a versatile set of boilerplates that streamline the development process for various applications. Whether you're building a web app, mobile app, desktop app, Chrome extension, or an NPM package in JavaScript, our comprehensive templates will help you get started quickly and efficiently.",
+    "background": {
+        "service_worker": "background.bundle.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon-48x48.png"
+    },
+    "icons": {
+        "128": "icon-128x128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*",
+                "<all_urls>"
+            ],
+            "js": [
+                "contentScript.bundle.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "icon-128x128.png",
+                "icon-48x48.png"
+            ],
+            "matches": []
+        }
+    ]
+}

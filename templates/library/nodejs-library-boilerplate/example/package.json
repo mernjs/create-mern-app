@@ -1,0 +1,26 @@
+{
+    "name": "example",
+    "version": "0.1.0",
+    "private": true,
+    "main": "server.js",
+    "scripts": {
+        "dev": "nodemon server.js",
+        "start": "node server.js",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix --ext .js,.jsx .",
+        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'",
+        "prepare": "husky install"
+    },
+    "dependencies": {
+        "body-parser": "^1.20.1",
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "node-library": "link:.."
+    },
+    "devDependencies": {
+        "eslint": "^8.32.0",
+        "eslint-config-google": "^0.14.0",
+        "nodemon": "^2.0.20",
+        "prettier": "^2.8.3"
+    }
+}

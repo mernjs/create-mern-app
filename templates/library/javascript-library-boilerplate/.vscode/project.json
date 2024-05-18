@@ -1,0 +1,9 @@
+{
+    "_comment": "The authentication module can be proceed in two ways. Using combination of username and password or token. The project.json which contains two of them at once is invalid.",
+    "project": "<your-key-here>",
+    "sonarURL": "<your-sonar-url>",
+    "auth": {
+        "username": "<sonar-username>",
+        "password": "<sonar-password>"
+    }
+}

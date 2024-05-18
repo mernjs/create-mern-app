@@ -1,0 +1,49 @@
+{
+    "name": "project_name",
+    "version": "1.0.6",
+    "description": "project_name",
+    "main": "dist/bundle.js",
+    "module": "dist/bundle.js",
+    "scripts": {
+        "watch": "rollup -c -w",
+        "build": "rollup -c",
+        "lint": "eslint .",
+        "example": "cd example && yarn dev",
+        "dev": "npm-run-all --parallel watch example",
+        "lint:fix": "eslint --fix --ext .js,.jsx .",
+        "upgrade": "npx npm-check-updates &&  npx npm-check-updates -u",
+        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'",
+        "prepare": "husky install"
+    },
+    "author": "Vijay Pratap Singh",
+    "license": "MIT",
+    "peerDependencies": {},
+    "dependencies": {
+        "@rollup/plugin-json": "^6.0.0",
+        "npm-run-all": "^4.1.5",
+        "rollup-plugin-uglify": "^6.0.4"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.20.12",
+        "@babel/preset-env": "^7.20.2",
+        "@rollup/plugin-babel": "^6.0.3",
+        "@rollup/plugin-commonjs": "^24.0.0",
+        "@rollup/plugin-node-resolve": "^15.0.1",
+        "@rollup/plugin-terser": "^0.3.0",
+        "eslint": "^8.33.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-plugin-react": "^7.32.2",
+        "husky": "^8.0.3",
+        "prettier": "^2.8.3",
+        "rollup": "^2.79.1",
+        "rollup-plugin-import-css": "^3.1.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mernjs/project_name.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mernjs/project_name/issues"
+    },
+    "homepage": "https://github.com/mernjs/project_name#readme"
+}

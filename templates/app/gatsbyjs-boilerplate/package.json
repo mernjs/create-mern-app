@@ -1,0 +1,49 @@
+{
+    "name": "project_name",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "gatsby develop",
+        "build": "gatsby build",
+        "start": "gatsby develop",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix --ext .js,.jsx .",
+        "upgrade": "npx npm-check-updates &&  npx npm-check-updates -u",
+        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'"
+    },
+    "dependencies": {
+        "@hookform/error-message": "^2.0.1",
+        "@reduxjs/toolkit": "^2.2.5",
+        "gatsby": "^5.13.5",
+        "gatsby-plugin-image": "^3.13.1",
+        "gatsby-plugin-manifest": "^5.13.1",
+        "gatsby-plugin-react-helmet": "^6.13.1",
+        "gatsby-plugin-react-redux": "^1.1.0",
+        "gatsby-plugin-sharp": "^5.13.1",
+        "gatsby-source-filesystem": "^5.13.1",
+        "gatsby-transformer-sharp": "^5.13.1",
+        "history": "^5.3.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-helmet": "^6.1.0",
+        "react-hook-form": "^7.51.4",
+        "react-redux": "^9.1.2",
+        "react-toastify": "^10.0.5",
+        "redux": "^5.0.1",
+        "redux-logger": "^3.0.6",
+        "redux-persist": "^6.0.0",
+        "styled-components": "^6.1.11"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.19",
+        "eslint": "^9.2.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-plugin-react": "^7.34.1",
+        "gatsby-plugin-postcss": "^6.13.1",
+        "postcss": "^8.4.38",
+        "prettier": "^3.2.5",
+        "tailwindcss": "^3.4.3"
+    }
+}
