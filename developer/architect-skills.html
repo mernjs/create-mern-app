@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERN & React Native Architect Skills</title>
+    <style>
+        body {
+            margin-top: 20px;
+            color: #bcd0f7;
+            background: #1A233A;
+        }
+
+        .timeline {
+            position: relative;
+            background: #272e48;
+            border-radius: 4px;
+            padding: 5rem;
+            margin: 0 auto 1rem auto;
+            overflow: hidden;
+        }
+
+        .timeline:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-right: 2px dashed #4b546f;
+            height: 100%;
+            display: block;
+        }
+
+        .timeline-row {
+            padding-left: 50%;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-row .timeline-time {
+            position: absolute;
+            right: 50%;
+            top: 15px;
+            text-align: center;
+            margin-right: 20px;
+            color: #bcd0f7;
+            font-size: 1.5rem;
+        }
+
+        .timeline-row .timeline-content {
+            position: relative;
+            padding: 20px 30px;
+            background: #1a233a;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .timeline-row .timeline-content:after {
+            content: "";
+            position: absolute;
+            top: 12px;
+            height: 30px;
+            width: 30px;
+            background: #1a233a;
+        }
+
+        .timeline-row .timeline-content:before {
+            content: attr(data-number);
+            position: absolute;
+            top: 12px;
+            right: -55px;
+            width: 30px;
+            height: 30px;
+            border-radius: 100px;
+            z-index: 10;
+            background: #272e48;
+            border: 2px dashed #4b546f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #bcd0f7;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .timeline-row .timeline-content h4 {
+            margin: 0 0 20px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 150%;
+        }
+
+        .timeline-row .timeline-content p {
+            margin-bottom: 30px;
+            line-height: 150%;
+        }
+
+        .timeline-row .timeline-content i {
+            font-size: 1.2rem;
+            line-height: 100%;
+            padding: 15px;
+            border-radius: 100px;
+            background: #272e48;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .timeline-row .timeline-content .thumbs {
+            margin-bottom: 20px;
+            display: flex;
+        }
+
+        .timeline-row .timeline-content .thumbs img {
+            margin: 5px;
+            max-width: 60px;
+        }
+
+        .timeline-row .timeline-content .badge {
+            color: #ffffff;
+            background: linear-gradient(120deg, #00b5fd 0%, #0047b1 100%);
+        }
+
+        .timeline-row:nth-child(even) .timeline-content {
+            margin-left: 40px;
+            text-align: left;
+        }
+
+        .timeline-row:nth-child(even) .timeline-content:after {
+            left: -8px;
+            right: initial;
+            border-bottom: 0;
+            border-left: 0;
+            transform: rotate(-135deg);
+        }
+
+        .timeline-row:nth-child(even) .timeline-content:before {
+            left: -58px;
+            right: initial;
+        }
+
+        .timeline-row:nth-child(odd) {
+            padding-left: 0;
+            padding-right: 50%;
+        }
+
+        .timeline-row:nth-child(odd) .timeline-time {
+            right: auto;
+            left: 50%;
+            text-align: left;
+            margin-right: 0;
+            margin-left: 20px;
+        }
+
+        .timeline-row:nth-child(odd) .timeline-content {
+            margin-right: 40px;
+        }
+
+        .timeline-row:nth-child(odd) .timeline-content:after {
+            right: -8px;
+            border-left: 0;
+            border-bottom: 0;
+            transform: rotate(45deg);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        @media (max-width: 992px) {
+            .timeline {
+                padding: 15px;
+            }
+
+            .timeline:after {
+                border: 0;
+            }
+
+            .timeline .timeline-row:nth-child(odd) {
+                padding: 0;
+            }
+
+            .timeline .timeline-row:nth-child(odd) .timeline-time {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin: 0 0 10px 0;
+            }
+
+            .timeline .timeline-row:nth-child(odd) .timeline-content {
+                margin: 0;
+            }
+
+            .timeline .timeline-row:nth-child(odd) .timeline-content:before {
+                display: none;
+            }
+
+            .timeline .timeline-row:nth-child(odd) .timeline-content:after {
+                display: none;
+            }
+
+            .timeline .timeline-row:nth-child(even) {
+                padding: 0;
+            }
+
+            .timeline .timeline-row:nth-child(even) .timeline-time {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin: 0 0 10px 0;
+                text-align: left;
+            }
+
+            .timeline .timeline-row:nth-child(even) .timeline-content {
+                margin: 0;
+            }
+
+            .timeline .timeline-row:nth-child(even) .timeline-content:before {
+                display: none;
+            }
+
+            .timeline .timeline-row:nth-child(even) .timeline-content:after {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">MERN & React Native Architect Skills</h1>
+        <div class="timeline">
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="1">
+                    <i class="icon-attachment"></i>
+                    <h4>Technical Leadership</h4>
+                    <p>Leading development teams to deliver high-quality software solutions.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="2">
+                    <i class="icon-attachment"></i>
+                    <h4>Team Collaboration</h4>
+                    <p>Facilitating effective communication and cooperation within and across teams.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="3">
+                    <i class="icon-attachment"></i>
+                    <h4>Client Handling</h4>
+                    <p>Interacting with clients to understand and fulfill their requirements.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="4">
+                    <i class="icon-attachment"></i>
+                    <h4>Requirement Gathering</h4>
+                    <p>Collecting and documenting detailed project requirements from clients and stakeholders.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="5">
+                    <i class="icon-attachment"></i>
+                    <h4>PDA (Pre Development Analysis)</h4>
+                    <p>Conducting initial analysis to plan and scope development projects.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="6">
+                    <i class="icon-attachment"></i>
+                    <h4>POC (Proof of Concepts)</h4>
+                    <p>Creating prototypes to demonstrate feasibility and functionality.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="7">
+                    <i class="icon-attachment"></i>
+                    <h4>Task Breakdown & Estimations</h4>
+                    <p>Dividing projects into tasks and estimating time and resources.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="8">
+                    <i class="icon-attachment"></i>
+                    <h4>Project Architecture</h4>
+                    <p>Planning and designing the overall structure of a software system.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="9">
+                    <i class="icon-attachment"></i>
+                    <h4>Database Schema</h4>
+                    <p>Designing database structures for efficient data management.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="10">
+                    <i class="icon-attachment"></i>
+                    <h4>Approach Documents</h4>
+                    <p>Documenting methodologies and plans for project execution.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="11">
+                    <i class="icon-attachment"></i>
+                    <h4>API Docs (Request & Response)</h4>
+                    <p>Creating detailed documentation for API endpoints and their usage.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="12">
+                    <i class="icon-attachment"></i>
+                    <h4>Diagram (DFD, UML, Flow Chart)</h4>
+                    <p>Visualizing system processes and structures through diagrams.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="13">
+                    <i class="icon-attachment"></i>
+                    <h4>Coding Standard</h4>
+                    <p>Defining and enforcing coding guidelines and best practices.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="14">
+                    <i class="icon-attachment"></i>
+                    <h4>Security Guidelines</h4>
+                    <p>Establishing protocols to ensure application security.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="15">
+                    <i class="icon-attachment"></i>
+                    <h4>Performance Guidelines</h4>
+                    <p>Setting standards to optimize application performance.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="16">
+                    <i class="icon-attachment"></i>
+                    <h4>Technical Video</h4>
+                    <p>Producing instructional videos to explain technical concepts and processes.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="17">
+                    <i class="icon-attachment"></i>
+                    <h4>Code Audit</h4>
+                    <p>Reviewing code to ensure quality, consistency, and security.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="18">
+                    <i class="icon-attachment"></i>
+                    <h4>Technical Training</h4>
+                    <p>Providing education and training on new technologies and practices.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="19">
+                    <i class="icon-attachment"></i>
+                    <h4>Technical Interview</h4>
+                    <p>Conducting interviews to assess the technical skills of candidates.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-row">
+                <div class="timeline-content" data-number="20">
+                    <i class="icon-attachment"></i>
+                    <h4>Self Learning</h4>
+                    <p>Continuously learning and adapting to new technologies and trends.</p>
+                </div>
+            </div>
+
+
+        </div>
+        <h1 class="text-center">End</h1>
+    </div>
+</body>
+
+</html>
