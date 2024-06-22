@@ -8,6 +8,16 @@ check_last_command() {
   fi
 }
 
+# Ensure GITHUB_TOKEN is set
+if [ -z "$GITHUB_TOKEN" ]; then
+  echo "GITHUB_TOKEN is not set. Please set it and try again."
+  exit 1
+fi
+
+# Set your repository information
+GITHUB_USER="mernjs"
+REPO_NAME="create-mern-app"
+
 # Step 1: Add all changes and commit
 echo "Adding all changes..."
 git add .
@@ -65,5 +75,22 @@ check_last_command
 echo "Pushing version bump commit and tag to the remote repository..."
 git push origin master --follow-tags
 check_last_command
+
+# Step 9: Create a release on GitHub
+echo "Creating a release on GitHub..."
+RELEASE_DATA=$(jq -n \
+  --arg tag "v$NEW_VERSION_TAG" \
+  --arg name "v$NEW_VERSION_TAG" \
+  --arg body "Release version $NEW_VERSION_TAG" \
+  '{ tag_name: $tag, name: $name, body: $body, draft: false, prerelease: false }')
+
+RELEASE_RESPONSE=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d "$RELEASE_DATA" \
+  "https://api.github.com/repos/$GITHUB_USER/$REPO_NAME/releases")
+  
+check_last_command
+
+echo "Release created on GitHub!"
 
 echo "All done!"
