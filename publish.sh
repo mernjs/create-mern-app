@@ -18,9 +18,15 @@ fi
 GITHUB_USER="mernjs"
 REPO_NAME="create-mern-app"
 
-# Step 1: Run the sh-zip-projects.sh script to create the zip file
+# Step 0: Run the sh-zip-projects.sh script to create the zip file
 echo "Running templates/app/sh-zip-projects.sh to create the zip file..."
-sh templates/app/sh-zip-projects.sh
+cd templates/app
+sh sh-zip-projects.sh
+check_last_command
+
+# Step 1: Back to root directory
+echo "Back to root directory"
+cd ../../
 check_last_command
 
 # Step 2: Add all changes and commit
