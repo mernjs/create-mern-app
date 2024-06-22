@@ -48,7 +48,7 @@ chmod +x templates/library/sh-cleanup-projects.sh
 check_last_command
 
 echo "Running templates/library/sh-cleanup-projects.sh to clean up..."
-(cd templates/app && sh sh-cleanup-projects.sh)
+(cd templates/library && sh sh-cleanup-projects.sh)
 check_last_command
 
 # Step 4: Run the sh-zip-projects.sh script to create the zip file for libraries
@@ -56,8 +56,8 @@ echo "Ensuring templates/library/sh-zip-projects.sh is executable..."
 chmod +x templates/library/sh-zip-projects.sh
 check_last_command
 
-echo "Running templates/app/sh-zip-projects.sh to create the zip file..."
-(cd templates/app && sh sh-zip-projects.sh)
+echo "Running templates/library/sh-zip-projects.sh to create the zip file..."
+(cd templates/library && sh sh-zip-projects.sh)
 check_last_command
 
 # Step 5: Navigate to the package directory
