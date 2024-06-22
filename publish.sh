@@ -78,17 +78,22 @@ check_last_command
 
 # Step 9: Create a release on GitHub
 echo "Creating a release on GitHub..."
-RELEASE_DATA=$(jq -n \
-  --arg tag "v$NEW_VERSION_TAG" \
-  --arg name "v$NEW_VERSION_TAG" \
-  --arg body "Release version $NEW_VERSION_TAG" \
-  '{ tag_name: $tag, name: $name, body: $body, draft: false, prerelease: false }')
+RELEASE_DATA=$(cat <<EOF
+{
+  "tag_name": "v$NEW_VERSION_TAG",
+  "name": "v$NEW_VERSION_TAG",
+  "body": "Release version $NEW_VERSION_TAG",
+  "draft": false,
+  "prerelease": false
+}
+EOF
+)
 
 RELEASE_RESPONSE=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
   -H "Content-Type: application/json" \
   -d "$RELEASE_DATA" \
   "https://api.github.com/repos/$GITHUB_USER/$REPO_NAME/releases")
-  
+
 check_last_command
 
 echo "Release created on GitHub!"
