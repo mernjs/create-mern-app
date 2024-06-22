@@ -1,0 +1,11 @@
+yarn run v1.22.22
+$ NODE_ENV=development nodemon server.js
+[33m[nodemon] 3.1.4[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+
+********** [31mMissing DB Connection[0m ***********
+
+********** 8085 is already in use **********

@@ -1,0 +1,36 @@
+yarn run v1.22.22
+$ nodemon server.js
+[33m[nodemon] 3.1.4[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:15844) [FSTDEP011] DeprecationWarning: Variadic listen method is deprecated. Please use ".listen(optionsObject)" instead. The variadic signature will be removed in `fastify@5`.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+********** [31mPort Error: listen EADDRINUSE: address already in use ::1:8083 is already in use[0m **********
+ ConnectionRefusedError [SequelizeConnectionRefusedError]
+    at ConnectionManager.connect (/Users/vijaypratapsingh/Desktop/create-mern-app/templates/app/fastifyjs-mysql-boilerplate/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/vijaypratapsingh/Desktop/create-mern-app/templates/app/fastifyjs-mysql-boilerplate/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/vijaypratapsingh/Desktop/create-mern-app/templates/app/fastifyjs-mysql-boilerplate/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/vijaypratapsingh/Desktop/create-mern-app/templates/app/fastifyjs-mysql-boilerplate/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/vijaypratapsingh/Desktop/create-mern-app/templates/app/fastifyjs-mysql-boilerplate/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/vijaypratapsingh/Desktop/create-mern-app/templates/app/fastifyjs-mysql-boilerplate/node_modules/sequelize/lib/sequelize.js:457:5) {
+  parent: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1117:18)
+      at afterConnectMultiple (node:net:1684:7) {
+    code: 'ECONNREFUSED',
+    fatal: true,
+    [errors]: [ [Error], [Error] ]
+  },
+  original: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1117:18)
+      at afterConnectMultiple (node:net:1684:7) {
+    code: 'ECONNREFUSED',
+    fatal: true,
+    [errors]: [ [Error], [Error] ]
+  }
+}
+********** [31mMissing DB Connection[0m ***********
+
+[32m[nodemon] clean exit - waiting for changes before restart[39m

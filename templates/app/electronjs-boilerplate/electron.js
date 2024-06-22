@@ -1,6 +1,6 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
-const START_URL = 'http://localhost:3000';
+const START_URL = 'http://localhost:8080';
 
 const createWindow = async () => {
     const isDev = (await import('electron-is-dev')).default;

@@ -1,0 +1,45 @@
+yarn run v1.22.22
+$ concurrently "cross-env BROWSER=none npm run web" "wait-on http://localhost:8080 && nodemon --exec electron ."
+[0] 
+[0] > project_name@0.1.0 web
+[0] > PORT=8080 react-scripts start
+[0] 
+[0] (node:15865) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+[0] (Use `node --trace-deprecation ...` to show where the warning was created)
+[0] (node:15865) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+[0] Starting the development server...
+[0] 
+[0] [0;33mOne of your dependencies, babel-preset-react-app, is importing the
+[0] "@babel/plugin-proposal-private-property-in-object" package without
+[0] declaring it in its dependencies. This is currently working because
+[0] "@babel/plugin-proposal-private-property-in-object" is already in your
+[0] node_modules folder for unrelated reasons, but it [1mmay break at any time[0;33m.
+[0] 
+[0] babel-preset-react-app is part of the create-react-app project, [1mwhich
+[0] is not maintianed anymore[0;33m. It is thus unlikely that this bug will
+[0] ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
+[0] your devDependencies to work around this error. This will make this message
+[0] go away.[0m
+[0]   
+[0] Compiled successfully!
+[0] 
+[0] You can now view project_name in the browser.
+[0] 
+[0]   Local:            http://localhost:8080
+[0]   On Your Network:  http://192.168.16.100:8080
+[0] 
+[0] Note that the development build is not optimized.
+[0] To create a production build, use yarn build.
+[0] 
+[0] webpack compiled successfully
+[1] [33m[nodemon] 3.1.4[39m
+[1] [33m[nodemon] to restart at any time, enter `rs`[39m
+[1] [33m[nodemon] watching path(s): *.*[39m
+[1] [33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[1] [32m[nodemon] starting `electron .`[39m
+[1] [16044:0622/024151.995878:ERROR:CONSOLE(1)] "Request Autofill.enable failed. {"code":-32601,"message":"'Autofill.enable' wasn't found"}", source: devtools://devtools/bundled/core/protocol_client/protocol_client.js (1)
+[1] [16044:0622/024151.996505:ERROR:CONSOLE(1)] "Request Autofill.setAddresses failed. {"code":-32601,"message":"'Autofill.setAddresses' wasn't found"}", source: devtools://devtools/bundled/core/protocol_client/protocol_client.js (1)
+[1] [16044:0622/025028.532996:ERROR:CONSOLE(1)] "Uncaught (in promise) TypeError: Failed to fetch", source: devtools://devtools/bundled/panels/elements/elements.js (1)
+[0] cross-env BROWSER=none npm run web exited with code 1
+[1] /Users/vijaypratapsingh/Desktop/create-mern-app/templates/app/electronjs-boilerplate/node_modules/electron/dist/Electron.app/Contents/MacOS/Electron exited with signal SIGTERM
+[1] wait-on http://localhost:8080 && nodemon --exec electron . exited with code SIGTERM

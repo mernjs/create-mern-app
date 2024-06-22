@@ -23,14 +23,14 @@
         "express": "^4.19.2",
         "faker": "^6.6.6",
         "jsonwebtoken": "^9.0.2",
-        "mongoose": "^8.4.0",
-        "mongoose-paginate-v2": "^1.8.1",
+        "mongoose": "^8.4.3",
+        "mongoose-paginate-v2": "^1.8.2",
         "morgan": "^1.10.0"
     },
     "devDependencies": {
-        "eslint": "^9.2.0",
+        "eslint": "^9.5.0",
         "eslint-config-google": "^0.14.0",
-        "nodemon": "^3.1.0",
-        "prettier": "^3.2.5"
+        "nodemon": "^3.1.4",
+        "prettier": "^3.3.2"
     }
 }

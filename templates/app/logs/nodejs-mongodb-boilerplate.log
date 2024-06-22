@@ -1,0 +1,15 @@
+yarn run v1.22.22
+$ nodemon server.js
+[33m[nodemon] 3.1.4[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:15837) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:15837) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+********** [31mPort 8086 is already in use[0m **********
+
+********** [31mMissing DB Connection[0m ***********
+
+[32m[nodemon] clean exit - waiting for changes before restart[39m

@@ -1,0 +1,19 @@
+yarn run v1.22.22
+$ next dev -p 8092
+❌ Invalid environment variables: { DATABASE_URL: [ 'Required' ] }
+file:///Users/vijaypratapsingh/Desktop/create-mern-app/templates/app/t3js-boilerplate/node_modules/@t3-oss/env-core/dist/index.js:29
+        throw new Error("Invalid environment variables");
+              ^
+
+Error: Invalid environment variables
+    at onValidationError (file:///Users/vijaypratapsingh/Desktop/create-mern-app/templates/app/t3js-boilerplate/node_modules/@t3-oss/env-core/dist/index.js:29:15)
+    at createEnv (file:///Users/vijaypratapsingh/Desktop/create-mern-app/templates/app/t3js-boilerplate/node_modules/@t3-oss/env-core/dist/index.js:35:16)
+    at createEnv (file:///Users/vijaypratapsingh/Desktop/create-mern-app/templates/app/t3js-boilerplate/node_modules/@t3-oss/env-nextjs/dist/index.js:12:12)
+    at file:///Users/vijaypratapsingh/Desktop/create-mern-app/templates/app/t3js-boilerplate/src/env.mjs:4:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:316:24)
+    at async file:///Users/vijaypratapsingh/Desktop/create-mern-app/templates/app/t3js-boilerplate/next.config.mjs:5:1
+
+Node.js v20.15.0
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

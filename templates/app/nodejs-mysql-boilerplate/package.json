@@ -27,14 +27,14 @@
         "lodash": "^4.17.21",
         "morgan": "^1.10.0",
         "mysql": "^2.18.1",
-        "mysql2": "^3.9.7",
+        "mysql2": "^3.10.1",
         "sequelize": "^6.37.3",
         "sequelize-cli": "^6.6.2"
     },
     "devDependencies": {
-        "eslint": "^9.2.0",
+        "eslint": "^9.5.0",
         "eslint-config-google": "^0.14.0",
-        "nodemon": "^3.1.0",
-        "prettier": "^3.2.5"
+        "nodemon": "^3.1.4",
+        "prettier": "^3.3.2"
     }
 }
