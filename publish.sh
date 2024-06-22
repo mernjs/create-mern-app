@@ -18,7 +18,17 @@ fi
 GITHUB_USER="mernjs"
 REPO_NAME="create-mern-app"
 
-# Step 1: Add all changes and commit
+# Step 0: Ensure the sh-zip-projects.sh script is executable
+echo "Ensuring templates/app/sh-zip-projects.sh is executable..."
+chmod +x templates/app/sh-zip-projects.sh
+check_last_command
+
+# Step 1: Run the sh-zip-projects.sh script to create the zip file
+echo "Running templates/app/sh-zip-projects.sh to create the zip file..."
+./templates/app/sh-zip-projects.sh
+check_last_command
+
+# Step 2: Add all changes and commit
 echo "Adding all changes..."
 git add .
 check_last_command
@@ -27,17 +37,17 @@ echo "Committing changes with message 'Y2024'..."
 git commit -am "Y2024"
 check_last_command
 
-# Step 2: Push changes to the master branch
+# Step 3: Push changes to the master branch
 echo "Pushing changes to the master branch..."
 git push origin master
 check_last_command
 
-# Step 3: Navigate to the package directory
+# Step 4: Navigate to the package directory
 echo "Navigating to package directory 'packages/create-mernjs-app'..."
 cd packages/create-mernjs-app
 check_last_command
 
-# Step 4: Bump the version (patch, minor, or major)
+# Step 5: Bump the version (patch, minor, or major)
 # Update the version here as per your need
 echo "Updating the package version..."
 NEW_VERSION=$(npm version patch)  # Use npm version minor or npm version major as needed
@@ -46,7 +56,7 @@ check_last_command
 # Extract the new version tag
 NEW_VERSION_TAG=$(echo $NEW_VERSION | tr -d 'v')
 
-# Step 5: Ensure you are logged into npm
+# Step 6: Ensure you are logged into npm
 echo "Checking npm login status..."
 npm whoami &> /dev/null
 if [ $? -ne 0 ]; then
@@ -55,14 +65,14 @@ if [ $? -ne 0 ]; then
   check_last_command
 fi
 
-# Step 6: Publish the package
+# Step 7: Publish the package
 echo "Publishing the package to npm..."
 npm publish --access public
 check_last_command
 
 echo "Package published successfully!"
 
-# Step 7: Create and push the version tag to GitHub
+# Step 8: Create and push the version tag to GitHub
 echo "Creating a new Git tag for the version $NEW_VERSION_TAG..."
 git tag -a "v$NEW_VERSION_TAG" -m "Release version $NEW_VERSION_TAG"
 check_last_command
@@ -71,12 +81,12 @@ echo "Pushing the tag to GitHub..."
 git push origin "v$NEW_VERSION_TAG"
 check_last_command
 
-# Step 8: Push the version bump commit and tag to the remote repository
+# Step 9: Push the version bump commit and tag to the remote repository
 echo "Pushing version bump commit and tag to the remote repository..."
 git push origin master --follow-tags
 check_last_command
 
-# Step 9: Create a release on GitHub
+# Step 10: Create a release on GitHub
 echo "Creating a release on GitHub..."
 RELEASE_DATA=$(cat <<EOF
 {
