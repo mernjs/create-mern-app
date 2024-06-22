@@ -24,7 +24,7 @@ fi
 GITHUB_USER="mernjs"
 REPO_NAME="create-mern-app"
 
-# Step 1: Run the sh-cleanup-projects.sh script to clean up before creating the zip file
+# Step 1: Run the sh-cleanup-projects.sh script to clean up before creating the zip file for projects
 echo "Ensuring templates/app/sh-cleanup-projects.sh is executable..."
 chmod +x templates/app/sh-cleanup-projects.sh
 check_last_command
@@ -33,7 +33,7 @@ echo "Running templates/app/sh-cleanup-projects.sh to clean up..."
 (cd templates/app && sh sh-cleanup-projects.sh)
 check_last_command
 
-# Step 2: Run the sh-zip-projects.sh script to create the zip file
+# Step 2: Run the sh-zip-projects.sh script to create the zip file for projects
 echo "Ensuring templates/app/sh-zip-projects.sh is executable..."
 chmod +x templates/app/sh-zip-projects.sh
 check_last_command
@@ -42,7 +42,25 @@ echo "Running templates/app/sh-zip-projects.sh to create the zip file..."
 (cd templates/app && sh sh-zip-projects.sh)
 check_last_command
 
-# Step 3: Navigate to the package directory
+# Step 3: Run the sh-cleanup-projects.sh script to clean up before creating the zip file for libraries
+echo "Ensuring templates/library/sh-cleanup-projects.sh is executable..."
+chmod +x templates/library/sh-cleanup-projects.sh
+check_last_command
+
+echo "Running templates/library/sh-cleanup-projects.sh to clean up..."
+(cd templates/app && sh sh-cleanup-projects.sh)
+check_last_command
+
+# Step 4: Run the sh-zip-projects.sh script to create the zip file for libraries
+echo "Ensuring templates/library/sh-zip-projects.sh is executable..."
+chmod +x templates/library/sh-zip-projects.sh
+check_last_command
+
+echo "Running templates/app/sh-zip-projects.sh to create the zip file..."
+(cd templates/app && sh sh-zip-projects.sh)
+check_last_command
+
+# Step 5: Navigate to the package directory
 echo "Navigating to package directory 'packages/create-mernjs-app'..."
 cd packages/create-mernjs-app
 check_last_command
@@ -54,7 +72,7 @@ if [ ! -f "$PACKAGE_JSON_PATH" ]; then
   exit 1
 fi
 
-# Step 4: Bump the version (patch, minor, or major)
+# Step 6: Bump the version (patch, minor, or major)
 # Update the version here as per your need
 echo "Updating the package version..."
 NEW_VERSION=$(npm version patch)  # Use npm version minor or npm version major as needed
@@ -63,7 +81,7 @@ check_last_command
 # Extract the new version tag
 NEW_VERSION_TAG=$(echo $NEW_VERSION | tr -d 'v')
 
-# Step 5: Add all changes and commit
+# Step 7: Add all changes and commit
 echo "Adding all changes..."
 git add .
 check_last_command
@@ -72,18 +90,18 @@ echo "Committing changes with message 'Y2024'..."
 git commit -am "Y2024"
 check_last_command
 
-# Step 6: Push changes to the master branch
+# Step 8: Push changes to the master branch
 echo "Pushing changes to the master branch..."
 git push origin master
 check_last_command
 
-# Step 7: Get the latest commit ID
+# Step 9: Get the latest commit ID
 echo "Getting the latest commit ID..."
 LATEST_COMMIT_ID=$(git rev-parse HEAD)
 check_last_command
 echo "Latest commit ID is $LATEST_COMMIT_ID"
 
-# Step 8: Update the commit ID in package.json
+# Step 10: Update the commit ID in package.json
 echo "Updating commit ID in $PACKAGE_JSON_PATH..."
 
 jq --arg commit_id "$LATEST_COMMIT_ID" '.dependencies.mernjs |= "github:mernjs/create-mern-app#" + $commit_id' $PACKAGE_JSON_PATH > tmp.$$.json && mv tmp.$$.json $PACKAGE_JSON_PATH
@@ -94,7 +112,7 @@ echo "Checking if the commit ID was updated correctly in package.json..."
 grep "github:mernjs/create-mern-app#$LATEST_COMMIT_ID" $PACKAGE_JSON_PATH
 check_last_command
 
-# Step 9: Add all changes and commit
+# Step 11: Add all changes and commit
 echo "Adding all changes..."
 git add .
 check_last_command
@@ -103,12 +121,12 @@ echo "Committing changes with message 'Y2024'..."
 git commit -am "Y2024"
 check_last_command
 
-# Step 10: Push changes to the master branch
+# Step 12: Push changes to the master branch
 echo "Pushing changes to the master branch..."
 git push origin master
 check_last_command
 
-# Step 11: Ensure you are logged into npm
+# Step 13: Ensure you are logged into npm
 echo "Checking npm login status..."
 npm whoami &> /dev/null
 if [ $? -ne 0 ]; then
@@ -117,14 +135,14 @@ if [ $? -ne 0 ]; then
   check_last_command
 fi
 
-# Step 12: Publish the package
+# Step 14: Publish the package
 echo "Publishing the package to npm..."
 npm publish --access public
 check_last_command
 
 echo "Package published successfully!"
 
-# Step 13: Create and push the version tag to GitHub
+# Step 15: Create and push the version tag to GitHub
 echo "Creating a new Git tag for the version $NEW_VERSION_TAG..."
 git tag -a "v$NEW_VERSION_TAG" -m "Release version $NEW_VERSION_TAG"
 check_last_command
@@ -133,12 +151,12 @@ echo "Pushing the tag to GitHub..."
 git push origin "v$NEW_VERSION_TAG"
 check_last_command
 
-# Step 14: Push the version bump commit and tag to the remote repository
+# Step 16: Push the version bump commit and tag to the remote repository
 echo "Pushing version bump commit and tag to the remote repository..."
 git push origin master --follow-tags
 check_last_command
 
-# Step 15: Create a release on GitHub
+# Step 17: Create a release on GitHub
 echo "Creating a release on GitHub..."
 RELEASE_DATA=$(cat <<EOF
 {

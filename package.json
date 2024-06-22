@@ -4,8 +4,10 @@
     "description": "The MERN App provides a versatile set of boilerplates that streamline the development process for various applications. Whether you're building a web app, mobile app, desktop app, Chrome extension, or an NPM package in JavaScript, our comprehensive templates will help you get started quickly and efficiently.",
     "scripts": {
         "publish": "sh publish.sh",
-        "upgrade": "sh upgrade.sh",
-        "stop": "sh stop.sh"
+        "app-upgrade": "sh app-upgrade.sh",
+        "app-stop": "sh app-stop.sh",
+        "library-upgrade": "sh library-upgrade.sh",
+        "library-stop": "sh library-stop.sh"
     },
     "author": "Vijay Pratap Singh <vijaypratap218@gmail.com> (https://mernjs.github.io/create-mern-app)",
     "license": "MIT",
