@@ -47,6 +47,13 @@ echo "Navigating to package directory 'packages/create-mernjs-app'..."
 cd packages/create-mernjs-app
 check_last_command
 
+# Confirm package.json exists
+PACKAGE_JSON_PATH="package.json"
+if [ ! -f "$PACKAGE_JSON_PATH" ]; then
+  echo "package.json not found in the directory $(pwd). Exiting."
+  exit 1
+fi
+
 # Step 4: Bump the version (patch, minor, or major)
 # Update the version here as per your need
 echo "Updating the package version..."
@@ -77,7 +84,6 @@ check_last_command
 echo "Latest commit ID is $LATEST_COMMIT_ID"
 
 # Step 8: Update the commit ID in package.json
-PACKAGE_JSON_PATH="packages/create-mernjs-app/package.json"
 echo "Updating commit ID in $PACKAGE_JSON_PATH..."
 
 jq --arg commit_id "$LATEST_COMMIT_ID" '.dependencies.mernjs |= "github:mernjs/create-mern-app#" + $commit_id' $PACKAGE_JSON_PATH > tmp.$$.json && mv tmp.$$.json $PACKAGE_JSON_PATH
