@@ -18,14 +18,9 @@ fi
 GITHUB_USER="mernjs"
 REPO_NAME="create-mern-app"
 
-# Step 0: Ensure the sh-zip-projects.sh script is executable
-echo "Ensuring templates/app/sh-zip-projects.sh is executable..."
-chmod +x templates/app/sh-zip-projects.sh
-check_last_command
-
 # Step 1: Run the sh-zip-projects.sh script to create the zip file
 echo "Running templates/app/sh-zip-projects.sh to create the zip file..."
-./templates/app/sh-zip-projects.sh
+sh templates/app/sh-zip-projects.sh
 check_last_command
 
 # Step 2: Add all changes and commit
