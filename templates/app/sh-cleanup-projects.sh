@@ -47,7 +47,19 @@ for project in "${projects[@]}"; do
         echo "Removing .next from $project"
         rm -rf .next
     fi
+
+    # Remove .next directory if it exists
+    if [ -d .cache ]; then
+        echo "Removing .cache from $project"
+        rm -rf .cache
+    fi
     
+    # Remove .expo-shared directory if it exists
+    if [ -d .expo-shared ]; then
+        echo "Removing .expo-shared from $project"
+        rm -rf .expo-shared
+    fi
+
     # Remove .expo directory if it exists
     if [ -d .expo ]; then
         echo "Removing .expo from $project"

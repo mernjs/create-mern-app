@@ -1,17 +1,23 @@
 import { combineReducers } from 'redux';
 import { createLogger } from 'redux-logger';
-import { persistStore, persistReducer } from 'redux-persist';
 import { configureStore } from '@reduxjs/toolkit';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { reducer as formReducer } from 'redux-form';
-
+import storage from 'redux-persist/lib/storage';
+import {
+    persistStore,
+    persistReducer,
+    FLUSH,
+    REHYDRATE,
+    PAUSE,
+    PERSIST,
+    PURGE,
+    REGISTER,
+} from 'redux-persist';
 import CoreReducer from '../reducers/CoreReducer';
 import AuthReducer from '../reducers/AuthReducer';
 
 const appReducer = combineReducers({
-    form: formReducer,
     core: CoreReducer,
-    auth: AuthReducer,
+    auth: AuthReducer
 });
 
 const rootReducer = (state, action) => {
@@ -25,17 +31,21 @@ const rootReducer = (state, action) => {
 const persistConfig = {
     key: 'root',
     version: 1,
-    storage: AsyncStorage,
+    storage: storage,
+    blacklist: ['api'],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 const reduxLogger = createLogger();
-const middleware = [reduxLogger];
 
 const configureCustomStore = () => {
     const store = configureStore({
         reducer: persistedReducer,
-        middleware: [...middleware],
+        middleware: (getDefaultMiddleware) => getDefaultMiddleware({
+            serializableCheck: {
+                ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+            },
+        }).concat(reduxLogger),
         devTools: process.env.NODE_ENV !== 'production',
     });
     const persistor = persistStore(store);
