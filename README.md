@@ -77,15 +77,17 @@ Library boilerplates for building npm package.
 
 Explore a collection of sample projects organized by technology
 
-<h4>NodeJS</h4>
-| SN. | Modules | Download |
-| ------ | ------ | ------ |
-| 1 | [Stripe Subscription Module]() | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")]() |
+*NodeJS*
 
-<h4>Swift</h4>
 | SN. | Modules | Download |
 | ------ | ------ | ------ |
-| 1 | [Swift Firebase Auth Module]() | [![Swift Firebase Auth](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Swift Firebase Auth")]() |
+| 1 | [Stripe Subscription Module](#stripe) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) |
+
+*Swift*
+
+| SN. | Modules | Download |
+| ------ | ------ | ------ |
+| 1 | [Swift Firebase Auth Module](#firebaseauth) | [![Swift Firebase Auth](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Swift Firebase Auth")](#firebaseauth) |
 
 
 <h4>Key Features</h4>
