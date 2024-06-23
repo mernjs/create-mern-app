@@ -40,7 +40,7 @@ create-mernjs-app my-library --template library
 
 OR 
 
-<h4>App Boilerplates</h4>
+<h4>1. App Boilerplates</h4>
 
 App boilerplates for building application.
 
@@ -59,7 +59,7 @@ App boilerplates for building application.
 | 11 | [T3JS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/t3js-boilerplate) | [![Download T3JS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download T3JS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/t3js-boilerplate.zip) |
 | 12 | [React Native Expo Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/expo-boilerplate) | [![Download React Native Expo Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download React Native Expo Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/expo-boilerplate.zip) |
 
-<h4>Library Boilerplates</h4>
+<h4>2. Library Boilerplates</h4>
 
 Library boilerplates for building npm package.
 
@@ -73,7 +73,7 @@ Library boilerplates for building npm package.
 | 6 | [React Native Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/react-native-library-boilerplate) | [![Download React Native Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download React Native Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/react-native-library-boilerplate.zip) |
 
 
-<h4>Modules</h4>
+<h4>3. Modules</h4>
 
 Explore a collection of sample projects organized by technology
 
