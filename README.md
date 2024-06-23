@@ -72,6 +72,22 @@ Library boilerplates for building npm package.
 | 5 | [NextJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/nextjs-library-boilerplate) | [![Download NextJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NextJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/nextjs-library-boilerplate.zip) |
 | 6 | [React Native Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/react-native-library-boilerplate) | [![Download React Native Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download React Native Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/react-native-library-boilerplate.zip) |
 
+
+<h4>Modules</h4>
+
+Explore a collection of sample projects organized by technology
+
+<h4>NodeJS</h4>
+| SN. | Modules | Download |
+| ------ | ------ | ------ |
+| 1 | [Stripe Subscription Module]() | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")]() |
+
+<h4>Swift</h4>
+| SN. | Modules | Download |
+| ------ | ------ | ------ |
+| 1 | [Swift Firebase Auth Module]() | [![Swift Firebase Auth](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Swift Firebase Auth")]() |
+
+
 <h4>Key Features</h4>
 
 1. **Effortless Initialization:**
