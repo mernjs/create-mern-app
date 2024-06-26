@@ -17,6 +17,7 @@ Under Beta Development
 <h4>Create MERN App</h4>
 Create MERN App provides a simple file and folder structure that you can easily customize to fit your project requirements.
 
+<h4>Documentation</h4>
 Read the [Documentation](https://mernjs.github.io/create-mern-app)
 
 <h4>Node Version </h4>
