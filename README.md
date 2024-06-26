@@ -10,9 +10,9 @@
 If you find this code useful, don't forget to <a target="_blank" href="https://github.com/mernjs/create-mern-app" rel="noopener">⭐ star the repo ⭐</a> 
 </h5>
 
-<p align="center">
-<h1>Under Beta Development</h1>
-</p>
+<h1 align="center">
+Under Beta Development
+</h1>
 
 <h4>Create MERN App</h4>
 Create MERN App provides a simple file and folder structure that you can easily customize to fit your project requirements [Documentation](https://mernjs.github.io/create-mern-app).
