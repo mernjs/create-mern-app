@@ -49,7 +49,7 @@ OR
 
 App boilerplates provide ready-to-use templates for building applications, simplifying the setup process and ensuring a consistent structure across projects.
 
-| SN. | Boilerplates | Download | Youtube | Docs |
+| SN. | Modules | Youtube | Docs | Download |
 | ------ | ------ | ------ | ------ | ------ |
 | 1 | [ExpressJS & MongoDB Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mongodb-boilerplate) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) | [![Download NodeJS MongoDB Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MongoDB Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nodejs-mongodb-boilerplate.zip) |
 | 2 | [ExpressJS & MySQL Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mysql-boilerplate) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) | [![Download NodeJS MySQL Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MySQL Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nodejs-mysql-boilerplate.zip) |
