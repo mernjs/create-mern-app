@@ -44,8 +44,8 @@ OR
 
 App boilerplates provide ready-to-use templates for building applications, simplifying the setup process and ensuring a consistent structure across projects.
 
-| SN. | Boilerplates | Download |
-| ------ | ------ | ------ |
+| SN. | Boilerplates | Download | Youtube | Docs |
+| ------ | ------ | ------ | ------ | ------ |
 | 1 | [ExpressJS & MongoDB Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mongodb-boilerplate) | [![Download NodeJS MongoDB Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MongoDB Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nodejs-mongodb-boilerplate.zip) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) |
 | 2 | [ExpressJS & MySQL Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mysql-boilerplate) | [![Download NodeJS MySQL Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MySQL Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nodejs-mysql-boilerplate.zip) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) |
 | 3 | [NextJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nextjs-boilerplate) | [![Download NextJS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NextJS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nextjs-boilerplate.zip) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) |
@@ -65,7 +65,7 @@ App boilerplates provide ready-to-use templates for building applications, simpl
 Library boilerplates offer pre-configured templates for creating npm packages, enabling efficient and standardized development of reusable code libraries.
 
 | SN. | Boilerplates | Download | Youtube | Docs |
-| ------ | ------ | ------ |
+| ------ | ------ | ------ | ------ | ------ |
 | 1 | [JavaScript Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/javascript-library-boilerplate) | [![Download JavaScript Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download JavaScript Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/javascript-library-boilerplate.zip) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) |
 | 2 | [ReactJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/reactjs-library-boilerplate) | [![Download ReactJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/reactjs-library-boilerplate.zip) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) |
 | 3 | [NodeJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/nodejs-library-boilerplate) | [![Download NodeJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/nodejs-library-boilerplate.zip) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) |
@@ -80,14 +80,14 @@ Discover a collection of sample projects, organized by technology, to help you q
 
 *NodeJS*
 
-| SN. | Modules | Download |
-| ------ | ------ | ------ |
+| SN. | Modules | Download | Youtube | Docs |
+| ------ | ------ | ------ | ------ | ------ |
 | 1 | [Stripe Subscription Module](#stripe) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) |
 
 *ReactJS*
 
-| SN. | Modules | Download |
-| ------ | ------ | ------ |
+| SN. | Modules | Download | Youtube | Docs |
+| ------ | ------ | ------ | ------ | ------ |
 | 1 | [ReactJS Firebase Auth Module](#firebaseauth) | [![ReactJS Firebase Auth](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "ReactJS Firebase Auth")](#firebaseauth) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) |
 
 
