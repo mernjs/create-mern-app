@@ -10,7 +10,9 @@
 If you find this code useful, don't forget to <a target="_blank" href="https://github.com/mernjs/create-mern-app" rel="noopener">⭐ star the repo ⭐</a> 
 </h5>
 
-# > Under Beta Development
+<p align="center">
+<h1>Under Beta Development</h1>
+</p>
 
 <h4>Create MERN App</h4>
 Create MERN App provides a simple file and folder structure that you can easily customize to fit your project requirements [Documentation](https://mernjs.github.io/create-mern-app).
@@ -52,7 +54,7 @@ App boilerplates provide ready-to-use templates for building applications, simpl
 | 2 | [ExpressJS & MySQL Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mysql-boilerplate) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) | [![Download NodeJS MySQL Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MySQL Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nodejs-mysql-boilerplate.zip) |
 | 3 | [NextJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nextjs-boilerplate) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) | [![Download NextJS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NextJS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nextjs-boilerplate.zip) |
 | 4 | [GatsbyJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/gatsbyjs-boilerplate) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) | [![Download GatsbyJS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download GatsbyJS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/gatsbyjs-boilerplate.zip) |
-| 5 | [ReactJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-boilerplate) | [![Download ReactJS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/reactjs-boilerplate.zip) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) |
+| 5 | [ReactJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-boilerplate) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) | [![Download ReactJS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/reactjs-boilerplate.zip) |
 | 6 | [ElectronJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/electronjs-boilerplate) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) | [![Download ElectronJS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ElectronJS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/electronjs-boilerplate.zip) |
 | 7 | [ReactJS Chrome Extension Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-chrome-extension-boilerplate) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) | [![Download ReactJS Chrome Extension Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Chrome Extension Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/reactjs-chrome-extension-boilerplate.zip) |
 | 8 | [ReactJS Webpack Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-webpack-boilerplate) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) | [![Download ReactJS Webpack Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Webpack Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/reactjs-webpack-boilerplate.zip) |
@@ -66,7 +68,7 @@ App boilerplates provide ready-to-use templates for building applications, simpl
 
 Library boilerplates offer pre-configured templates for creating npm packages, enabling efficient and standardized development of reusable code libraries.
 
-| SN. | Boilerplates | Download | Youtube | Docs |
+| SN. | Modules | Youtube | Docs | Download |
 | ------ | ------ | ------ | ------ | ------ |
 | 1 | [JavaScript Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/javascript-library-boilerplate) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) | [![Download JavaScript Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download JavaScript Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/javascript-library-boilerplate.zip) |
 | 2 | [ReactJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/reactjs-library-boilerplate) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) | [![Download ReactJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/reactjs-library-boilerplate.zip) |
@@ -82,15 +84,15 @@ Discover a collection of sample projects, organized by technology, to help you q
 
 *NodeJS*
 
-| SN. | Modules | Download | Youtube | Docs |
+| SN. | Modules | Youtube | Docs | Download |
 | ------ | ------ | ------ | ------ | ------ |
 | 1 | [Stripe Subscription Module](#stripe) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) |
 
 *ReactJS*
 
-| SN. | Modules | Download | Youtube | Docs |
+| SN. | Modules | Youtube | Docs | Download |
 | ------ | ------ | ------ | ------ | ------ |
-| 1 | [ReactJS Firebase Auth Module](#firebaseauth) | [![ReactJS Firebase Auth](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "ReactJS Firebase Auth")](#firebaseauth) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) |
+| 1 | [ReactJS Firebase Auth Module](#firebaseauth) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [Read Docs](https://mernjs.github.io/create-mern-app/guidelines) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) |
 
 
 <h4>Key Features</h4>
