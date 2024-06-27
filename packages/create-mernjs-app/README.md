@@ -85,7 +85,7 @@ Discover a collection of sample projects, organized by technology, to help you q
 
 | SN. | Modules | Youtube | Download |
 | ------ | ------ | ------ | ------ |
-| 1 | [Stripe Subscription With NodeJS & ReactJS](#stripe) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLqXikWu103FgL34iaKCrHs7) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) |
+| 1 | [Stripe Subscription Module With NodeJS & ReactJS](#stripe) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLqXikWu103FgL34iaKCrHs7) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) |
 | 2 | [ReactJS Firebase Auth Module](#firebaseauth) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLp4cm2rjcjlOlizWf6y_skf) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) |
 
 
