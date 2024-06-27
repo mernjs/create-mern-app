@@ -16,7 +16,7 @@ Under Beta Development
 
 <h4>Create MERN App</h4>
 
-Create MERN App provides a simple file and folder structure that you can easily customize to fit your project requirements [Documentation](https://mernjs.github.io/create-mern-app).
+Create MERN App provides a simple file and folder structure that you can easily customize to fit your project requirements.
 
 <h4>Node Version </h4>
 
@@ -91,8 +91,8 @@ Discover a collection of sample projects, organized by technology, to help you q
 
 *ReactJS*
 
-| SN. | Modules | Youtube | Docs | Download |
-| ------ | ------ | ------ | ------ | ------ |
+| SN. | Modules | Youtube | Download |
+| ------ | ------ | ------ | ------ |
 | 1 | [ReactJS Firebase Auth Module](#firebaseauth) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) |
 
 
