@@ -1,19 +1,19 @@
 ## Project Guidelines
 
-### 1. Project Setup Guideline
+### Guideline 1 - Project Setup Guideline
 Adding soon
 
-### 2. Coding Standard Guidelines
+### Guideline 2 - Coding Standard Guidelines
 Adding soon
 
-### 3. Security Guidelines
+### Guideline 3 - Security Guidelines
 Adding soon
 
-### 4. Performance Guidelines
+### Guideline 4 - Performance Guidelines
 Adding soon
 
-### 5. Code Audit Guidelines
+### Guideline 5 - Code Audit Guidelines
 Adding soon
 
-### 6. Deployment Guidelines
+### Guideline 6 - Deployment Guidelines
 Adding soon
