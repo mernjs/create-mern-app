@@ -83,17 +83,10 @@ Library boilerplates offer pre-configured templates for creating npm packages, e
 
 Discover a collection of sample projects, organized by technology, to help you quickly implement specific features or functionalities in your applications.
 
-*NodeJS*
-
 | SN. | Modules | Youtube | Download |
 | ------ | ------ | ------ | ------ |
-| 1 | [Stripe Subscription Module](#stripe) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) |
-
-*ReactJS*
-
-| SN. | Modules | Youtube | Download |
-| ------ | ------ | ------ | ------ |
-| 1 | [ReactJS Firebase Auth Module](#firebaseauth) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) |
+| 1 | [Stripe Subscription With NodeJS & ReactJS](#stripe) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) |
+| 2 | [ReactJS Firebase Auth Module](#firebaseauth) | [Watch Video](https://www.youtube.com/channel/UCAcmuHoa3sEN_KuwFYk6xMw) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) |
 
 
 <h4>Key Features</h4>
