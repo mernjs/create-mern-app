@@ -20,7 +20,9 @@
 		"indent": "off",
 		"no-tabs": "off",
 		"no-unused-vars": "off",
-		"max-len": "off"
+		"max-len": "off",
+		"space-before-function-paren": "off",
+		"react/prop-types": "off"
 	},
 	"settings": {
 		"react": {

@@ -43,15 +43,24 @@ const persistedReducer = persistReducer(persistConfig, rootReducer);
 const reduxLogger = createLogger();
 
 const configureCustomStore = () => {
+	const middlewares = [api.middleware];
+	const isDebugMode = process.env.REACT_APP_DEBUG === 'true';
+
+	if (isDebugMode) {
+		middlewares.push(reduxLogger);
+	}
+
 	const store = configureStore({
 		reducer: persistedReducer,
-		middleware: (getDefaultMiddleware) => getDefaultMiddleware({
-			serializableCheck: {
-				ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-			},
-		}).concat(api.middleware, reduxLogger),
-		devTools: process.env.NODE_ENV !== 'production',
+		middleware: (getDefaultMiddleware) =>
+			getDefaultMiddleware({
+				serializableCheck: {
+					ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+				},
+			}).concat(middlewares),
+		devTools: isDebugMode,
 	});
+
 	const persistor = persistStore(store);
 	return { store, persistor };
 };

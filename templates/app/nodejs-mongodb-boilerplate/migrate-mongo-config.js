@@ -1,4 +1,4 @@
-const ENV = require('./src/database/dbconfig/DB_config');
+const ENV = require('./src/database/dbconfig/DBConfig');
 const config = {
     mongodb: {
         url: ENV.MONGO_URI,

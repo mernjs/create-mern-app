@@ -1,29 +1,18 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import styled from 'styled-components';
+import { Header, Footer } from '../components';
 
 const NotFound = () => {
-    return (
-        <>
-            <ScrollView>
-                <Header />
-                <Container>
-                    <h1>404 - Page Not Found</h1>
-                </Container>
-            </ScrollView>
-            <Footer />
-        </>
-    );
+	return (
+		<div className="flex flex-col h-screen">
+			<Header />
+			<div className='mb-auto'>
+				<div className="sm:mx-auto sm:w-full sm:max-w-sm">
+					<h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Page not found</h2>
+				</div>
+			</div>
+			<Footer />
+		</div>
+	);
 };
 
 export default NotFound;
-
-const ScrollView = styled.div`
-    min-height: calc(100vh - 80px);
-`;
-
-const Container = styled.div`
-    text-align: center;
-    padding-top: 50px;
-`;
