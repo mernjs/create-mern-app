@@ -35,7 +35,6 @@ class AuthController {
                 { ...user, accessToken },
             );
         } catch (error) {
-            res.send(error.message);
             return Utilities.apiResponse(res, 500, error);
         }
     }
@@ -67,7 +66,6 @@ class AuthController {
                 { ...savedUser, accessToken },
             );
         } catch (error) {
-            res.send(error.message);
             Utilities.apiResponse(res, 500, error);
         }
     }
