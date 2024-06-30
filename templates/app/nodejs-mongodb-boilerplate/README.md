@@ -130,11 +130,6 @@ To get started with the project, follow these steps:
    npm run dev
    ```
 
-5. **Run tests (optional):**
-   ```bash
-   npm test
-   ```
-
 ## Scripts
 
 - **Development**: `npm run dev`
