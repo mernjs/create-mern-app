@@ -1,8 +1,3 @@
-## Project Guidelines
-Certainly! Here's an improved version of your `README.md` file, organized and detailed to reflect the project guidelines you’ve provided:
-
----
-
 # Project Name
 
 ## Overview
@@ -17,8 +12,6 @@ This project is a web application built using Node.js and Express.js, following 
 - **Utilities**: Common utility functions.
 - **Controllers**: Business logic and request handling.
 - **Configuration**: Server and environment settings.
-
-The project use of MVC (Model-View-Controller) pattern.
 
 ### 2. Consistent Naming Conventions
 
