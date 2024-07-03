@@ -13,14 +13,10 @@ import {
 	REGISTER,
 } from 'redux-persist';
 import { api } from './services/api';
-import CoreReducer from './reducers/CoreReducer';
 import AuthReducer from './reducers/AuthReducer';
-import UserReducer from 'reducers/UserReducer';
 
 const appReducer = combineReducers({
-	core: CoreReducer,
 	auth: AuthReducer,
-	user: UserReducer,
 	[api.reducerPath]: api.reducer,
 });
 

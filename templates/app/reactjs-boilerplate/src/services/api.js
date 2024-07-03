@@ -1,22 +1,20 @@
-import { createApi, fetchBaseQuery, retry } from '@reduxjs/toolkit/query/react';
+import { createApi, retry } from '@reduxjs/toolkit/query/react';
+import apiRequest from '../Utilities';
 
-const baseQuery = fetchBaseQuery({
-    // baseUrl: 'http://localhost:8080/api/v1/',
-    baseUrl: `${process.env.REACT_APP_API_URL}/`,
-    prepareHeaders: (headers, { getState }) => {
-        const token = getState().auth.token;
-        if (token) {
-            headers.set('authentication', `Bearer ${token}`);
-        }
-        return headers;
-    },
-});
+const baseQuery = async (args) => {
+	try {
+		const response = await apiRequest(args);
+		return { data: { data: response?.data, message: response?.message } };
+	} catch (error) {
+		return { error: { data: error?.data, message: error?.message } };
+	}
+};
 
-const baseQueryWithRetry = retry(baseQuery, { maxRetries: 6 });
+const baseQueryWithRetry = retry(baseQuery, { maxRetries: 1 });
 
 export const api = createApi({
-    reducerPath: 'api',
-    baseQuery: baseQueryWithRetry,
-    tagTypes: ['Users'],
-    endpoints: () => ({}),
+	reducerPath: 'api',
+	baseQuery: baseQueryWithRetry,
+	tagTypes: ['Users', 'Auth', 'Payments'],
+	endpoints: () => ({}),
 });

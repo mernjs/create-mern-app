@@ -1,9 +1,10 @@
 import React from 'react';
 import { Header, Footer } from '../components';
 import { useSelector } from 'react-redux';
+import { decrypt } from 'Utilities';
 
 const Home = () => {
-	const user = useSelector((state) => state.auth.user);
+	const user = useSelector((state) => decrypt({ data: state.auth?.user }));
 
 	return (
 		<div className="flex flex-col h-screen">

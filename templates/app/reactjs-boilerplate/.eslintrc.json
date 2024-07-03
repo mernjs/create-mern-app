@@ -22,7 +22,9 @@
 		"no-unused-vars": "off",
 		"max-len": "off",
 		"space-before-function-paren": "off",
-		"react/prop-types": "off"
+		"react/prop-types": "off",
+		"quotes": "off",
+		"semi": "off"
 	},
 	"settings": {
 		"react": {

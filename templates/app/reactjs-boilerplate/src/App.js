@@ -1,5 +1,5 @@
 import React, { Suspense, lazy, Profiler } from 'react';
-import { Provider, useSelector } from 'react-redux';
+import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -13,27 +13,31 @@ import {
 import { history } from './Utilities';
 import { store, persistor } from './Store';
 import Loading from 'pages/Loading';
+import useAuthMiddleware from 'hooks/useAuthMiddleware';
 
-const Login = lazy(() => import('./pages/Login'));
-const Signup = lazy(() => import('./pages/Signup'));
-const Dashboard = lazy(() => import('./pages/Dashboard'));
 const NotFound = lazy(() => import('./pages/NotFound'));
+const Login = lazy(() => import('./pages/auth/Login'));
+const Signup = lazy(() => import('./pages/auth/Signup'));
+const Dashboard = lazy(() => import('./pages/Dashboard'));
+const UserListing = lazy(() => import('./pages/users/UserListing'));
+const UserDetails = lazy(() => import('./pages/users/UserDetails'));
+
 
 const onRender = (id, phase, actualDuration, baseDuration, startTime, commitTime) => {
 	console.log({ id, phase, actualDuration, baseDuration, startTime, commitTime });
 };
 
 const AuthRoute = ({ children }) => {
-	const user = useSelector((state) => state.auth.user);
-	return user !== null ? <Navigate to="/" /> : children;
+	const user = useAuthMiddleware()
+	return user ? <Navigate to="/" /> : children;
 };
 AuthRoute.propTypes = {
 	children: PropTypes.element,
 };
 
 const PrivateRoute = ({ children }) => {
-	const user = useSelector((state) => state.auth.user);
-	return user !== null ? children : <Navigate to={{ pathname: '/login' }} />;
+	const user = useAuthMiddleware()
+	return user ? children : <Navigate to={{ pathname: '/login' }} />;
 };
 PrivateRoute.propTypes = {
 	children: PropTypes.element,
@@ -68,6 +72,24 @@ const AppRoutes = () => {
 						<AuthRoute>
 							<Signup />
 						</AuthRoute>
+					}
+				/>
+				<Route
+					exact={true}
+					path="/users"
+					element={
+						<PrivateRoute>
+							<UserListing />
+						</PrivateRoute>
+					}
+				/>
+				<Route
+					exact={true}
+					path="/users/:userId"
+					element={
+						<PrivateRoute>
+							<UserDetails />
+						</PrivateRoute>
 					}
 				/>
 				<Route exact={true} path="*" element={<NotFound />} />

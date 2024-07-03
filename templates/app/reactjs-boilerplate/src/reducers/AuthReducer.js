@@ -1,20 +1,22 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { encrypt } from 'Utilities';
 
 const AuthReducer = createSlice({
-    name: 'AuthReducer',
+	name: 'AuthReducer',
 
-    initialState: {
-        user: null,
-    },
+	initialState: {
+		user: null,
+	},
 
-    reducers: {
-        setAuth: (state, action) => {
-            state.user = action.payload;
-        },
-        logout: (state, action) => {
-            state.user = null;
-        },
-    },
+	reducers: {
+		setAuth: (state, action) => {
+			const userEncrypted = encrypt(action.payload)
+			state.user = userEncrypted;
+		},
+		logout: (state, action) => {
+			state.user = null;
+		},
+	},
 });
 
 export const AuthActions = AuthReducer.actions;

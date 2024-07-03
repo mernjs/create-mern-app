@@ -29,10 +29,13 @@ const instance = axios.create({
 
 instance.interceptors.request.use(
 	async (config) => {
-		const token = store.getState()?.auth?.user?.accessToken || '';
+		const decryptedUser = store.getState()?.auth?.user ? decrypt({ data: store.getState()?.auth?.user }) : null;
+		const token = decryptedUser?.accessToken || '';
 		if (token) config.headers.Authorization = `${token}`;
-		if (config.data && process.env.REACT_APP_DEBUG === 'false') {
-			config.data = { payload: encrypt(config.data) };
+		if (config.body && process.env.REACT_APP_DEBUG === 'false') {
+			config.data = { payload: encrypt(config.body) };
+		} else {
+			config.data = config.body
 		}
 		return config;
 	},
@@ -60,21 +63,20 @@ export default instance;
 
 export const history = createBrowserHistory();
 
-export const requestStart = (loaderName) => {
-	store.dispatch(CoreActions.loaderActivate(loaderName));
-};
-
-export const requestError = (loaderName, message) => {
-	store.dispatch(CoreActions.loaderDeactivate(loaderName));
-	if (message) toast.error(message);
-};
-
-export const requestSuccess = (loaderName, message) => {
-	store.dispatch(CoreActions.loaderDeactivate(loaderName));
-	if (message) toast.success(message);
-};
-
 export const showToast = (message, type) => {
 	if (type === 'error') toast.error(message);
 	if (type === 'success') toast.success(message);
+};
+
+export const handleFormError = (error, setError) => {
+	if (typeof error.data == 'object') {
+		Object.keys(error.data).forEach((field) => {
+			setError(field, {
+				type: 'server',
+				message: error.data[field],
+			});
+		});
+	} else {
+		showToast(error?.message || 'An error occurred', 'error');
+	}
 };
