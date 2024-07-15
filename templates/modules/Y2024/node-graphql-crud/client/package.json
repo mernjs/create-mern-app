@@ -1,0 +1,42 @@
+{
+  "name": "graphql-crud",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.0.0",
+    "@material-ui/icons": "^1.0.0",
+    "apollo-boost": "^0.4.9",
+    "classnames": "^2.3.2",
+    "graphql": "^16.6.0",
+    "node-sass": "^8.0.0",
+    "normalize.css": "^8.0.1",
+    "react": "^18.2.0",
+    "react-apollo": "^3.1.5",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "flow": "flow"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "^2.8.7"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}

@@ -1,4 +1,3 @@
-"use client"
 import React from 'react';
 import { ErrorMessage } from '@hookform/error-message';
 
@@ -6,7 +5,7 @@ const Input = (props) => {
 	const { field, label, type, placeholder, errors } = props;
 	return (
 		<div>
-			{label && <label for={field.name} className="block text-sm font-medium leading-6 text-gray-900">{label}</label>}
+			{label && <label htmlFor={field.name} className="block text-sm font-medium leading-6 text-gray-900">{label}</label>}
 			<div className="mt-2">
 				<input
 					placeholder={placeholder}

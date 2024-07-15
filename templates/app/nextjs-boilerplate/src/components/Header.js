@@ -1,18 +1,15 @@
-"use client"
-import React from 'react';
-import Link from 'next/link';
+import React, { memo } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { AuthActions } from '../reducers/AuthReducer';
-import { useRouter } from 'next/navigation';
+import { decrypt } from '../Utilities';
+import Link from 'next/link';
 
 const Header = () => {
 	const dispatch = useDispatch();
-	const { push } = useRouter();
-	const user = useSelector((state) => state.auth.user);
-
+	const user = useSelector((state) => decrypt({ data: state.auth?.user }));
+	console.log("user", user)
 	const logout = () => {
 		dispatch(AuthActions.logout());
-		push('/login');
 	};
 
 	return (
@@ -30,7 +27,10 @@ const Header = () => {
 				<div className="hidden w-full md:block md:w-auto" id="navbar-default">
 
 					<ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-						{user === null && (
+						<li>
+							<Link href="/users">Users</Link>
+						</li>
+						{!user && (
 							<>
 								<li>
 									<Link href="/login">Login</Link>
@@ -40,14 +40,12 @@ const Header = () => {
 								</li>
 							</>
 						)}
-						{user !== null && (
-							<>
-								<li>
-									<span onClick={logout}>
-										Logout
-									</span>
-								</li>
-							</>
+						{user && (
+							<li>
+								<span onClick={logout}>
+									Logout
+								</span>
+							</li>
 						)}
 					</ul>
 				</div>
@@ -57,4 +55,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
+export default memo(Header);

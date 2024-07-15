@@ -6,19 +6,22 @@ import { useDispatch } from 'react-redux';
 import { AuthActions } from '@/reducers/AuthReducer';
 import { useForm, Controller } from 'react-hook-form';
 import { useRouter } from 'next/navigation';
+import { useLoginMutation } from '@/services/AuthServices';
 
 const Login = () => {
 
 	const { handleSubmit, control, formState: { isSubmitting, errors } } = useForm({ mode: 'onChange' });
-	const { push } = useRouter();
+	const [login] = useLoginMutation();
 	const dispatch = useDispatch();
+	const { push } = useRouter();
 
 	const onSubmit = async (payload) => {
 		try {
-			dispatch(AuthActions.setAuth(payload));
-			push("/");
+			const response = await login(payload).unwrap();
+			dispatch(AuthActions.setAuth(response.data));
+			push("/")
 		} catch (error) {
-			console.log(error?.message);
+			showToast(error?.message, 'error');
 		}
 	};
 

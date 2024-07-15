@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Header, Footer, } from '@/components';
 import { useGetUsersQuery } from '@/services/UserServices';
 import ReactPaginate from 'react-paginate';
+import Link from 'next/link';
 
 const Users = () => {
 
@@ -29,10 +30,10 @@ const Users = () => {
 							</div>
 						}
 						{data?.data?.docs?.map((item, index) => {
-							return <div key={index} onClick={() => push(`/user-details/${item._id}`)} style={{ padding: '10px', border: '2px solid gray', width: '500px', margin: '0 auto', marginBottom: '20px' }}>
+							return <Link key={index} href={`/user-details/${item._id}`} style={{ padding: '10px', border: '2px solid gray', width: '500px', margin: '0 auto', marginBottom: '20px' }}>
 								<p><b>Name:</b> {item.name}</p>
 								<p><b>Email:</b> {item.email}</p>
-							</div>;
+							</Link>;
 						})}
 
 						{data?.data?.docs &&

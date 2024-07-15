@@ -1,12 +1,14 @@
-import { apiCall } from './apiCall';
+import { api } from './api';
 
-export const UserServices = apiCall.injectEndpoints({
-
+export const UserServices = api.injectEndpoints({
 	endpoints: (build) => ({
 
 		getUsers: build.query({
 			query: (page) => `users?page=${page}`,
-			providesTags: (result) => result?.data?.docs ? result.data?.docs.map(({ _id }) => ({ type: 'Users', _id })) : [],
+			providesTags: (result) =>
+				result?.data?.docs ? result.data?.docs.map(({ _id }) => ({ type: 'Users', _id })) : [],
+			keepUnusedDataFor: 60,
+			refetchOnMountOrArgChange: true,
 		}),
 
 		addUser: build.mutation({
@@ -20,10 +22,12 @@ export const UserServices = apiCall.injectEndpoints({
 
 		getUser: build.query({
 			query: (id) => ({
-				url: `users/${id}`,
+				url: `user/${id}`,
 				method: 'GET',
 			}),
 			providesTags: (result, error, id) => [{ type: 'Users', id }],
+			keepUnusedDataFor: 300,
+			refetchOnMountOrArgChange: false,
 		}),
 
 		updateUser: build.mutation({
@@ -56,9 +60,7 @@ export const UserServices = apiCall.injectEndpoints({
 			},
 			invalidatesTags: (result, error, id) => [{ type: 'Users', id }],
 		}),
-
 	}),
-
 });
 
 export const {

@@ -1,5 +1,5 @@
 import { createApi, retry } from '@reduxjs/toolkit/query/react';
-import apiRequest from '../Utilities';
+import apiRequest from 'Utilities';
 
 const baseQuery = async (args) => {
 	try {

@@ -10,17 +10,17 @@ import {
 	Route,
 	Navigate,
 } from 'react-router-dom';
-import { history } from './Utilities';
-import { store, persistor } from './Store';
+import { history } from 'Utilities';
+import { store, persistor } from 'Store';
 import Loading from 'pages/Loading';
 import useAuthMiddleware from 'hooks/useAuthMiddleware';
 
-const NotFound = lazy(() => import('./pages/NotFound'));
-const Login = lazy(() => import('./pages/auth/Login'));
-const Signup = lazy(() => import('./pages/auth/Signup'));
-const Dashboard = lazy(() => import('./pages/Dashboard'));
-const UserListing = lazy(() => import('./pages/users/UserListing'));
-const UserDetails = lazy(() => import('./pages/users/UserDetails'));
+const NotFound = lazy(() => import('pages/NotFound'));
+const Login = lazy(() => import('pages/auth/Login'));
+const Signup = lazy(() => import('pages/auth/Signup'));
+const Dashboard = lazy(() => import('pages/Dashboard'));
+const UserListing = lazy(() => import('pages/users/UserListing'));
+const UserDetails = lazy(() => import('pages/users/UserDetails'));
 
 
 const onRender = (id, phase, actualDuration, baseDuration, startTime, commitTime) => {

@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon . -e js,graphql",
+    "serve": "node ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "graphql-yoga": "^1.13.1",
+    "mongoose": "^5.1.0"
+  }
+}

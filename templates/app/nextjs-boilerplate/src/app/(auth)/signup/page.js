@@ -6,19 +6,21 @@ import { useDispatch } from 'react-redux';
 import { AuthActions } from '@/reducers/AuthReducer';
 import { useForm, Controller } from 'react-hook-form';
 import { useRouter } from 'next/navigation';
+import { useRegisterMutation } from '@/services/AuthServices';
 
 const Signup = () => {
-
-	const { handleSubmit, control, formState: { isSubmitting, errors } } = useForm({ mode: 'onChange' });
-	const { push } = useRouter();
+	const { handleSubmit, control, formState: { isSubmitting, errors }, setError } = useForm({ mode: 'onChange' });
+	const [register] = useRegisterMutation();
 	const dispatch = useDispatch();
+	const { push } = useRouter();
 
 	const onSubmit = async (payload) => {
 		try {
-			dispatch(AuthActions.setAuth(payload));
-			push("/");
+			const response = await register(payload).unwrap();
+			dispatch(AuthActions.setAuth(response.data));
+			push("/")
 		} catch (error) {
-			console.log(error?.message);
+			handleFormError(error, setError);
 		}
 	};
 

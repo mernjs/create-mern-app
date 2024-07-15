@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 const Home = () => {
 
-	const user = useSelector((state) => state.auth.user);
+	const user = useSelector((state) => state?.auth?.user);
 
 	return (
 		<div className="flex flex-col h-screen">

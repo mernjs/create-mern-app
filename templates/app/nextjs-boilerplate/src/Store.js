@@ -12,16 +12,12 @@ import {
 	PURGE,
 	REGISTER,
 } from 'redux-persist';
-import { apiCall } from '@/services/apiCall';
-import CoreReducer from '@/reducers/CoreReducer';
+import { api } from '@/services/api';
 import AuthReducer from '@/reducers/AuthReducer';
-import UserReducer from '@/reducers/UserReducer';
 
 const appReducer = combineReducers({
-	core: CoreReducer,
 	auth: AuthReducer,
-	user: UserReducer,
-	[apiCall.reducerPath]: apiCall.reducer,
+	[api.reducerPath]: api.reducer,
 });
 
 const rootReducer = (state, action) => {
@@ -36,22 +32,31 @@ const persistConfig = {
 	key: 'root',
 	version: 1,
 	storage: storage,
-	blacklist: ['apiCall'],
+	blacklist: ['api'],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 const reduxLogger = createLogger();
 
 const configureCustomStore = () => {
+	const middlewares = [api.middleware];
+	const isDebugMode = process.env.NEXT_PUBLIC_DEBUG === 'true';
+
+	if (isDebugMode) {
+		middlewares.push(reduxLogger);
+	}
+
 	const store = configureStore({
 		reducer: persistedReducer,
-		middleware: (getDefaultMiddleware) => getDefaultMiddleware({
-			serializableCheck: {
-				ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-			},
-		}).concat(apiCall.middleware, reduxLogger),
-		devTools: process.env.NODE_ENV !== 'production',
+		middleware: (getDefaultMiddleware) =>
+			getDefaultMiddleware({
+				serializableCheck: {
+					ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+				},
+			}).concat(middlewares),
+		devTools: isDebugMode,
 	});
+
 	const persistor = persistStore(store);
 	return { store, persistor };
 };
