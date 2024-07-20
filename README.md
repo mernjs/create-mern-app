@@ -85,8 +85,8 @@ Explore a collection of sample modules, organized by technology, to help you qui
 
 | SN. | Modules | Download |
 | ------ | ------ | ------ |
-| 1 | [Stripe Subscription Module With NodeJS & ReactJS](#stripe) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) |
-| 2 | [ReactJS Firebase Auth Module](#firebaseauth) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) |
+| 1 | [Stripe Subscription - MERN](#stripe) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) |
+| 2 | [Firebase Auth - ReactJS](#firebaseauth) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) |
 
 
 <h4>4. Code Snippets</h4>
@@ -95,7 +95,7 @@ Explore a collection of reusable code snippets to quickly implement common featu
 
 | SN. | Snippets | Download |
 | ------ | ------ | ------ |
-| 1 | [NodeJS JWT Code Snippets](#stripe) | [![NodeJS JWT Code Snippets](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "NodeJS JWT Code Snippets")](#stripe) |
+| 1 | [JWT Code - NodeJS](#stripe) | [![JWT Code - NodeJS](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "JWT Code - NodeJS")](#stripe) |
 
 
 <h4>5. Projects</h4>
