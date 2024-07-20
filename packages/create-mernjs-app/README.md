@@ -49,7 +49,7 @@ OR
 
 App boilerplates provide ready-to-use templates for building applications, simplifying the setup process and ensuring a consistent structure across projects.
 
-| SN. | Modules | Download |
+| SN. | Boilerplates | Download |
 | ------ | ------ | ------ |
 | 1 | [NodeJS & MongoDB](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/app/nodejs-mongodb-boilerplate) | [![Download NodeJS MongoDB](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MongoDB")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/app/nodejs-mongodb-boilerplate.zip) |
 | 2 | [NodeJS & MySQL](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/app/nodejs-mysql-boilerplate) | [![Download NodeJS MySQL](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MySQL")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/app/nodejs-mysql-boilerplate.zip) |
@@ -69,7 +69,7 @@ App boilerplates provide ready-to-use templates for building applications, simpl
 
 Library boilerplates offer pre-configured templates for creating npm packages, enabling efficient and standardized development of reusable code libraries.
 
-| SN. | Modules | Download |
+| SN. | Boilerplates | Download |
 | ------ | ------ | ------ |
 | 1 | [JavaScript Library](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/library/javascript-library-boilerplate) | [![Download JavaScript Library](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download JavaScript Library")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/library/javascript-library-boilerplate.zip) |
 | 2 | [ReactJS Library](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/library/reactjs-library-boilerplate) | [![Download ReactJS Library](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Library")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/library/reactjs-library-boilerplate.zip) |
