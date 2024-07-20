@@ -89,13 +89,13 @@ Discover a collection of sample modules, organized by technology, to help you qu
 | 2 | [ReactJS Firebase Auth Module](#firebaseauth) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLp4cm2rjcjlOlizWf6y_skf) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) |
 
 
-<h4>4. Snippets</h4>
+<h4>4. Code Snippets</h4>
 
 Code snippets are small blocks of reusable code that you can add to a code file, that organized by technology, to help you quickly implement specific features or functionalities in your applications.
 
 | SN. | Snippets | Youtube | Download |
 | ------ | ------ | ------ | ------ |
-| 1 | [NodeJS JWT Snippets](#stripe) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLqXikWu103FgL34iaKCrHs7) | [![NodeJS JWT Snippets](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "NodeJS JWT Snippets")](#stripe) |
+| 1 | [NodeJS JWT Code Snippets](#stripe) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLqXikWu103FgL34iaKCrHs7) | [![NodeJS JWT Code Snippets](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "NodeJS JWT Code Snippets")](#stripe) |
 
 
 <h4>Key Features</h4>
