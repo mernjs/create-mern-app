@@ -51,18 +51,18 @@ App boilerplates provide ready-to-use templates for building applications, simpl
 
 | SN. | Modules | Youtube | Download |
 | ------ | ------ | ------ | ------ |
-| 1 | [ExpressJS & MongoDB Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mongodb-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLprvoreP6yHqa_9TxN3i28I) | [![Download NodeJS MongoDB Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MongoDB Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nodejs-mongodb-boilerplate.zip) |
-| 2 | [ExpressJS & MySQL Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mysql-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLp195HLzgpf80JJaJ1ZLVG5) | [![Download NodeJS MySQL Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MySQL Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nodejs-mysql-boilerplate.zip) |
-| 3 | [NextJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nextjs-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLqRaX-PNi0OKYhwTGec2EMS) | [![Download NextJS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NextJS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/nextjs-boilerplate.zip) |
-| 4 | [GatsbyJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/gatsbyjs-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLos8kTCGKyeyEa1yfnMxqfz) | [![Download GatsbyJS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download GatsbyJS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/gatsbyjs-boilerplate.zip) |
-| 5 | [ReactJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLoOOR1KT7eAw9iwdytyZvti) | [![Download ReactJS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/reactjs-boilerplate.zip) |
-| 6 | [ElectronJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/electronjs-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLqsuAJmFRrSxguNR8FE-ot6) | [![Download ElectronJS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ElectronJS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/electronjs-boilerplate.zip) |
-| 7 | [ReactJS Chrome Extension Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-chrome-extension-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLotmavyfpCUzL7HqYXG6uI8) | [![Download ReactJS Chrome Extension Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Chrome Extension Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/reactjs-chrome-extension-boilerplate.zip) |
-| 8 | [ReactJS Webpack Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-webpack-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLoI8IQ4EswieCbzP54nZZWv) | [![Download ReactJS Webpack Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Webpack Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/reactjs-webpack-boilerplate.zip) |
-| 9 | [FastifyJS & MySQL Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/fastifyjs-mysql-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLpFwJS4p_QEjq_1rl7bKzCj) | [![Download FastifyJS MySQL Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download FastifyJS MySQL Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/fastifyjs-mysql-boilerplate.zip) |
-| 10 | [FastifyJS & MongoDB Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/fastifyjs-mongodb-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLpx2BZ9LK_R6koag6QxSt3q) | [![Download FastifyJS MongoDB Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download FastifyJS MongoDB Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/fastifyjs-mongodb-boilerplate.zip) |
-| 11 | [T3JS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/t3js-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLoznqvBA8T9LeD5BcQQfKRc) | [![Download T3JS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download T3JS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/t3js-boilerplate.zip) |
-| 12 | [React Native Expo Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/app/expo-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLpK735w-WQGBs_nntaPH5PY) | [![Download React Native Expo Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download React Native Expo Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/app/expo-boilerplate.zip) |
+| 1 | [ExpressJS & MongoDB Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/app/nodejs-mongodb-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLprvoreP6yHqa_9TxN3i28I) | [![Download NodeJS MongoDB Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MongoDB Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/app/nodejs-mongodb-boilerplate.zip) |
+| 2 | [ExpressJS & MySQL Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/app/nodejs-mysql-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLp195HLzgpf80JJaJ1ZLVG5) | [![Download NodeJS MySQL Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MySQL Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/app/nodejs-mysql-boilerplate.zip) |
+| 3 | [NextJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/app/nextjs-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLqRaX-PNi0OKYhwTGec2EMS) | [![Download NextJS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NextJS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/app/nextjs-boilerplate.zip) |
+| 4 | [GatsbyJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/app/gatsbyjs-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLos8kTCGKyeyEa1yfnMxqfz) | [![Download GatsbyJS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download GatsbyJS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/app/gatsbyjs-boilerplate.zip) |
+| 5 | [ReactJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/app/reactjs-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLoOOR1KT7eAw9iwdytyZvti) | [![Download ReactJS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/app/reactjs-boilerplate.zip) |
+| 6 | [ElectronJS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/app/electronjs-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLqsuAJmFRrSxguNR8FE-ot6) | [![Download ElectronJS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ElectronJS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/app/electronjs-boilerplate.zip) |
+| 7 | [ReactJS Chrome Extension Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/app/reactjs-chrome-extension-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLotmavyfpCUzL7HqYXG6uI8) | [![Download ReactJS Chrome Extension Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Chrome Extension Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/app/reactjs-chrome-extension-boilerplate.zip) |
+| 8 | [ReactJS Webpack Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/app/reactjs-webpack-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLoI8IQ4EswieCbzP54nZZWv) | [![Download ReactJS Webpack Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Webpack Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/app/reactjs-webpack-boilerplate.zip) |
+| 9 | [FastifyJS & MySQL Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/app/fastifyjs-mysql-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLpFwJS4p_QEjq_1rl7bKzCj) | [![Download FastifyJS MySQL Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download FastifyJS MySQL Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/app/fastifyjs-mysql-boilerplate.zip) |
+| 10 | [FastifyJS & MongoDB Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/app/fastifyjs-mongodb-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLpx2BZ9LK_R6koag6QxSt3q) | [![Download FastifyJS MongoDB Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download FastifyJS MongoDB Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/app/fastifyjs-mongodb-boilerplate.zip) |
+| 11 | [T3JS Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/app/t3js-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLoznqvBA8T9LeD5BcQQfKRc) | [![Download T3JS Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download T3JS Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/app/t3js-boilerplate.zip) |
+| 12 | [React Native Expo Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/app/expo-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLpK735w-WQGBs_nntaPH5PY) | [![Download React Native Expo Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download React Native Expo Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/app/expo-boilerplate.zip) |
 
 
 <h4>2. Library Boilerplates</h4>
@@ -71,17 +71,17 @@ Library boilerplates offer pre-configured templates for creating npm packages, e
 
 | SN. | Modules | Youtube | Download |
 | ------ | ------ | ------ | ------ |
-| 1 | [JavaScript Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/javascript-library-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLqep9CYVWO5a3AQAniAJcA9) | [![Download JavaScript Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download JavaScript Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/javascript-library-boilerplate.zip) |
-| 2 | [ReactJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/reactjs-library-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLr_xS7_UPXXIHDL9CXiKU8n) | [![Download ReactJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/reactjs-library-boilerplate.zip) |
-| 3 | [NodeJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/nodejs-library-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLpoOj9rTBQRkgjswp4j2tgf) | [![Download NodeJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/nodejs-library-boilerplate.zip) |
-| 4 | [ExpressJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/expressjs-library-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLqHv9qy4BeQcbJh71IaMBjI) | [![Download ExpressJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ExpressJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/expressjs-library-boilerplate.zip) |
-| 5 | [NextJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/nextjs-library-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLps-UOLqcftByibrM1ZYxvt) | [![Download NextJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NextJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/nextjs-library-boilerplate.zip) |
-| 6 | [React Native Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/library/react-native-library-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLrJka3KLrOc98wXusZIm1jp) | [![Download React Native Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download React Native Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/library/react-native-library-boilerplate.zip) |
+| 1 | [JavaScript Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/library/javascript-library-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLqep9CYVWO5a3AQAniAJcA9) | [![Download JavaScript Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download JavaScript Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/library/javascript-library-boilerplate.zip) |
+| 2 | [ReactJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/library/reactjs-library-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLr_xS7_UPXXIHDL9CXiKU8n) | [![Download ReactJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/library/reactjs-library-boilerplate.zip) |
+| 3 | [NodeJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/library/nodejs-library-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLpoOj9rTBQRkgjswp4j2tgf) | [![Download NodeJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/library/nodejs-library-boilerplate.zip) |
+| 4 | [ExpressJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/library/expressjs-library-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLqHv9qy4BeQcbJh71IaMBjI) | [![Download ExpressJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ExpressJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/library/expressjs-library-boilerplate.zip) |
+| 5 | [NextJS Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/library/nextjs-library-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLps-UOLqcftByibrM1ZYxvt) | [![Download NextJS Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NextJS Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/library/nextjs-library-boilerplate.zip) |
+| 6 | [React Native Library Boilerplate](https://github.com/mernjs/create-mern-app/tree/master/templates/boilerplates/library/react-native-library-boilerplate) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLrJka3KLrOc98wXusZIm1jp) | [![Download React Native Library Boilerplate](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download React Native Library Boilerplate")](https://github.com/mernjs/create-mern-app/raw/master/templates/boilerplates/library/react-native-library-boilerplate.zip) |
 
 
 <h4>3. Modules</h4>
 
-Discover a collection of sample projects, organized by technology, to help you quickly implement specific features or functionalities in your applications.
+Discover a collection of sample modules, organized by technology, to help you quickly implement specific features or functionalities in your applications.
 
 | SN. | Modules | Youtube | Download |
 | ------ | ------ | ------ | ------ |
@@ -89,72 +89,60 @@ Discover a collection of sample projects, organized by technology, to help you q
 | 2 | [ReactJS Firebase Auth Module](#firebaseauth) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLp4cm2rjcjlOlizWf6y_skf) | [![Stripe Subscription](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Stripe Subscription")](#stripe) |
 
 
+<h4>4. Snippets</h4>
+
+Code snippets are small blocks of reusable code that you can add to a code file, that organized by technology, to help you quickly implement specific features or functionalities in your applications.
+
+| SN. | Snippets | Youtube | Download |
+| ------ | ------ | ------ | ------ |
+| 1 | [NodeJS JWT Snippets](#stripe) | [Watch Video](https://www.youtube.com/playlist?list=PLdb4nm44DkLqXikWu103FgL34iaKCrHs7) | [![NodeJS JWT Snippets](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "NodeJS JWT Snippets")](#stripe) |
+
+
 <h4>Key Features</h4>
 
 Effortlessly build secure and scalable MERN applications with automated setup, industry-standard coding practices, secure authentication, robust data handling, and proactive security measures.
 
-1. **Effortless Initialization:**
-   Start your MERN project quickly using a simple command-line interface that sets up everything automatically.
+1. **Effortless Initialization:** Start your MERN project quickly using a simple command-line interface that sets up everything automatically.
 
-2. **Secure Coding Practices:**
-   Follow industry standards to write strong, resilient code. Regular reviews and best practices reduce vulnerabilities during development.
+2. **Secure Coding Practices:** Follow industry standards to write strong, resilient code. Regular reviews and best practices reduce vulnerabilities during development.
 
-3. **Well-Defined Folder Structure:**
-   Use a clean and organized project layout that makes it easy to maintain and expand your application.
+3. **Well-Defined Folder Structure:** Use a clean and organized project layout that makes it easy to maintain and expand your application.
 
-4. **Server & Client Code Separation:**
-   Keep server-side and client-side code separate for easier management and development.
+4. **Server & Client Code Separation:** Keep server-side and client-side code separate for easier management and development.
 
-5. **Authentication Ready:**
-   Easily add secure login/signup features using best practices to protect user data.
+5. **Authentication Ready:** Easily add secure login/signup features using best practices to protect user data.
 
-6. **Automatic Indentation:**
-   Automatically format code for consistency, making it easier to read and understand.
+6. **Automatic Indentation:** Automatically format code for consistency, making it easier to read and understand.
 
-7. **ESLint Integration:**
-   Improve code quality by using ESLint to find and fix potential issues based on coding standards.
+7. **ESLint Integration:** Improve code quality by using ESLint to find and fix potential issues based on coding standards.
 
-8. **Prettier Support:**
-   Use Prettier to automatically format your code, keeping it neat and visually appealing.
+8. **Prettier Support:** Use Prettier to automatically format your code, keeping it neat and visually appealing.
 
-9. **Tailwind CSS for Styling:**
-   Speed up styling with Tailwind CSS, creating responsive and attractive user interfaces.
+9. **Tailwind CSS for Styling:** Speed up styling with Tailwind CSS, creating responsive and attractive user interfaces.
 
-10. **Data Encryption:**
-    Encrypt data to secure it during storage and transmission, protecting against unauthorized access.
+10. **Data Encryption:** Encrypt data to secure it during storage and transmission, protecting against unauthorized access.
 
-11. **Input Validation:**
-    Validate user inputs rigorously to prevent attacks and ensure safe usage.
+11. **Input Validation:** Validate user inputs rigorously to prevent attacks and ensure safe usage.
 
-12. **CORS:**
-    Control which domains can access your application to prevent unauthorized requests.
+12. **CORS:** Control which domains can access your application to prevent unauthorized requests.
 
-13. **Rate Limiting:**
-    Limit API usage to prevent abuse and protect against denial-of-service attacks.
+13. **Rate Limiting:** Limit API usage to prevent abuse and protect against denial-of-service attacks.
 
-14. **Error Handling:**
-    Implement effective error-handling mechanisms to keep sensitive information secure.
+14. **Error Handling:** Implement effective error-handling mechanisms to keep sensitive information secure.
 
-15. **Middleware Security:**
-    Secure middleware components to protect core functionalities from common threats.
+15. **Middleware Security:** Secure middleware components to protect core functionalities from common threats.
 
-16. **Dependency Scanning:**
-    Regularly check and update dependencies to fix known vulnerabilities and enhance security.
+16. **Dependency Scanning:** Regularly check and update dependencies to fix known vulnerabilities and enhance security.
 
-17. **Secure File Uploads:**
-    Safely upload files with validation to ensure they are safe for your application.
+17. **Secure File Uploads:** Safely upload files with validation to ensure they are safe for your application.
 
-18. **Environment Configuration:**
-    Manage environment settings securely to protect sensitive data like API keys.
+18. **Environment Configuration:** Manage environment settings securely to protect sensitive data like API keys.
 
-19. **Security Headers:**
-    Set HTTP security headers to make your web application more secure against common vulnerabilities.
+19. **Security Headers:** Set HTTP security headers to make your web application more secure against common vulnerabilities.
 
-20. **API Versioning:**
-    Implement versioning for your APIs to support smooth updates and compatibility.
+20. **API Versioning:** Implement versioning for your APIs to support smooth updates and compatibility.
 
-21. **Monitoring:**
-    Set up robust monitoring to quickly detect and respond to security incidents, ensuring your application stays secure and reliable.
+21. **Monitoring:** Set up robust monitoring to quickly detect and respond to security incidents, ensuring your application stays secure and reliable.
 
 <h4>Support</h4>
 

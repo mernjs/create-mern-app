@@ -9,10 +9,10 @@ check_last_command() {
 }
 
 # Step 0: Run the sh-stop-projects.sh script to stop all running ports
-echo "Ensuring templates/app/sh-stop-projects.sh is executable..."
-chmod +x templates/app/sh-stop-projects.sh
+echo "Ensuring templates/boilerplates/app/sh-stop-projects.sh is executable..."
+chmod +x templates/boilerplates/app/sh-stop-projects.sh
 check_last_command
 
-echo "Running templates/app/sh-stop-projects.sh to clean up..."
+echo "Running templates/boilerplates/app/sh-stop-projects.sh to clean up..."
 (cd templates/app && sh sh-stop-projects.sh)
 check_last_command
