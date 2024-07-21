@@ -96,7 +96,7 @@ Explore a collection of reusable code snippets to quickly implement common featu
 | SN. | Snippets | Download |
 | ------ | ------ | ------ |
 | 1 | [Express Rate Limit](https://github.com/mernjs/create-mern-app/tree/master/templates/snippets/express-rate-limit) | [![Express Rate Limit](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Express Rate Limit")](https://github.com/mernjs/create-mern-app/raw/master/templates/snippets/express-rate-limit.zip) |
-| 1 | [NodeJS JWT](#https://github.com/mernjs/create-mern-app/tree/master/templates/snippets/node-jwt) | [![NodeJS JWT](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "NodeJS JWT")](https://github.com/mernjs/create-mern-app/raw/master/templates/snippets/node-jwt.zip) |
+| 1 | [NodeJS JWT](https://github.com/mernjs/create-mern-app/tree/master/templates/snippets/node-jwt) | [![NodeJS JWT](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "NodeJS JWT")](https://github.com/mernjs/create-mern-app/raw/master/templates/snippets/node-jwt.zip) |
 | 1 | [NodeJS Encryption Decryption](https://github.com/mernjs/create-mern-app/tree/master/templates/snippets/nodejs-encryption-decryption) | [![NodeJS Encryption Decryption](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "NodeJS Encryption Decryption")](https://github.com/mernjs/create-mern-app/raw/master/templates/snippets/nodejs-encryption-decryption.zip) |
 
 
