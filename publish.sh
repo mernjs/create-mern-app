@@ -25,39 +25,39 @@ GITHUB_USER="mernjs"
 REPO_NAME="create-mern-app"
 
 # Step 1: Run the sh-cleanup-projects.sh script to clean up before creating the zip file for projects
-echo "Ensuring templates/app/sh-cleanup-projects.sh is executable..."
-chmod +x templates/app/sh-cleanup-projects.sh
+echo "Ensuring templates/boilerplates/app/sh-cleanup-projects.sh is executable..."
+chmod +x templates/boilerplates/app/sh-cleanup-projects.sh
 check_last_command
 
-echo "Running templates/app/sh-cleanup-projects.sh to clean up..."
-(cd templates/app && sh sh-cleanup-projects.sh)
+echo "Running templates/boilerplates/app/sh-cleanup-projects.sh to clean up..."
+(cd templates/boilerplates/app && sh sh-cleanup-projects.sh)
 check_last_command
 
 # Step 2: Run the sh-zip-projects.sh script to create the zip file for projects
-echo "Ensuring templates/app/sh-zip-projects.sh is executable..."
-chmod +x templates/app/sh-zip-projects.sh
+echo "Ensuring templates/boilerplates/app/sh-zip-projects.sh is executable..."
+chmod +x templates/boilerplates/app/sh-zip-projects.sh
 check_last_command
 
-echo "Running templates/app/sh-zip-projects.sh to create the zip file..."
-(cd templates/app && sh sh-zip-projects.sh)
+echo "Running templates/boilerplates/app/sh-zip-projects.sh to create the zip file..."
+(cd templates/boilerplates/app && sh sh-zip-projects.sh)
 check_last_command
 
 # Step 3: Run the sh-cleanup-projects.sh script to clean up before creating the zip file for libraries
-echo "Ensuring templates/library/sh-cleanup-projects.sh is executable..."
-chmod +x templates/library/sh-cleanup-projects.sh
+echo "Ensuring templates/boilerplates/library/sh-cleanup-projects.sh is executable..."
+chmod +x templates/boilerplates/library/sh-cleanup-projects.sh
 check_last_command
 
-echo "Running templates/library/sh-cleanup-projects.sh to clean up..."
-(cd templates/library && sh sh-cleanup-projects.sh)
+echo "Running templates/boilerplates/library/sh-cleanup-projects.sh to clean up..."
+(cd templates/boilerplates/library && sh sh-cleanup-projects.sh)
 check_last_command
 
 # Step 4: Run the sh-zip-projects.sh script to create the zip file for libraries
-echo "Ensuring templates/library/sh-zip-projects.sh is executable..."
-chmod +x templates/library/sh-zip-projects.sh
+echo "Ensuring templates/boilerplates/library/sh-zip-projects.sh is executable..."
+chmod +x templates/boilerplates/library/sh-zip-projects.sh
 check_last_command
 
-echo "Running templates/library/sh-zip-projects.sh to create the zip file..."
-(cd templates/library && sh sh-zip-projects.sh)
+echo "Running templates/boilerplates/library/sh-zip-projects.sh to create the zip file..."
+(cd templates/boilerplates/library && sh sh-zip-projects.sh)
 check_last_command
 
 # Step 5: Navigate to the package directory
