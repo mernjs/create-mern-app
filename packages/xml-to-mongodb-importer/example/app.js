@@ -1,4 +1,4 @@
-const { runImporter } = require("../");
+const { runImporter } = require("xml-to-mongodb-importer");
 
 (async () => {
 	try {

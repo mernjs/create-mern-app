@@ -2,10 +2,10 @@
 	"name": "example",
 	"version": "0.1.0",
 	"private": true,
-	"main": "server.js",
+	"main": "app.js",
 	"scripts": {
-		"dev": "nodemon server.js",
-		"start": "node server.js"
+		"dev": "nodemon app.js",
+		"start": "node app.js"
 	},
 	"dependencies": {
 		"xml-to-mongodb-importer": "^1.0.3"
