@@ -6,7 +6,7 @@
 
 - Splits large XML files into smaller chunks.
 - Imports XML data into MongoDB.
-- Automatically cleans up temporary files.
+- Automatically cleans up chunks files.
 
 ## Installation
 
@@ -46,14 +46,16 @@ runImporter(params)
 
 ### Parameters
 
-- `xmlUrl` (string): The path to your XML file. It must end with `.xml`.
-- `openingTag` (string): The opening tag of the XML elements to be split. It must be enclosed in angle brackets, e.g., `<item>`.
-- `closingTag` (string): The closing tag of the XML elements to be split. It must be enclosed in angle brackets, e.g., `</item>`.
-- `connection` (object): An object containing the MongoDB connection details:
-  - `mongoURI` (string): The MongoDB connection URI.
-  - `databaseName` (string): The name of the database.
-  - `collectionName` (string): The name of the collection.
-- `chunkSize` (number, optional): The number of XML elements per chunk. Default is 2500.
+| Parameter        | Type     | Description                                                                                   |
+|------------------|----------|-----------------------------------------------------------------------------------------------|
+| `xmlUrl`         | string   | The path to your XML file. It must end with `.xml`.                                            |
+| `openingTag`     | string   | The opening tag of the XML elements to be split, enclosed in angle brackets (e.g., `<item>`).  |
+| `closingTag`     | string   | The closing tag of the XML elements to be split, enclosed in angle brackets (e.g., `</item>`). |
+| `connection`     | object   | An object containing MongoDB connection details:                                                |
+| `connection.mongoURI` | string | The MongoDB connection URI.                                                                    |
+| `connection.databaseName` | string | The name of the MongoDB database where data will be imported.                                   |
+| `connection.collectionName` | string | The name of the MongoDB collection where data will be imported.                                 |
+| `chunkSize`      | number   | (Optional) The number of XML elements per chunk. Default is 2500.                               |
 
 ### Contributing
 
