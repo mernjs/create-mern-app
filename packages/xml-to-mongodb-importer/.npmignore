@@ -2,7 +2,7 @@ node_modules
 .storybook
 example
 src
-index.js
+libs
 *.tgz
 .gitignore
 rollup.config.js

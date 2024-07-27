@@ -1,7 +1,7 @@
 {
 	"name": "xml-to-mongodb-importer",
-	"version": "1.0.0",
-	"main": "libs/index.js",
+	"version": "1.0.3",
+	"main": "index.js",
 	"scripts": {
 		"example": "cd example && yarn dev",
 		"start": "nodemon index.js",
@@ -32,7 +32,7 @@
 		"rollup-plugin-node": "^0.2.1"
 	},
 	"repository": {
-		"type": "git",
+		"type": "url",
 		"url": "https://github.com/mernjs/create-mern-app/tree/master/packages/xml-to-mongodb-importer"
 	},
 	"bugs": {

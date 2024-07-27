@@ -80,7 +80,6 @@ async function databseConnection(connection) {
 			await client.connect();
 			const db = client.db(databaseName);
 			const collection = db.collection(collectionName);
-			await collection.drop();
 			resolve({ client, collection });
 		} catch (error) {
 			reject(error);
