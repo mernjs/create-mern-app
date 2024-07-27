@@ -109,6 +109,15 @@ Explore fully-featured sample projects that showcase best practices and efficien
 | 1 | [Instagram Clone - MERN](#stripe) | [![Instagram Clone - MERN](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Instagram Clone - MERN")](#stripe) |
 
 
+<h4>6. NPM Packages</h4>
+
+Explore npm packages that simplify your development workflow. These packages offer efficient solutions for various technologies and are easy to install and integrate, enhancing productivity and code quality.
+
+| SN. | Package | NPM | Download |
+| ------ | ------ | ------ | ------ |
+| 1 | [xml-to-mongodb-importer](https://github.com/mernjs/create-mern-app/tree/master/packages/xml-to-mongodb-importer) | [![npm version](https://img.shields.io/npm/v/xml-to-mongodb-importer-2)](https://www.npmjs.com/package/xml-to-mongodb-importer-2)  | [![xml-to-mongodb-importer](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "xml-to-mongodb-importer")](https://github.com/mernjs/create-mern-app/tree/master/packages/xml-to-mongodb-importer) |
+
+
 <h4>Key Features</h4>
 
 Effortlessly build secure and scalable MERN applications with automated setup, industry-standard coding practices, secure authentication, robust data handling, and proactive security measures.

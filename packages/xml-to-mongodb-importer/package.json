@@ -1,6 +1,6 @@
 {
-	"name": "xml-to-mongodb-importer",
-	"version": "1.0.0",
+	"name": "xml-to-mongodb-importer-2",
+	"version": "2.0.0",
 	"main": "index.js",
 	"scripts": {
 		"example": "cd example && yarn dev",
