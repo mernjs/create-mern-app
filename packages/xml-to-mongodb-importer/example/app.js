@@ -9,7 +9,7 @@ const { runImporter } = require("xml-to-mongodb-importer");
 			connection: {
 				mongoURI: 'mongodb://localhost:27017',
 				databaseName: 'xml-db',
-				collectionName: 'job'
+				collectionName: 'foods'
 			}
 		});
 	} catch (error) {
