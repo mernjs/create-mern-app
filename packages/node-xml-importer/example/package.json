@@ -1,0 +1,20 @@
+{
+	"name": "example",
+	"version": "0.1.0",
+	"private": true,
+	"main": "server.js",
+	"scripts": {
+		"dev": "nodemon server.js",
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"node-xml-importer": "^1.0.0",
+		"node-xml-importers": "file:../"
+	},
+	"devDependencies": {
+		"eslint": "^8.32.0",
+		"eslint-config-google": "^0.14.0",
+		"nodemon": "^2.0.20",
+		"prettier": "^2.8.3"
+	}
+}

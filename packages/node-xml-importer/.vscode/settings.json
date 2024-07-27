@@ -1,0 +1,14 @@
+{
+	"editor.formatOnSave": true,
+	"editor.cursorBlinking": "blink",
+	"editor.cursorStyle": "line",
+	"editor.fontFamily": "'Operator Mono',  'SF Mono', Menlo, Operator Mono, Monaco, 'Courier New', monospace",
+	"editor.fontSize": 10,
+	"editor.fontWeight": "500",
+	"editor.letterSpacing": 0,
+	"editor.lineHeight": 20,
+	"editor.lineNumbers": "on",
+	"editor.insertSpaces": false,
+	"editor.tabSize": 4,
+	"editor.detectIndentation": false
+}
