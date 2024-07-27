@@ -8,8 +8,7 @@
 		"start": "node server.js"
 	},
 	"dependencies": {
-		"node-xml-importer": "^1.0.0",
-		"node-xml-importers": "file:../"
+		"xml-to-mongodb-importer": "^1.0.0"
 	},
 	"devDependencies": {
 		"eslint": "^8.32.0",

@@ -1,5 +1,5 @@
 {
-	"name": "node-xml-importer",
+	"name": "xml-to-mongodb-importer",
 	"version": "1.0.0",
 	"main": "libs/index.js",
 	"scripts": {
@@ -33,10 +33,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/mernjs/create-mern-app/tree/master/packages/node-xml-importer"
+		"url": "https://github.com/mernjs/create-mern-app/tree/master/packages/xml-to-mongodb-importer"
 	},
 	"bugs": {
 		"url": "https://github.com/mernjs/create-mern-app/issues"
 	},
-	"homepage": "https://github.com/mernjs/create-mern-app/tree/master/packages/node-xml-importer#readme"
+	"homepage": "https://github.com/mernjs/create-mern-app/tree/master/packages/xml-to-mongodb-importer#readme"
 }

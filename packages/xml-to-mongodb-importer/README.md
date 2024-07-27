@@ -20,8 +20,6 @@ npm install xml-to-mongodb-importer
 
 Here's an example of how to use `xml-to-mongodb-importer`:
 
-### Example
-
 ```javascript
 const { runImporter } = require('xml-to-mongodb-importer');
 
