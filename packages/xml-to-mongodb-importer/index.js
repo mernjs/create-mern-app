@@ -153,6 +153,28 @@ async function validateTags(xmlUrl, openingTag, closingTag) {
 	});
 }
 
+async function validateMongoDBConnection(connection) {
+	const { mongoURI, databaseName, collectionName } = connection;
+	let client;
+	try {
+		client = new MongoClient(mongoURI);
+		await client.connect();
+		const db = client.db(databaseName);
+		await db.command({ ping: 1 });
+		const collections = await db.listCollections({ name: collectionName }).toArray();
+		if (collections.length === 0) {
+			throw new Error(`Collection "${collectionName}" does not exist in database "${databaseName}"`);
+		}
+		return true;
+	} catch (error) {
+		throw new Error(`MongoDB connection validation failed: ${error.message}`);
+	} finally {
+		if (client) {
+			await client.close();
+		}
+	}
+}
+
 module.exports.runImporter = async (params) => {
 	return new Promise(async (resolve, reject) => {
 		try {
@@ -173,6 +195,7 @@ module.exports.runImporter = async (params) => {
 				throw new Error('Invalid connection: It should be an object with mongoURI, databaseName, and collectionName properties');
 			}
 			await validateTags(xmlUrl, openingTag, closingTag);
+			await validateMongoDBConnection(connection);
 			await createOutputFolder();
 			await XmlSplitter(xmlUrl, openingTag, closingTag, chunkSize);
 			await readFileAndSaveToMongoDB(connection, openingTag);
