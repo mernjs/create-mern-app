@@ -1,11 +1,11 @@
-const { runImporter } = require("xml-to-mongodb-importer");
+const { runImporter } = require("../");
 
 (async () => {
 	try {
 		await runImporter({
-			xmlUrl: `${__dirname}/books.xml`,
-			openingTag: '<job>',
-			closingTag: '</job>',
+			xmlUrl: `${__dirname}/sample.xml`,
+			openingTag: '<food>',
+			closingTag: '</food>',
 			connection: {
 				mongoURI: 'mongodb://localhost:27017',
 				databaseName: 'xml-db',

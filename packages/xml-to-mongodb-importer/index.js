@@ -115,6 +115,44 @@ async function readFileAndSaveToMongoDB(connection, openingTag) {
 	}
 }
 
+async function validateTags(xmlUrl, openingTag, closingTag) {
+	return new Promise((resolve, reject) => {
+		const rl = readline.createInterface({
+			input: fs.createReadStream(xmlUrl),
+			crlfDelay: Infinity
+		});
+
+		let openingTagFound = false;
+		let closingTagFound = false;
+		let lineCount = 0;
+
+		rl.on('line', (line) => {
+			lineCount++;
+			if (line.includes(openingTag)) {
+				openingTagFound = true;
+			}
+			if (line.includes(closingTag)) {
+				closingTagFound = true;
+			}
+			if (openingTagFound && closingTagFound) {
+				rl.close();
+			}
+		});
+
+		rl.on('close', () => {
+			if (!openingTagFound && !closingTagFound) {
+				reject(new Error(`Neither opening tag "${openingTag}" nor closing tag "${closingTag}" found in the XML file.`));
+			} else if (!openingTagFound) {
+				reject(new Error(`Opening tag "${openingTag}" not found in the XML file.`));
+			} else if (!closingTagFound) {
+				reject(new Error(`Closing tag "${closingTag}" not found in the XML file.`));
+			} else {
+				resolve(true);
+			}
+		});
+	});
+}
+
 module.exports.runImporter = async (params) => {
 	return new Promise(async (resolve, reject) => {
 		try {
@@ -134,6 +172,7 @@ module.exports.runImporter = async (params) => {
 			if (typeof connection !== 'object' || !connection.mongoURI || !connection.databaseName || !connection.collectionName) {
 				throw new Error('Invalid connection: It should be an object with mongoURI, databaseName, and collectionName properties');
 			}
+			await validateTags(xmlUrl, openingTag, closingTag);
 			await createOutputFolder();
 			await XmlSplitter(xmlUrl, openingTag, closingTag, chunkSize);
 			await readFileAndSaveToMongoDB(connection, openingTag);
