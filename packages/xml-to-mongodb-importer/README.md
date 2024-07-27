@@ -44,8 +44,8 @@ runImporter(params)
     });
 ```
 
-### Github Example
-Here's code [example](https://github.com/mernjs/create-mern-app/tree/master/packages/xml-to-mongodb-importer/example)
+### Example
+Here's Github code [example](https://github.com/mernjs/create-mern-app/tree/master/packages/xml-to-mongodb-importer/example)
 
 ### Parameters
 
