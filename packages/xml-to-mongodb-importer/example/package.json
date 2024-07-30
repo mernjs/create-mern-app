@@ -8,7 +8,7 @@
         "start": "node app.js"
     },
     "dependencies": {
-        "xml-to-mongodb-importer": "^1.0.3"
+        "xml-to-mongodb-importer": "^2.0.0"
     },
     "devDependencies": {
         "nodemon": "^2.0.20"
