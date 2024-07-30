@@ -1,19 +1,16 @@
 {
-	"name": "example",
-	"version": "0.1.0",
-	"private": true,
-	"main": "app.js",
-	"scripts": {
-		"dev": "nodemon app.js",
-		"start": "node app.js"
-	},
-	"dependencies": {
-		"xml-to-mongodb-importer": "^1.0.3"
-	},
-	"devDependencies": {
-		"eslint": "^8.32.0",
-		"eslint-config-google": "^0.14.0",
-		"nodemon": "^2.0.20",
-		"prettier": "^2.8.3"
-	}
+    "name": "example",
+    "version": "0.1.0",
+    "private": true,
+    "main": "app.js",
+    "scripts": {
+        "dev": "nodemon app.js",
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "xml-to-mongodb-importer": "^1.0.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    }
 }

@@ -1,12 +1,13 @@
 # XML to MongoDB Importer
 
-`xml-to-mongodb-importer` is a Node.js module that splits large XML files into smaller chunks and imports the data into a MongoDB database.
+`xml-to-mongodb-importer` is a Node.js module that handle large XML files by splitting into smaller chunks and imports the data into a MongoDB database.
 
 ## Features
 
-- Splits large XML files into smaller chunks.
-- Imports XML data into MongoDB.
-- Automatically cleans up chunks files.
+- **Chunk Splitting**: Breaks large XML files into smaller, more manageable chunks.
+- **Data Import**: Imports XML data into MongoDB seamlessly.
+- **Automatic Cleanup**: Cleans up temporary chunk files after import.
+
 
 ## Installation
 
