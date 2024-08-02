@@ -1,0 +1,42 @@
+{
+	"name": "xml-to-json-chunk-processor",
+	"version": "1.0.0",
+	"description": "`xml-to-json-chunk-processor` is a Node.js module that provides an efficient way to read large XML files, split them into smaller chunks based on specified XML tags, and convert these chunks to JSON format.",
+	"main": "index.js",
+	"scripts": {
+		"example": "cd example && yarn dev",
+		"start": "nodemon index.js",
+		"watch": "rollup -c -w",
+		"build": "rollup -c",
+		"lint": "eslint .",
+		"dev": "npm-run-all --parallel watch start example",
+		"lint:fix": "eslint --fix --ext .js,.jsx .",
+		"upgrade": "npx npm-check-updates &&  npx npm-check-updates -u",
+		"prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'"
+	},
+	"dependencies": {
+		"readline": "^1.3.0",
+		"xml2js": "^0.6.2"
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^26.0.1",
+		"@rollup/plugin-node-resolve": "^15.2.3",
+		"@rollup/plugin-terser": "^0.4.4",
+		"concurrently": "^8.2.2",
+		"eslint": "^9.5.0",
+		"eslint-config-google": "^0.14.0",
+		"nodemon": "^3.1.4",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^3.3.2",
+		"rollup": "^4.18.0",
+		"rollup-plugin-node": "^0.2.1"
+	},
+	"repository": {
+		"type": "url",
+		"url": "https://github.com/mernjs/create-mern-app/tree/master/packages/xml-to-json-chunk-processor"
+	},
+	"bugs": {
+		"url": "https://github.com/mernjs/create-mern-app/issues"
+	},
+	"homepage": "https://github.com/mernjs/create-mern-app/tree/master/packages/xml-to-json-chunk-processor#readme"
+}
