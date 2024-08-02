@@ -116,6 +116,7 @@ Explore npm packages that simplify your development workflow. These packages off
 | SN. | Package | NPM | Download |
 | ------ | ------ | ------ | ------ |
 | 1 | [xml-to-mongodb-importer](https://github.com/mernjs/create-mern-app/tree/master/packages/xml-to-mongodb-importer) | [![npm version](https://img.shields.io/npm/v/xml-to-mongodb-importer)](https://www.npmjs.com/package/xml-to-mongodb-importer)  | [![xml-to-mongodb-importer](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "xml-to-mongodb-importer")](https://github.com/mernjs/create-mern-app/tree/master/packages/xml-to-mongodb-importer) |
+| 2 | [react-svg-icons-loader](https://github.com/mernjs/create-mern-app/tree/master/packages/react-svg-icons-loader) | [![npm version](https://img.shields.io/npm/v/react-svg-icons-loader)](https://www.npmjs.com/package/react-svg-icons-loader)  | [![react-svg-icons-loader](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "react-svg-icons-loader")](https://github.com/mernjs/create-mern-app/tree/master/packages/react-svg-icons-loader) |
 
 
 <h4>Key Features</h4>
