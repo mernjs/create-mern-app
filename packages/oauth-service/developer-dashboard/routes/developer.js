@@ -51,7 +51,6 @@ router.post('/register', async (req, res) => {
 router.use((req, res, next) => {
     const token = req.session.token;
     if (!token) return res.redirect('/developer/login');
-
     jwt.verify(token, SECRET_KEY, (err, user) => {
         if (err) return res.redirect('/developer/login');
         req.user = user;

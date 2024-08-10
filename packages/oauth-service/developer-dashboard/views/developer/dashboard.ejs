@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,17 +14,21 @@
             cursor: pointer;
             margin-left: 10px;
         }
+
         .copy-btn i {
             transition: color 0.3s;
         }
+
         .copy-btn.copied i {
             color: green;
         }
+
         .delete-btn {
             cursor: pointer;
         }
     </style>
 </head>
+
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
         <!-- Main Header -->
@@ -32,25 +37,27 @@
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
-                <li class="nav-item d-none d-sm-inline-block">
+                <!-- <li class="nav-item d-none d-sm-inline-block">
                     <a href="/developer/dashboard" class="nav-link">Dashboard</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="/developer/logout" class="nav-link">Logout</a>
-                </li>
+                </li> -->
             </ul>
         </nav>
 
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <a href="/developer/dashboard" class="brand-link">
-                <img src="https://adminlte.io/themes/v3/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">Developer</span>
+                <img src="https://adminlte.io/themes/v3/dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">Create MERN App</span>
             </a>
             <div class="sidebar">
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
                         <li class="nav-item">
                             <a href="/developer/dashboard" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -86,99 +93,123 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                             <!-- Flash Messages -->
+                            <!-- Flash Messages -->
                             <% if (success) { %>
                                 <div id="success-message">
                                     <%= success %>
                                 </div>
-                            <% } %>
-                            <% if (error) { %>
-                                <div id="error-message">
-                                    <%= error %>
-                                </div>
-                            <% } %>
-
-
-                            <!-- Application Creation Form -->
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title">Create New Application</h3>
-                                </div>
-                                <form action="/developer/applications" method="POST">
-                                    <div class="card-body">
-                                        <div class="form-group">
-                                            <label for="app_name">Application Name:</label>
-                                            <input type="text" class="form-control" id="app_name" name="app_name" required>
+                                <% } %>
+                                    <% if (error) { %>
+                                        <div id="error-message">
+                                            <%= error %>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="redirect_uri">Redirect URI:</label>
-                                            <input type="text" class="form-control" id="redirect_uri" name="redirect_uri" required>
-                                        </div>
-                                    </div>
-                                    <div class="card-footer">
-                                        <button type="submit" class="btn btn-primary">Create Application</button>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <!-- Applications List -->
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title">Your Applications</h3>
-                                </div>
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <% if (applications.length > 0) { %>
-                                            <table class="table table-striped table-bordered">
-                                                <thead>
-                                                    <tr>
-                                                        <th>App Name</th>
-                                                        <th>Client ID</th>
-                                                        <th>Client Secret</th>
-                                                        <th>Redirect URI</th>
-                                                        <th>Actions</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <% applications.forEach(app => { %>
-                                                        <tr>
-                                                            <td><%= app.app_name %></td>
-                                                            <td>
-                                                                <input type="text" class="form-control-plaintext" value="<%= app.client_id %>" id="client-id-<%= app._id %>" readonly>
-                                                                <button class="btn btn-info copy-btn" data-clipboard-target="#client-id-<%= app._id %>">
-                                                                    <i class="fas fa-copy"></i>
-                                                                </button>
-                                                            </td>
-                                                            <td>
-                                                                <input type="text" class="form-control-plaintext" value="<%= app.client_secret %>" id="client-secret-<%= app._id %>" readonly>
-                                                                <button class="btn btn-info copy-btn" data-clipboard-target="#client-secret-<%= app._id %>">
-                                                                    <i class="fas fa-copy"></i>
-                                                                </button>
-                                                            </td>
-                                                            <td>
-                                                                <input type="text" class="form-control-plaintext" value="<%= app.redirect_uri %>" id="redirect-uri-<%= app._id %>" readonly>
-                                                                <button class="btn btn-info copy-btn" data-clipboard-target="#redirect-uri-<%= app._id %>">
-                                                                    <i class="fas fa-copy"></i>
-                                                                </button>
-                                                            </td>
-                                                            <td>
-                                                                <form action="/developer/applications/<%= app._id %>" method="POST" class="d-inline">
-                                                                    <input type="hidden" name="_method" value="DELETE">
-                                                                    <button type="submit" class="btn btn-danger delete-btn">
-                                                                        <i class="fas fa-trash-alt"></i>
-                                                                    </button>
-                                                                </form>
-                                                            </td>
-                                                        </tr>
-                                                    <% }) %>
-                                                </tbody>
-                                            </table>
-                                        <% } else { %>
-                                            <p>You have not created any applications yet.</p>
                                         <% } %>
-                                    </div>
-                                </div>
-                            </div>
+
+
+                                            <!-- Application Creation Form -->
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h3 class="card-title">Create New Application</h3>
+                                                </div>
+                                                <form action="/developer/applications" method="POST">
+                                                    <div class="card-body">
+                                                        <div class="form-group">
+                                                            <label for="app_name">Application Name:</label>
+                                                            <input type="text" class="form-control" id="app_name"
+                                                                name="app_name" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="redirect_uri">Redirect URI:</label>
+                                                            <input type="text" class="form-control" id="redirect_uri"
+                                                                name="redirect_uri" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <button type="submit" class="btn btn-primary">Create
+                                                            Application</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <!-- Applications List -->
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h3 class="card-title">Your Applications</h3>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="table-responsive">
+                                                        <% if (applications.length> 0) { %>
+                                                            <table class="table table-striped table-bordered">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>App Name</th>
+                                                                        <th>Client ID</th>
+                                                                        <th>Client Secret</th>
+                                                                        <th>Redirect URI</th>
+                                                                        <th>Actions</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <% applications.forEach(app=> { %>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <%= app.app_name %>
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="text"
+                                                                                    class="form-control-plaintext"
+                                                                                    value="<%= app.client_id %>"
+                                                                                    id="client-id-<%= app._id %>"
+                                                                                    readonly>
+                                                                                <button class="btn btn-info copy-btn"
+                                                                                    data-clipboard-target="#client-id-<%= app._id %>">
+                                                                                    <i class="fas fa-copy"></i>
+                                                                                </button>
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="text"
+                                                                                    class="form-control-plaintext"
+                                                                                    value="<%= app.client_secret %>"
+                                                                                    id="client-secret-<%= app._id %>"
+                                                                                    readonly>
+                                                                                <button class="btn btn-info copy-btn"
+                                                                                    data-clipboard-target="#client-secret-<%= app._id %>">
+                                                                                    <i class="fas fa-copy"></i>
+                                                                                </button>
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="text"
+                                                                                    class="form-control-plaintext"
+                                                                                    value="<%= app.redirect_uri %>"
+                                                                                    id="redirect-uri-<%= app._id %>"
+                                                                                    readonly>
+                                                                                <button class="btn btn-info copy-btn"
+                                                                                    data-clipboard-target="#redirect-uri-<%= app._id %>">
+                                                                                    <i class="fas fa-copy"></i>
+                                                                                </button>
+                                                                            </td>
+                                                                            <td>
+                                                                                <form
+                                                                                    action="/developer/applications/<%= app._id %>"
+                                                                                    method="POST" class="d-inline">
+                                                                                    <input type="hidden" name="_method"
+                                                                                        value="DELETE">
+                                                                                    <button type="submit"
+                                                                                        class="btn btn-danger delete-btn">
+                                                                                        <i class="fas fa-trash-alt"></i>
+                                                                                    </button>
+                                                                                </form>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <% }) %>
+                                                                </tbody>
+                                                            </table>
+                                                            <% } else { %>
+                                                                <p>You have not created any applications yet.</p>
+                                                                <% } %>
+                                                    </div>
+                                                </div>
+                                            </div>
                         </div>
                     </div>
                 </div>
@@ -208,10 +239,10 @@
     <!-- jQuery Form Plugin for handling DELETE requests -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form/4.3.0/jquery.form.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const clipboard = new ClipboardJS('.copy-btn');
 
-            clipboard.on('success', function(e) {
+            clipboard.on('success', function (e) {
                 const btn = e.trigger;
                 btn.classList.add('copied');
                 setTimeout(() => {
@@ -220,12 +251,12 @@
                 e.clearSelection();
             });
 
-            clipboard.on('error', function(e) {
+            clipboard.on('error', function (e) {
                 alert('Failed to copy to clipboard');
             });
 
             // Handle delete button click
-            $('.delete-btn').click(function(event) {
+            $('.delete-btn').click(function (event) {
                 if (!confirm('Are you sure you want to delete this application?')) {
                     event.preventDefault();
                 }
@@ -251,4 +282,5 @@
         hideFlashMessage('error-message');
     </script>
 </body>
+
 </html>

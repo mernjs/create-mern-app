@@ -14,10 +14,7 @@ const app = express();
 const PORT = 3000;
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/login-with-vpjs', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
+mongoose.connect('mongodb://localhost:27017/login-with-vpjs');
 
 // Set up CORS to allow all domains
 app.use(cors());
