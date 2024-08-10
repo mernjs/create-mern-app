@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Dashboard</title>
+    <!-- AdminLTE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/css/adminlte.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .copy-btn {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .copy-btn i {
+            transition: color 0.3s;
+        }
+        .copy-btn.copied i {
+            color: green;
+        }
+        .delete-btn {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Main Header -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="/developer/dashboard" class="nav-link">Dashboard</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="/developer/logout" class="nav-link">Logout</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <a href="/developer/dashboard" class="brand-link">
+                <img src="https://adminlte.io/themes/v3/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">Developer</span>
+            </a>
+            <div class="sidebar">
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item">
+                            <a href="/developer/dashboard" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/developer/logout" class="nav-link">
+                                <i class="nav-icon fas fa-sign-out-alt"></i>
+                                <p>Logout</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0">Dashboard</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                             <!-- Flash Messages -->
+                            <% if (success) { %>
+                                <div id="success-message">
+                                    <%= success %>
+                                </div>
+                            <% } %>
+                            <% if (error) { %>
+                                <div id="error-message">
+                                    <%= error %>
+                                </div>
+                            <% } %>
+
+
+                            <!-- Application Creation Form -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Create New Application</h3>
+                                </div>
+                                <form action="/developer/applications" method="POST">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="app_name">Application Name:</label>
+                                            <input type="text" class="form-control" id="app_name" name="app_name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="redirect_uri">Redirect URI:</label>
+                                            <input type="text" class="form-control" id="redirect_uri" name="redirect_uri" required>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button type="submit" class="btn btn-primary">Create Application</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Applications List -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Your Applications</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <% if (applications.length > 0) { %>
+                                            <table class="table table-striped table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>App Name</th>
+                                                        <th>Client ID</th>
+                                                        <th>Client Secret</th>
+                                                        <th>Redirect URI</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <% applications.forEach(app => { %>
+                                                        <tr>
+                                                            <td><%= app.app_name %></td>
+                                                            <td>
+                                                                <input type="text" class="form-control-plaintext" value="<%= app.client_id %>" id="client-id-<%= app._id %>" readonly>
+                                                                <button class="btn btn-info copy-btn" data-clipboard-target="#client-id-<%= app._id %>">
+                                                                    <i class="fas fa-copy"></i>
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <input type="text" class="form-control-plaintext" value="<%= app.client_secret %>" id="client-secret-<%= app._id %>" readonly>
+                                                                <button class="btn btn-info copy-btn" data-clipboard-target="#client-secret-<%= app._id %>">
+                                                                    <i class="fas fa-copy"></i>
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <input type="text" class="form-control-plaintext" value="<%= app.redirect_uri %>" id="redirect-uri-<%= app._id %>" readonly>
+                                                                <button class="btn btn-info copy-btn" data-clipboard-target="#redirect-uri-<%= app._id %>">
+                                                                    <i class="fas fa-copy"></i>
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <form action="/developer/applications/<%= app._id %>" method="POST" class="d-inline">
+                                                                    <input type="hidden" name="_method" value="DELETE">
+                                                                    <button type="submit" class="btn btn-danger delete-btn">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </button>
+                                                                </form>
+                                                            </td>
+                                                        </tr>
+                                                    <% }) %>
+                                                </tbody>
+                                            </table>
+                                        <% } else { %>
+                                            <p>You have not created any applications yet.</p>
+                                        <% } %>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-inline">
+                By Vijay Pratap Singh
+            </div>
+            <strong>&copy; 2024 <a href="#">Create MERN App</a>.</strong> All rights reserved.
+        </footer>
+    </div>
+
+    <!-- AdminLTE JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/js/adminlte.min.js"></script>
+    <!-- Clipboard.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jQuery Form Plugin for handling DELETE requests -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form/4.3.0/jquery.form.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const clipboard = new ClipboardJS('.copy-btn');
+
+            clipboard.on('success', function(e) {
+                const btn = e.trigger;
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.classList.remove('copied');
+                }, 1500);
+                e.clearSelection();
+            });
+
+            clipboard.on('error', function(e) {
+                alert('Failed to copy to clipboard');
+            });
+
+            // Handle delete button click
+            $('.delete-btn').click(function(event) {
+                if (!confirm('Are you sure you want to delete this application?')) {
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+    <script>
+        // JavaScript to hide flash messages after a timeout
+        function hideFlashMessage(id) {
+            const messageElement = document.getElementById(id);
+            if (messageElement) {
+                setTimeout(() => {
+                    messageElement.style.opacity = '0';
+                    setTimeout(() => {
+                        messageElement.style.display = 'none';
+                    }, 600); // Match this duration with the CSS transition
+                }, 3000); // Time in milliseconds before hiding (3 seconds)
+            }
+        }
+
+        // Hide flash messages
+        hideFlashMessage('success-message');
+        hideFlashMessage('error-message');
+    </script>
+</body>
+</html>

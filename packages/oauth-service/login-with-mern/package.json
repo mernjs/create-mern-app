@@ -1,0 +1,52 @@
+{
+    "name": "login-with-mern",
+    "version": "1.0.1",
+    "description": "login-with-mern is a React component designed to simplify the authentication process in applications. It handles login redirection and token retrieval and provides user profile information upon successful authentication.",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
+    "scripts": {
+        "watch": "rollup -c -w",
+        "build": "rollup -c --bundleConfigAsCjs",
+        "lint": "eslint .",
+        "example": "cd example && yarn start",
+        "dev": "npm-run-all --parallel watch example",
+        "lint:fix": "eslint --fix --ext .js,.jsx .",
+        "upgrade": "npx npm-check-updates &&  npx npm-check-updates -u",
+        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'"
+    },
+    "author": "Vijay Pratap Singh",
+    "license": "MIT",
+    "peerDependencies": {
+        "react": "*",
+        "react-dom": "*"
+    },
+    "dependencies": {
+        "@create-mern-app/auth-service": "^1.0.1",
+        "npm-run-all": "^4.1.5"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.24.7",
+        "@babel/preset-env": "^7.24.7",
+        "@babel/preset-react": "^7.24.7",
+        "@rollup/plugin-babel": "^6.0.4",
+        "@rollup/plugin-commonjs": "^26.0.1",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-terser": "^0.4.4",
+        "eslint": "^9.5.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-plugin-react": "^7.34.3",
+        "prettier": "^3.3.2",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "rollup": "^4.18.0",
+        "rollup-plugin-import-css": "^3.5.0"
+    },
+    "repository": {
+        "type": "url",
+        "url": "https://github.com/mernjs/create-mern-app/tree/master/packages/oauth-service/login-with-mern"
+    },
+    "bugs": {
+        "url": "https://github.com/mernjs/create-mern-app/issues"
+    },
+    "homepage": "https://github.com/mernjs/create-mern-app/tree/master/packages/oauth-service/login-with-mern#readme"
+}

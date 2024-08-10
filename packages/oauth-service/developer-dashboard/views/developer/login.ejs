@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm md:max-w-md lg:max-w-lg">
+        <h1 class="text-3xl font-semibold mb-6 text-center text-gray-900">Developer Login</h1>
+        
+        <% if (error) { %>
+            <p class="text-red-600 mb-4 text-center text-sm md:text-base font-medium"><%= error %></p>
+        <% } %>
+        
+        <form action="/developer/login" method="POST" class="space-y-6">
+            <div>
+                <label for="email" class="block text-gray-700 text-sm font-medium mb-1">Email:</label>
+                <input type="email" id="email" name="email" required
+                       class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-400 text-gray-900 transition ease-in-out duration-150" />
+            </div>
+            
+            <div>
+                <label for="password" class="block text-gray-700 text-sm font-medium mb-1">Password:</label>
+                <input type="password" id="password" name="password" required
+                       class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-400 text-gray-900 transition ease-in-out duration-150" />
+            </div>
+            
+            <button type="submit"
+                    class="w-full py-2 bg-blue-600 text-white font-semibold rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition ease-in-out duration-150">
+                Login
+            </button>
+        </form>
+        
+        <p class="mt-6 text-center text-gray-600 text-sm md:text-base">
+            <a href="/developer/register" class="text-blue-600 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Register</a>
+        </p>
+    </div>
+</body>
+</html>
