@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrollbars */
+  height: 100%;
+}
+
+#root, #__next {
+  height: 100%;
+}
+
+canvas {
+  display: block; /* Remove any default inline spacing */
+}
