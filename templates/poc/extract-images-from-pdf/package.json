@@ -1,0 +1,23 @@
+{
+  "name": "pdf-image",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "asposepdfnodejs": "^24.6.0",
+    "fs-extra": "^11.2.0",
+    "jszip": "^3.10.1",
+    "mammoth": "^1.8.0",
+    "node-fetch": "^3.3.2",
+    "pdf-export-images": "^1.2.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.4.168",
+    "sharp": "^0.33.4"
+  }
+}

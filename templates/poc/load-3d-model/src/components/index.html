@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Synthesis Test</title>
+</head>
+
+<body>
+    <button id="startButton">Start Speech Synthesis</button>
+    <script>
+        const testSpeechRecognition = () => {
+            if ('webkitSpeechRecognition' in window) {
+                const testRecognition = new webkitSpeechRecognition();
+                testRecognition.lang = 'en-US';
+                testRecognition.continuous = false;
+                testRecognition.interimResults = false;
+
+                testRecognition.onresult = (event) => {
+                    const lastResult = event.results[event.results.length - 1];
+                    const command = lastResult[0].transcript.trim().toLowerCase();
+                    console.log("Test Command recognized:", command);
+                };
+
+                testRecognition.onerror = (event) => {
+                    console.error('Speech recognition error:', event.error);
+                };
+
+                testRecognition.onend = () => {
+                    console.log('Test Speech recognition ended.');
+                    testSpeechRecognition()
+                };
+
+                testRecognition.start();
+            } else {
+                alert('Speech recognition not supported in this browser.');
+            }
+        };
+
+        (() => {
+            testSpeechRecognition()
+        })()
+
+        document.getElementById('startButton').addEventListener('click', () => {
+            if ('speechSynthesis' in window) {
+                const question = "What is your name?";
+                const utterance = new SpeechSynthesisUtterance(question);
+                utterance.lang = 'en-US';
+                const allVoices = window.speechSynthesis.getVoices();
+                console.log("allVoices", allVoices)
+                const femaleVoice = allVoices.find((voice) => voice.name === 'Veena');
+
+                if (femaleVoice) {
+                    utterance.voice = femaleVoice;
+                } else {
+                    console.warn('Female voice not found. Using the default voice.');
+                }
+
+                utterance.onstart = () => {
+                    console.log('Asking question:', question);
+                };
+
+                utterance.onend = () => {
+                    console.log('Question asked:', question);
+                };
+
+                utterance.onerror = (event) => {
+                    console.error('Speech synthesis error:', event.error);
+                };
+
+                window.speechSynthesis.speak(utterance);
+            } else {
+                console.error('Speech Synthesis API not supported in this browser.');
+            }
+        });
+    </script>
+</body>
+
+</html>

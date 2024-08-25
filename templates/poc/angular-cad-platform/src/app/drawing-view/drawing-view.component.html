@@ -1,0 +1,17 @@
+<div style="position: relative;">
+    <canvas #canvas (click)="handleCanvasClick($event)" (mousemove)="handleMouseMove($event)"></canvas>
+
+    <input #input type="text" [(ngModel)]="desiredLength" (change)="handleInputChange($event)"
+        (keydown)="handleKeyDown($event)" style="display: none; position: absolute; top: 0; left: 0;" />
+
+    <div *ngIf="currentLineIndex !== null">
+        <input type="text" placeholder="Wall Height A (cm)" [(ngModel)]="wallHeightA">
+        <input type="text" placeholder="Wall Height B (cm)" [(ngModel)]="wallHeightB">
+        <button (click)="handleHeightChange()">Apply Heights</button>
+    </div>
+
+    <div>
+        <button (click)="setViewMode('floor')">Floor View</button>
+        <button (click)="setViewMode('ceiling')">Ceiling View</button>
+    </div>
+</div>
