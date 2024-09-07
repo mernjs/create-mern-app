@@ -1,0 +1,12 @@
+{
+    "name": "snippets",
+    "version": "1.0.0",
+    "scripts": {
+        "clean-dev": "sh sh-cleanup-projects.sh",
+        "install-dev": "sh sh-install-projects.sh",
+        "start-dev": "sh sh-start-projects.sh",
+        "stop-dev": "sh sh-stop-projects.sh",
+        "upgrade-dev": "sh sh-upgrade-projects.sh",
+        "zip-dev": "sh sh-zip-projects.sh"
+    }
+}
