@@ -24,45 +24,45 @@ fi
 GITHUB_USER="mernjs"
 REPO_NAME="create-mern-app"
 
-# Step 1: Run the sh-cleanup-projects.sh script to clean up before creating the zip file for projects
-echo "Ensuring templates/boilerplates/app/sh-cleanup-projects.sh is executable..."
-chmod +x templates/boilerplates/app/sh-cleanup-projects.sh
-check_last_command
+# # Step 1: Run the sh-cleanup-projects.sh script to clean up before creating the zip file for projects
+# echo "Ensuring src/app/sh-cleanup-projects.sh is executable..."
+# chmod +x src/app/sh-cleanup-projects.sh
+# check_last_command
 
-echo "Running templates/boilerplates/app/sh-cleanup-projects.sh to clean up..."
-(cd templates/boilerplates/app && sh sh-cleanup-projects.sh)
-check_last_command
+# echo "Running src/app/sh-cleanup-projects.sh to clean up..."
+# (cd src/app && sh sh-cleanup-projects.sh)
+# check_last_command
 
-# Step 2: Run the sh-zip-projects.sh script to create the zip file for projects
-echo "Ensuring templates/boilerplates/app/sh-zip-projects.sh is executable..."
-chmod +x templates/boilerplates/app/sh-zip-projects.sh
-check_last_command
+# # Step 2: Run the sh-zip-projects.sh script to create the zip file for projects
+# echo "Ensuring src/app/sh-zip-projects.sh is executable..."
+# chmod +x src/app/sh-zip-projects.sh
+# check_last_command
 
-echo "Running templates/boilerplates/app/sh-zip-projects.sh to create the zip file..."
-(cd templates/boilerplates/app && sh sh-zip-projects.sh)
-check_last_command
+# echo "Running src/app/sh-zip-projects.sh to create the zip file..."
+# (cd src/app && sh sh-zip-projects.sh)
+# check_last_command
 
-# Step 3: Run the sh-cleanup-projects.sh script to clean up before creating the zip file for libraries
-echo "Ensuring templates/boilerplates/library/sh-cleanup-projects.sh is executable..."
-chmod +x templates/boilerplates/library/sh-cleanup-projects.sh
-check_last_command
+# # Step 3: Run the sh-cleanup-projects.sh script to clean up before creating the zip file for libraries
+# echo "Ensuring src/library/sh-cleanup-projects.sh is executable..."
+# chmod +x src/library/sh-cleanup-projects.sh
+# check_last_command
 
-echo "Running templates/boilerplates/library/sh-cleanup-projects.sh to clean up..."
-(cd templates/boilerplates/library && sh sh-cleanup-projects.sh)
-check_last_command
+# echo "Running src/library/sh-cleanup-projects.sh to clean up..."
+# (cd src/library && sh sh-cleanup-projects.sh)
+# check_last_command
 
-# Step 4: Run the sh-zip-projects.sh script to create the zip file for libraries
-echo "Ensuring templates/boilerplates/library/sh-zip-projects.sh is executable..."
-chmod +x templates/boilerplates/library/sh-zip-projects.sh
-check_last_command
+# # Step 4: Run the sh-zip-projects.sh script to create the zip file for libraries
+# echo "Ensuring src/library/sh-zip-projects.sh is executable..."
+# chmod +x src/library/sh-zip-projects.sh
+# check_last_command
 
-echo "Running templates/boilerplates/library/sh-zip-projects.sh to create the zip file..."
-(cd templates/boilerplates/library && sh sh-zip-projects.sh)
-check_last_command
+# echo "Running src/library/sh-zip-projects.sh to create the zip file..."
+# (cd src/library && sh sh-zip-projects.sh)
+# check_last_command
 
 # Step 5: Navigate to the package directory
 echo "Navigating to package directory 'packages/create-mernjs-app'..."
-cd packages/create-mernjs-app
+cd src/packages/create-mernjs-app
 check_last_command
 
 # Confirm package.json exists
