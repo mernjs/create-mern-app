@@ -25,27 +25,34 @@ Create MERN App provides a simple file and folder structure that you can easily 
 | node-version >= 18   | :white_check_mark: |
 | node-version  < 18   | :x:  |
 
-<h4>Install create-mernjs-app globally</h4>
+<h4>Download Methods</h4>
+You can set up a MERN project in two ways:
+1. Using CLI
+2. Directly Download Zip Code
+
+<h4>1. Using CLI</h4>
+
+Install create-mernjs-app globally
 
 ```
 npm install create-mernjs-app -g 
 ```
 
-<h4>Creating an App</h4>
+Creating an App
 
 ```
 create-mernjs-app my-app
 ```
 
-<h4>Creating a Library</h4>
+Creating a Library
 
 ```
 create-mernjs-app my-library --template library
 ```
 
-OR 
+<h4>2. Directly Download Zip Code</h4>
 
-<h4>1. App Boilerplates</h4>
+**1. App Boilerplates**
 
 App boilerplates provide ready-to-use templates for building applications, simplifying the setup process and ensuring a consistent structure across projects.
 
@@ -64,7 +71,7 @@ App boilerplates provide ready-to-use templates for building applications, simpl
 | 11 | [T3JS](https://github.com/mernjs/create-mern-app/tree/master/src/app/t3js-boilerplate) | [![Download T3JS](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download T3JS")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/t3js-boilerplate.zip) |
 | 12 | [React Native Expo](https://github.com/mernjs/create-mern-app/tree/master/src/app/expo-boilerplate) | [![Download React Native Expo](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download React Native Expo")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/expo-boilerplate.zip) |
 
-<h4>2. Library Boilerplates</h4>
+**2. Library Boilerplates**
 
 Library boilerplates offer pre-configured templates for creating npm packages, enabling efficient and standardized development of reusable code libraries.
 
@@ -77,7 +84,7 @@ Library boilerplates offer pre-configured templates for creating npm packages, e
 | 5 | [NextJS Library](https://github.com/mernjs/create-mern-app/tree/master/src/library/nextjs-library-boilerplate) | [![Download NextJS Library](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NextJS Library")](https://github.com/mernjs/create-mern-app/raw/master/zip/library/nextjs-library-boilerplate.zip) |
 | 6 | [React Native Library](https://github.com/mernjs/create-mern-app/tree/master/src/library/react-native-library-boilerplate) | [![Download React Native Library](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download React Native Library")](https://github.com/mernjs/create-mern-app/raw/master/zip/library/react-native-library-boilerplate.zip) |
 
-<h4>3. NPM Packages</h4>
+**3. NPM Packages**
 
 Explore npm packages that simplify your development workflow. These packages offer efficient solutions for various technologies and are easy to install and integrate, enhancing productivity and code quality.
 
@@ -86,7 +93,7 @@ Explore npm packages that simplify your development workflow. These packages off
 | 1 | [xml-to-mongodb-importer](https://github.com/mernjs/create-mern-app/tree/master/src/packages/xml-to-mongodb-importer) | [![npm version](https://img.shields.io/npm/v/xml-to-mongodb-importer)](https://www.npmjs.com/package/xml-to-mongodb-importer)  | [![xml-to-mongodb-importer](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "xml-to-mongodb-importer")](https://github.com/mernjs/create-mern-app/tree/master/src/packages/xml-to-mongodb-importer) |
 | 2 | [react-svg-icons-loader](https://github.com/mernjs/create-mern-app/tree/master/src/packages/react-svg-icons-loader) | [![npm version](https://img.shields.io/npm/v/react-svg-icons-loader)](https://www.npmjs.com/package/react-svg-icons-loader)  | [![react-svg-icons-loader](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "react-svg-icons-loader")](https://github.com/mernjs/create-mern-app/tree/master/src/packages/react-svg-icons-loader) |
 
-<h4>4. Code Snippets</h4>
+**4. Code Snippets**
 
 Explore a collection of reusable code snippets to quickly implement common features and functionalities in your projects.
 
