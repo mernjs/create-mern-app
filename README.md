@@ -61,7 +61,7 @@ create-mernjs-app my-library --template snippets
 
 <h4>2. Directly Download Zip Code</h4>
 
-App Boilerplates
+**App Boilerplates**
 
 App boilerplates provide ready-to-use templates for building applications, simplifying the setup process and ensuring a consistent structure across projects.
 
@@ -80,7 +80,7 @@ App boilerplates provide ready-to-use templates for building applications, simpl
 | 11 | [T3JS](https://github.com/mernjs/create-mern-app/tree/master/src/app/t3js-boilerplate) | [![Download T3JS](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download T3JS")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/t3js-boilerplate.zip) |
 | 12 | [React Native Expo](https://github.com/mernjs/create-mern-app/tree/master/src/app/expo-boilerplate) | [![Download React Native Expo](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download React Native Expo")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/expo-boilerplate.zip) |
 
-Library Boilerplates
+**Library Boilerplates**
 
 Library boilerplates offer pre-configured templates for creating npm packages, enabling efficient and standardized development of reusable code libraries.
 
@@ -93,7 +93,7 @@ Library boilerplates offer pre-configured templates for creating npm packages, e
 | 5 | [NextJS Library](https://github.com/mernjs/create-mern-app/tree/master/src/library/nextjs-library-boilerplate) | [![Download NextJS Library](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NextJS Library")](https://github.com/mernjs/create-mern-app/raw/master/zip/library/nextjs-library-boilerplate.zip) |
 | 6 | [React Native Library](https://github.com/mernjs/create-mern-app/tree/master/src/library/react-native-library-boilerplate) | [![Download React Native Library](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download React Native Library")](https://github.com/mernjs/create-mern-app/raw/master/zip/library/react-native-library-boilerplate.zip) |
 
-NPM Packages
+**NPM Packages**
 
 Explore npm packages that simplify your development workflow. These packages offer efficient solutions for various technologies and are easy to install and integrate, enhancing productivity and code quality.
 
@@ -102,7 +102,7 @@ Explore npm packages that simplify your development workflow. These packages off
 | 1 | [xml-to-mongodb-importer](https://github.com/mernjs/create-mern-app/tree/master/src/packages/xml-to-mongodb-importer) | [![npm version](https://img.shields.io/npm/v/xml-to-mongodb-importer)](https://www.npmjs.com/package/xml-to-mongodb-importer)  | [![xml-to-mongodb-importer](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "xml-to-mongodb-importer")](https://github.com/mernjs/create-mern-app/tree/master/src/packages/xml-to-mongodb-importer) |
 | 2 | [react-svg-icons-loader](https://github.com/mernjs/create-mern-app/tree/master/src/packages/react-svg-icons-loader) | [![npm version](https://img.shields.io/npm/v/react-svg-icons-loader)](https://www.npmjs.com/package/react-svg-icons-loader)  | [![react-svg-icons-loader](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "react-svg-icons-loader")](https://github.com/mernjs/create-mern-app/tree/master/src/packages/react-svg-icons-loader) |
 
-Code Snippets
+**Code Snippets**
 
 Explore a collection of reusable code snippets to quickly implement common features and functionalities in your projects.
 
