@@ -62,7 +62,7 @@ REPO_NAME="create-mern-app"
 
 # Step 5: Navigate to the package directory
 echo "Navigating to package directory 'packages/create-mernjs-app'..."
-cd src/packages/create-mernjs-app
+cd templates/packages/create-mernjs-app
 check_last_command
 
 # Confirm package.json exists

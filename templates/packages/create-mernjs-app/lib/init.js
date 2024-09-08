@@ -28,12 +28,12 @@ module.exports = async (projectname, { project_type, template }) => {
     let project_typ = project_type.replace(/ /g, '-').toLowerCase()
 
     const destinationPath = `${currentWorkingDir}/${projectname}`
-    const sourcePath = path.join(__dirname, `../../../node_modules/create-mernjs-app/node_modules/mernjs/src/${templates}/${project_typ}/`)
+    const sourcePath = `templates/${templates}/${project_typ}`
     const gitSourcePath = path.join(__dirname, `utils/gitignore.js`)
 
     const appID = Helpers.generateRadomeString(32)
 
-    Helpers.createDirAndCopy(sourcePath, destinationPath)
+    Helpers.sparseCloneRepo(sourcePath, destinationPath)
         .then((success) => {
             Helpers.copyGitignoreFile(gitSourcePath, destinationPath)
             console.log(" ")

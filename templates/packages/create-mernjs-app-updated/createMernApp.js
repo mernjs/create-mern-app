@@ -1,7 +1,7 @@
-const { exec, spawn } = require("child_process"); // Added spawn here
+const { exec, spawn } = require("child_process");
 const chalk = require("chalk");
 const commander = require("commander");
-const { prompt } = require("inquirer")
+const { prompt } = require("inquirer");
 const fs = require("fs-extra");
 const Constants = require('./lib/utils/Constants');
 const yosay = require('yosay');
@@ -39,11 +39,12 @@ async function sparseCloneRepo(repoUrl, subdirectory, destinationPath) {
             `cd ${destinationPath}`,                         // Move to the destination directory
             `git remote add origin ${repoUrl}`,              // Add the remote repo URL
             `git config core.sparseCheckout true`,           // Enable sparse checkout
-            `echo "${subdirectory}" >> .git/info/sparse-checkout`, // Specify the subdirectory you want to clone
-            `git pull origin master`,                        // Pull from the master branch (adjust to main if needed)
-            `mv ${subdirectory}/* ./`                       // Move files from the subdirectory to the root
-            // `rm -rf ${subdirectory}`,                        // Remove the empty subdirectory
-            // `rm -rf .git`                                    // Optional: Remove .git to avoid including Git history
+            `echo "${subdirectory}" >> .git/info/sparse-checkout`, // Specify the subdirectory to clone
+            `git pull origin master`,                        // Pull from the master branch (or 'main' if necessary)
+            `mv ${subdirectory}/* ./`,                       // Move files from the subdirectory to the root
+            `rm -rf ${subdirectory}`,                        // Remove the empty subdirectory
+            `rm -rf templates`,
+            `rm -rf .git`                                    // Optional: Remove .git to avoid including Git history
         ].join(' && ');
 
         exec(commands, (error, stdout, stderr) => {
@@ -56,70 +57,60 @@ async function sparseCloneRepo(repoUrl, subdirectory, destinationPath) {
     });
 }
 
-
 async function init() {
     const program = new commander.Command(Constants.package.name)
         .version(Constants.package.version)
         .arguments('<project-directory>')
         .usage(`${chalk.green('<project-directory>')}`)
-        .option('-y, --yes', 'skip Is this OK ? step')
-        .option('--template <github-repo-url>', 'specify a GitHub template repository')
-        .option('--template-dir <subdirectory>', 'specify a subdirectory in the template repository to use as the template')
-        .action(async (project_name, cmd_obj) => {
-            projectName = project_name;
+        .option('-y, --yes', 'skip Is this OK? step')
+        .action(async (project_name) => {
+            const projectName = project_name;
             checkAppName(project_name);
+
             Helpers.checkForLatestVersion().then(async (latest) => {
                 if (latest && semver.lt(Constants.package.version, latest)) {
-                    const message1 = `You are running \`create-mernjs-app\` ${chalk.bold.red(Constants.package.version)}, which is behind the latest release ${chalk.bold.green(latest)}.`;
-                    const message2 = 'We recommend always using the latest version of create-mernjs-app.';
-                    const message3 = 'npm install create-mernjs-app -g';
-                    const message4 = `https://github.com/mernjs/create-mern-app/releases`;
-                    console.log('\n');
-                    console.log(yosay(`${chalk.yellow(message1)} \n\n ${chalk.cyan(message2)} \n\n ${chalk.bold.green(message3)} \n\n ${chalk.blue(message4)} `, { maxLength: 55 }));
-                    console.log('\n');
+                    console.log(chalk.red('Please update to the latest version.'));
                     process.exit(1);
                 } else {
                     const currentPath = process.cwd();
                     const destinationPath = `${currentPath}/${project_name}`;
                     if (fs.existsSync(destinationPath)) {
-                        console.log('');
                         console.log(chalk.red("Folder already exists"));
-                        console.log('');
                         return;
                     }
-                    console.log('Press ^C at any time to quit.');
-                    prompt(cmd_obj?.template ? Constants.select_library_form : Constants.select_form).then(async (data) => {
-                        const repoUrl = cmd_obj?.template || 'https://github.com/mernjs/create-mern-app';
-                        const subdirectory = cmd_obj?.templateDir || 'default-template-folder';
 
-                        console.log(chalk.green(`Cloning the template from ${repoUrl}, subdirectory: ${subdirectory}...`));
-                        try {
-                            await sparseCloneRepo(repoUrl, subdirectory, destinationPath);
-                            console.log(chalk.green(`Template cloned successfully to ${destinationPath}`));
-                            Helpers.rewritePackageName(`${destinationPath}/package.json`, project_name);
-                            console.log(chalk.hex('#4c84ff').bold("Installing dependencies... This might take a couple of minutes."));
-                            const command = 'npm install --legacy-peer-deps';
-                            const child = spawn(command, { stdio: "inherit", shell: true }); // Updated spawn usage
-                            child.on("close", (code) => {
-                                if (code !== 0) return;
-                                console.log(" ");
-                                console.log(chalk.hex('#008000').bold('  We suggest that you begin by typing:'));
-                                console.log(" ");
-                                console.log(chalk.hex('#4c84ff')(`    cd ${project_name}`));
-                                console.log(`       Go to your project directory`);
-                                console.log(" ");
-                                console.log(chalk.hex('#4c84ff')(`    ${Constants.mernjs.serve}`));
-                                console.log(`       Starts the development server.`);
-                                console.log(" ");
-                                console.log("All Done!");
-                                process.exit(0);
-                            });
-                        } catch (error) {
-                            console.error(chalk.red('Error cloning repository:'), error);
-                            // fs.rmdirSync(destinationPath, { recursive: true, force: true });
+                    // Hardcoded repository URL and subdirectory
+                    const repoUrl = 'https://github.com/mernjs/create-mern-app'; // Hardcoded URL
+                    const subdirectory = 'templates/app/electronjs-boilerplate'; // Hardcoded subdirectory (e.g., 'packages')
+
+
+                    // Create a loader with ora
+                    console.log(`Creating a new ${chalk.yellow(project_name)} project in ${chalk.green(destinationPath)}`)
+
+                    try {
+                        await sparseCloneRepo(repoUrl, subdirectory, destinationPath);
+                        let message = `Congratulations! Your ${chalk.yellow(project_name)} project has been Created at`
+                        console.log(message, chalk.green(`${destinationPath}`));
+
+                        process.chdir(destinationPath)
+
+                        Helpers.rewritePackageName(`${destinationPath} / package.json`, project_name);
+                        console.log(chalk.hex('#4c84ff').bold("Installing dependencies..."));
+
+                        const command = 'npm install';
+                        const child = spawn(command, { stdio: "inherit", shell: true });
+
+                        child.on("close", (code) => {
+                            if (code !== 0) return;
+                            console.log(chalk.hex('#008000').bold('Project setup complete.'));
                             process.exit(0);
-                        }
-                    });
+                        });
+                    } catch (error) {
+                        spinner.fail('Error cloning repository');
+                        console.error(chalk.red('Error:', error));
+                        fs.rmdirSync(destinationPath, { recursive: true, force: true });
+                        process.exit(0);
+                    }
                 }
             }).catch((error) => {
                 console.log(error);
@@ -128,17 +119,8 @@ async function init() {
         })
         .parse(process.argv);
 
-    if (typeof projectName === 'undefined') {
-        console.log();
-        console.error('Please specify the project directory:');
-        console.log();
-        console.log(`  ${chalk.cyan(`${program.name()}`)} ${chalk.green('<project-directory>')}`);
-        console.log();
-        console.log('For example:');
-        console.log(`  ${chalk.cyan(`${program.name()}`)} ${chalk.green('my_project')}`);
-        console.log();
-        console.log(`Run ${chalk.cyan(`${program.name()} --help`)} to see all options.`);
-        console.log();
+    if (typeof program.args[0] === 'undefined') {
+        console.error('Please specify the project directory.');
         process.exit(1);
     }
 }
