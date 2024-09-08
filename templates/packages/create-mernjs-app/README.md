@@ -34,24 +34,31 @@ You can download code in two ways:
 
 <h4>1. Using CLI</h4>
 
-Creating an App
+**Create a New App**
 
-```
+```bash
 npx create-mernjs-app my-app
 ```
 
-Creating a Library, Packages & Snippets
+**Create a Library, Packages, or Snippets**
 
-```
-// for download pre-configured library creation template
-npx create-mernjs-app my-library --template library
+- **Pre-configured Library Creation Template:**
 
-// for download pre-built npm packages
-npx create-mernjs-app my-package --template packages
+  ```bash
+  npx create-mernjs-app my-library --template library
+  ```
 
-// for download pre-built reuseable code
-npx create-mernjs-app my-snippets --template snippets
-```
+- **Pre-built NPM Packages:**
+
+  ```bash
+  npx create-mernjs-app my-package --template packages
+  ```
+
+- **Reusable Code Snippets:**
+
+  ```bash
+  npx create-mernjs-app my-snippets --template snippets
+  ```
 
 <h4>2. Directly Download Zip Code</h4>
 
@@ -74,7 +81,7 @@ App boilerplates provide ready-to-use templates for building applications, simpl
 | 11 | [T3JS](https://github.com/mernjs/create-mern-app/tree/master/templates/app/t3js-boilerplate) | [![Download T3JS](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download T3JS")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/t3js-boilerplate.zip) |
 | 12 | [React Native Expo](https://github.com/mernjs/create-mern-app/tree/master/templates/app/expo-boilerplate) | [![Download React Native Expo](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download React Native Expo")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/expo-boilerplate.zip) |
 
-/<h4>Library Boilerplates</h4>
+<h4>Library Boilerplates</h4>
 
 Library boilerplates offer pre-configured templates for creating npm packages, enabling efficient and standardized development of reusable code libraries.
 
