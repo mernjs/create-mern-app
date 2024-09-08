@@ -34,29 +34,23 @@ You can download code in two ways:
 
 <h4>1. Using CLI</h4>
 
-Install create-mernjs-app globally
-
-```
-npm install create-mernjs-app -g 
-```
-
 Creating an App
 
 ```
-create-mernjs-app my-app
+npx create-mernjs-app my-app
 ```
 
 Creating a Library, Packages & Snippets
 
 ```
 // for download pre-configured library creation template
-create-mernjs-app my-library --template library
+npx create-mernjs-app my-library --template library
 
 // for download pre-built npm packages
-create-mernjs-app my-library --template packages
+npx create-mernjs-app my-package --template packages
 
 // for download pre-built reuseable code
-create-mernjs-app my-library --template snippets
+npx create-mernjs-app my-snippets --template snippets
 ```
 
 <h4>2. Directly Download Zip Code</h4>
@@ -67,18 +61,18 @@ App boilerplates provide ready-to-use templates for building applications, simpl
 
 | SN. | Boilerplates | Download |
 | ------ | ------ | ------ |
-| 1 | [NodeJS & MongoDB](https://github.com/mernjs/create-mern-app/tree/master/src/app/nodejs-mongodb-boilerplate) | [![Download NodeJS MongoDB](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MongoDB")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/nodejs-mongodb-boilerplate.zip) |
-| 2 | [NodeJS & MySQL](https://github.com/mernjs/create-mern-app/tree/master/src/app/nodejs-mysql-boilerplate) | [![Download NodeJS MySQL](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MySQL")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/nodejs-mysql-boilerplate.zip) |
-| 3 | [NextJS](https://github.com/mernjs/create-mern-app/tree/master/src/app/nextjs-boilerplate) | [![Download NextJS](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NextJS")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/nextjs-boilerplate.zip) |
-| 4 | [GatsbyJS](https://github.com/mernjs/create-mern-app/tree/master/src/app/gatsbyjs-boilerplate) | [![Download GatsbyJS](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download GatsbyJS")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/gatsbyjs-boilerplate.zip) |
-| 5 | [ReactJS](https://github.com/mernjs/create-mern-app/tree/master/src/app/reactjs-boilerplate) | [![Download ReactJS](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/reactjs-boilerplate.zip) |
-| 6 | [ElectronJS](https://github.com/mernjs/create-mern-app/tree/master/src/app/electronjs-boilerplate) | [![Download ElectronJS](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ElectronJS")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/electronjs-boilerplate.zip) |
-| 7 | [ReactJS Chrome Extension](https://github.com/mernjs/create-mern-app/tree/master/src/app/reactjs-chrome-extension-boilerplate) | [![Download ReactJS Chrome Extension](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Chrome Extension")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/reactjs-chrome-extension-boilerplate.zip) |
-| 8 | [ReactJS Webpack](https://github.com/mernjs/create-mern-app/tree/master/src/app/reactjs-webpack-boilerplate) | [![Download ReactJS Webpack](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Webpack")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/reactjs-webpack-boilerplate.zip) |
-| 9 | [FastifyJS & MySQL](https://github.com/mernjs/create-mern-app/tree/master/src/app/fastifyjs-mysql-boilerplate) | [![Download FastifyJS MySQL](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download FastifyJS MySQL")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/fastifyjs-mysql-boilerplate.zip) |
-| 10 | [FastifyJS & MongoDB](https://github.com/mernjs/create-mern-app/tree/master/src/app/fastifyjs-mongodb-boilerplate) | [![Download FastifyJS MongoDB](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download FastifyJS MongoDB")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/fastifyjs-mongodb-boilerplate.zip) |
-| 11 | [T3JS](https://github.com/mernjs/create-mern-app/tree/master/src/app/t3js-boilerplate) | [![Download T3JS](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download T3JS")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/t3js-boilerplate.zip) |
-| 12 | [React Native Expo](https://github.com/mernjs/create-mern-app/tree/master/src/app/expo-boilerplate) | [![Download React Native Expo](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download React Native Expo")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/expo-boilerplate.zip) |
+| 1 | [NodeJS & MongoDB](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mongodb-boilerplate) | [![Download NodeJS MongoDB](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MongoDB")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/nodejs-mongodb-boilerplate.zip) |
+| 2 | [NodeJS & MySQL](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nodejs-mysql-boilerplate) | [![Download NodeJS MySQL](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS MySQL")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/nodejs-mysql-boilerplate.zip) |
+| 3 | [NextJS](https://github.com/mernjs/create-mern-app/tree/master/templates/app/nextjs-boilerplate) | [![Download NextJS](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NextJS")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/nextjs-boilerplate.zip) |
+| 4 | [GatsbyJS](https://github.com/mernjs/create-mern-app/tree/master/templates/app/gatsbyjs-boilerplate) | [![Download GatsbyJS](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download GatsbyJS")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/gatsbyjs-boilerplate.zip) |
+| 5 | [ReactJS](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-boilerplate) | [![Download ReactJS](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/reactjs-boilerplate.zip) |
+| 6 | [ElectronJS](https://github.com/mernjs/create-mern-app/tree/master/templates/app/electronjs-boilerplate) | [![Download ElectronJS](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ElectronJS")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/electronjs-boilerplate.zip) |
+| 7 | [ReactJS Chrome Extension](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-chrome-extension-boilerplate) | [![Download ReactJS Chrome Extension](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Chrome Extension")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/reactjs-chrome-extension-boilerplate.zip) |
+| 8 | [ReactJS Webpack](https://github.com/mernjs/create-mern-app/tree/master/templates/app/reactjs-webpack-boilerplate) | [![Download ReactJS Webpack](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Webpack")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/reactjs-webpack-boilerplate.zip) |
+| 9 | [FastifyJS & MySQL](https://github.com/mernjs/create-mern-app/tree/master/templates/app/fastifyjs-mysql-boilerplate) | [![Download FastifyJS MySQL](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download FastifyJS MySQL")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/fastifyjs-mysql-boilerplate.zip) |
+| 10 | [FastifyJS & MongoDB](https://github.com/mernjs/create-mern-app/tree/master/templates/app/fastifyjs-mongodb-boilerplate) | [![Download FastifyJS MongoDB](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download FastifyJS MongoDB")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/fastifyjs-mongodb-boilerplate.zip) |
+| 11 | [T3JS](https://github.com/mernjs/create-mern-app/tree/master/templates/app/t3js-boilerplate) | [![Download T3JS](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download T3JS")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/t3js-boilerplate.zip) |
+| 12 | [React Native Expo](https://github.com/mernjs/create-mern-app/tree/master/templates/app/expo-boilerplate) | [![Download React Native Expo](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download React Native Expo")](https://github.com/mernjs/create-mern-app/raw/master/zip/app/expo-boilerplate.zip) |
 
 /<h4>Library Boilerplates</h4>
 
@@ -86,12 +80,12 @@ Library boilerplates offer pre-configured templates for creating npm packages, e
 
 | SN. | Boilerplates | Download |
 | ------ | ------ | ------ |
-| 1 | [JavaScript Library](https://github.com/mernjs/create-mern-app/tree/master/src/library/javascript-library-boilerplate) | [![Download JavaScript Library](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download JavaScript Library")](https://github.com/mernjs/create-mern-app/raw/master/zip/library/javascript-library-boilerplate.zip) |
-| 2 | [ReactJS Library](https://github.com/mernjs/create-mern-app/tree/master/src/library/reactjs-library-boilerplate) | [![Download ReactJS Library](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Library")](https://github.com/mernjs/create-mern-app/raw/master/zip/library/reactjs-library-boilerplate.zip) |
-| 3 | [NodeJS Library](https://github.com/mernjs/create-mern-app/tree/master/src/library/nodejs-library-boilerplate) | [![Download NodeJS Library](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS Library")](https://github.com/mernjs/create-mern-app/raw/master/zip/library/nodejs-library-boilerplate.zip) |
-| 4 | [ExpressJS Library](https://github.com/mernjs/create-mern-app/tree/master/src/library/expressjs-library-boilerplate) | [![Download ExpressJS Library](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ExpressJS Library")](https://github.com/mernjs/create-mern-app/raw/master/zip/library/expressjs-library-boilerplate.zip) |
-| 5 | [NextJS Library](https://github.com/mernjs/create-mern-app/tree/master/src/library/nextjs-library-boilerplate) | [![Download NextJS Library](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NextJS Library")](https://github.com/mernjs/create-mern-app/raw/master/zip/library/nextjs-library-boilerplate.zip) |
-| 6 | [React Native Library](https://github.com/mernjs/create-mern-app/tree/master/src/library/react-native-library-boilerplate) | [![Download React Native Library](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download React Native Library")](https://github.com/mernjs/create-mern-app/raw/master/zip/library/react-native-library-boilerplate.zip) |
+| 1 | [JavaScript Library](https://github.com/mernjs/create-mern-app/tree/master/templates/library/javascript-library-boilerplate) | [![Download JavaScript Library](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download JavaScript Library")](https://github.com/mernjs/create-mern-app/raw/master/zip/library/javascript-library-boilerplate.zip) |
+| 2 | [ReactJS Library](https://github.com/mernjs/create-mern-app/tree/master/templates/library/reactjs-library-boilerplate) | [![Download ReactJS Library](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ReactJS Library")](https://github.com/mernjs/create-mern-app/raw/master/zip/library/reactjs-library-boilerplate.zip) |
+| 3 | [NodeJS Library](https://github.com/mernjs/create-mern-app/tree/master/templates/library/nodejs-library-boilerplate) | [![Download NodeJS Library](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NodeJS Library")](https://github.com/mernjs/create-mern-app/raw/master/zip/library/nodejs-library-boilerplate.zip) |
+| 4 | [ExpressJS Library](https://github.com/mernjs/create-mern-app/tree/master/templates/library/expressjs-library-boilerplate) | [![Download ExpressJS Library](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download ExpressJS Library")](https://github.com/mernjs/create-mern-app/raw/master/zip/library/expressjs-library-boilerplate.zip) |
+| 5 | [NextJS Library](https://github.com/mernjs/create-mern-app/tree/master/templates/library/nextjs-library-boilerplate) | [![Download NextJS Library](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download NextJS Library")](https://github.com/mernjs/create-mern-app/raw/master/zip/library/nextjs-library-boilerplate.zip) |
+| 6 | [React Native Library](https://github.com/mernjs/create-mern-app/tree/master/templates/library/react-native-library-boilerplate) | [![Download React Native Library](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download React Native Library")](https://github.com/mernjs/create-mern-app/raw/master/zip/library/react-native-library-boilerplate.zip) |
 
 <h4>NPM Packages</h4>
 
@@ -99,8 +93,8 @@ Explore npm packages that simplify your development workflow. These packages off
 
 | SN. | Package | NPM | Download |
 | ------ | ------ | ------ | ------ |
-| 1 | [xml-to-mongodb-importer](https://github.com/mernjs/create-mern-app/tree/master/src/packages/xml-to-mongodb-importer) | [![npm version](https://img.shields.io/npm/v/xml-to-mongodb-importer)](https://www.npmjs.com/package/xml-to-mongodb-importer)  | [![xml-to-mongodb-importer](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "xml-to-mongodb-importer")](https://github.com/mernjs/create-mern-app/tree/master/src/packages/xml-to-mongodb-importer) |
-| 2 | [react-svg-icons-loader](https://github.com/mernjs/create-mern-app/tree/master/src/packages/react-svg-icons-loader) | [![npm version](https://img.shields.io/npm/v/react-svg-icons-loader)](https://www.npmjs.com/package/react-svg-icons-loader)  | [![react-svg-icons-loader](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "react-svg-icons-loader")](https://github.com/mernjs/create-mern-app/tree/master/src/packages/react-svg-icons-loader) |
+| 1 | [xml-to-mongodb-importer](https://github.com/mernjs/create-mern-app/tree/master/templates/packages/xml-to-mongodb-importer) | [![npm version](https://img.shields.io/npm/v/xml-to-mongodb-importer)](https://www.npmjs.com/package/xml-to-mongodb-importer)  | [![xml-to-mongodb-importer](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "xml-to-mongodb-importer")](https://github.com/mernjs/create-mern-app/tree/master/templates/packages/xml-to-mongodb-importer) |
+| 2 | [react-svg-icons-loader](https://github.com/mernjs/create-mern-app/tree/master/templates/packages/react-svg-icons-loader) | [![npm version](https://img.shields.io/npm/v/react-svg-icons-loader)](https://www.npmjs.com/package/react-svg-icons-loader)  | [![react-svg-icons-loader](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "react-svg-icons-loader")](https://github.com/mernjs/create-mern-app/tree/master/templates/packages/react-svg-icons-loader) |
 
 <h4>Code Snippets</h4>
 
@@ -108,9 +102,9 @@ Explore a collection of reusable code snippets to quickly implement common featu
 
 | SN. | Snippets | Download |
 | ------ | ------ | ------ |
-| 1 | [Express Rate Limit](https://github.com/mernjs/create-mern-app/tree/master/src/snippets/express-rate-limit) | [![Express Rate Limit](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Express Rate Limit")](https://github.com/mernjs/create-mern-app/raw/master/zip/snippets/express-rate-limit.zip) |
-| 2 | [NodeJS JWT](https://github.com/mernjs/create-mern-app/tree/master/src/snippets/node-jwt) | [![NodeJS JWT](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "NodeJS JWT")](https://github.com/mernjs/create-mern-app/raw/master/zip/snippets/node-jwt.zip) |
-| 3 | [NodeJS Encryption Decryption](https://github.com/mernjs/create-mern-app/tree/master/src/snippets/nodejs-encryption-decryption) | [![NodeJS Encryption Decryption](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "NodeJS Encryption Decryption")](https://github.com/mernjs/create-mern-app/raw/master/zip/snippets/nodejs-encryption-decryption.zip) |
+| 1 | [Express Rate Limit](https://github.com/mernjs/create-mern-app/tree/master/templates/snippets/express-rate-limit) | [![Express Rate Limit](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Express Rate Limit")](https://github.com/mernjs/create-mern-app/raw/master/zip/snippets/express-rate-limit.zip) |
+| 2 | [NodeJS JWT](https://github.com/mernjs/create-mern-app/tree/master/templates/snippets/node-jwt) | [![NodeJS JWT](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "NodeJS JWT")](https://github.com/mernjs/create-mern-app/raw/master/zip/snippets/node-jwt.zip) |
+| 3 | [NodeJS Encryption Decryption](https://github.com/mernjs/create-mern-app/tree/master/templates/snippets/nodejs-encryption-decryption) | [![NodeJS Encryption Decryption](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "NodeJS Encryption Decryption")](https://github.com/mernjs/create-mern-app/raw/master/zip/snippets/nodejs-encryption-decryption.zip) |
 
 <h4>Key Features</h4>
 
