@@ -46,10 +46,17 @@ Creating an App
 create-mernjs-app my-app
 ```
 
-Creating a Library
+Creating a Library, Packages & Snippets
 
 ```
+// for download pre-configured library creation template
 create-mernjs-app my-library --template library
+
+// for download pre-built npm packages
+create-mernjs-app my-library --template packages
+
+// for download pre-built reuseable code
+create-mernjs-app my-library --template snippets
 ```
 
 <h4>2. Directly Download Zip Code</h4>
