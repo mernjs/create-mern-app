@@ -7,7 +7,14 @@ const Helpers = require('./utils/Helpers')
 
 module.exports = async (projectname, { project_type, template }) => {
     const currentWorkingDir = process.cwd()
-    const templates = template === 'library' ? 'library' : 'app'
+    let templates = ""
+    if (template === 'library') {
+        templates = 'library'
+    } else if (template === 'snippets') {
+        templates = 'snippets'
+    } else {
+        templates = 'app'
+    }
     console.log(' ')
     console.log(chalk.hex('#4c84ff')(`Creating a new ${chalk.yellow(projectname)} project in`), chalk.green(`${currentWorkingDir}/${projectname}`))
     console.log(' ')
