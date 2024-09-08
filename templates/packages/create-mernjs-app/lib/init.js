@@ -31,8 +31,6 @@ module.exports = async (projectname, { project_type, template }) => {
     const sourcePath = `templates/${templates}/${project_typ}`
     const gitSourcePath = path.join(__dirname, `utils/gitignore.js`)
 
-    const appID = Helpers.generateRadomeString(32)
-
     Helpers.sparseCloneRepo(sourcePath, destinationPath)
         .then((success) => {
             Helpers.copyGitignoreFile(gitSourcePath, destinationPath)

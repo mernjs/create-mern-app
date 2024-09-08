@@ -1,6 +1,6 @@
 const fs = require("fs-extra");
-const { spawn } = require("child_process");
 const https = require('https');
+const { exec, spawn } = require("child_process");
 
 function errorMessaage(error) {
     console.log(" ");
@@ -86,5 +86,31 @@ exports.checkForLatestVersion = () => {
             .on('error', () => {
                 reject();
             });
+    });
+}
+
+exports.sparseCloneRepo = (subdirectory, destinationPath) => {
+    const repoUrl = 'https://github.com/mernjs/create-mern-app'; // Hardcoded URL
+    return new Promise((resolve, reject) => {
+        const commands = [
+            `git init ${destinationPath}`,                   // Initialize a new git repo at destinationPath
+            `cd ${destinationPath}`,                         // Move to the destination directory
+            `git remote add origin ${repoUrl}`,              // Add the remote repo URL
+            `git config core.sparseCheckout true`,           // Enable sparse checkout
+            `echo "${subdirectory}" >> .git/info/sparse-checkout`, // Specify the subdirectory to clone
+            `git pull origin master`,                        // Pull from the master branch (or 'main' if necessary)
+            `mv ${subdirectory}/* ./`,                       // Move files from the subdirectory to the root
+            `rm -rf ${subdirectory}`,                        // Remove the empty subdirectory
+            `rm -rf templates`,
+            `rm -rf .git`                                    // Optional: Remove .git to avoid including Git history
+        ].join(' && ');
+
+        exec(commands, (error, stdout, stderr) => {
+            if (error) {
+                reject(error);
+                return;
+            }
+            resolve(stdout.trim());
+        });
     });
 }
