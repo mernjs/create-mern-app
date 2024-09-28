@@ -1,0 +1,45 @@
+{
+    "name": "@mernjs/node-google-sheet",
+    "description": "`@mernjs/node-google-sheet` is a Node.js module that provides a simple way to interact with Google Sheets using the `@mernjs/node-google-sheet`. It allows for authorization, sheet management, and CRUD operations on data within a Google Spreadsheet.",
+    "version": "2.0.0",
+    "main": "libs/cjs/index.js",
+    "module": "libs/esm/index.js",
+    "scripts": {
+        "example": "cd example && yarn dev",
+        "start": "nodemon src/index.js",
+        "watch": "rollup -c -w",
+        "build": "rollup -c",
+        "lint": "eslint .",
+        "dev": "npm-run-all --parallel watch start example",
+        "lint:fix": "eslint --fix --ext .js,.jsx .",
+        "upgrade": "npx npm-check-updates && npx npm-check-updates -u",
+        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss}'",
+        "prepare": "husky"
+    },
+    "dependencies": {
+        "googleapis": "^144.0.0"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^26.0.1",
+        "@rollup/plugin-json": "^6.1.0",
+        "@rollup/plugin-node-resolve": "^15.3.0",
+        "@rollup/plugin-terser": "^0.4.4",
+        "concurrently": "^8.2.2",
+        "eslint": "^9.5.0",
+        "eslint-config-google": "^0.14.0",
+        "husky": "^9.1.6",
+        "nodemon": "^3.1.4",
+        "npm-run-all": "^4.1.5",
+        "prettier": "^3.3.2",
+        "rollup": "^4.18.0",
+        "rollup-plugin-node": "^0.2.1"
+    },
+    "repository": {
+        "type": "url",
+        "url": "https://github.com/mernjs/create-mern-app/tree/master/packages/node-google-sheet"
+    },
+    "bugs": {
+        "url": "https://github.com/mernjs/create-mern-app/issues"
+    },
+    "homepage": "https://github.com/mernjs/create-mern-app/tree/master/packages/node-google-sheet#readme"
+}

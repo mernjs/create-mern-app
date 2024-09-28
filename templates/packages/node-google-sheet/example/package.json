@@ -1,0 +1,16 @@
+{
+	"name": "example",
+	"version": "0.1.0",
+	"private": true,
+	"main": "example.js",
+	"scripts": {
+		"dev": "nodemon example.js",
+		"start": "node example.js"
+	},
+	"dependencies": {
+		"@mernjs/node-google-sheet": "file:../"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.20"
+	}
+}
