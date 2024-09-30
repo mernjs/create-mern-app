@@ -1,6 +1,6 @@
 # Google Sheets API Wrapper
 
-`@mernjs/node-google-sheet` is a Node.js module that provides a simple way to interact with Google Sheets using the `@mernjs/node-google-sheet`. It allows for authorization, sheet management, and CRUD operations on data within a Google Spreadsheet.
+`@mernjs/googlesheets` is a Node.js module that provides a simple way to interact with Google Sheets using the `@mernjs/googlesheets`. It allows for authorization, sheet management, and CRUD operations on data within a Google Spreadsheet.
 
 ## Table of Contents
 
@@ -38,7 +38,7 @@
 Install the required packages using npm:
 
 ```bash
-npm install @mernjs/node-google-sheet
+npm install @mernjs/googlesheets
 ```
 
 ## 3. Usage
@@ -307,7 +307,7 @@ console.log('Record deleted successfully.');
 Here’s a complete example demonstrating how to use the `GoogleSheets` class to perform various operations:
 
 ```javascript
-import { GoogleSheets } from '@mernjs/node-google-sheet';
+import { GoogleSheets } from '@mernjs/googlesheets';
 
 async function main() {
 	const sheets = new GoogleSheets();
@@ -391,7 +391,7 @@ Each method throws an error if the authorization is incomplete or if the provide
 
 #### 6. **Access the Google Sheets API Using the Service Account**
    - Use the downloaded `.json` credentials in your application to authenticate and access the Google Sheets API.
-   - Make sure to include `@mernjs/node-google-sheet` to handle authentication and Google Sheets API requests.
+   - Make sure to include `@mernjs/googlesheets` to handle authentication and Google Sheets API requests.
 
 ## 7. Contributing
 

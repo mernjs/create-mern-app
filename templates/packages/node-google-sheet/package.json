@@ -1,7 +1,7 @@
 {
-    "name": "@mernjs/node-google-sheet",
-    "description": "`@mernjs/node-google-sheet` is a Node.js module that provides a simple way to interact with Google Sheets using the `@mernjs/node-google-sheet`. It allows for authorization, sheet management, and CRUD operations on data within a Google Spreadsheet.",
-    "version": "2.0.0",
+    "name": "@mernjs/googlesheets",
+    "description": "`@mernjs/googlesheets` is a Node.js module that provides a simple way to interact with Google Sheets using the `@mernjs/googlesheets`. It allows for authorization, sheet management, and CRUD operations on data within a Google Spreadsheet.",
+    "version": "1.0.0",
     "main": "libs/cjs/index.js",
     "module": "libs/esm/index.js",
     "scripts": {
