@@ -1,0 +1,10 @@
+<h2>Item List</h2>
+<a href="{% url 'add_item' %}">Add New Item</a>
+<ul>
+{% for item in items %}
+    <li>{{ item.name }} - ${{ item.price }} 
+        <a href="{% url 'edit_item' item.id %}">Edit</a> 
+        <a href="{% url 'delete_item' item.id %}">Delete</a>
+    </li>
+{% endfor %}
+</ul>

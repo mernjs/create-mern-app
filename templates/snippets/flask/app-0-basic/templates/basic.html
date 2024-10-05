@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask</title>
+</head>
+<body>
+    <h1>Hello Flask From HTML {{userName}} {{firstName}} {{lastName}}</h1>
+    {% for index in range(10) %}
+            <p>{{ index+1 }}</p>
+    {% endfor %}
+
+    {% for item in data %}
+        {% if item == "React" %}
+            <p>ReactJS</p>
+        {% else %}
+            <p>{{ item }}</p>
+        {% endif %}
+    {% endfor %}
+    
+</body>
+</html>
