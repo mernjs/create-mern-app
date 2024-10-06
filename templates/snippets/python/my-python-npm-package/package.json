@@ -1,0 +1,11 @@
+{
+  "name": "my-python-npm-package",
+  "version": "1.0.0",
+  "description": "An npm package that wraps Python functionality.",
+  "main": "index.js",
+  "scripts": {
+    "install": "./install.sh"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
