@@ -22,7 +22,7 @@
         "@react-navigation/stack": "^6.3.29",
         "@reduxjs/toolkit": "^2.2.5",
         "axios": "^1.7.2",
-        "expo": "^51.0.14",
+        "expo": "^52.0.6",
         "expo-status-bar": "^1.12.1",
         "lodash": "^4.17.21",
         "native-base": "^3.4.28",
