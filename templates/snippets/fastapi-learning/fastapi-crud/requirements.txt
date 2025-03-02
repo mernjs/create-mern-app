@@ -1,0 +1,17 @@
+click==7.1.2
+fastapi==0.63.0
+gunicorn==20.1.0
+h11==0.9.0
+Jinja2==2.11.3
+MarkupSafe==1.1.1
+numpy==1.20.2
+pandas==1.2.4
+pydantic==1.8.1
+python-dateutil==2.8.1
+python-multipart==0.0.5
+pytz==2021.1
+six==1.15.0
+starlette==0.13.6
+typing-extensions==3.10.0.0
+uvicorn==0.11.8
+websockets==8.1

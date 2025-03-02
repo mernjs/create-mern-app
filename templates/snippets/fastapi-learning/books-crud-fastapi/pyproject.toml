@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "books-crud-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+SQLAlchemy = "^2.0.5"
+fastapi = "^0.93.0"
+uvicorn = "^0.20.0"
+python-dotenv = "^1.0.0"
+psycopg2 = "^2.9.5"
+
+[tool.poetry.dev-dependencies]
+black = "^23.1.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

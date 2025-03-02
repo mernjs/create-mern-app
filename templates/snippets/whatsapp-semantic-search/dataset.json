@@ -1,0 +1,240 @@
+[
+    {
+        "Sender": "Alice",
+        "Receiver": "Bob",
+        "Timestamp": "2023-10-01 09:00:00",
+        "Message": "Hey Bob! Are we still on for the meeting?",
+        "Topics": ["meeting", "schedule"]
+    },
+    {
+        "Sender": "Bob",
+        "Receiver": "Alice",
+        "Timestamp": "2023-10-01 09:01:00",
+        "Message": "Yes, see you at 10!",
+        "Topics": ["meeting", "time", "confirmation"]
+    },
+    {
+        "Sender": "Alice",
+        "Receiver": "Charlie",
+        "Timestamp": "2023-10-01 09:05:00",
+        "Message": "Hey Charlie, do you want to join the meeting?",
+        "Topics": ["meeting", "invitation"]
+    },
+    {
+        "Sender": "Charlie",
+        "Receiver": "Alice",
+        "Timestamp": "2023-10-01 09:06:00",
+        "Message": "Sure, I'll be there!",
+        "Topics": ["meeting", "confirmation"]
+    },
+    {
+        "Sender": "David",
+        "Receiver": "Group",
+        "Timestamp": "2023-10-01 09:15:00",
+        "Message": "Can someone share the meeting link?",
+        "Topics": ["meeting", "link"]
+    },
+    {
+        "Sender": "Bob",
+        "Receiver": "Group",
+        "Timestamp": "2023-10-01 09:16:00",
+        "Message": "I'll send it right now!",
+        "Topics": ["meeting", "link"]
+    },
+    {
+        "Sender": "Alice",
+        "Receiver": "Bob",
+        "Timestamp": "2023-10-02 09:15:00",
+        "Message": "Bob, can you share the agenda for today's meeting?",
+        "Topics": ["meeting", "agenda"]
+    },
+    {
+        "Sender": "Bob",
+        "Receiver": "Alice",
+        "Timestamp": "2023-10-02 09:16:00",
+        "Message": "Sure! I'll send it over shortly.",
+        "Topics": ["meeting", "agenda"]
+    },
+    {
+        "Sender": "Charlie",
+        "Receiver": "Alice",
+        "Timestamp": "2023-10-02 09:20:00",
+        "Message": "What time is the meeting today?",
+        "Topics": ["meeting", "time"]
+    },
+    {
+        "Sender": "Alice",
+        "Receiver": "Charlie",
+        "Timestamp": "2023-10-02 09:21:00",
+        "Message": "It's at 10 AM. Looking forward to seeing you there!",
+        "Topics": ["meeting", "time", "confirmation"]
+    },
+    {
+        "Sender": "David",
+        "Receiver": "Group",
+        "Timestamp": "2023-10-02 09:30:00",
+        "Message": "Can we have a quick call to discuss the project updates?",
+        "Topics": ["project", "meeting", "updates"]
+    },
+    {
+        "Sender": "Eve",
+        "Receiver": "Group",
+        "Timestamp": "2023-10-02 09:31:00",
+        "Message": "I'm available. How about 2 PM?",
+        "Topics": ["meeting", "time"]
+    },
+    {
+        "Sender": "David",
+        "Receiver": "Group",
+        "Timestamp": "2023-10-02 09:32:00",
+        "Message": "2 PM works for me. Let's confirm with others.",
+        "Topics": ["meeting", "time", "confirmation"]
+    },
+    {
+        "Sender": "Alice",
+        "Receiver": "Group",
+        "Timestamp": "2023-10-02 09:35:00",
+        "Message": "I'm in! Count me in for 2 PM.",
+        "Topics": ["meeting", "confirmation"]
+    },
+    {
+        "Sender": "Bob",
+        "Receiver": "Group",
+        "Timestamp": "2023-10-02 09:36:00",
+        "Message": "I can join too. Looking forward to it!",
+        "Topics": ["meeting", "confirmation"]
+    },
+    {
+        "Sender": "Charlie",
+        "Receiver": "Group",
+        "Timestamp": "2023-10-02 09:37:00",
+        "Message": "I'll be there as well! See you at 2 PM.",
+        "Topics": ["meeting", "confirmation"]
+    },
+    {
+        "Sender": "Eve",
+        "Receiver": "Alice",
+        "Timestamp": "2023-10-03 09:00:00",
+        "Message": "Alice, can we discuss the budget during today's meeting?",
+        "Topics": ["budget", "meeting"]
+    },
+    {
+        "Sender": "Alice",
+        "Receiver": "Eve",
+        "Timestamp": "2023-10-03 09:01:00",
+        "Message": "Absolutely! I’ll add it to the agenda.",
+        "Topics": ["budget", "agenda"]
+    },
+    {
+        "Sender": "David",
+        "Receiver": "Group",
+        "Timestamp": "2023-10-03 09:15:00",
+        "Message": "Reminder: Today's meeting is at 2 PM.",
+        "Topics": ["meeting", "reminder"]
+    },
+    {
+        "Sender": "Charlie",
+        "Receiver": "Bob",
+        "Timestamp": "2023-10-03 09:20:00",
+        "Message": "Bob, do you have the latest sales figures for the meeting?",
+        "Topics": ["sales", "meeting"]
+    },
+    {
+        "Sender": "Bob",
+        "Receiver": "Charlie",
+        "Timestamp": "2023-10-03 09:21:00",
+        "Message": "Yes, I’ll pull them up before the meeting.",
+        "Topics": ["sales", "meeting"]
+    },
+    {
+        "Sender": "Eve",
+        "Receiver": "Group",
+        "Timestamp": "2023-10-04 09:00:00",
+        "Message": "Can we set a follow-up meeting for next week?",
+        "Topics": ["meeting", "follow-up"]
+    },
+    {
+        "Sender": "David",
+        "Receiver": "Group",
+        "Timestamp": "2023-10-04 09:01:00",
+        "Message": "How about Tuesday at 3 PM?",
+        "Topics": ["meeting", "follow-up", "time"]
+    },
+    {
+        "Sender": "Alice",
+        "Receiver": "Group",
+        "Timestamp": "2023-10-04 09:02:00",
+        "Message": "Tuesday at 3 PM works for me.",
+        "Topics": ["meeting", "follow-up", "time"]
+    },
+    {
+        "Sender": "Charlie",
+        "Receiver": "Group",
+        "Timestamp": "2023-10-04 09:03:00",
+        "Message": "I'm available then as well.",
+        "Topics": ["meeting", "follow-up", "time"]
+    },
+    {
+        "Sender": "Bob",
+        "Receiver": "Group",
+        "Timestamp": "2023-10-04 09:04:00",
+        "Message": "Count me in for Tuesday too!",
+        "Topics": ["meeting", "follow-up", "time"]
+    },
+    {
+        "Sender": "Alice",
+        "Receiver": "Bob",
+        "Timestamp": "2023-10-05 09:00:00",
+        "Message": "Do you think we need more participants for the follow-up meeting?",
+        "Topics": ["meeting", "participants"]
+    },
+    {
+        "Sender": "Bob",
+        "Receiver": "Alice",
+        "Timestamp": "2023-10-05 09:01:00",
+        "Message": "Possibly, let's discuss it before we finalize.",
+        "Topics": ["meeting", "participants"]
+    },
+    {
+        "Sender": "David",
+        "Receiver": "Group",
+        "Timestamp": "2023-10-05 09:15:00",
+        "Message": "Please prepare your updates for the follow-up meeting.",
+        "Topics": ["meeting", "preparation"]
+    },
+    {
+        "Sender": "Charlie",
+        "Receiver": "Alice",
+        "Timestamp": "2023-10-06 09:00:00",
+        "Message": "Alice, can you remind me of the key points from our last meeting?",
+        "Topics": ["meeting", "recap"]
+    },
+    {
+        "Sender": "Alice",
+        "Receiver": "Charlie",
+        "Timestamp": "2023-10-06 09:01:00",
+        "Message": "Sure! I'll summarize and send it to you.",
+        "Topics": ["meeting", "recap"]
+    },
+    {
+        "Sender": "Eve",
+        "Receiver": "Group",
+        "Timestamp": "2023-10-06 09:30:00",
+        "Message": "Looking forward to our meeting next week! Let's finalize the agenda.",
+        "Topics": ["meeting", "agenda"]
+    },
+    {
+        "Sender": "David",
+        "Receiver": "Group",
+        "Timestamp": "2023-10-06 09:31:00",
+        "Message": "I have some points to add for the agenda.",
+        "Topics": ["meeting", "agenda"]
+    },
+    {
+        "Sender": "Alice",
+        "Receiver": "Group",
+        "Timestamp": "2023-10-06 09:32:00",
+        "Message": "Feel free to share your points, David!",
+        "Topics": ["meeting", "agenda"]
+    }
+]

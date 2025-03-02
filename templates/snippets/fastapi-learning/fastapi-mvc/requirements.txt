@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+sqlalchemy
+databases[sqlite]

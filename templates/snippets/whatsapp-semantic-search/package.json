@@ -1,0 +1,19 @@
+{
+  "name": "whatsapp-semantic-search",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "index": "node indexData.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Semantic search Q&A system for WhatsApp messages using Elasticsearch and ELSER.",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.15.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}
