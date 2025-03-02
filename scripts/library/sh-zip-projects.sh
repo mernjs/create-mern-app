@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the parent directory where all project directories are located
-parent_directory="/Users/vijaypratapsingh/Desktop/create-mern-app/src/library"
+parent_directory="/Users/vijaypratapsingh/Desktop/create-mern-app/templates/library"
 
 # Define the directory where the zip files will be stored
 zip_directory="/Users/vijaypratapsingh/Desktop/create-mern-app/zip/library"
