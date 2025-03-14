@@ -1,6 +1,6 @@
 {
   "name": "create-mernjs-app",
-  "version": "22.0.2",
+  "version": "22.0.3",
   "description": "The MERN App provides a versatile set of boilerplates that streamline the development process for various applications. Whether you're building a web app, mobile app, desktop app, Chrome extension, or an NPM package in JavaScript, our comprehensive templates will help you get started quickly and efficiently.",
   "main": "./index.js",
   "scripts": {
