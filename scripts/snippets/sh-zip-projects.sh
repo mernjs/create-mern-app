@@ -26,9 +26,9 @@ for project in "${projects[@]}"; do
         rm "$zip_file"
     fi
     
-    # Create a new zip file for the project directory
+    # Create a new zip file while keeping folder structure and excluding .DS_Store
     echo "Creating zip file for $project"
-    zip -r "$zip_file" "$project"
+    (cd "$parent_directory" && zip -r "$zip_file" "$project_name" -x "*.DS_Store")
 done
 
 echo "Zip files have been created in $zip_directory for all projects."

@@ -16,6 +16,12 @@
         "library-stop": "sh scripts/library/sh-stop-projects.sh",
         "library-upgrade": "sh scripts/library/sh-upgrade-projects.sh",
         "library-zip": "sh scripts/library/sh-zip-projects.sh",
+        "others-clean": "sh scripts/others/sh-cleanup-projects.sh",
+        "others-install": "sh scripts/others/sh-install-projects.sh",
+        "others-start": "sh scripts/others/sh-start-projects.sh",
+        "others-stop": "sh scripts/others/sh-stop-projects.sh",
+        "others-upgrade": "sh scripts/others/sh-upgrade-projects.sh",
+        "others-zip": "sh scripts/others/sh-zip-projects.sh",
         "packages-clean": "sh scripts/packages/sh-cleanup-projects.sh",
         "packages-install": "sh scripts/packages/sh-install-projects.sh",
         "packages-start": "sh scripts/packages/sh-start-projects.sh",
@@ -27,7 +33,9 @@
         "snippets-start": "sh scripts/snippets/sh-start-projects.sh",
         "snippets-stop": "sh scripts/snippets/sh-stop-projects.sh",
         "snippets-upgrade": "sh scripts/snippets/sh-upgrade-projects.sh",
-        "snippets-zip": "sh scripts/snippets/sh-zip-projects.sh"
+        "snippets-zip": "sh scripts/snippets/sh-zip-projects.sh",
+        "clean": "npm run app-clean && npm run library-clean && npm run others-clean && npm run packages-clean && npm run snippets-clean",
+        "zip": "npm run app-zip && npm run library-zip && npm run others-zip && npm run packages-zip && npm run snippets-zip"
     },
     "author": "Vijay Pratap Singh <vijaypratap218@gmail.com> (https://mernjs.github.io/create-mern-app)",
     "license": "MIT",
