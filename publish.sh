@@ -56,8 +56,8 @@ echo "Adding all changes..."
 git add .
 check_last_command
 
-echo "Committing changes with message 'Y2024'..."
-git commit -am "Y2024"
+echo "Committing changes with message 'Y2025'..."
+git commit -am "Y2025"
 check_last_command
 
 # Step 8: Push changes to the master branch
@@ -87,8 +87,8 @@ echo "Adding all changes..."
 git add .
 check_last_command
 
-echo "Committing changes with message 'Y2024'..."
-git commit -am "Y2024"
+echo "Committing changes with message 'Y2025'..."
+git commit -am "Y2025"
 check_last_command
 
 # Step 12: Push changes to the master branch

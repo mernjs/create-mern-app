@@ -37,13 +37,10 @@ You can download the code in two ways:
 
 #### 1️⃣ Using CLI
 
-#### Create a New App
-
-```bash
-npx create-mernjs-app my-app
-```
-
-#### Create a Library, Package, or Snippet
+- **Pre-configured Project Creation Template:**
+  ```bash
+  npx create-mernjs-app my-app
+  ```
 
 - **Pre-configured Library Creation Template:**
   ```bash
@@ -65,7 +62,7 @@ npx create-mernjs-app my-app
 
 #### 📂 App Boilerplates
 
-📝 App boilerplates provide ready-to-use templates for building applications, simplifying the setup process and ensuring a consistent structure across projects.
+App boilerplates provide ready-to-use templates for building applications, simplifying the setup process and ensuring a consistent structure across projects.
 
 | # | Name | Download |
 | --- | ---- | -------- |
@@ -89,7 +86,7 @@ npx create-mernjs-app my-app
 
 #### 📂 Library Boilerplates
 
-📝 Library boilerplates offer pre-configured templates for creating npm packages, enabling efficient and standardized development of reusable code libraries.
+Library boilerplates offer pre-configured templates for creating npm packages, enabling efficient and standardized development of reusable code libraries.
 
 | # | Name | Download |
 | --- | ---- | -------- |
@@ -104,7 +101,7 @@ npx create-mernjs-app my-app
 
 #### 📂 NPM Packages
 
-📝 Explore npm packages that simplify your development workflow. These packages offer efficient solutions for various technologies and are easy to install and integrate, enhancing productivity and code quality.
+Explore npm packages that simplify your development workflow. These packages offer efficient solutions for various technologies and are easy to install and integrate, enhancing productivity and code quality.
 
 | # | Name | Download |
 | --- | ---- | -------- |
@@ -119,7 +116,7 @@ npx create-mernjs-app my-app
 
 #### 📂 Code Snippets
 
-📝 Explore a collection of reusable code snippets to quickly implement common features and functionalities in your projects.
+Explore a collection of reusable code snippets to quickly implement common features and functionalities in your projects.
 
 | # | Name | Download |
 | --- | ---- | -------- |

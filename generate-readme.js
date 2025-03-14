@@ -98,13 +98,10 @@ You can download the code in two ways:
 
 #### 1️⃣ Using CLI
 
-#### Create a New App
-
-\`\`\`bash
-npx create-mernjs-app my-app
-\`\`\`
-
-#### Create a Library, Package, or Snippet
+- **Pre-configured Project Creation Template:**
+  \`\`\`bash
+  npx create-mernjs-app my-app
+  \`\`\`
 
 - **Pre-configured Library Creation Template:**
   \`\`\`bash
@@ -127,7 +124,7 @@ npx create-mernjs-app my-app
 
 sections.forEach((section) => {
     readmeContent += `\n#### 📂 ${section.title}\n\n`;
-    readmeContent += `📝 ${section.description}\n\n`;
+    readmeContent += `${section.description}\n\n`;
     readmeContent += `| # | Name | Download |\n`;
     readmeContent += `| --- | ---- | -------- |\n`;
 
