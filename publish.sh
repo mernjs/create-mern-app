@@ -130,10 +130,29 @@ RELEASE_DATA=$(cat <<EOF
 {
   "tag_name": "v$NEW_VERSION_TAG",
   "name": "v$NEW_VERSION_TAG",
-  "body": ""
+  "body": "# **[$NEW_VERSION_TAG] - $(date +%Y-%m-%d)**\n\n"
+          "## 🚀 New Features\n\n"
+          "✅ **Feature 1:** Description here.\n\n"
+          "## 🔄 Enhancements\n\n"
+          "✅ **Enhancement 1:** Description here.\n\n"
+          "## 🐞 Bug Fixes\n\n"
+          "✅ **Bug Fix 1:** Description here.\n\n"
+          "## ⚡ Performance Optimizations\n\n"
+          "✅ **Optimization 1:** Description here.\n\n"
+          "## 📖 Documentation Updates\n\n"
+          "✅ **Docs Update 1:** Description here.\n\n"
+          "## 👨‍💻 Developer Experience\n\n"
+          "✅ **Dev Experience 1:** Description here.\n\n"
+          "## 🧪 Testing & Stability\n\n"
+          "✅ **Testing Update 1:** Description here.\n\n"
+          "## ⚠️ Deprecations & Breaking Changes\n\n"
+          "❌ **Deprecated Feature:** Description here.\n\n"
+          "## 🚨 Known Issues\n\n"
+          "⚠️ **Issue 1:** Description here.\n\n"
 }
 EOF
 )
+
 
 RELEASE_RESPONSE=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
   -H "Content-Type: application/json" \
