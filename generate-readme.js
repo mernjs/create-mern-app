@@ -98,6 +98,8 @@ You can download the code in two ways:
 
 #### 1️⃣ Using CLI
 
+Quickly set up a new project using the \`npx\` command. Choose from different templates like app boilerplates, libraries, npm packages, or code snippets. This method ensures that you get a pre-configured structure without manual setup.
+
 - **Pre-configured Project Creation Template:**
   \`\`\`bash
   npx create-mernjs-app my-app
@@ -120,6 +122,7 @@ You can download the code in two ways:
 
 #### 2️⃣ Directly Download Zip Code
 
+Download the pre-built templates as a .zip file and extract them to start working on your project. This is useful if you prefer manual setup without using CLI tools.
 `;
 
 sections.forEach((section) => {

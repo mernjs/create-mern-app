@@ -28,3 +28,4 @@ yarn-error.log*
 
 # vercel
 .vercel
+token.sh
