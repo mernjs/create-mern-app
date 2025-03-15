@@ -19,7 +19,7 @@
     "fs-extra": "^10.1.0",
     "https": "^1.0.0",
     "inquirer": "^8.0.0",
-    "mernjs": "github:mernjs/create-mern-app#9a64b8a32d1e3883dd670ee63b6be6a43dc43fa4",
+    "mernjs": "github:mernjs/create-mern-app#a5f6a81fd3bab28296ab85f9a436ed7766a38242",
     "path": "^0.12.7",
     "semver": "^7.3.8",
     "shelljs": "^0.8.5",
