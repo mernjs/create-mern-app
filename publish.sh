@@ -44,7 +44,7 @@ fi
 
 # Step 6: Bump the version (patch, minor, or major)
 echo "Updating the package version..."
-NEW_VERSION=$(npm version patch)  # Use npm version minor or npm version major as needed
+NEW_VERSION=$(npm version major)  # Use npm version minor or npm version major as needed
 check_last_command
 
 # Extract the new version tag
@@ -130,7 +130,7 @@ echo "Creating a release on GitHub..."
 # Create a local file with the release notes
 RELEASE_NOTES_FILE="release_notes.md"
 cat > $RELEASE_NOTES_FILE << EOF
-## [$NEW_VERSION_TAG] - $(date +%Y-%m-%d)
+# [$NEW_VERSION_TAG] - $(date +%Y-%m-%d)
 
 #### 🚀 New Features
 - **Feature 1:** Description here.
