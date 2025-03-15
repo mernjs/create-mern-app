@@ -1,5 +1,61 @@
 const pkg = require('../../package.json');
 const path = require('path')
+const fs = require("fs");
+
+const templatesPath = path.join(__dirname, `../../node_modules/mernjs/templates`)
+
+const sectionMapping = {
+    app: {
+        id: 'app',
+        type: "list",
+        name: "project_type",
+        message: "Choose your favourite boilerplate",
+    },
+    library: {
+        id: 'library',
+        type: "list",
+        name: "project_type",
+        message: "Choose your favourite boilerplate",
+    },
+    packages: {
+        id: 'packages',
+        type: "list",
+        name: "project_type",
+        message: "Choose your favourite boilerplate",
+    },
+    snippets: {
+        id: 'snippets',
+        type: "list",
+        name: "project_type",
+        message: "Choose your favourite boilerplate",
+    },
+};
+
+const capitalizeWords = (str) => str.replace(/-/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
+
+const sections = [];
+
+fs.readdirSync(templatesPath, { withFileTypes: true })
+    .filter((dirent) => dirent.isDirectory())
+    .forEach((category) => {
+        const categoryPath = path.join(templatesPath, category.name);
+        const sectionInfo = sectionMapping[category.name];
+
+        if (!sectionInfo) return;
+
+        const choices = fs.readdirSync(categoryPath, { withFileTypes: true })
+            .filter((dirent) => dirent.isDirectory())
+            .map((dirent) => capitalizeWords(dirent.name));
+
+        if (choices.length > 0) {
+            sections.push({
+                type: sectionInfo.type,
+                name: sectionInfo.name,
+                message: sectionInfo.message,
+                choices: choices,
+            });
+        }
+    });
 
 let Constants = {}
 
@@ -17,6 +73,8 @@ Constants.package = {
     description: pkg.description
 }
 
+Constants.templates_form = sections
+
 Constants.select_form = [
     {
         type: "list",
@@ -32,42 +90,6 @@ Constants.select_library_form = [
         name: "project_type",
         message: "Choose your favourite boilerplate",
         choices: ['JavaScript Library Boilerplate', 'ReactJS Library Boilerplate', 'NodeJS Library Boilerplate', 'ExpressJS Library Boilerplate', 'NextJS Library Boilerplate', 'React Native Library Boilerplate']
-    }
-]
-
-Constants.nodejs_db = [
-    {
-        type: "list",
-        name: "database",
-        message: "Choose your favourite database",
-        choices: ['MongoDB', 'MySQL'],
-    }
-]
-
-Constants.frontend_library = [
-    {
-        type: "list",
-        name: "library",
-        message: "Choose your favourite library",
-        choices: ['Redux Thunk', 'Redux Saga'],
-    }
-]
-
-Constants.type = [
-    {
-        type: "list",
-        name: "type",
-        message: "What type do you need",
-        choices: ['With API', 'Without API'],
-    }
-]
-
-Constants.mysql_orm = [
-    {
-        type: "list",
-        name: "orm",
-        message: "Choose your favourite ORM",
-        choices: ['Sequelize ORM', 'Bookshelf ORM', 'SQL Query'],
     }
 ]
 
@@ -96,8 +118,6 @@ Constants.emailFiled = [
         validate: isEmail
     }
 ]
-
-Constants.templatepath = path.join(__dirname, `../node_modules/@mernjs/generate/lib`)
 
 Constants.message = 'Create MERN App'
 

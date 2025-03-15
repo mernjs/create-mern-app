@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "The MERN App provides a versatile set of boilerplates that streamline the development process for various applications. Whether you're building a web app, mobile app, desktop app, Chrome extension, or an NPM package in JavaScript, our comprehensive templates will help you get started quickly and efficiently.",
     "scripts": {
-        "deploy": "sh scripts/token.sh && sh publish.sh",
+        "deploy": "chmod +x scripts/token.sh && sh scripts/token.sh && sh publish.sh",
         "app-clean": "sh scripts/app/sh-cleanup-projects.sh",
         "app-install": "sh scripts/app/sh-install-projects.sh",
         "app-start": "sh scripts/app/sh-start-projects.sh",

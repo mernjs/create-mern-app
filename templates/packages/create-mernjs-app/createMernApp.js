@@ -45,7 +45,7 @@ async function init() {
         .action((project_name, cmd_obj) => {
             projectName = project_name
             if (cmd_obj?.template) {
-                if ((cmd_obj && cmd_obj?.template !== 'app') && (cmd_obj && cmd_obj?.template !== 'library')) {
+                if ((cmd_obj && cmd_obj?.template !== 'app') && (cmd_obj && cmd_obj?.template !== 'library') && (cmd_obj && cmd_obj?.template !== 'packages') && (cmd_obj && cmd_obj?.template !== 'snippets')) {
                     console.log()
                     console.error('Please specify the valid template:');
                     console.log()
@@ -81,7 +81,22 @@ async function init() {
                         return;
                     }
                     console.log('Press ^C at any time to quit.')
-                    prompt(cmd_obj?.template === 'library' ? Constants.select_library_form : Constants.select_form)
+                    let templates = ""
+                    switch (cmd_obj?.template) {
+                        case "library":
+                            templates = Constants.templates_form[1]
+                            break;
+                        case "packages":
+                            templates = Constants.templates_form[2]
+                            break;
+                        case "snippets":
+                            templates = Constants.templates_form[3]
+                            break;
+                        default:
+                            templates = Constants.templates_form[0]
+                            break;
+                    }
+                    prompt([templates])
                         .then(async data => {
                             let project_type = `${data.project_type}`
                             let template = cmd_obj?.template

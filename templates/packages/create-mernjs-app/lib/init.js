@@ -12,8 +12,8 @@ module.exports = async (projectname, { project_type, template }) => {
         case "library":
             templates = "library"
             break;
-        case "package":
-            templates = "package"
+        case "packages":
+            templates = "packages"
             break;
         case "snippets":
             templates = "snippets"
