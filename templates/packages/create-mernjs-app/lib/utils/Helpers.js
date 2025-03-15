@@ -90,27 +90,29 @@ exports.checkForLatestVersion = () => {
 }
 
 exports.sparseCloneRepo = (subdirectory, destinationPath) => {
-    const repoUrl = 'https://github.com/mernjs/create-mern-app'; // Hardcoded URL
+    const repoUrl = 'https://github.com/mernjs/create-mern-app'; // Hardcoded repo URL
+
     return new Promise((resolve, reject) => {
         const commands = [
+            `mkdir -p ${destinationPath}`,                   // Ensure the destination directory exists
             `git init ${destinationPath}`,                   // Initialize a new git repo at destinationPath
             `cd ${destinationPath}`,                         // Move to the destination directory
             `git remote add origin ${repoUrl}`,              // Add the remote repo URL
             `git config core.sparseCheckout true`,           // Enable sparse checkout
-            `echo "${subdirectory}" >> .git/info/sparse-checkout`, // Specify the subdirectory to clone
+            `echo "${subdirectory}/" >> .git/info/sparse-checkout`, // Include the subdirectory
+            `echo "${subdirectory}/.*" >> .git/info/sparse-checkout`, // Include all dotfiles in the subdirectory
             `git pull origin master`,                        // Pull from the master branch (or 'main' if necessary)
-            `mv ${subdirectory}/* ./`,                       // Move files from the subdirectory to the root
-            `rm -rf ${subdirectory}`,                        // Remove the empty subdirectory
-            `rm -rf templates`,
-            `rm -rf .git`                                    // Optional: Remove .git to avoid including Git history
+            `shopt -s dotglob && mv ${subdirectory}/* ./`,   // Move all files (including hidden files)
+            `rm -rf ${subdirectory} .git`,                   // Clean up
+            `rm -rf templates`
         ].join(' && ');
 
         exec(commands, (error, stdout, stderr) => {
             if (error) {
-                reject(error);
+                reject(`Error: ${stderr || error.message}`);
                 return;
             }
             resolve(stdout.trim());
         });
     });
-}
+};
