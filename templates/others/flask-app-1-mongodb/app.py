@@ -5,7 +5,7 @@ from routes.api import api_bp  # Ensure this import works
 app = Flask(__name__)
 
 # MongoDB configuration
-app.config["MONGO_URI"] = "mongodb+srv://priteshhesta:xp7vccnYJWYqgPly@cluster0.kajp98n.mongodb.net/iContentPro"
+app.config["MONGO_URI"] = ""
 mongo = PyMongo(app)
 app.config['MONGO'] = mongo
 

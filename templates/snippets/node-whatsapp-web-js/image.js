@@ -19,7 +19,7 @@ async function transformImage(imagePath) {
         },
         {
             headers: {
-                'Authorization': `Bearer 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`,
+                'Authorization': `Bearer `,
                 'Content-Type': 'application/json'
             }
         }
@@ -56,7 +56,7 @@ app.get('/transform', async (req, res) => {
         fs.writeFileSync(outputPath, imageBuffer);
 
         res.json({ message: 'Image transformed successfully!', url: outputPath });
-        
+
     } catch (error) {
         console.error(error);
         res.status(500).json({ error: 'An error occurred during image transformation.' });

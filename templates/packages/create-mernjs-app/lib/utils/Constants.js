@@ -74,24 +74,6 @@ Constants.package = {
 
 Constants.templates_form = sections
 
-Constants.select_form = [
-    {
-        type: "list",
-        name: "project_type",
-        message: "Choose your favourite boilerplate",
-        choices: ['MERN Boilerplate', 'NextJS Boilerplate', 'ReactJS Boilerplate', 'Expo Boilerplate', 'GatsbyJS Boilerplate', 'ElectronJS Boilerplate', 'React Native Boilerplate', 'NodeJS MySQL Boilerplate', 'NodeJS MongoDB Boilerplate', 'ReactJS Webpack Boilerplate', 'ReactJS Chrome Extension Boilerplate']
-    }
-]
-
-Constants.select_library_form = [
-    {
-        type: "list",
-        name: "project_type",
-        message: "Choose your favourite boilerplate",
-        choices: ['JavaScript Library Boilerplate', 'ReactJS Library Boilerplate', 'NodeJS Library Boilerplate', 'ExpressJS Library Boilerplate', 'NextJS Library Boilerplate', 'React Native Library Boilerplate']
-    }
-]
-
 Constants.confirm = [
     {
         type: 'confirm',

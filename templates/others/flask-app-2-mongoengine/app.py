@@ -5,8 +5,8 @@ from routes.api import api_bp
 app = Flask(__name__)
 
 connect(
-    db='iContentPro',
-    host='mongodb+srv://priteshhesta:xp7vccnYJWYqgPly@cluster0.kajp98n.mongodb.net',
+    db='',
+    host='',
     alias='default'
 )
 

@@ -25,7 +25,7 @@ const transformToDocumentArray = (data) => {
 
 const connectToDatabase = async () => {
     try {
-        const client = new MongoClient('mongodb+srv://priteshhesta:xp7vccnYJWYqgPly@cluster0.kajp98n.mongodb.net', { useNewUrlParser: true, useUnifiedTopology: true });
+        const client = new MongoClient('', { useNewUrlParser: true, useUnifiedTopology: true });
         await client.connect();
         return client.db('chatbot');
     } catch (error) {

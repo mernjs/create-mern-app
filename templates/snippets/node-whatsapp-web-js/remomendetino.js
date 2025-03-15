@@ -15,7 +15,7 @@ async function fetchFromHuggingFace(prompt) {
             inputs: prompt,
         }, {
             headers: {
-                'Authorization': `Bearer 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`, // Optional if you need to authenticate
+                'Authorization': `Bearer `, // Optional if you need to authenticate
             }
         });
 
@@ -39,7 +39,7 @@ app.get('/recommend', async (req, res) => {
 
     try {
         const recommendations = await fetchFromHuggingFace(`Based on my preference for action and adventure movies, please suggest 3 movies along with their genres and brief descriptions.`);
-        
+
         console.log("Recommendations for TMDb query:", recommendations);
 
         const movies = await fetchMovies(recommendations);

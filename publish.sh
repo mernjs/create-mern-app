@@ -72,15 +72,14 @@ check_last_command
 echo "Latest commit ID is $LATEST_COMMIT_ID"
 
 # Step 10: Update the commit ID in package.json
-echo "Updating commit ID in $PACKAGE_JSON_PATH..."
-
-jq --arg commit_id "$LATEST_COMMIT_ID" '.dependencies.mernjs |= "github:mernjs/create-mern-app#" + $commit_id' $PACKAGE_JSON_PATH > tmp.$$.json && mv tmp.$$.json $PACKAGE_JSON_PATH
-check_last_command
+# echo "Updating commit ID in $PACKAGE_JSON_PATH..."
+# jq --arg commit_id "$LATEST_COMMIT_ID" '.dependencies.mernjs |= "github:mernjs/create-mern-app#" + $commit_id' $PACKAGE_JSON_PATH > tmp.$$.json && mv tmp.$$.json $PACKAGE_JSON_PATH
+# check_last_command
 
 # Debug: Check if the jq command worked
-echo "Checking if the commit ID was updated correctly in package.json..."
-grep "github:mernjs/create-mern-app#$LATEST_COMMIT_ID" $PACKAGE_JSON_PATH
-check_last_command
+# echo "Checking if the commit ID was updated correctly in package.json..."
+# grep "github:mernjs/create-mern-app#$LATEST_COMMIT_ID" $PACKAGE_JSON_PATH
+# check_last_command
 
 # Step 11: Add all changes and commit
 echo "Adding all changes..."
@@ -132,7 +131,7 @@ RELEASE_DATA=$(cat <<EOF
 {
   "tag_name": "v$NEW_VERSION_TAG",
   "name": "v$NEW_VERSION_TAG",
-  "body": "Release version $NEW_VERSION_TAG",
+  "body": "Release version... $NEW_VERSION_TAG",
   "draft": false,
   "prerelease": false
 }
