@@ -130,33 +130,33 @@ echo "Creating a release on GitHub..."
 # Create a local file with the release notes
 RELEASE_NOTES_FILE="release_notes.md"
 cat > $RELEASE_NOTES_FILE << EOF
-# [V$NEW_VERSION_TAG] - $(date +%Y-%m-%d)
+## [$NEW_VERSION_TAG] - $(date +%Y-%m-%d)
 
-## 🚀 New Features
+#### 🚀 New Features
 - **Feature 1:** Description here.
 
-## 🔄 Enhancements
+#### 🔄 Enhancements
 - **Enhancement 1:** Description here.
 
-## 🐞 Bug Fixes
+#### 🐞 Bug Fixes
 - **Bug Fix 1:** Description here.
 
-## ⚡ Performance Optimizations
+#### ⚡ Performance Optimizations
 - **Optimization 1:** Description here.
 
-## 📖 Documentation Updates
+#### 📖 Documentation Updates
 - **Docs Update 1:** Description here.
 
-## 👨‍💻 Developer Experience
+#### 👨‍💻 Developer Experience
 - **Dev Experience 1:** Description here.
 
-## 🧪 Testing & Stability
+#### 🧪 Testing & Stability
 - **Testing Update 1:** Description here.
 
-## ⚠️ Deprecations & Breaking Changes
+#### ⚠️ Deprecations & Breaking Changes
 - **Deprecated Feature:** Description here.
 
-## 🚨 Known Issues
+#### 🚨 Known Issues
 - **Issue 1:** Description here.
 EOF
 
