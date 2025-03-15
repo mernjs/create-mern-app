@@ -130,25 +130,7 @@ RELEASE_DATA=$(cat <<EOF
 {
   "tag_name": "v$NEW_VERSION_TAG",
   "name": "v$NEW_VERSION_TAG",
-  "body": "# **[$NEW_VERSION_TAG] - $(date +%Y-%m-%d)**\n\n"
-          "## **🚀 New Features**\n"
-          "✅ **Feature 1:** Description here.\n\n"
-          "## **🔄 Enhancements**\n"
-          "✅ **Enhancement 1:** Description here.\n\n"
-          "## **🐞 Bug Fixes**\n"
-          "✅ **Bug Fix 1:** Description here.\n\n"
-          "## **⚡ Performance Optimizations**\n"
-          "✅ **Optimization 1:** Description here.\n\n"
-          "## **📖 Documentation Updates**\n"
-          "✅ **Docs Update 1:** Description here.\n\n"
-          "## **👨‍💻 Developer Experience**\n"
-          "✅ **Dev Experience 1:** Description here.\n\n"
-          "## **🧪 Testing & Stability**\n"
-          "✅ **Testing Update 1:** Description here.\n\n"
-          "## **⚠️ Deprecations & Breaking Changes**\n"
-          "❌ **Deprecated Feature:** Description here.\n\n"
-          "## **🚨 Known Issues**\n"
-          "⚠️ **Issue 1:** Description here.\n\n"
+  "body": ""
 }
 EOF
 )
