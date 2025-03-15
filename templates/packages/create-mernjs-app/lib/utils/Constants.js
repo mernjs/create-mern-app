@@ -1,61 +1,60 @@
 const pkg = require('../../package.json');
-const path = require('path')
-const fs = require("fs");
+const { execSync } = require("child_process");
 
-const templatesPath = path.join(__dirname, `../../node_modules/mernjs/templates`)
+const repoOwner = "mernjs";
+const repoName = "create-mern-app";
+const branch = "master";
+const githubApiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/templates?ref=${branch}`;
 
 const sectionMapping = {
-    app: {
-        id: 'app',
-        type: "list",
-        name: "project_type",
-        message: "Choose your favourite boilerplate",
-    },
-    library: {
-        id: 'library',
-        type: "list",
-        name: "project_type",
-        message: "Choose your favourite boilerplate",
-    },
-    packages: {
-        id: 'packages',
-        type: "list",
-        name: "project_type",
-        message: "Choose your favourite boilerplate",
-    },
-    snippets: {
-        id: 'snippets',
-        type: "list",
-        name: "project_type",
-        message: "Choose your favourite boilerplate",
-    },
+    app: { id: "app", type: "list", name: "project_type", message: "Choose your favourite boilerplate" },
+    library: { id: "library", type: "list", name: "project_type", message: "Choose your favourite boilerplate" },
+    packages: { id: "packages", type: "list", name: "project_type", message: "Choose your favourite boilerplate" },
+    snippets: { id: "snippets", type: "list", name: "project_type", message: "Choose your favourite boilerplate" },
 };
 
 const capitalizeWords = (str) => str.replace(/-/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
 
-const sections = [];
+function fetchFromGitHub(url) {
+    try {
+        const curlCommand = `curl -s -H "User-Agent: node.js" "${url}"`;
+        const response = execSync(curlCommand, { encoding: "utf-8" });
+        return JSON.parse(response);
+    } catch (error) {
+        console.error("Error fetching data from GitHub:", error.message);
+        return [];
+    }
+}
 
-fs.readdirSync(templatesPath, { withFileTypes: true })
-    .filter((dirent) => dirent.isDirectory())
-    .forEach((category) => {
-        const categoryPath = path.join(templatesPath, category.name);
+function fetchTemplates() {
+    const categories = fetchFromGitHub(githubApiUrl);
+    const sections = [];
+
+    for (const category of categories) {
+        if (category.type !== "dir") continue;
+
         const sectionInfo = sectionMapping[category.name];
+        if (!sectionInfo) continue;
 
-        if (!sectionInfo) return;
-
-        const choices = fs.readdirSync(categoryPath, { withFileTypes: true })
-            .filter((dirent) => dirent.isDirectory())
-            .map((dirent) => capitalizeWords(dirent.name));
+        const templates = fetchFromGitHub(category.url);
+        const choices = templates
+            .filter((template) => template.type === "dir")
+            .map((template) => capitalizeWords(template.name));
 
         if (choices.length > 0) {
             sections.push({
                 type: sectionInfo.type,
                 name: sectionInfo.name,
                 message: sectionInfo.message,
-                choices: choices,
+                choices,
             });
         }
-    });
+    }
+
+    return sections;
+}
+
+const sections = fetchTemplates();
 
 let Constants = {}
 
