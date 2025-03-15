@@ -43,9 +43,8 @@ if [ ! -f "$PACKAGE_JSON_PATH" ]; then
 fi
 
 # Step 6: Bump the version (patch, minor, or major)
-# Update the version here as per your need
 echo "Updating the package version..."
-NEW_VERSION=$(npm version patch)  # Use npm version minor or npm version major as needed
+NEW_VERSION=$(npm version major)  # Use npm version minor or npm version major as needed
 check_last_command
 
 # Extract the new version tag
@@ -131,9 +130,25 @@ RELEASE_DATA=$(cat <<EOF
 {
   "tag_name": "v$NEW_VERSION_TAG",
   "name": "v$NEW_VERSION_TAG",
-  "body": "Release version... $NEW_VERSION_TAG",
-  "draft": false,
-  "prerelease": false
+  "body": "# **[$NEW_VERSION_TAG] - $(date +%Y-%m-%d)**\n\n"
+          "## **🚀 New Features**\n"
+          "✅ **Feature 1:** Description here.\n\n"
+          "## **🔄 Enhancements**\n"
+          "✅ **Enhancement 1:** Description here.\n\n"
+          "## **🐞 Bug Fixes**\n"
+          "✅ **Bug Fix 1:** Description here.\n\n"
+          "## **⚡ Performance Optimizations**\n"
+          "✅ **Optimization 1:** Description here.\n\n"
+          "## **📖 Documentation Updates**\n"
+          "✅ **Docs Update 1:** Description here.\n\n"
+          "## **👨‍💻 Developer Experience**\n"
+          "✅ **Dev Experience 1:** Description here.\n\n"
+          "## **🧪 Testing & Stability**\n"
+          "✅ **Testing Update 1:** Description here.\n\n"
+          "## **⚠️ Deprecations & Breaking Changes**\n"
+          "❌ **Deprecated Feature:** Description here.\n\n"
+          "## **🚨 Known Issues**\n"
+          "⚠️ **Issue 1:** Description here.\n\n"
 }
 EOF
 )
