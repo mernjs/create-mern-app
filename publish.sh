@@ -127,63 +127,48 @@ check_last_command
 # Step 17: Create a release on GitHub
 echo "Creating a release on GitHub..."
 
-# Create the release notes in markdown format
-RELEASE_NOTES=$(cat <<EOT
-# **[$NEW_VERSION_TAG] - $(date +%Y-%m-%d)**
+# Create a local file with the release notes
+RELEASE_NOTES_FILE="release_notes.md"
+cat > $RELEASE_NOTES_FILE << EOF
+# [$NEW_VERSION_TAG] - $(date +%Y-%m-%d)
 
-## **🚀 New Features**
-✅ **Feature 1:** Description here.
+## 🚀 New Features
+✅ Feature 1: Description here.
 
-## **🔄 Enhancements**
-✅ **Enhancement 1:** Description here.
+## 🔄 Enhancements
+✅ Enhancement 1: Description here.
 
-## **🐞 Bug Fixes**
-✅ **Bug Fix 1:** Description here.
+## 🐞 Bug Fixes
+✅ Bug Fix 1: Description here.
 
-## **⚡ Performance Optimizations**
-✅ **Optimization 1:** Description here.
+## ⚡ Performance Optimizations
+✅ Optimization 1: Description here.
 
-## **📖 Documentation Updates**
-✅ **Docs Update 1:** Description here.
+## 📖 Documentation Updates
+✅ Docs Update 1: Description here.
 
-## **👨‍💻 Developer Experience**
-✅ **Dev Experience 1:** Description here.
+## 👨‍💻 Developer Experience
+✅ Dev Experience 1: Description here.
 
-## **🧪 Testing & Stability**
-✅ **Testing Update 1:** Description here.
+## 🧪 Testing & Stability
+✅ Testing Update 1: Description here.
 
-## **⚠️ Deprecations & Breaking Changes**
-❌ **Deprecated Feature:** Description here.
+## ⚠️ Deprecations & Breaking Changes
+❌ Deprecated Feature: Description here.
 
-## **🚨 Known Issues**
-⚠️ **Issue 1:** Description here.
-EOT
-)
+## 🚨 Known Issues
+⚠️ Issue 1: Description here.
+EOF
 
-# Use jq to create proper JSON with the release notes
-# This properly escapes newlines and special characters
-RELEASE_DATA=$(jq -n \
-  --arg tag "v$NEW_VERSION_TAG" \
-  --arg name "v$NEW_VERSION_TAG" \
-  --arg body "$RELEASE_NOTES" \
-  '{tag_name: $tag, name: $name, body: $body}')
-
-# Create the GitHub release
-RELEASE_RESPONSE=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+# Create the GitHub release using a file for the body content
+echo "Creating a release on GitHub..."
+curl -s \
+  -H "Authorization: token $GITHUB_TOKEN" \
   -H "Content-Type: application/json" \
-  -d "$RELEASE_DATA" \
-  "https://api.github.com/repos/$GITHUB_USER/$REPO_NAME/releases")
+  -d "{\"tag_name\":\"v$NEW_VERSION_TAG\", \"name\":\"v$NEW_VERSION_TAG\", \"body\":$(cat $RELEASE_NOTES_FILE | jq -sR .)}" \
+  "https://api.github.com/repos/$GITHUB_USER/$REPO_NAME/releases"
 
-check_last_command
-
-# Check if the release was created successfully
-if echo "$RELEASE_RESPONSE" | jq -e '.id' > /dev/null; then
-  echo "Release created successfully on GitHub!"
-  echo "Release URL: $(echo "$RELEASE_RESPONSE" | jq -r '.html_url')"
-else
-  echo "Failed to create release. Response:"
-  echo "$RELEASE_RESPONSE" | jq '.'
-  exit 1
-fi
+# Remove the temporary file
+rm $RELEASE_NOTES_FILE
 
 echo "All done!"
