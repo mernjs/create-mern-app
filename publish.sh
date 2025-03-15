@@ -44,7 +44,7 @@ fi
 
 # Step 6: Bump the version (patch, minor, or major)
 echo "Updating the package version..."
-NEW_VERSION=$(npm version major)  # Use npm version minor or npm version major as needed
+NEW_VERSION=$(npm version patch)  # Use npm version minor or npm version major as needed
 check_last_command
 
 # Extract the new version tag
