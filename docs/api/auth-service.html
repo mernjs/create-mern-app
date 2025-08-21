@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@create-mern-app/auth-service</title>
+    <link rel="stylesheet" href="https://mernjs.github.io/create-mern-app/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://mernjs.github.io/create-mern-app/assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="https://mernjs.github.io/create-mern-app/assets/css/styles.css" id="theme-style">
+</head>
+<body>
+<div class="container" style="margin-top:40px;margin-bottom:60px;">
+    <a href="./index.html">← Back to API Index</a>
+    <h1>@create-mern-app/auth-service</h1>
+    <p class="lead">Simple OAuth2.0 helper: auth URL, token exchange, refresh, profile.</p>
+
+    <h2>Install</h2>
+    <pre><code class="language-bash">npm install @create-mern-app/auth-service</code></pre>
+
+    <h2>Usage</h2>
+    <pre><code class="language-javascript">import AuthService from '@create-mern-app/auth-service';
+
+const authService = new AuthService({
+  clientId: 'your_client_id',
+  clientSecret: 'your_client_secret',
+  redirectUri: 'http://localhost:5500/callback',
+  authBaseUrl: 'http://localhost:3000'
+});
+
+const url = authService.getAuthUrl();
+// Redirect user to `url`
+
+const { accessToken, refreshToken } = await authService.getAccessToken('auth_code');
+const refreshed = await authService.getRefreshToken(refreshToken);
+const profile = await authService.getUserProfile(accessToken);
+</code></pre>
+
+    <h2>API</h2>
+    <ul>
+        <li><code>constructor({ clientId, clientSecret, redirectUri, authBaseUrl })</code></li>
+        <li><code>getAuthUrl()</code></li>
+        <li><code>getAccessToken(authCode)</code> → <code>{ accessToken, refreshToken? }</code></li>
+        <li><code>getRefreshToken(refreshToken)</code> → <code>{ accessToken, refreshToken? }</code></li>
+        <li><code>getUserProfile(accessToken)</code></li>
+    </ul>
+</div>
+
+<script src="https://mernjs.github.io/create-mern-app/assets/plugins/prism/prism.js"></script>
+</body>
+</html>

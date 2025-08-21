@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@mernjs/googlesheets</title>
+    <link rel="stylesheet" href="https://mernjs.github.io/create-mern-app/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://mernjs.github.io/create-mern-app/assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="https://mernjs.github.io/create-mern-app/assets/css/styles.css" id="theme-style">
+</head>
+<body>
+<div class="container" style="margin-top:40px;margin-bottom:60px;">
+    <a href="./index.html">← Back to API Index</a>
+    <h1>@mernjs/googlesheets</h1>
+    <p class="lead">Wrapper for Google Sheets: authorize, manage sheets, and CRUD data.</p>
+
+    <h2>Install</h2>
+    <pre><code class="language-bash">npm install @mernjs/googlesheets</code></pre>
+
+    <h2>Quick start</h2>
+    <pre><code class="language-javascript">import GoogleSheets from '@mernjs/googlesheets';
+
+const sheets = new GoogleSheets();
+await sheets.authorize('path/to/key.json', 'spreadsheet-id');
+await sheets.connectSheet('MyActiveSheet');
+
+await sheets.createSheet('NewSheetTitle');
+const all = await sheets.getAllSheets();
+const values = await sheets.getSheet('sheetId');
+await sheets.updateSheet('sheetId', 'UpdatedTitle');
+await sheets.deleteSheet('sheetId');
+
+await sheets.addHeader(['Name', 'Email']);
+await sheets.insertData([{ Name: 'Alice', Email: 'a@example.com' }]);
+const found = await sheets.findData({ Email: 'a@example.com' });
+await sheets.updateData({ Email: 'a@example.com' }, { Name: 'Alice A.'});
+await sheets.deleteData({ Email: 'a@example.com' });
+</code></pre>
+
+    <h2>Key methods</h2>
+    <ul>
+        <li><code>authorize(keyFile, spreadsheetId)</code></li>
+        <li><code>connectSheet(sheetName)</code></li>
+        <li><code>createSheet(title)</code>, <code>getAllSheets()</code>, <code>getSheet(sheetId)</code>, <code>updateSheet(sheetId, newTitle)</code>, <code>deleteSheet(sheetId)</code></li>
+        <li><code>addHeader(headers)</code>, <code>insertData(rows)</code>, <code>findData(query)</code>, <code>updateData(filter, update)</code>, <code>deleteData(filter)</code></li>
+    </ul>
+</div>
+
+<script src="https://mernjs.github.io/create-mern-app/assets/plugins/prism/prism.js"></script>
+</body>
+</html>

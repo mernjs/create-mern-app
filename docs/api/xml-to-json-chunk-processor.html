@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xml-to-json-chunk-processor</title>
+    <link rel="stylesheet" href="https://mernjs.github.io/create-mern-app/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://mernjs.github.io/create-mern-app/assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="https://mernjs.github.io/create-mern-app/assets/css/styles.css" id="theme-style">
+</head>
+<body>
+<div class="container" style="margin-top:40px;margin-bottom:60px;">
+    <a href="./index.html">← Back to API Index</a>
+    <h1>xml-to-json-chunk-processor</h1>
+    <p class="lead">Split large XML files by tag and convert chunks to JSON with callbacks.</p>
+
+    <h2>Install</h2>
+    <pre><code class="language-bash">npm install xml-to-json-chunk-processor</code></pre>
+
+    <h2>Usage</h2>
+    <pre><code class="language-javascript">const xmltoJson = require('xml-to-json-chunk-processor');
+
+const params = {
+  xmlUrl: 'path/to/large.xml',
+  openingTag: '&lt;item&gt;',
+  closingTag: '&lt;/item&gt;',
+  chunkSize: 2500,
+  callback: (data) => {
+    console.log('Processed data:', data);
+  }
+};
+
+xmltoJson(params)
+  .then(() => console.log('XML Processing Completed'))
+  .catch(console.error);
+</code></pre>
+
+    <h2>Parameters</h2>
+    <ul>
+        <li><code>xmlUrl</code>: string path to XML file</li>
+        <li><code>openingTag</code>: string like <code>&lt;item&gt;</code></li>
+        <li><code>closingTag</code>: string like <code>&lt;/item&gt;</code></li>
+        <li><code>chunkSize</code>: number, default 2500</li>
+        <li><code>callback</code>: function receiving parsed JSON per chunk</li>
+    </ul>
+</div>
+
+<script src="https://mernjs.github.io/create-mern-app/assets/plugins/prism/prism.js"></script>
+</body>
+</html>
