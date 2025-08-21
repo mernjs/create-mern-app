@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xml-to-mongodb-importer</title>
+    <link rel="stylesheet" href="https://mernjs.github.io/create-mern-app/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://mernjs.github.io/create-mern-app/assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="https://mernjs.github.io/create-mern-app/assets/css/styles.css" id="theme-style">
+</head>
+<body>
+<div class="container" style="margin-top:40px;margin-bottom:60px;">
+    <a href="./index.html">← Back to API Index</a>
+    <h1>xml-to-mongodb-importer</h1>
+    <p class="lead">Split large XML files and import parsed JSON into MongoDB.</p>
+
+    <h2>Install</h2>
+    <pre><code class="language-bash">npm install xml-to-mongodb-importer</code></pre>
+
+    <h2>Usage</h2>
+    <pre><code class="language-javascript">const { runImporter } = require('xml-to-mongodb-importer');
+
+const params = {
+  xmlUrl: 'path/to/file.xml',
+  openingTag: '&lt;item&gt;',
+  closingTag: '&lt;/item&gt;',
+  connection: {
+    mongoURI: 'mongodb://localhost:27017',
+    databaseName: 'yourDb',
+    collectionName: 'items'
+  },
+  chunkSize: 2500
+};
+
+runImporter(params)
+  .then(() => console.log('Import completed successfully!'))
+  .catch(console.error);
+</code></pre>
+
+    <h2>Parameters</h2>
+    <ul>
+        <li><code>xmlUrl</code>: string, path to <code>.xml</code> file</li>
+        <li><code>openingTag</code>, <code>closingTag</code>: strings like <code>&lt;item&gt;</code>, <code>&lt;/item&gt;</code></li>
+        <li><code>connection.mongoURI</code>: Mongo connection URI</li>
+        <li><code>connection.databaseName</code>: Database name</li>
+        <li><code>connection.collectionName</code>: Collection name</li>
+        <li><code>chunkSize</code>: number, default 2500</li>
+    </ul>
+</div>
+
+<script src="https://mernjs.github.io/create-mern-app/assets/plugins/prism/prism.js"></script>
+</body>
+</html>

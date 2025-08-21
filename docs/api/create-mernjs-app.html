@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLI: create-mernjs-app</title>
+    <link rel="stylesheet" href="https://mernjs.github.io/create-mern-app/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://mernjs.github.io/create-mern-app/assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="https://mernjs.github.io/create-mern-app/assets/css/styles.css" id="theme-style">
+</head>
+<body>
+<div class="container" style="margin-top:40px;margin-bottom:60px;">
+    <a href="./index.html">← Back to API Index</a>
+    <h1>create-mernjs-app (CLI)</h1>
+    <p class="lead">Scaffold apps, libraries, packages, and snippets from curated templates.</p>
+
+    <h2>Requirements</h2>
+    <ul>
+        <li>Node.js 18+</li>
+    </ul>
+
+    <h2>Usage</h2>
+    <pre><code class="language-bash">npx create-mernjs-app &lt;project-directory&gt; [--template app|library|packages|snippets] [--yes]</code></pre>
+
+    <h3>Arguments</h3>
+    <ul>
+        <li><code>&lt;project-directory&gt;</code>: Name of the folder to create.</li>
+    </ul>
+
+    <h3>Options</h3>
+    <ul>
+        <li><code>-y, --yes</code>: Skip confirmation prompt.</li>
+        <li><code>--template &lt;type&gt;</code>: Choose template catalog: <code>app</code>, <code>library</code>, <code>packages</code>, or <code>snippets</code>.</li>
+    </ul>
+
+    <h2>Examples</h2>
+    <pre><code class="language-bash"># Create an app (interactive category selection)
+npx create-mernjs-app my-app
+
+# Create a library project
+npx create-mernjs-app my-lib --template library
+
+# Create from packages catalog
+npx create-mernjs-app my-tool --template packages
+
+# Create from snippets catalog, auto-confirm
+npx create-mernjs-app my-sample --template snippets --yes</code></pre>
+
+    <h2>What it does</h2>
+    <ol>
+        <li>Validates project name and Node version.</li>
+        <li>Loads live template list from GitHub.</li>
+        <li>Prompts for a template within the chosen catalog.</li>
+        <li>Performs a sparse checkout to copy only the selected template.</li>
+        <li>Rewrites <code>package.json</code> name (and <code>app.json</code> for React Native).</li>
+        <li>Runs <code>npm install --legacy-peer-deps</code>.</li>
+        <li>Prints next steps: <code>cd &lt;project&gt;</code> and <code>npm run dev</code>.</li>
+    </ol>
+
+    <h2>Troubleshooting</h2>
+    <ul>
+        <li><strong>Folder exists</strong>: Use a new <code>project-directory</code>.</li>
+        <li><strong>Git required</strong>: Ensure Git is installed for sparse checkout.</li>
+        <li><strong>Network access</strong>: CLI fetches templates via GitHub API.</li>
+    </ul>
+
+    <h2>Links</h2>
+    <ul>
+        <li><a href="https://www.npmjs.com/package/create-mernjs-app" target="_blank" rel="noopener">NPM</a></li>
+        <li><a href="https://github.com/mernjs/create-mern-app" target="_blank" rel="noopener">Repository</a></li>
+    </ul>
+</div>
+
+<script src="https://mernjs.github.io/create-mern-app/assets/plugins/prism/prism.js"></script>
+</body>
+</html>
