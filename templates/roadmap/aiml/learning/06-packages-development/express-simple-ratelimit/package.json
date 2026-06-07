@@ -1,0 +1,22 @@
+{
+ "name": "express-simple-ratelimit",
+ "version": "1.0.0",
+ "description": "A simple and lightweight rate limiting middleware for Express",
+ "main": "index.js",
+ "keywords": [
+  "express",
+  "rate-limit",
+  "middleware",
+  "security",
+  "api"
+ ],
+ "author": "Vijay",
+ "license": "MIT",
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "type": "commonjs",
+ "dependencies": {
+  "express": "^5.2.1"
+ }
+}

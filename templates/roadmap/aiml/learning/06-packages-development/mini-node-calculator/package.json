@@ -1,0 +1,13 @@
+{
+  "name": "mini-node-calculator",
+  "version": "1.0.0",
+  "description": "A minimal Node.js calculator with basic arithmetic operations",
+  "main": "index.js",
+  "keywords": [
+    "calculator",
+    "math",
+    "utility"
+  ],
+  "author": "Create MERN App <mernjscommunity@gmail.com>",
+  "license": "MIT"
+}

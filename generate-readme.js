@@ -8,22 +8,38 @@ const sectionMapping = {
         name: "app",
         title: "App Boilerplates",
         description: "App boilerplates provide ready-to-use templates for building applications, simplifying the setup process and ensuring a consistent structure across projects.",
+        hasZip: true
     },
     library: {
         name: "library",
         title: "Library Boilerplates",
         description: "Library boilerplates offer pre-configured templates for creating npm packages, enabling efficient and standardized development of reusable code libraries.",
+        hasZip: true
     },
     packages: {
         name: "packages",
         title: "NPM Packages",
         description: "Explore npm packages that simplify your development workflow. These packages offer efficient solutions for various technologies and are easy to install and integrate, enhancing productivity and code quality.",
+        hasZip: true
     },
     snippets: {
         name: "snippets",
         title: "Code Snippets",
         description: "Explore a collection of reusable code snippets to quickly implement common features and functionalities in your projects.",
+        hasZip: true
     },
+    roadmap: {
+        name: "roadmap",
+        title: "Learning & Interview Roadmaps (AI Brain)",
+        description: "A centralized knowledge repository for learning, interview preparation, architecture design, and continuous professional growth across various tech stacks. Optimized for both human developers and AI coding agents.",
+        hasZip: false
+    },
+    others: {
+        name: "others",
+        title: "Other Templates & Resources",
+        description: "Additional templates, boilerplates, and miscellaneous resources for varied project needs.",
+        hasZip: true
+    }
 };
 
 const capitalizeWords = (str) => str.replace(/-/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
@@ -39,7 +55,7 @@ fs.readdirSync(templatesPath, { withFileTypes: true })
         if (!sectionInfo) return;
 
         const projects = fs.readdirSync(categoryPath, { withFileTypes: true })
-            .filter((dirent) => dirent.isDirectory())
+            .filter((dirent) => dirent.isDirectory() && !dirent.name.startsWith('.'))
             .map((dirent) => ({
                 name: capitalizeWords(dirent.name),
                 path: dirent.name,
@@ -50,10 +66,15 @@ fs.readdirSync(templatesPath, { withFileTypes: true })
                 name: sectionInfo.name,
                 title: sectionInfo.title,
                 description: sectionInfo.description,
+                hasZip: sectionInfo.hasZip,
                 projects,
             });
         }
     });
+
+// Sort sections based on the order in sectionMapping
+const orderedSectionNames = Object.keys(sectionMapping);
+sections.sort((a, b) => orderedSectionNames.indexOf(a.name) - orderedSectionNames.indexOf(b.name));
 
 const baseRepoUrl = "https://github.com/mernjs/create-mern-app";
 const baseZipUrl = `${baseRepoUrl}/raw/master/zip`;
@@ -69,6 +90,7 @@ let readmeContent = `
 </p>
 
 <h5 align="center">Set up a modern web, mobile, and desktop app by running one command.</h5>
+<h5 align="center">Optimized for Developers & AI Coding Agents</h5>
 
 <h5 align="center">
 If you find this code useful, don't forget to <a href="https://github.com/mernjs/create-mern-app" target="_blank">⭐ star the repo ⭐</a> 
@@ -78,86 +100,111 @@ If you find this code useful, don't forget to <a href="https://github.com/mernjs
 🚧 Under Beta Development 🚧
 </h3>
 
-#### Create MERN App
+## 📖 Welcome to the Developer Guide
 
-Create MERN App provides a simple file and folder structure that you can easily customize to fit your project requirements.
+Welcome to the **Create MERN App** ecosystem! Whether you want to quickly start a new React project, find a handy Node.js snippet, or prepare for a system design interview, you are in the right place.
 
-#### Node Version Support
+This repository is more than just a CLI tool—it's a massive, open-source library of pre-configured code templates and a deep-dive knowledge base.
 
-| Version | Supported |
-| ------- | --------- |
-| node >= 18 | ✅ Yes |
-| node < 18 | ❌ No |
+---
 
-#### 📥 Download Methods
+### 🗺️ Navigate the Project
 
-You can download the code in two ways:
+To help you get the most out of this repository, we've broken down our documentation into simple, easy-to-read guides:
 
-1. **Using CLI**
-2. **Directly Download Zip Code**
+1. **[🏗️ Project Architecture](docs/ARCHITECTURE.md)**
+   *Curious how the CLI fetches templates? Want to know where files are stored? Start here for a plain-English breakdown of how the repository works under the hood.*
 
-#### 1️⃣ Using CLI
+2. **[🤖 AI-Assisted Workflow](docs/AI_WORKFLOW.md)**
+   *We built this repo to work perfectly with AI tools like Cursor, GitHub Copilot, and Claude. Read this guide to learn the exact prompts to use to make the AI build templates for you.*
 
-Quickly set up a new project using the \`npx\` command. Choose from different templates like app boilerplates, libraries, npm packages, or code snippets. This method ensures that you get a pre-configured structure without manual setup.
+3. **[📏 Standards & Conventions](docs/STANDARDS.md)**
+   *Learn how we use Prettier, ESLint, and Conventional Commits to keep our code clean and professional. A must-read before you submit code!*
 
-- **Pre-configured Project Creation Template:**
-  \`\`\`bash
-  npx create-mernjs-app my-app
-  \`\`\`
+4. **[🤝 How to Contribute](CONTRIBUTING.md)**
+   *Ready to add your own boilerplate or fix a bug? This step-by-step tutorial will walk you through cloning the repo, adding your code, and opening your first Pull Request.*
 
-- **Pre-configured Library Creation Template:**
-  \`\`\`bash
-  npx create-mernjs-app my-library --template library
-  \`\`\`
+---
 
-- **Pre-built NPM Packages:**
-  \`\`\`bash
-  npx create-mernjs-app my-package --template packages
-  \`\`\`
+## ⚡ Getting Started (How to use the CLI)
 
-- **Reusable Code Snippets:**
-  \`\`\`bash
-  npx create-mernjs-app my-snippets --template snippets
-  \`\`\`
+Starting a new project is incredibly easy. You don't need to manually download or clone anything. Just use the \`npx\` command in your terminal.
 
-#### 2️⃣ Directly Download Zip Code
+### 📋 Prerequisites
+Make sure you have Node.js installed.
+| Node Version | Supported |
+| ------------ | --------- |
+| Node >= 18   | ✅ Yes    |
+| Node < 18    | ❌ No     |
 
-Download the pre-built templates as a .zip file and extract them to start working on your project. This is useful if you prefer manual setup without using CLI tools.
+### 💻 Command Line Examples
+
+**1. Create a Full Application (like Next.js or React Native)**
+\`\`\`bash
+npx create-mernjs-app my-awesome-app
+\`\`\`
+*(The CLI will give you an interactive menu to choose your tech stack!)*
+
+**2. Create an NPM Package Library**
+\`\`\`bash
+npx create-mernjs-app my-custom-library --template library
+\`\`\`
+
+**3. Download a Pre-Built NPM Package**
+\`\`\`bash
+npx create-mernjs-app my-package-setup --template packages
+\`\`\`
+
+**4. Grab a Code Snippet (e.g., JWT Authentication logic)**
+\`\`\`bash
+npx create-mernjs-app my-auth-snippet --template snippets
+\`\`\`
+
+> **Prefer manual downloads?** No problem. You can browse the tables below and click the **Download** badges to get the raw '.zip' files instantly.
+
+---
 `;
 
 sections.forEach((section) => {
     readmeContent += `\n#### 📂 ${section.title}\n\n`;
     readmeContent += `${section.description}\n\n`;
-    readmeContent += `| # | Name | Download |\n`;
-    readmeContent += `| --- | ---- | -------- |\n`;
+    
+    if (section.hasZip) {
+        readmeContent += `| # | Name | Download |\n`;
+        readmeContent += `| --- | ---- | -------- |\n`;
+    } else {
+        readmeContent += `| # | Name | View |\n`;
+        readmeContent += `| --- | ---- | ---- |\n`;
+    }
 
     section.projects.forEach((item, index) => {
-        const itemUrl = `${baseSnippetUrl}/${item.path}`;
-        const zipUrl = `${baseZipUrl}/${section.name}/${item.path}.zip`;
-        const badge = `![Download](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white)`;
-
-        readmeContent += `| ${index + 1} | [${item.name}](${itemUrl}) | [${badge}](${zipUrl}) |\n`;
+        const itemUrl = `${baseSnippetUrl}/${section.name}/${item.path}`;
+        
+        if (section.hasZip) {
+            const zipUrl = `${baseZipUrl}/${section.name}/${item.path}.zip`;
+            const badge = `![Download](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white)`;
+            readmeContent += `| ${index + 1} | [${item.name}](${itemUrl}) | [${badge}](${zipUrl}) |\n`;
+        } else {
+            const badge = `![View](https://custom-icon-badges.herokuapp.com/badge/-View-blue?style=for-the-badge&logo=github&logoColor=white)`;
+            readmeContent += `| ${index + 1} | [${item.name}](${itemUrl}) | [${badge}](${itemUrl}) |\n`;
+        }
     });
 
     readmeContent += `\n---\n`;
 });
 
 readmeContent += `
-
 #### 🚀 Key Features
 
-Effortlessly build secure and scalable MERN applications with automated setup, industry-standard coding practices, secure authentication, robust data handling, and proactive security measures.
+Effortlessly build secure and scalable applications with automated setup, industry-standard coding practices, and proactive security measures.
 
-1. **Effortless Initialization** - Start your MERN project quickly using a simple command-line interface that sets up everything automatically.
+1. **Effortless Initialization** - Start your project quickly using a simple command-line interface.
 2. **Secure Coding Practices** - Follow industry standards to write strong, resilient code.
 3. **Well-Defined Folder Structure** - Organized project layout for easy maintenance.
-4. **Authentication Ready** - Secure login/signup features using best practices.
+4. **AI-Ready Documentation** - Explicit documentation meant for both human devs and AI coding agents.
 5. **ESLint & Prettier** - Auto-formatting & linting for cleaner code.
-6. **Tailwind CSS** - Modern styling framework for responsive UI.
-7. **Data Encryption** - Secure storage and transmission of data.
-8. **Rate Limiting & CORS** - Security controls to prevent misuse.
-9. **API Versioning & Monitoring** - Maintainability & performance tracking.
-10. **Secure File Uploads & Dependency Scanning** - Enhanced application security.
+6. **Modern Tooling** - Deep integration with Tailwind CSS, Next.js, Fastify, and more.
+7. **Security Controls** - Rate Limiting, CORS, Data Encryption implemented by default in templates.
 
 #### 💬 Support
 
@@ -174,3 +221,4 @@ For queries, suggestions, or security concerns, please reach out via [GitHub Dis
 fs.writeFileSync("README.md", readmeContent, "utf8");
 
 console.log("✅ README.md generated successfully!");
+

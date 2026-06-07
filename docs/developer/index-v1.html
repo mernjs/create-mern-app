@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vijay Pratap Singh - Technical Architect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --bg-color: #030712;
+      --surface-color: rgba(17, 24, 39, 0.7);
+      --glass-border: rgba(255, 255, 255, 0.08);
+      --text-main: #f9fafb;
+      --text-muted: #9ca3af;
+      --primary: #38bdf8;
+      --secondary: #818cf8;
+      --accent: #c084fc;
+      --gradient-text: linear-gradient(135deg, #38bdf8 0%, #c084fc 100%);
+      --gradient-card: linear-gradient(180deg, rgba(30,30,40,0.8) 0%, rgba(15,15,20,0.8) 100%);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.1), transparent 25%),
+        radial-gradient(circle at 90% 80%, rgba(192, 132, 252, 0.1), transparent 25%);
+      background-attachment: fixed;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    /* Navbar */
+    header {
+      position: fixed; top: 0; width: 100%;
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      background: rgba(3, 7, 18, 0.7);
+      border-bottom: 1px solid var(--glass-border);
+      z-index: 1000; padding: 1.2rem 0;
+    }
+    .nav-container {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0 2rem;
+    }
+    .logo { font-size: 1.5rem; font-weight: 800; background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a { color: var(--text-main); text-decoration: none; font-weight: 400; transition: color 0.3s ease; font-size: 1.05rem; }
+    .nav-links a:hover { color: var(--primary); }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 6rem 2rem 2rem; }
+    section { padding: 5rem 0; }
+    .section-title { font-size: 2.5rem; font-weight: 800; margin-bottom: 4rem; text-align: center; position: relative; }
+    .section-title span { background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+    /* Hero */
+    .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; }
+    .hero h1 { font-size: 5rem; font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -1px; }
+    .hero h1 span { background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero h2 { font-size: 1.8rem; font-weight: 400; color: var(--text-main); margin-bottom: 2rem; }
+    .hero p { max-width: 800px; font-size: 1.2rem; color: var(--text-muted); margin-bottom: 3rem; }
+    .btn-group { display: flex; gap: 1rem; justify-content: center; }
+    .btn-primary {
+      background: var(--gradient-text); color: #fff; padding: 1rem 2.5rem; border-radius: 30px;
+      text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none; cursor: pointer;
+    }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4); }
+    .btn-secondary {
+      background: transparent; color: var(--text-main); padding: 1rem 2.5rem; border-radius: 30px;
+      text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease;
+      border: 1px solid var(--glass-border); backdrop-filter: blur(10px);
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.3); transform: translateY(-3px); }
+
+    .contact-links { display: flex; gap: 1.5rem; margin-top: 3rem; justify-content: center; }
+    .contact-links a { color: var(--text-muted); font-size: 1.8rem; transition: color 0.3s, transform 0.3s; }
+    .contact-links a:hover { color: var(--primary); transform: scale(1.1); }
+
+    /* Glass Card */
+    .glass-card {
+      background: var(--surface-color);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+      padding: 2.5rem;
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .glass-card::before {
+      content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.05), transparent);
+      transform: translateX(-100%); transition: transform 0.6s;
+    }
+    .glass-card:hover::before { transform: translateX(100%); }
+    .glass-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6); border-color: rgba(255,255,255,0.2); }
+
+    /* Timeline */
+    .timeline-container { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+    @media (max-width: 900px) { .timeline-container { grid-template-columns: 1fr; } }
+    .timeline { position: relative; padding-left: 2rem; border-left: 2px solid rgba(56, 189, 248, 0.3); }
+    .timeline-item { position: relative; margin-bottom: 3rem; }
+    .timeline-item:last-child { margin-bottom: 0; }
+    .timeline-item::before {
+      content: ''; position: absolute; left: -2.45rem; top: 0; width: 16px; height: 16px;
+      background: var(--bg-color); border: 3px solid var(--primary); border-radius: 50%; box-shadow: 0 0 15px var(--primary);
+    }
+    .timeline-date { color: var(--primary); font-size: 0.95rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 1px; text-transform: uppercase;}
+    .timeline-title { font-size: 1.4rem; font-weight: 600; margin-bottom: 0.5rem; color: #fff; }
+    .timeline-subtitle { color: var(--text-muted); font-size: 1.05rem; margin-bottom: 1rem; }
+    .timeline-content { color: var(--text-muted); font-size: 1rem; }
+    .timeline-content ul { padding-left: 1.2rem; margin-top: 0.8rem; }
+    .timeline-content li { margin-bottom: 0.5rem; }
+
+    /* Skills */
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+    .skill-category h3 { font-size: 1.4rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem; color: #fff; }
+    .skill-category h3 i { color: var(--primary); font-size: 1.6rem; }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+    .tag {
+      background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0.6rem 1.2rem; border-radius: 30px; font-size: 0.95rem; font-weight: 400; transition: all 0.3s ease;
+      color: #e5e7eb;
+    }
+    .tag:hover { background: rgba(56, 189, 248, 0.1); border-color: var(--primary); color: #fff; box-shadow: 0 0 15px rgba(56, 189, 248, 0.2); transform: translateY(-2px);}
+
+    /* Projects Grid */
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 2.5rem; }
+    .project-card { display: flex; flex-direction: column; justify-content: space-between; height: 100%; }
+    .project-icon { font-size: 2.5rem; color: var(--primary); margin-bottom: 1.5rem; }
+    .project-title { font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem; color: #fff; }
+    .project-desc { color: var(--text-muted); font-size: 1rem; margin-bottom: 2rem; flex-grow: 1;}
+    .project-tech { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .project-tech .tag { font-size: 0.8rem; padding: 0.4rem 0.8rem; background: rgba(192, 132, 252, 0.1); border-color: rgba(192, 132, 252, 0.3); color: #e9d5ff;}
+
+    /* Open Source */
+    .os-card { display: flex; align-items: center; gap: 2rem; }
+    .os-card img { width: 80px; height: 80px; border-radius: 16px; object-fit: contain; background: #fff; padding: 10px;}
+    .os-content { flex: 1; }
+    .os-title { font-size: 1.5rem; font-weight: 600; color: #fff; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 1rem;}
+    .os-title a { color: var(--text-muted); font-size: 1.2rem; transition: color 0.3s; }
+    .os-title a:hover { color: var(--primary); }
+
+    /* Awards */
+    .awards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+    .award-card { text-align: center; padding: 2.5rem 1.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .award-icon { font-size: 3rem; color: #fbbf24; margin-bottom: 1.5rem; filter: drop-shadow(0 0 10px rgba(251, 191, 36, 0.4));}
+    .award-title { font-size: 1.1rem; font-weight: 600; color: #fff; }
+
+    /* Floating WhatsApp */
+    .float {
+      position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px;
+      background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center;
+      font-size: 30px; box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); z-index: 100;
+      display: flex; align-items: center; justify-content: center; text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+    .float:hover { transform: scale(1.1); color: #fff; }
+
+    footer { text-align: center; padding: 3rem 0; border-top: 1px solid var(--glass-border); margin-top: 5rem; color: var(--text-muted); background: rgba(0,0,0,0.5);}
+
+    /* Animation Classes */
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .animate-up { animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+    .delay-1 { animation-delay: 0.1s; } .delay-2 { animation-delay: 0.2s; } .delay-3 { animation-delay: 0.3s; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 3.5rem; }
+      .nav-links { display: none; } /* Add hamburger menu in real implementation */
+      .os-card { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">VPS.</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#opensource">Open Source</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero container">
+      <h2 class="animate-up">Hello! I’m</h2>
+      <h1 class="animate-up delay-1">Vijay Pratap <span>Singh</span></h1>
+      <p class="animate-up delay-2">
+        A passionate <strong>Technical Architect</strong> with <strong>8+ years</strong> of hands-on experience in the <strong>MERN Stack & Generative AI</strong>. I specialize in writing clean, scalable code, optimizing large architectures, and building high-performance AI applications.
+      </p>
+      <div class="btn-group animate-up delay-3">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="mailto:vijaypratap218@gmail.com" class="btn-secondary">Contact Me</a>
+      </div>
+      <div class="contact-links animate-up delay-3">
+        <a href="https://www.linkedin.com/in/vprtsingh" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/mernjs" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.youtube.com/@vprtsingh" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a>
+        <a href="https://wa.me/+919838111071?text=Hello" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION -->
+    <section id="experience" class="container">
+      <h2 class="section-title">My <span>Journey</span></h2>
+      <div class="timeline-container">
+        <!-- Experience -->
+        <div>
+          <h3 style="font-size: 1.8rem; margin-bottom: 2rem; color: #fff;"><i class="fas fa-briefcase" style="color: var(--primary); margin-right: 10px;"></i> Experience</h3>
+          <div class="timeline">
+            <div class="timeline-item glass-card">
+              <div class="timeline-date">Oct 2017 – Present</div>
+              <div class="timeline-title">Technical Architect</div>
+              <div class="timeline-subtitle">Hestabit Technologies Pvt Ltd, Noida</div>
+              <div class="timeline-content">
+                <ul>
+                  <li><strong>Domain Expertise:</strong> Lead development across Web, Mobile, Desktop, Browser Extensions, Web Scraping, and NPM packages.</li>
+                  <li><strong>Solution Design:</strong> Architect high-level diagrams, workflows, and tech stacks aligning with business goals.</li>
+                  <li><strong>Generative AI Integration:</strong> Built RAG systems, multi-agent AI systems, multimodal pipelines, OCR, and speech processing systems using LangChain, OpenAI, Claude, and Gemini.</li>
+                  <li><strong>Leadership:</strong> Conduct feasibility/PDA, gap analysis, breakdown estimations, and mentor cross-functional teams.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div>
+          <h3 style="font-size: 1.8rem; margin-bottom: 2rem; color: #fff;"><i class="fas fa-graduation-cap" style="color: var(--primary); margin-right: 10px;"></i> Education</h3>
+          <div class="timeline">
+            <div class="timeline-item glass-card" style="padding: 1.5rem;">
+              <div class="timeline-date">2017</div>
+              <div class="timeline-title">Bachelor of Computer Applications (BCA)</div>
+              <div class="timeline-subtitle">Shobhit University, Meerut</div>
+            </div>
+            <div class="timeline-item glass-card" style="padding: 1.5rem;">
+              <div class="timeline-date">2013</div>
+              <div class="timeline-title">Intermediate</div>
+              <div class="timeline-subtitle">S.K. Inter College, Gorakhpur</div>
+            </div>
+            <div class="timeline-item glass-card" style="padding: 1.5rem;">
+              <div class="timeline-date">2011</div>
+              <div class="timeline-title">Matriculation</div>
+              <div class="timeline-subtitle">D.V.N. Inter College, Gorakhpur</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="container">
+      <h2 class="section-title">Technical <span>Arsenal</span></h2>
+      <div class="skills-grid">
+        
+        <div class="glass-card skill-category">
+          <h3><i class="fas fa-brain"></i> Generative AI</h3>
+          <div class="skill-tags">
+            <span class="tag">LangChain</span>
+            <span class="tag">LangGraph</span>
+            <span class="tag">LlamaIndex</span>
+            <span class="tag">Ollama</span>
+            <span class="tag">FAISS</span>
+            <span class="tag">Pinecone</span>
+            <span class="tag">RAGAS</span>
+            <span class="tag">Langfuse</span>
+            <span class="tag">OpenAI / Claude / Gemini</span>
+            <span class="tag">Midjourney / Stable Diffusion</span>
+          </div>
+        </div>
+
+        <div class="glass-card skill-category">
+          <h3><i class="fas fa-server"></i> Backend & Database</h3>
+          <div class="skill-tags">
+            <span class="tag">NodeJS</span>
+            <span class="tag">ExpressJS</span>
+            <span class="tag">NestJS</span>
+            <span class="tag">BunJS</span>
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">RealmDB</span>
+          </div>
+        </div>
+
+        <div class="glass-card skill-category">
+          <h3><i class="fas fa-laptop-code"></i> Frontend & UI</h3>
+          <div class="skill-tags">
+            <span class="tag">ReactJS</span>
+            <span class="tag">NextJS</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">JavaScript (ES6+)</span>
+            <span class="tag">ThreeJS</span>
+            <span class="tag">Redux / Zustand</span>
+            <span class="tag">TailwindCSS</span>
+            <span class="tag">Material UI</span>
+          </div>
+        </div>
+
+        <div class="glass-card skill-category">
+          <h3><i class="fas fa-cloud"></i> Cloud, DevOps & Testing</h3>
+          <div class="skill-tags">
+            <span class="tag">AWS (EC2, Lambda, SQS)</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">Sonarqube</span>
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">Playwright (E2E)</span>
+            <span class="tag">Jest</span>
+            <span class="tag">React Native Expo</span>
+            <span class="tag">ElectronJS</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="container">
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <div class="projects-grid">
+        
+        <div class="glass-card project-card">
+          <div>
+            <i class="fas fa-hard-hat project-icon"></i>
+            <h3 class="project-title">ProjectEngineer – Construction AI Tools</h3>
+            <p class="project-desc">AI-powered web app for a construction company featuring auth, subscriptions, AI writer, document analyzer, and AI chat via RAG pipeline.</p>
+          </div>
+          <div class="project-tech">
+            <span class="tag">Next.js</span><span class="tag">MongoDB</span><span class="tag">Stripe</span><span class="tag">OpenAI</span><span class="tag">Deepgram</span>
+          </div>
+        </div>
+
+        <div class="glass-card project-card">
+          <div>
+            <i class="fas fa-shield-alt project-icon"></i>
+            <h3 class="project-title">Call Guard – Spam Call Filter</h3>
+            <p class="project-desc">PWA that smartly filters spam calls. Checks spam reports and decides routing logic based on a dynamic spam score before connecting.</p>
+          </div>
+          <div class="project-tech">
+            <span class="tag">NextJS</span><span class="tag">Redux</span><span class="tag">Twilio</span><span class="tag">Node.js</span>
+          </div>
+        </div>
+
+        <div class="glass-card project-card">
+          <div>
+            <i class="fas fa-robot project-icon"></i>
+            <h3 class="project-title">Golf AI Helpline – Hybrid App</h3>
+            <p class="project-desc">Golf-focused AI assistant app allowing users to call and interact with an AI agent capable of providing human-like voice responses.</p>
+          </div>
+          <div class="project-tech">
+            <span class="tag">React Native</span><span class="tag">ElevenLabs</span><span class="tag">Node.js</span><span class="tag">MongoDB</span>
+          </div>
+        </div>
+
+        <div class="glass-card project-card">
+          <div>
+            <i class="fas fa-briefcase project-icon"></i>
+            <h3 class="project-title">GradBay – Job Portal</h3>
+            <p class="project-desc">Full-featured job portal connecting graduates and employers with ATS, profile management, subscription payments, and OpenAI integrations.</p>
+          </div>
+          <div class="project-tech">
+            <span class="tag">ReactJS</span><span class="tag">NodeJS</span><span class="tag">Stripe</span><span class="tag">Twilio</span><span class="tag">OpenAI</span>
+          </div>
+        </div>
+
+        <div class="glass-card project-card">
+          <div>
+            <i class="fas fa-camera project-icon"></i>
+            <h3 class="project-title">Image Recognition & Alerting</h3>
+            <p class="project-desc">Serverless architecture processing over 1,000,000 images from 893 device folders to detect blank images and trigger automated admin alerts.</p>
+          </div>
+          <div class="project-tech">
+            <span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">AWS Lambda</span><span class="tag">SQS</span><span class="tag">EventBridge</span>
+          </div>
+        </div>
+
+        <div class="glass-card project-card">
+          <div>
+            <i class="fas fa-chart-line project-icon"></i>
+            <h3 class="project-title">Pairrot – Staffing Prediction</h3>
+            <p class="project-desc">Predictive analytics application forecasting orders, sales, and labor needs using machine learning models and visual dashboards.</p>
+          </div>
+          <div class="project-tech">
+            <span class="tag">Python</span><span class="tag">Prophet ML</span><span class="tag">FastAPI</span><span class="tag">Next.js</span>
+          </div>
+        </div>
+
+        <div class="glass-card project-card">
+          <div>
+            <i class="fas fa-file-invoice project-icon"></i>
+            <h3 class="project-title">iContentsPro – Claim Insurance</h3>
+            <p class="project-desc">Hybrid app for automating insurance claims with separate portals for homeowners and professionals, including subscription management.</p>
+          </div>
+          <div class="project-tech">
+            <span class="tag">React Native</span><span class="tag">Node.js</span><span class="tag">DocumentDB</span><span class="tag">Stripe</span>
+          </div>
+        </div>
+
+        <div class="glass-card project-card">
+          <div>
+            <i class="fas fa-heart project-icon"></i>
+            <h3 class="project-title">Hart – Dating App</h3>
+            <p class="project-desc">Dating app with match swiping, audio/video calls, AI-based matchmaking, and a live-streaming module.</p>
+          </div>
+          <div class="project-tech">
+            <span class="tag">React Native</span><span class="tag">MongoDB</span><span class="tag">Socket.IO</span>
+          </div>
+        </div>
+
+        <div class="glass-card project-card">
+          <div>
+            <i class="fas fa-chrome project-icon"></i>
+            <h3 class="project-title">SowBlack - Chrome Extension</h3>
+            <p class="project-desc">Extension suggesting alternative websites based on the current page URL to improve content discovery and user choice.</p>
+          </div>
+          <div class="project-tech">
+            <span class="tag">React</span><span class="tag">Redux</span><span class="tag">NodeJS</span><span class="tag">OpenAI</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- OPEN SOURCE & AWARDS -->
+    <section id="opensource" class="container">
+      <div class="row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+        
+        <div>
+          <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Open <span>Source</span></h2>
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            
+            <div class="glass-card os-card" style="padding: 1.5rem;">
+              <img src="images/create-mern-app.png" onerror="this.src='https://mernjs.github.io/create-mern-app/assets/logo1.png'" alt="MERN">
+              <div class="os-content">
+                <h3 class="os-title">Create MERN App 
+                  <a href="https://github.com/mernjs/create-mern-app" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="https://www.npmjs.com/package/create-mernjs-app" target="_blank"><i class="fab fa-npm" style="color: #cb3837;"></i></a>
+                </h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Massive boilerplate ecosystem for web, mobile, desktop, and NPM packages.</p>
+              </div>
+            </div>
+
+            <div class="glass-card os-card" style="padding: 1.5rem;">
+              <div style="width: 80px; height: 80px; background: rgba(56, 189, 248, 0.1); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--primary);">
+                <i class="fas fa-file-code"></i>
+              </div>
+              <div class="os-content">
+                <h3 class="os-title">XML to JSON Processor
+                  <a href="https://www.npmjs.com/package/xml-to-json-chunk-processor" target="_blank"><i class="fab fa-npm" style="color: #cb3837;"></i></a>
+                </h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">NodeJS utility to efficiently read large XML files and convert them into JSON chunks.</p>
+              </div>
+            </div>
+
+            <div class="glass-card os-card" style="padding: 1.5rem;">
+              <div style="width: 80px; height: 80px; background: rgba(56, 189, 248, 0.1); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #10b981;">
+                <i class="fas fa-table"></i>
+              </div>
+              <div class="os-content">
+                <h3 class="os-title">Google Sheets Wrapper
+                  <a href="https://www.npmjs.com/package/@mernjs/googlesheets" target="_blank"><i class="fab fa-npm" style="color: #cb3837;"></i></a>
+                </h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Simple and flexible wrapper for interacting with Google Sheets using Node.js.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div>
+          <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Awards & <span>Recognition</span></h2>
+          <div class="awards-grid">
+            
+            <div class="glass-card award-card">
+              <i class="fas fa-trophy award-icon"></i>
+              <h3 class="award-title">Role Transition Award</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); mt-2">Seamless transition to Technical Architect.</p>
+            </div>
+            
+            <div class="glass-card award-card">
+              <i class="fas fa-medal award-icon"></i>
+              <h3 class="award-title">Technical Enhancement</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); mt-2">Raised tech standards across the company.</p>
+            </div>
+
+            <div class="glass-card award-card">
+              <i class="fas fa-award award-icon"></i>
+              <h3 class="award-title">Excellence in Coding</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); mt-2">Consistent clean, high-quality code delivery.</p>
+            </div>
+
+            <div class="glass-card award-card">
+              <i class="fas fa-star award-icon"></i>
+              <h3 class="award-title">Upcoming Performer</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); mt-2">Early recognition for development excellence.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <style>
+        @media (max-width: 900px) {
+          #opensource .row { grid-template-columns: 1fr !important; }
+        }
+      </style>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="padding: 0;">
+      <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 0.5rem;">Vijay Pratap Singh</h3>
+      <p>Technical Architect & MERN/AI Expert</p>
+      <div class="contact-links" style="margin-top: 1.5rem;">
+        <a href="https://www.linkedin.com/in/vprtsingh" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/mernjs" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/+919838111071" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <p style="margin-top: 2rem; font-size: 0.9rem; color: #6b7280;">© 2023 - Built with passion.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/+919838111071?text=Hello" class="float" target="_blank">
+    <i class="fa fa-whatsapp"></i>
+  </a>
+
+  <!-- Simple script to trigger fade-in animations on scroll -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.glass-card, .section-title').forEach(el => {
+        el.style.opacity = 0;
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>

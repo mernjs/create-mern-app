@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastapi-simple-ratelimit"
+version = "0.1.0"
+description = "Simple rate limiting dependency for FastAPI"
+readme = "README.md"
+requires-python = ">=3.9"
+
+# SPDX license expression (FIXED)
+license = "MIT"
+
+# Optional but recommended
+license-files = ["LICENSE"]
+
+authors = [
+  { name = "Create MERN App", email = "mernjscommunity@gmail.com" }
+]
+
+dependencies = [
+  "fastapi"
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Framework :: FastAPI",
+  "Operating System :: OS Independent"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]

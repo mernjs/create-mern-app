@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mini-python-calculator"
+version = "0.1.0"
+description = "A minimal Python calculator with add, subtract, multiply and divide"
+readme = "README.md"
+requires-python = ">=3.8"
+
+authors = [
+  { name = "Create MERN App", email = "mernjscommunity@gmail.com" }
+]
+
+license = { text = "MIT" }
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[tool.setuptools]
+# IMPORTANT: single-file module
+py-modules = ["calculator"]
+
+[project.urls]
+Homepage = "https://github.com/mernjs/GenAI/tree/main/02-language-comparison"
