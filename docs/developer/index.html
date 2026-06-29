@@ -39,7 +39,8 @@
 
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 80px; /* offset for fixed navbar */
+            scroll-padding-top: 80px;
+            /* offset for fixed navbar */
         }
 
         /* Custom Interactive Cursor */
@@ -265,7 +266,8 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding-top: 80px; /* clear the fixed navbar */
+            padding-top: 80px;
+            /* clear the fixed navbar */
         }
 
         .hero-badge {
@@ -860,6 +862,7 @@
             border: none;
             z-index: 1001;
         }
+
         .hamburger span {
             display: block;
             width: 25px;
@@ -868,9 +871,19 @@
             border-radius: 2px;
             transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
         }
-        .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-        .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
-        .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+        .hamburger.open span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .hamburger.open span:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+
+        .hamburger.open span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
 
         /* Mobile nav overlay */
         .mobile-nav-overlay {
@@ -887,10 +900,12 @@
             opacity: 0;
             transition: opacity 0.3s ease;
         }
+
         .mobile-nav-overlay.open {
             display: flex;
             opacity: 1;
         }
+
         .mobile-nav-overlay a {
             font-size: 1.5rem;
             font-weight: 700;
@@ -898,7 +913,11 @@
             text-decoration: none;
             transition: color 0.3s;
         }
-        .mobile-nav-overlay a:hover { color: var(--primary); }
+
+        .mobile-nav-overlay a:hover {
+            color: var(--primary);
+        }
+
         .mobile-nav-overlay .btn {
             margin-top: 1rem;
             font-size: 1.1rem;
@@ -906,12 +925,25 @@
 
         /* Tablet: 1024px */
         @media (max-width: 1024px) {
-            .hamburger { display: flex; }
-            .nav-links { display: none !important; }
+            .hamburger {
+                display: flex;
+            }
 
-            .section-title { font-size: 2.2rem; }
-            .container { padding: 5rem 1.5rem 3rem; }
-            .hero h1 { font-size: clamp(2.8rem, 7vw, 5rem); }
+            .nav-links {
+                display: none !important;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .container {
+                padding: 5rem 1.5rem 3rem;
+            }
+
+            .hero h1 {
+                font-size: clamp(2.8rem, 7vw, 5rem);
+            }
 
             /* About section flex → column */
             div[style*="display: flex"][style*="flex-wrap: wrap"],
@@ -923,110 +955,245 @@
             .tbs-cards-container {
                 grid-template-columns: 1fr !important;
             }
-            .tbs-card-think, .tbs-card-build, .tbs-card-scale {
+
+            .tbs-card-think,
+            .tbs-card-build,
+            .tbs-card-scale {
                 grid-column: 1 / -1 !important;
             }
 
             /* Timeline */
-            .timeline-container { grid-template-columns: 1fr; gap: 2rem; }
+            .timeline-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
 
             /* Domains grid */
-            .domains-grid { grid-template-columns: repeat(2, 1fr) !important; }
+            .domains-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
 
             /* Stats grid */
-            .stats-grid { grid-template-columns: repeat(3, 1fr) !important; }
+            .stats-grid {
+                grid-template-columns: repeat(3, 1fr) !important;
+            }
         }
 
         /* Mobile: 768px */
         @media (max-width: 768px) {
-            * { cursor: auto !important; }
-            .cursor-dot, .cursor-outline { display: none; }
+            * {
+                cursor: auto !important;
+            }
 
-            .section-title { font-size: 1.9rem; letter-spacing: -0.5px; }
-            .container { padding: 5rem 1.2rem 2.5rem; }
-            .section-header { margin-bottom: 2.5rem; }
+            .cursor-dot,
+            .cursor-outline {
+                display: none;
+            }
 
-            .hero { min-height: 80vh; padding-top: 5rem; }
-            .hero h1 { font-size: clamp(2rem, 9vw, 3.5rem); letter-spacing: -1px; }
-            .hero h2 { font-size: 1.2rem; }
-            .hero p { font-size: 1rem; }
-            .btn { padding: 0.8rem 1.8rem; font-size: 0.95rem; }
+            .section-title {
+                font-size: 1.9rem;
+                letter-spacing: -0.5px;
+            }
+
+            .container {
+                padding: 5rem 1.2rem 2.5rem;
+            }
+
+            .section-header {
+                margin-bottom: 2.5rem;
+            }
+
+            .hero {
+                min-height: 80vh;
+                padding-top: 5rem;
+            }
+
+            .hero h1 {
+                font-size: clamp(2rem, 9vw, 3.5rem);
+                letter-spacing: -1px;
+            }
+
+            .hero h2 {
+                font-size: 1.2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .btn {
+                padding: 0.8rem 1.8rem;
+                font-size: 0.95rem;
+            }
 
             /* Why Vijay section */
-            .why-vijay-grid { grid-template-columns: 1fr !important; }
+            .why-vijay-grid {
+                grid-template-columns: 1fr !important;
+            }
 
             /* Approach timeline — left align */
-            .approach-timeline::before { left: 20px !important; }
-            .approach-node { left: 20px !important; }
+            .approach-timeline::before {
+                left: 20px !important;
+            }
+
+            .approach-node {
+                left: 20px !important;
+            }
+
             .approach-item:nth-child(even) .approach-content,
             .approach-item:nth-child(odd) .approach-content {
                 margin: 0 0 0 55px !important;
                 width: calc(100% - 55px) !important;
                 text-align: left !important;
             }
+
             .approach-item:nth-child(odd) .approach-title {
                 justify-content: flex-start !important;
                 flex-direction: row !important;
             }
 
             /* Domains grid */
-            .domains-grid { grid-template-columns: 1fr !important; }
-            .domain-card { padding: 2rem 1.5rem; }
+            .domains-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            .domain-card {
+                padding: 2rem 1.5rem;
+            }
 
             /* Stats grid */
-            .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
-            .stat-value { font-size: 2.8rem; }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+
+            .stat-value {
+                font-size: 2.8rem;
+            }
 
             /* Bento grid */
-            .bento-grid { grid-template-columns: 1fr !important; }
-            .bento-card.large { grid-column: span 1 !important; }
+            .bento-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            .bento-card.large {
+                grid-column: span 1 !important;
+            }
 
             /* Glass card padding */
-            .card-content { padding: 1.8rem !important; }
+            .card-content {
+                padding: 1.8rem !important;
+            }
 
             /* Vision orbit */
-            .hero-tbs-wrapper { width: 150px; height: 150px; }
+            .hero-tbs-wrapper {
+                width: 150px;
+                height: 150px;
+            }
         }
 
         /* Small Mobile: 480px */
         @media (max-width: 480px) {
-            .section-title { font-size: 1.6rem; }
-            .container { padding: 4.5rem 1rem 2rem; }
+            .section-title {
+                font-size: 1.6rem;
+            }
 
-            .hero h1 { font-size: clamp(1.8rem, 10vw, 2.8rem); }
-            .hero p { font-size: 0.95rem; }
-            .btn-group { flex-direction: column; align-items: center; gap: 1rem; }
-            .btn { width: 100%; justify-content: center; }
+            .container {
+                padding: 4.5rem 1rem 2rem;
+            }
+
+            .hero h1 {
+                font-size: clamp(1.8rem, 10vw, 2.8rem);
+            }
+
+            .hero p {
+                font-size: 0.95rem;
+            }
+
+            .btn-group {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
 
             /* TBS cards */
-            .tbs-interactive-card { flex-direction: column !important; text-align: center !important; padding: 1.2rem !important; }
-            .tbs-step-num { font-size: 4rem !important; }
+            .tbs-interactive-card {
+                flex-direction: column !important;
+                text-align: center !important;
+                padding: 1.2rem !important;
+            }
+
+            .tbs-step-num {
+                font-size: 4rem !important;
+            }
 
             /* Stats grid → single column */
-            .stats-grid { grid-template-columns: 1fr !important; }
-            .stat-card { padding: 2rem 1.2rem; }
-            .stat-value { font-size: 3rem; }
+            .stats-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            .stat-card {
+                padding: 2rem 1.2rem;
+            }
+
+            .stat-value {
+                font-size: 3rem;
+            }
 
             /* Approach timeline */
-            .approach-content { padding: 1rem 1.2rem; }
-            .approach-title { font-size: 1rem; }
+            .approach-content {
+                padding: 1rem 1.2rem;
+            }
+
+            .approach-title {
+                font-size: 1rem;
+            }
 
             /* Domain card */
-            .domain-icon { font-size: 2.5rem; }
-            .domain-title { font-size: 1.2rem; }
+            .domain-icon {
+                font-size: 2.5rem;
+            }
+
+            .domain-title {
+                font-size: 1.2rem;
+            }
 
             /* Timeline dates */
-            .timeline-date { font-size: 0.85rem; }
-            .timeline-title { font-size: 1.2rem; }
+            .timeline-date {
+                font-size: 0.85rem;
+            }
+
+            .timeline-title {
+                font-size: 1.2rem;
+            }
         }
 
         /* Extra Small: 360px */
         @media (max-width: 360px) {
-            .section-title { font-size: 1.4rem; }
-            .container { padding: 4.5rem 0.8rem 1.5rem; }
-            .hero h1 { font-size: 1.7rem; }
-            .stat-value { font-size: 2.5rem; }
-            .approach-content { margin-left: 45px !important; width: calc(100% - 45px) !important; }
+            .section-title {
+                font-size: 1.4rem;
+            }
+
+            .container {
+                padding: 4.5rem 0.8rem 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .stat-value {
+                font-size: 2.5rem;
+            }
+
+            .approach-content {
+                margin-left: 45px !important;
+                width: calc(100% - 45px) !important;
+            }
         }
     </style>
 </head>
@@ -1056,7 +1223,8 @@
                 <li><a href="#expertise" class="interactable" style="font-size: 0.85rem;">Tech</a></li>
                 <li><a href="#projects" class="interactable" style="font-size: 0.85rem;">Projects</a></li>
                 <li><a href="#opensource" class="interactable" style="font-size: 0.85rem;">OSS</a></li>
-                <li><a href="mailto:vijaypratap218@gmail.com" class="btn btn-primary interactable" style="padding: 0.4rem 1rem; font-size: 0.85rem; margin-left: 0.5rem;">Hire Me</a></li>
+                <li><a href="mailto:vijaypratap218@gmail.com" class="btn btn-primary interactable"
+                        style="padding: 0.4rem 1rem; font-size: 0.85rem; margin-left: 0.5rem;">Hire Me</a></li>
             </ul>
             <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">
                 <span></span><span></span><span></span>
@@ -1078,7 +1246,8 @@
         <a href="#expertise" class="mobile-nav-link">Tech Stack</a>
         <a href="#projects" class="mobile-nav-link">Projects</a>
         <a href="#opensource" class="mobile-nav-link">Open Source</a>
-        <a href="mailto:vijaypratap218@gmail.com" class="btn btn-primary" style="margin-top: 1.5rem;"><i class="fas fa-envelope"></i> Hire Me</a>
+        <a href="mailto:vijaypratap218@gmail.com" class="btn btn-primary" style="margin-top: 1.5rem;"><i
+                class="fas fa-envelope"></i> Hire Me</a>
     </div>
 
     <main style="padding-top: 70px;">
@@ -1094,19 +1263,21 @@
                     justify-content: center;
                     align-items: center;
                 }
+
                 .hero-tbs-orbit {
                     position: absolute;
                     width: 160px;
                     height: 160px;
                     border-radius: 50%;
-                    border: 1px dashed rgba(255,255,255,0.15);
+                    border: 1px dashed rgba(255, 255, 255, 0.15);
                     animation: spin 30s linear infinite;
                 }
+
                 .hero-tbs-center {
                     width: 60px;
                     height: 60px;
                     border-radius: 50%;
-                    background: rgba(3,7,18,0.9);
+                    background: rgba(3, 7, 18, 0.9);
                     border: 2px solid var(--accent);
                     display: flex;
                     justify-content: center;
@@ -1115,17 +1286,18 @@
                     font-size: 0.75rem;
                     color: #fff;
                     z-index: 10;
-                    box-shadow: 0 0 18px rgba(192,132,252,0.4);
+                    box-shadow: 0 0 18px rgba(192, 132, 252, 0.4);
                     letter-spacing: 0.05em;
                     text-align: center;
                     line-height: 1.2;
                 }
+
                 .hero-tbs-node {
                     position: absolute;
                     width: 52px;
                     height: 52px;
                     border-radius: 50%;
-                    background: rgba(17,24,39,0.95);
+                    background: rgba(17, 24, 39, 0.95);
                     border: 1px solid var(--glass-border);
                     display: flex;
                     flex-direction: column;
@@ -1137,34 +1309,60 @@
                     transition: all 0.3s ease;
                     backdrop-filter: blur(10px);
                 }
+
                 .hero-tbs-node:nth-child(3) {
                     transform: rotate(-90deg) translate(80px) rotate(90deg);
                     color: var(--primary);
-                    border-color: rgba(56,189,248,0.3);
+                    border-color: rgba(56, 189, 248, 0.3);
                 }
+
                 .hero-tbs-node:nth-child(4) {
                     transform: rotate(30deg) translate(80px) rotate(-30deg);
                     color: var(--accent);
-                    border-color: rgba(192,132,252,0.3);
+                    border-color: rgba(192, 132, 252, 0.3);
                 }
+
                 .hero-tbs-node:nth-child(5) {
                     transform: rotate(150deg) translate(80px) rotate(-150deg);
                     color: #10b981;
-                    border-color: rgba(16,185,129,0.3);
+                    border-color: rgba(16, 185, 129, 0.3);
                 }
+
                 .hero-tbs-node:hover {
                     transform: scale(1.2);
                     z-index: 20;
                 }
-                .hero-tbs-node:nth-child(3):hover { transform: rotate(-90deg) translate(80px) rotate(90deg) scale(1.2); box-shadow: 0 0 12px rgba(56,189,248,0.4); border-color: var(--primary); }
-                .hero-tbs-node:nth-child(4):hover { transform: rotate(30deg) translate(80px) rotate(-30deg) scale(1.2); box-shadow: 0 0 12px rgba(192,132,252,0.4); border-color: var(--accent); }
-                .hero-tbs-node:nth-child(5):hover { transform: rotate(150deg) translate(80px) rotate(-150deg) scale(1.2); box-shadow: 0 0 12px rgba(16,185,129,0.4); border-color: #10b981; }
-                .hero-tbs-node i { font-size: 1rem; margin-bottom: 2px; }
+
+                .hero-tbs-node:nth-child(3):hover {
+                    transform: rotate(-90deg) translate(80px) rotate(90deg) scale(1.2);
+                    box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+                    border-color: var(--primary);
+                }
+
+                .hero-tbs-node:nth-child(4):hover {
+                    transform: rotate(30deg) translate(80px) rotate(-30deg) scale(1.2);
+                    box-shadow: 0 0 12px rgba(192, 132, 252, 0.4);
+                    border-color: var(--accent);
+                }
+
+                .hero-tbs-node:nth-child(5):hover {
+                    transform: rotate(150deg) translate(80px) rotate(-150deg) scale(1.2);
+                    box-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
+                    border-color: #10b981;
+                }
+
+                .hero-tbs-node i {
+                    font-size: 1rem;
+                    margin-bottom: 2px;
+                }
             </style>
 
             <div class="hero-tbs-wrapper load-up">
                 <div class="hero-tbs-orbit"></div>
-                <div class="hero-tbs-center">VPS</div>
+                <div class="hero-tbs-center">
+                    <img src="images/vijay2.jpeg" alt="Vijay Pratap Singh"
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                </div>
                 <div class="hero-tbs-node">
                     <i class="fas fa-brain"></i>
                     Think
@@ -1195,10 +1393,23 @@
 
         <!-- ABOUT ME: THE ONE-MAN ARMY -->
         <section id="about" class="container" style="padding-top: 0; padding-bottom: 2rem;">
+            <style>
+                .about-grid-layout {
+                    display: grid;
+                    grid-template-columns: 1.3fr 1fr;
+                    gap: 3rem;
+                    align-items: start;
+                }
+
+                @media (max-width: 960px) {
+                    .about-grid-layout {
+                        grid-template-columns: 1fr;
+                    }
+                }
+            </style>
             <div class="glass-card interactable reveal" style="border-left: 4px solid var(--accent);">
-                <div class="card-content"
-                    style="padding: 4rem 3rem; display: flex; flex-wrap: wrap; gap: 3rem; align-items: center;">
-                    <div style="flex: 1; min-width: 300px;">
+                <div class="card-content about-grid-layout" style="padding: 4rem 3rem;">
+                    <div>
                         <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">
                             Vijay <span style="color: var(--accent);">Pratap Singh</span>
                         </h2>
@@ -1216,8 +1427,7 @@
                             expertise to take a raw concept and single-handedly forge it into a market-ready, infinitely
                             scalable product.
                         </p>
-                    </div>
-                    <div style="flex: 1; min-width: 300px;">
+                        <div style="margin-top: 3rem;"></div>
                         <style>
                             .tbs-cards-container {
                                 display: grid;
@@ -1226,9 +1436,11 @@
                                 width: 100%;
                                 perspective: 1000px;
                             }
+
                             .tbs-card-think {
                                 grid-column: 1 / span 2;
                             }
+
                             .tbs-interactive-card {
                                 background: rgba(17, 24, 39, 0.4);
                                 border: 1px solid rgba(255, 255, 255, 0.05);
@@ -1245,34 +1457,44 @@
                                 transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
                                 z-index: 1;
                             }
-                            .tbs-card-build, .tbs-card-scale {
-                                flex-direction: column;
-                                text-align: center;
+
+                            .tbs-card-build,
+                            .tbs-card-scale {
+                                flex-direction: row;
+                                text-align: left;
                                 gap: 1rem;
                                 padding: 1.5rem 1rem;
                             }
+
                             .tbs-card-think {
                                 padding: 1.5rem 2rem;
                             }
-                            
+
                             /* Adjustments for the smaller bottom cards */
-                            .tbs-card-build .tbs-step-num, .tbs-card-scale .tbs-step-num {
+                            .tbs-card-build .tbs-step-num,
+                            .tbs-card-scale .tbs-step-num {
                                 top: -10px;
                                 right: -10px;
                                 transform: none;
                                 font-size: 5rem;
                             }
-                            .tbs-card-build:hover .tbs-step-num, .tbs-card-scale:hover .tbs-step-num {
+
+                            .tbs-card-build:hover .tbs-step-num,
+                            .tbs-card-scale:hover .tbs-step-num {
                                 right: 0;
                                 transform: scale(1.05);
                             }
-                            .tbs-card-build .tbs-arrow, .tbs-card-scale .tbs-arrow {
+
+                            .tbs-card-build .tbs-arrow,
+                            .tbs-card-scale .tbs-arrow {
                                 top: auto;
                                 bottom: 15px;
                                 right: 50%;
                                 transform: translateX(50%) translateY(20px);
                             }
-                            .tbs-card-build:hover .tbs-arrow, .tbs-card-scale:hover .tbs-arrow {
+
+                            .tbs-card-build:hover .tbs-arrow,
+                            .tbs-card-scale:hover .tbs-arrow {
                                 transform: translateX(50%) translateY(0);
                             }
 
@@ -1281,33 +1503,44 @@
                                 .tbs-cards-container {
                                     grid-template-columns: 1fr;
                                 }
-                                .tbs-card-think, .tbs-card-build, .tbs-card-scale {
+
+                                .tbs-card-think,
+                                .tbs-card-build,
+                                .tbs-card-scale {
                                     grid-column: 1 / -1;
                                     flex-direction: row;
                                     text-align: left;
                                     padding: 1.5rem;
                                 }
-                                .tbs-card-build .tbs-step-num, .tbs-card-scale .tbs-step-num {
+
+                                .tbs-card-build .tbs-step-num,
+                                .tbs-card-scale .tbs-step-num {
                                     top: 50%;
                                     right: -10px;
                                     transform: translateY(-50%);
                                     font-size: 6rem;
                                 }
-                                .tbs-card-build:hover .tbs-step-num, .tbs-card-scale:hover .tbs-step-num {
+
+                                .tbs-card-build:hover .tbs-step-num,
+                                .tbs-card-scale:hover .tbs-step-num {
                                     right: 10px;
                                     transform: translateY(-50%) scale(1.1);
                                 }
-                                .tbs-card-build .tbs-arrow, .tbs-card-scale .tbs-arrow {
+
+                                .tbs-card-build .tbs-arrow,
+                                .tbs-card-scale .tbs-arrow {
                                     top: 50%;
                                     bottom: auto;
                                     right: 30px;
                                     transform: translateY(-50%) translateX(-20px);
                                 }
-                                .tbs-card-build:hover .tbs-arrow, .tbs-card-scale:hover .tbs-arrow {
+
+                                .tbs-card-build:hover .tbs-arrow,
+                                .tbs-card-scale:hover .tbs-arrow {
                                     transform: translateY(-50%) translateX(0);
                                 }
                             }
-                            
+
                             /* Animated Gradient Border using ::before */
                             .tbs-interactive-card::before {
                                 content: '';
@@ -1315,19 +1548,19 @@
                                 inset: 0;
                                 border-radius: 20px;
                                 padding: 2px;
-                                background: linear-gradient(120deg, transparent 40%, rgba(255,255,255,0.1), transparent 60%);
+                                background: linear-gradient(120deg, transparent 40%, rgba(255, 255, 255, 0.1), transparent 60%);
                                 -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
                                 -webkit-mask-composite: xor;
                                 mask-composite: exclude;
                                 transition: all 0.5s ease;
                                 opacity: 0.5;
                             }
-                            
+
                             .tbs-interactive-card:hover {
                                 transform: translateY(-8px) scale(1.03) rotateX(5deg) rotateY(-5deg);
                                 background: rgba(17, 24, 39, 0.8);
-                                box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.4), 
-                                            -1px -1px 0px rgba(255, 255, 255, 0.1) inset;
+                                box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.4),
+                                    -1px -1px 0px rgba(255, 255, 255, 0.1) inset;
                                 z-index: 10;
                             }
 
@@ -1344,6 +1577,7 @@
                                 transition: all 0.5s ease;
                                 pointer-events: none;
                             }
+
                             .tbs-interactive-card:hover .tbs-step-num {
                                 color: rgba(255, 255, 255, 0.06);
                                 right: 10px;
@@ -1364,14 +1598,15 @@
                                 color: rgba(255, 255, 255, 0.5);
                                 z-index: 2;
                                 transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-                                box-shadow: inset 0 0 20px rgba(255,255,255,0.02);
+                                box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.02);
                             }
-                            
+
                             .tbs-card-content {
                                 z-index: 2;
                                 flex: 1;
                                 transition: all 0.5s ease;
                             }
+
                             .tbs-card-content h4 {
                                 font-size: 1.4rem;
                                 font-weight: 800;
@@ -1380,6 +1615,7 @@
                                 letter-spacing: 0.02em;
                                 transition: color 0.3s;
                             }
+
                             .tbs-card-content p {
                                 font-size: 0.95rem;
                                 color: var(--text-muted);
@@ -1402,29 +1638,93 @@
                                 transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
                                 z-index: 2;
                             }
+
                             .tbs-interactive-card:hover .tbs-arrow {
                                 transform: translateY(-50%) translateX(0);
                                 opacity: 1;
                             }
 
                             /* specific colors and glows */
-                            .tbs-card-think:hover::before { background: linear-gradient(120deg, transparent, rgba(56,189,248,0.8), transparent); opacity: 1;}
-                            .tbs-card-think:hover .tbs-icon-box { background: var(--primary); color: #fff; border-color: rgba(56,189,248,0.5); box-shadow: 0 10px 25px rgba(56,189,248,0.4), inset 0 0 10px rgba(255,255,255,0.5); transform: translateZ(20px) rotate(-10deg); }
-                            .tbs-card-think:hover .tbs-card-content h4 { color: #fff; transform: translateZ(10px); }
-                            .tbs-card-think:hover .tbs-card-content p { color: #e2e8f0; opacity: 1; }
-                            .tbs-card-think:hover .tbs-arrow { color: var(--primary); }
+                            .tbs-card-think:hover::before {
+                                background: linear-gradient(120deg, transparent, rgba(56, 189, 248, 0.8), transparent);
+                                opacity: 1;
+                            }
 
-                            .tbs-card-build:hover::before { background: linear-gradient(120deg, transparent, rgba(192,132,252,0.8), transparent); opacity: 1;}
-                            .tbs-card-build:hover .tbs-icon-box { background: var(--accent); color: #fff; border-color: rgba(192,132,252,0.5); box-shadow: 0 10px 25px rgba(192,132,252,0.4), inset 0 0 10px rgba(255,255,255,0.5); transform: translateZ(20px) rotate(-10deg); }
-                            .tbs-card-build:hover .tbs-card-content h4 { color: #fff; transform: translateZ(10px); }
-                            .tbs-card-build:hover .tbs-card-content p { color: #e2e8f0; opacity: 1; }
-                            .tbs-card-build:hover .tbs-arrow { color: var(--accent); }
+                            .tbs-card-think:hover .tbs-icon-box {
+                                background: var(--primary);
+                                color: #fff;
+                                border-color: rgba(56, 189, 248, 0.5);
+                                box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.5);
+                                transform: translateZ(20px) rotate(-10deg);
+                            }
 
-                            .tbs-card-scale:hover::before { background: linear-gradient(120deg, transparent, rgba(16,185,129,0.8), transparent); opacity: 1;}
-                            .tbs-card-scale:hover .tbs-icon-box { background: #10b981; color: #fff; border-color: rgba(16,185,129,0.5); box-shadow: 0 10px 25px rgba(16,185,129,0.4), inset 0 0 10px rgba(255,255,255,0.5); transform: translateZ(20px) rotate(-10deg); }
-                            .tbs-card-scale:hover .tbs-card-content h4 { color: #fff; transform: translateZ(10px); }
-                            .tbs-card-scale:hover .tbs-card-content p { color: #e2e8f0; opacity: 1; }
-                            .tbs-card-scale:hover .tbs-arrow { color: #10b981; }
+                            .tbs-card-think:hover .tbs-card-content h4 {
+                                color: #fff;
+                                transform: translateZ(10px);
+                            }
+
+                            .tbs-card-think:hover .tbs-card-content p {
+                                color: #e2e8f0;
+                                opacity: 1;
+                            }
+
+                            .tbs-card-think:hover .tbs-arrow {
+                                color: var(--primary);
+                            }
+
+                            .tbs-card-build:hover::before {
+                                background: linear-gradient(120deg, transparent, rgba(192, 132, 252, 0.8), transparent);
+                                opacity: 1;
+                            }
+
+                            .tbs-card-build:hover .tbs-icon-box {
+                                background: var(--accent);
+                                color: #fff;
+                                border-color: rgba(192, 132, 252, 0.5);
+                                box-shadow: 0 10px 25px rgba(192, 132, 252, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.5);
+                                transform: translateZ(20px) rotate(-10deg);
+                            }
+
+                            .tbs-card-build:hover .tbs-card-content h4 {
+                                color: #fff;
+                                transform: translateZ(10px);
+                            }
+
+                            .tbs-card-build:hover .tbs-card-content p {
+                                color: #e2e8f0;
+                                opacity: 1;
+                            }
+
+                            .tbs-card-build:hover .tbs-arrow {
+                                color: var(--accent);
+                            }
+
+                            .tbs-card-scale:hover::before {
+                                background: linear-gradient(120deg, transparent, rgba(16, 185, 129, 0.8), transparent);
+                                opacity: 1;
+                            }
+
+                            .tbs-card-scale:hover .tbs-icon-box {
+                                background: #10b981;
+                                color: #fff;
+                                border-color: rgba(16, 185, 129, 0.5);
+                                box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.5);
+                                transform: translateZ(20px) rotate(-10deg);
+                            }
+
+                            .tbs-card-scale:hover .tbs-card-content h4 {
+                                color: #fff;
+                                transform: translateZ(10px);
+                            }
+
+                            .tbs-card-scale:hover .tbs-card-content p {
+                                color: #e2e8f0;
+                                opacity: 1;
+                            }
+
+                            .tbs-card-scale:hover .tbs-arrow {
+                                color: #10b981;
+                            }
 
                             /* Moving background light effect on hover */
                             .tbs-interactive-card::after {
@@ -1434,21 +1734,28 @@
                                 left: -50%;
                                 width: 200%;
                                 height: 200%;
-                                background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 50%);
+                                background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
                                 opacity: 0;
                                 transition: opacity 0.5s;
                                 pointer-events: none;
                                 z-index: 0;
                                 transform: scale(0.5);
                             }
+
                             .tbs-interactive-card:hover::after {
                                 opacity: 1;
                                 transform: scale(1);
                                 animation: subtlePulse 4s infinite alternate;
                             }
+
                             @keyframes subtlePulse {
-                                0% { transform: scale(1) translate(0, 0); }
-                                100% { transform: scale(1.1) translate(2%, 2%); }
+                                0% {
+                                    transform: scale(1) translate(0, 0);
+                                }
+
+                                100% {
+                                    transform: scale(1.1) translate(2%, 2%);
+                                }
                             }
                         </style>
 
@@ -1482,6 +1789,10 @@
                             </div>
                         </div>
                     </div>
+                    <div style="display: flex; justify-content: flex-end; align-items: flex-start;">
+                        <img src="images/vijay.jpeg" alt="Vijay Pratap Singh"
+                            style="width: 100%; max-width: 450px; border-radius: 24px; box-shadow: 0 15px 35px rgba(192, 132, 252, 0.25); border: 1px solid var(--glass-border);">
+                    </div>
                 </div>
             </div>
         </section>
@@ -1491,10 +1802,16 @@
             <div class="glass-card interactable reveal">
                 <div class="card-content" style="padding: 4rem 2rem;">
                     <div style="text-align: center; margin-bottom: 4rem;">
-                        <i class="fas fa-bolt" style="font-size: 3rem; color: #facc15; margin-bottom: 1.5rem; filter: drop-shadow(0 0 12px #facc15);"></i>
-                        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Why <span style="background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Vijay?</span></h2>
-                        <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 800px; margin: 0 auto; line-height: 1.8;">
-                            Why pay for an entire department when one expert can out-build, out-architect, and out-deliver them all? I replace the entire overhead of a traditional software team — at a fraction of the cost, and in half the time.
+                        <i class="fas fa-bolt"
+                            style="font-size: 3rem; color: #facc15; margin-bottom: 1.5rem; filter: drop-shadow(0 0 12px #facc15);"></i>
+                        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Why <span
+                                style="background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Vijay?</span>
+                        </h2>
+                        <p
+                            style="font-size: 1.15rem; color: var(--text-muted); max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                            Why pay for an entire department when one expert can out-build, out-architect, and
+                            out-deliver them all? I replace the entire overhead of a traditional software team — at a
+                            fraction of the cost, and in half the time.
                         </p>
                     </div>
 
@@ -1502,69 +1819,150 @@
                     <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: stretch; margin-bottom: 3rem;">
 
                         <!-- Traditional Team Column -->
-                        <div style="flex: 1; min-width: 280px; background: rgba(239, 68, 68, 0.04); border: 1px solid rgba(239, 68, 68, 0.2); border-radius: 20px; padding: 2rem; position: relative;">
-                            <div style="position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 20px; padding: 4px 16px; font-size: 0.8rem; font-weight: 700; color: #f87171; white-space: nowrap; letter-spacing: 0.05em;">WITHOUT VIJAY</div>
-                            <h3 style="color: #f87171; font-size: 1.2rem; font-weight: 700; margin-bottom: 1.5rem; margin-top: 0.5rem;">A Full Traditional Team</h3>
+                        <div
+                            style="flex: 1; min-width: 280px; background: rgba(239, 68, 68, 0.04); border: 1px solid rgba(239, 68, 68, 0.2); border-radius: 20px; padding: 2rem; position: relative;">
+                            <div
+                                style="position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 20px; padding: 4px 16px; font-size: 0.8rem; font-weight: 700; color: #f87171; white-space: nowrap; letter-spacing: 0.05em;">
+                                WITHOUT VIJAY</div>
+                            <h3
+                                style="color: #f87171; font-size: 1.2rem; font-weight: 700; margin-bottom: 1.5rem; margin-top: 0.5rem;">
+                                A Full Traditional Team</h3>
                             <div style="display: flex; flex-direction: column; gap: 0.85rem;">
-                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: #f87171; font-size: 1.2rem;">✕</span><span style="color: var(--text-muted); font-size: 0.95rem;">Project Manager (coordination overhead)</span></div>
-                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: #f87171; font-size: 1.2rem;">✕</span><span style="color: var(--text-muted); font-size: 0.95rem;">Project Lead (meetings &amp; sprint planning)</span></div>
-                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: #f87171; font-size: 1.2rem;">✕</span><span style="color: var(--text-muted); font-size: 0.95rem;">Senior Developer (high cost)</span></div>
-                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: #f87171; font-size: 1.2rem;">✕</span><span style="color: var(--text-muted); font-size: 0.95rem;">Junior Engineers (babysitting &amp; rework)</span></div>
-                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: #f87171; font-size: 1.2rem;">✕</span><span style="color: var(--text-muted); font-size: 0.95rem;">QA Testing team (delayed feedback loops)</span></div>
-                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: #f87171; font-size: 1.2rem;">✕</span><span style="color: var(--text-muted); font-size: 0.95rem;">DevOps Engineer (infrastructure silos)</span></div>
-                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: #f87171; font-size: 1.2rem;">✕</span><span style="color: var(--text-muted); font-size: 0.95rem;">Solution Architect (expensive consultant)</span></div>
-                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: #f87171; font-size: 1.2rem;">✕</span><span style="color: var(--text-muted); font-size: 0.95rem;">AI/ML Specialist (niche &amp; costly)</span></div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span
+                                        style="color: #f87171; font-size: 1.2rem;">✕</span><span
+                                        style="color: var(--text-muted); font-size: 0.95rem;">Project Manager
+                                        (coordination overhead)</span></div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span
+                                        style="color: #f87171; font-size: 1.2rem;">✕</span><span
+                                        style="color: var(--text-muted); font-size: 0.95rem;">Project Lead (meetings
+                                        &amp; sprint planning)</span></div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span
+                                        style="color: #f87171; font-size: 1.2rem;">✕</span><span
+                                        style="color: var(--text-muted); font-size: 0.95rem;">Senior Developer (high
+                                        cost)</span></div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span
+                                        style="color: #f87171; font-size: 1.2rem;">✕</span><span
+                                        style="color: var(--text-muted); font-size: 0.95rem;">Junior Engineers
+                                        (babysitting &amp; rework)</span></div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span
+                                        style="color: #f87171; font-size: 1.2rem;">✕</span><span
+                                        style="color: var(--text-muted); font-size: 0.95rem;">QA Testing team (delayed
+                                        feedback loops)</span></div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span
+                                        style="color: #f87171; font-size: 1.2rem;">✕</span><span
+                                        style="color: var(--text-muted); font-size: 0.95rem;">DevOps Engineer
+                                        (infrastructure silos)</span></div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span
+                                        style="color: #f87171; font-size: 1.2rem;">✕</span><span
+                                        style="color: var(--text-muted); font-size: 0.95rem;">Solution Architect
+                                        (expensive consultant)</span></div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span
+                                        style="color: #f87171; font-size: 1.2rem;">✕</span><span
+                                        style="color: var(--text-muted); font-size: 0.95rem;">AI/ML Specialist (niche
+                                        &amp; costly)</span></div>
                             </div>
-                            <div style="margin-top: 2rem; padding: 1rem; background: rgba(239, 68, 68, 0.08); border-radius: 12px; text-align: center;">
-                                <div style="font-size: 0.85rem; color: #9ca3af; margin-bottom: 0.25rem;">Avg. Team Cost / Month</div>
+                            <!-- <div
+                                style="margin-top: 2rem; padding: 1rem; background: rgba(239, 68, 68, 0.08); border-radius: 12px; text-align: center;">
+                                <div style="font-size: 0.85rem; color: #9ca3af; margin-bottom: 0.25rem;">Avg. Team Cost
+                                    / Month</div>
                                 <div style="font-size: 1.8rem; font-weight: 800; color: #f87171;">$30,000+</div>
-                                <div style="font-size: 0.8rem; color: #9ca3af; margin-top: 0.25rem;">Slow, fragmented, expensive</div>
-                            </div>
+                                <div style="font-size: 0.8rem; color: #9ca3af; margin-top: 0.25rem;">Slow, fragmented,
+                                    expensive</div>
+                            </div> -->
                         </div>
 
                         <!-- VS Badge -->
                         <div style="display: flex; align-items: center; justify-content: center; min-width: 60px;">
-                            <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--text-muted); font-size: 0.9rem;">VS</div>
+                            <div
+                                style="width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--text-muted); font-size: 0.9rem;">
+                                VS</div>
                         </div>
 
                         <!-- Vijay Column -->
-                        <div style="flex: 1; min-width: 280px; background: rgba(16, 185, 129, 0.04); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 20px; padding: 2rem; position: relative; box-shadow: 0 0 30px rgba(16, 185, 129, 0.08);">
-                            <div style="position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.4); border-radius: 20px; padding: 4px 16px; font-size: 0.8rem; font-weight: 700; color: #10b981; white-space: nowrap; letter-spacing: 0.05em;">WITH VIJAY</div>
-                            <h3 style="color: #10b981; font-size: 1.2rem; font-weight: 700; margin-bottom: 1.5rem; margin-top: 0.5rem;">One Expert. Zero Compromise.</h3>
+                        <div
+                            style="flex: 1; min-width: 280px; background: rgba(16, 185, 129, 0.04); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 20px; padding: 2rem; position: relative; box-shadow: 0 0 30px rgba(16, 185, 129, 0.08);">
+                            <div
+                                style="position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.4); border-radius: 20px; padding: 4px 16px; font-size: 0.8rem; font-weight: 700; color: #10b981; white-space: nowrap; letter-spacing: 0.05em;">
+                                WITH VIJAY</div>
+                            <h3
+                                style="color: #10b981; font-size: 1.2rem; font-weight: 700; margin-bottom: 1.5rem; margin-top: 0.5rem;">
+                                One Expert. Zero Compromise.</h3>
                             <div style="display: flex; flex-direction: column; gap: 0.85rem;">
-                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: #10b981; font-size: 1.2rem;">✓</span><span style="color: #fff; font-size: 0.95rem;"><strong>Visionary Architect</strong> — end-to-end system design</span></div>
-                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: #10b981; font-size: 1.2rem;">✓</span><span style="color: #fff; font-size: 0.95rem;"><strong>Full-Stack Engineer</strong> — Web, Mobile, Desktop, Extensions</span></div>
-                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: #10b981; font-size: 1.2rem;">✓</span><span style="color: #fff; font-size: 0.95rem;"><strong>Generative AI Expert</strong> — RAG, Agents, Voice, Multimodal</span></div>
-                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: #10b981; font-size: 1.2rem;">✓</span><span style="color: #fff; font-size: 0.95rem;"><strong>DevOps &amp; CI/CD</strong> — zero-downtime cloud deployments</span></div>
-                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: #10b981; font-size: 1.2rem;">✓</span><span style="color: #fff; font-size: 0.95rem;"><strong>QA &amp; Code Quality</strong> — built-in best practices, zero rework</span></div>
-                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: #10b981; font-size: 1.2rem;">✓</span><span style="color: #fff; font-size: 0.95rem;"><strong>Product Strategist</strong> — business-first, revenue-focused decisions</span></div>
-                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: #10b981; font-size: 1.2rem;">✓</span><span style="color: #fff; font-size: 0.95rem;"><strong>Direct Communication</strong> — no meetings, no overhead, no delays</span></div>
-                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: #10b981; font-size: 1.2rem;">✓</span><span style="color: #fff; font-size: 0.95rem;"><strong>8+ Years Battle-Tested Experience</strong> across all domains</span></div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span
+                                        style="color: #10b981; font-size: 1.2rem;">✓</span><span
+                                        style="color: #fff; font-size: 0.95rem;"><strong>Visionary Architect</strong> —
+                                        end-to-end system design</span></div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span
+                                        style="color: #10b981; font-size: 1.2rem;">✓</span><span
+                                        style="color: #fff; font-size: 0.95rem;"><strong>Full-Stack Engineer</strong> —
+                                        Web, Mobile, Desktop, Extensions</span></div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span
+                                        style="color: #10b981; font-size: 1.2rem;">✓</span><span
+                                        style="color: #fff; font-size: 0.95rem;"><strong>Generative AI Expert</strong> —
+                                        RAG, Agents, Voice, Multimodal</span></div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span
+                                        style="color: #10b981; font-size: 1.2rem;">✓</span><span
+                                        style="color: #fff; font-size: 0.95rem;"><strong>DevOps &amp; CI/CD</strong> —
+                                        zero-downtime cloud deployments</span></div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span
+                                        style="color: #10b981; font-size: 1.2rem;">✓</span><span
+                                        style="color: #fff; font-size: 0.95rem;"><strong>QA &amp; Code Quality</strong>
+                                        — built-in best practices, zero rework</span></div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span
+                                        style="color: #10b981; font-size: 1.2rem;">✓</span><span
+                                        style="color: #fff; font-size: 0.95rem;"><strong>Product Strategist</strong> —
+                                        business-first, revenue-focused decisions</span></div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span
+                                        style="color: #10b981; font-size: 1.2rem;">✓</span><span
+                                        style="color: #fff; font-size: 0.95rem;"><strong>Direct Communication</strong> —
+                                        no meetings, no overhead, no delays</span></div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem;"><span
+                                        style="color: #10b981; font-size: 1.2rem;">✓</span><span
+                                        style="color: #fff; font-size: 0.95rem;"><strong>8+ Years Battle-Tested
+                                            Experience</strong> across all domains</span></div>
                             </div>
-                            <div style="margin-top: 2rem; padding: 1rem; background: rgba(16, 185, 129, 0.08); border-radius: 12px; text-align: center;">
-                                <div style="font-size: 0.85rem; color: #9ca3af; margin-bottom: 0.25rem;">Your Investment</div>
+                            <!-- <div
+                                style="margin-top: 2rem; padding: 1rem; background: rgba(16, 185, 129, 0.08); border-radius: 12px; text-align: center;">
+                                <div style="font-size: 0.85rem; color: #9ca3af; margin-bottom: 0.25rem;">Your Investment
+                                </div>
                                 <div style="font-size: 1.8rem; font-weight: 800; color: #10b981;">80% Less</div>
-                                <div style="font-size: 0.8rem; color: #9ca3af; margin-top: 0.25rem;">Faster delivery. Higher quality. Zero bloat.</div>
-                            </div>
+                                <div style="font-size: 0.8rem; color: #9ca3af; margin-top: 0.25rem;">Faster delivery.
+                                    Higher quality. Zero bloat.</div>
+                            </div> -->
                         </div>
                     </div>
 
                     <!-- 3 Key Benefits -->
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
-                        <div style="background: rgba(250, 204, 21, 0.04); border: 1px solid rgba(250, 204, 21, 0.2); border-radius: 16px; padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+                        <div style="background: rgba(250, 204, 21, 0.04); border: 1px solid rgba(250, 204, 21, 0.2); border-radius: 16px; padding: 2rem; text-align: center; transition: all 0.3s ease;"
+                            onmouseover="this.style.transform='translateY(-5px)'"
+                            onmouseout="this.style.transform='translateY(0)'">
                             <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">💰</div>
-                            <h4 style="color: #facc15; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem;">Slash Costs</h4>
-                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">No salaries for 6 roles. No management overhead. One expert rate, all capabilities.</p>
+                            <h4 style="color: #facc15; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem;">
+                                Slash Costs</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">No salaries for 6
+                                roles. No management overhead. One expert rate, all capabilities.</p>
                         </div>
-                        <div style="background: rgba(56, 189, 248, 0.04); border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 16px; padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div style="background: rgba(56, 189, 248, 0.04); border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 16px; padding: 2rem; text-align: center; transition: all 0.3s ease;"
+                            onmouseover="this.style.transform='translateY(-5px)'"
+                            onmouseout="this.style.transform='translateY(0)'">
                             <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">⚡</div>
-                            <h4 style="color: var(--primary); font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem;">Ship Faster</h4>
-                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">No handoffs. No standups. No blockers. From idea to deployment in record time.</p>
+                            <h4
+                                style="color: var(--primary); font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem;">
+                                Ship Faster</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">No handoffs. No
+                                standups. No blockers. From idea to deployment in record time.</p>
                         </div>
-                        <div style="background: rgba(192, 132, 252, 0.04); border: 1px solid rgba(192, 132, 252, 0.2); border-radius: 16px; padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div style="background: rgba(192, 132, 252, 0.04); border: 1px solid rgba(192, 132, 252, 0.2); border-radius: 16px; padding: 2rem; text-align: center; transition: all 0.3s ease;"
+                            onmouseover="this.style.transform='translateY(-5px)'"
+                            onmouseout="this.style.transform='translateY(0)'">
                             <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">🎯</div>
-                            <h4 style="color: var(--accent); font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem;">Zero Compromise</h4>
-                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">Architecture, AI, quality — all owned by one senior mind. Consistent vision, every line.</p>
+                            <h4
+                                style="color: var(--accent); font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem;">
+                                Zero Compromise</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">Architecture, AI,
+                                quality — all owned by one senior mind. Consistent vision, every line.</p>
                         </div>
                     </div>
 
@@ -1577,10 +1975,15 @@
             <div class="glass-card interactable reveal" style="border-top: 4px solid var(--accent);">
                 <div class="card-content" style="padding: 4rem 2rem;">
                     <div style="text-align: center; margin-bottom: 4rem;">
-                        <i class="fas fa-project-diagram" style="font-size: 3rem; color: var(--accent); margin-bottom: 1.5rem; filter: drop-shadow(0 0 10px var(--accent));"></i>
-                        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">My Execution <span style="background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Approach</span></h2>
-                        <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 800px; margin: 0 auto; line-height: 1.8;">
-                            A systematic, battle-tested pipeline designed to eliminate ambiguity, mitigate risks early, and guarantee a robust, scalable product delivery.
+                        <i class="fas fa-project-diagram"
+                            style="font-size: 3rem; color: var(--accent); margin-bottom: 1.5rem; filter: drop-shadow(0 0 10px var(--accent));"></i>
+                        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">My Execution <span
+                                style="background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Approach</span>
+                        </h2>
+                        <p
+                            style="font-size: 1.15rem; color: var(--text-muted); max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                            A systematic, battle-tested pipeline designed to eliminate ambiguity, mitigate risks early,
+                            and guarantee a robust, scalable product delivery.
                         </p>
                     </div>
 
@@ -1591,6 +1994,7 @@
                             margin: 0 auto;
                             padding: 2rem 0;
                         }
+
                         .approach-timeline::before {
                             content: '';
                             position: absolute;
@@ -1601,6 +2005,7 @@
                             background: linear-gradient(to bottom, transparent, var(--accent), var(--primary), #10b981, transparent);
                             transform: translateX(-50%);
                         }
+
                         .approach-item {
                             position: relative;
                             margin-bottom: 3rem;
@@ -1610,16 +2015,19 @@
                             align-items: center;
                             perspective: 1000px;
                         }
+
                         .approach-item:nth-child(even) .approach-content {
                             margin-left: 55%;
                             text-align: left;
                             transform-origin: left center;
                         }
+
                         .approach-item:nth-child(odd) .approach-content {
                             margin-right: 55%;
                             text-align: right;
                             transform-origin: right center;
                         }
+
                         .approach-node {
                             position: absolute;
                             left: 50%;
@@ -1634,20 +2042,39 @@
                             box-shadow: 0 0 15px rgba(192, 132, 252, 0.6);
                             transition: all 0.3s ease;
                         }
+
                         .approach-item:hover .approach-node {
                             transform: translate(-50%, -50%) scale(1.5);
                             background: var(--accent);
                         }
-                        
+
                         /* Alternate colors for steps */
-                        .approach-item:nth-child(3n+1) .approach-node { border-color: var(--primary); box-shadow: 0 0 15px rgba(56,189,248,0.6); }
-                        .approach-item:nth-child(3n+1):hover .approach-node { background: var(--primary); }
-                        
-                        .approach-item:nth-child(3n+2) .approach-node { border-color: var(--accent); box-shadow: 0 0 15px rgba(192,132,252,0.6); }
-                        .approach-item:nth-child(3n+2):hover .approach-node { background: var(--accent); }
-                        
-                        .approach-item:nth-child(3n+3) .approach-node { border-color: #10b981; box-shadow: 0 0 15px rgba(16,185,129,0.6); }
-                        .approach-item:nth-child(3n+3):hover .approach-node { background: #10b981; }
+                        .approach-item:nth-child(3n+1) .approach-node {
+                            border-color: var(--primary);
+                            box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+                        }
+
+                        .approach-item:nth-child(3n+1):hover .approach-node {
+                            background: var(--primary);
+                        }
+
+                        .approach-item:nth-child(3n+2) .approach-node {
+                            border-color: var(--accent);
+                            box-shadow: 0 0 15px rgba(192, 132, 252, 0.6);
+                        }
+
+                        .approach-item:nth-child(3n+2):hover .approach-node {
+                            background: var(--accent);
+                        }
+
+                        .approach-item:nth-child(3n+3) .approach-node {
+                            border-color: #10b981;
+                            box-shadow: 0 0 15px rgba(16, 185, 129, 0.6);
+                        }
+
+                        .approach-item:nth-child(3n+3):hover .approach-node {
+                            background: #10b981;
+                        }
 
                         .approach-content {
                             background: rgba(17, 24, 39, 0.7);
@@ -1659,13 +2086,15 @@
                             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
                             position: relative;
                         }
+
                         .approach-content:hover {
                             transform: scale(1.05) translateY(-5px);
                             background: rgba(17, 24, 39, 0.95);
-                            border-color: rgba(255,255,255,0.15);
-                            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+                            border-color: rgba(255, 255, 255, 0.15);
+                            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
                             z-index: 10;
                         }
+
                         .approach-title {
                             font-size: 1.2rem;
                             font-weight: 700;
@@ -1675,24 +2104,28 @@
                             align-items: center;
                             gap: 0.75rem;
                         }
+
                         .approach-item:nth-child(odd) .approach-title {
                             justify-content: flex-end;
                             flex-direction: row-reverse;
                         }
-                        
+
                         @media (max-width: 768px) {
                             .approach-timeline::before {
                                 left: 30px;
                             }
+
                             .approach-node {
                                 left: 30px;
                             }
+
                             .approach-item:nth-child(even) .approach-content,
                             .approach-item:nth-child(odd) .approach-content {
                                 margin: 0 0 0 70px;
                                 width: calc(100% - 70px);
                                 text-align: left;
                             }
+
                             .approach-item:nth-child(odd) .approach-title {
                                 justify-content: flex-start;
                                 flex-direction: row;
@@ -1704,78 +2137,111 @@
                         <div class="approach-item">
                             <div class="approach-node"></div>
                             <div class="approach-content">
-                                <div class="approach-title"><i class="fas fa-search" style="color: var(--primary);"></i> Business Requirement & Discovery</div>
-                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Deep-dive consultations to extract core business objectives, define user personas, and understand the exact market problems we are solving.</p>
+                                <div class="approach-title"><i class="fas fa-search" style="color: var(--primary);"></i>
+                                    Business Requirement & Discovery</div>
+                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Deep-dive
+                                    consultations to extract core business objectives, define user personas, and
+                                    understand the exact market problems we are solving.</p>
                             </div>
                         </div>
                         <div class="approach-item">
                             <div class="approach-node"></div>
                             <div class="approach-content">
-                                <div class="approach-title"><i class="fas fa-balance-scale" style="color: var(--accent);"></i> Feasibility & PDA Analysis</div>
-                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Evaluating technical viability, budget constraints, risk assessment, and Problem Domain Analysis (PDA) before writing a single line of code.</p>
+                                <div class="approach-title"><i class="fas fa-balance-scale"
+                                        style="color: var(--accent);"></i> Feasibility & PDA Analysis</div>
+                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Evaluating technical
+                                    viability, budget constraints, risk assessment, and Problem Domain Analysis (PDA)
+                                    before writing a single line of code.</p>
                             </div>
                         </div>
                         <div class="approach-item">
                             <div class="approach-node"></div>
                             <div class="approach-content">
-                                <div class="approach-title"><i class="fas fa-chart-pie" style="color: #10b981;"></i> Gap Analysis & Strategy</div>
-                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Mapping the delta between current capabilities and the desired future-state to formulate a strategic execution roadmap.</p>
+                                <div class="approach-title"><i class="fas fa-chart-pie" style="color: #10b981;"></i> Gap
+                                    Analysis & Strategy</div>
+                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Mapping the delta
+                                    between current capabilities and the desired future-state to formulate a strategic
+                                    execution roadmap.</p>
                             </div>
                         </div>
                         <div class="approach-item">
                             <div class="approach-node"></div>
                             <div class="approach-content">
-                                <div class="approach-title"><i class="fas fa-paint-brush" style="color: var(--primary);"></i> UI/UX Architecture & Prototyping</div>
-                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Designing intuitive user journeys, wireframing interfaces, and creating high-fidelity interactive prototypes for stakeholder approval.</p>
+                                <div class="approach-title"><i class="fas fa-paint-brush"
+                                        style="color: var(--primary);"></i> UI/UX Architecture & Prototyping</div>
+                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Designing intuitive
+                                    user journeys, wireframing interfaces, and creating high-fidelity interactive
+                                    prototypes for stakeholder approval.</p>
                             </div>
                         </div>
                         <div class="approach-item">
                             <div class="approach-node"></div>
                             <div class="approach-content">
-                                <div class="approach-title"><i class="fas fa-server" style="color: var(--accent);"></i> Architecture & System Design</div>
-                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Selecting the optimal tech stack, designing database schemas, and architecting highly scalable, fault-tolerant infrastructure.</p>
+                                <div class="approach-title"><i class="fas fa-server" style="color: var(--accent);"></i>
+                                    Architecture & System Design</div>
+                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Selecting the optimal
+                                    tech stack, designing database schemas, and architecting highly scalable,
+                                    fault-tolerant infrastructure.</p>
                             </div>
                         </div>
                         <div class="approach-item">
                             <div class="approach-node"></div>
                             <div class="approach-content">
-                                <div class="approach-title"><i class="fas fa-code" style="color: #10b981;"></i> Agile Execution & Coding</div>
-                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Sprint-based iterative development enforcing strict coding standards, DRY principles, and highly maintainable architecture.</p>
+                                <div class="approach-title"><i class="fas fa-code" style="color: #10b981;"></i> Agile
+                                    Execution & Coding</div>
+                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Sprint-based
+                                    iterative development enforcing strict coding standards, DRY principles, and highly
+                                    maintainable architecture.</p>
                             </div>
                         </div>
                         <div class="approach-item">
                             <div class="approach-node"></div>
                             <div class="approach-content">
-                                <div class="approach-title"><i class="fas fa-brain" style="color: var(--primary);"></i> AI & Core Integration</div>
-                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Embedding advanced logic, custom algorithms, LLMs, and intelligent automation seamlessly into the product's core fabric.</p>
+                                <div class="approach-title"><i class="fas fa-brain" style="color: var(--primary);"></i>
+                                    AI & Core Integration</div>
+                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Embedding advanced
+                                    logic, custom algorithms, LLMs, and intelligent automation seamlessly into the
+                                    product's core fabric.</p>
                             </div>
                         </div>
                         <div class="approach-item">
                             <div class="approach-node"></div>
                             <div class="approach-content">
-                                <div class="approach-title"><i class="fas fa-shield-alt" style="color: var(--accent);"></i> QA, Testing & Security</div>
-                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Rigorous automated unit/E2E testing, manual QA passes, and comprehensive security/vulnerability audits to ensure enterprise-grade stability.</p>
+                                <div class="approach-title"><i class="fas fa-shield-alt"
+                                        style="color: var(--accent);"></i> QA, Testing & Security</div>
+                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Rigorous automated
+                                    unit/E2E testing, manual QA passes, and comprehensive security/vulnerability audits
+                                    to ensure enterprise-grade stability.</p>
                             </div>
                         </div>
                         <div class="approach-item">
                             <div class="approach-node"></div>
                             <div class="approach-content">
-                                <div class="approach-title"><i class="fas fa-infinity" style="color: #10b981;"></i> CI/CD & DevOps Automation</div>
-                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Establishing zero-downtime deployment pipelines using containerization (Docker/K8s) for automated, flawless releases.</p>
+                                <div class="approach-title"><i class="fas fa-infinity" style="color: #10b981;"></i>
+                                    CI/CD & DevOps Automation</div>
+                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Establishing
+                                    zero-downtime deployment pipelines using containerization (Docker/K8s) for
+                                    automated, flawless releases.</p>
                             </div>
                         </div>
                         <div class="approach-item">
                             <div class="approach-node"></div>
                             <div class="approach-content">
-                                <div class="approach-title"><i class="fas fa-check-circle" style="color: var(--primary);"></i> UAT & Production Deployment</div>
-                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Final User Acceptance Testing in a staging environment, followed by a coordinated, secure rollout to the live production server.</p>
+                                <div class="approach-title"><i class="fas fa-check-circle"
+                                        style="color: var(--primary);"></i> UAT & Production Deployment</div>
+                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Final User Acceptance
+                                    Testing in a staging environment, followed by a coordinated, secure rollout to the
+                                    live production server.</p>
                             </div>
                         </div>
                         <div class="approach-item">
                             <div class="approach-node"></div>
                             <div class="approach-content">
-                                <div class="approach-title"><i class="fas fa-chart-line" style="color: var(--accent);"></i> Monitoring & Future Scaling</div>
-                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Post-launch APM monitoring, log tracking, and capacity planning to ensure the platform effortlessly handles massive user growth.</p>
+                                <div class="approach-title"><i class="fas fa-chart-line"
+                                        style="color: var(--accent);"></i> Monitoring & Future Scaling</div>
+                                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Post-launch APM
+                                    monitoring, log tracking, and capacity planning to ensure the platform effortlessly
+                                    handles massive user growth.</p>
                             </div>
                         </div>
                     </div>
@@ -2315,12 +2781,16 @@
         <section id="results" class="container" style="padding-top: 0; padding-bottom: 2rem;">
             <div class="section-header reveal">
                 <span class="section-label">04. Impact & Metrics</span>
-                <h2 class="section-title" style="margin-bottom: 1rem;">Measurable <span style="background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Results</span></h2>
-                <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 800px; margin: 0 auto; line-height: 1.8; text-align: center;">
-                    Code is only as valuable as the business outcomes it drives. Here is a snapshot of the concrete, quantifiable impact I have delivered across multiple domains.
+                <h2 class="section-title" style="margin-bottom: 1rem;">Measurable <span
+                        style="background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Results</span>
+                </h2>
+                <p
+                    style="font-size: 1.15rem; color: var(--text-muted); max-width: 800px; margin: 0 auto; line-height: 1.8; text-align: center;">
+                    Code is only as valuable as the business outcomes it drives. Here is a snapshot of the concrete,
+                    quantifiable impact I have delivered across multiple domains.
                 </p>
             </div>
-            
+
             <style>
                 .stats-grid {
                     display: grid;
@@ -2328,6 +2798,7 @@
                     gap: 1.5rem;
                     perspective: 1000px;
                 }
+
                 .stat-card {
                     background: rgba(17, 24, 39, 0.6);
                     border: 1px solid rgba(255, 255, 255, 0.05);
@@ -2345,33 +2816,39 @@
                     justify-content: center;
                     cursor: crosshair;
                 }
+
                 .stat-card::before {
                     content: '';
                     position: absolute;
                     inset: 0;
-                    background: radial-gradient(circle at 50% 0%, rgba(255,255,255,0.06), transparent 60%);
+                    background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.06), transparent 60%);
                     z-index: -1;
                     opacity: 0;
                     transition: opacity 0.5s;
                 }
+
                 .stat-card:hover::before {
                     opacity: 1;
                 }
+
                 .stat-card:hover {
                     transform: translateY(-10px) scale(1.03);
-                    box-shadow: 0 20px 40px rgba(0,0,0,0.4), inset 0 0 0 1px rgba(255,255,255,0.1);
+                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
                     z-index: 10;
                 }
+
                 .stat-icon {
                     font-size: 2rem;
                     margin-bottom: 1rem;
                     opacity: 0.8;
                     transition: all 0.4s ease;
                 }
+
                 .stat-card:hover .stat-icon {
                     transform: scale(1.2) translateY(-5px);
                     opacity: 1;
                 }
+
                 .stat-value {
                     font-size: 3.5rem;
                     font-weight: 900;
@@ -2380,13 +2857,15 @@
                     background: var(--gradient-text);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
-                    filter: drop-shadow(0 0 10px rgba(255,255,255,0.05));
+                    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.05));
                     transition: all 0.4s ease;
                 }
+
                 .stat-card:hover .stat-value {
-                    filter: drop-shadow(0 0 20px rgba(255,255,255,0.2));
+                    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
                     transform: scale(1.1);
                 }
+
                 .stat-label {
                     color: var(--text-muted);
                     font-size: 0.95rem;
@@ -2395,40 +2874,97 @@
                     letter-spacing: 1px;
                     transition: color 0.4s;
                 }
+
                 .stat-card:hover .stat-label {
                     color: #fff;
                 }
-                
+
                 /* Custom colors for each stat */
-                .stat-card:nth-child(1):hover { border-color: var(--primary); box-shadow: 0 20px 40px rgba(56,189,248,0.15); }
-                .stat-card:nth-child(1) .stat-icon { color: var(--primary); }
-                
-                .stat-card:nth-child(2):hover { border-color: var(--accent); box-shadow: 0 20px 40px rgba(192,132,252,0.15); }
-                .stat-card:nth-child(2) .stat-value { background: linear-gradient(135deg, #c084fc, #a855f7); -webkit-background-clip: text; }
-                .stat-card:nth-child(2) .stat-icon { color: var(--accent); }
-                
-                .stat-card:nth-child(3):hover { border-color: #10b981; box-shadow: 0 20px 40px rgba(16,185,129,0.15); }
-                .stat-card:nth-child(3) .stat-value { background: linear-gradient(135deg, #34d399, #10b981); -webkit-background-clip: text; }
-                .stat-card:nth-child(3) .stat-icon { color: #10b981; }
-                
-                .stat-card:nth-child(4):hover { border-color: #facc15; box-shadow: 0 20px 40px rgba(250,204,21,0.15); }
-                .stat-card:nth-child(4) .stat-value { background: linear-gradient(135deg, #fde047, #facc15); -webkit-background-clip: text; }
-                .stat-card:nth-child(4) .stat-icon { color: #facc15; }
-                
-                .stat-card:nth-child(5):hover { border-color: #fb923c; box-shadow: 0 20px 40px rgba(251,146,60,0.15); }
-                .stat-card:nth-child(5) .stat-value { background: linear-gradient(135deg, #fdba74, #fb923c); -webkit-background-clip: text; }
-                .stat-card:nth-child(5) .stat-icon { color: #fb923c; }
-                
-                .stat-card:nth-child(6):hover { border-color: #f87171; box-shadow: 0 20px 40px rgba(248,113,113,0.15); }
-                .stat-card:nth-child(6) .stat-value { background: linear-gradient(135deg, #fca5a5, #f87171); -webkit-background-clip: text; }
-                .stat-card:nth-child(6) .stat-icon { color: #f87171; }
+                .stat-card:nth-child(1):hover {
+                    border-color: var(--primary);
+                    box-shadow: 0 20px 40px rgba(56, 189, 248, 0.15);
+                }
+
+                .stat-card:nth-child(1) .stat-icon {
+                    color: var(--primary);
+                }
+
+                .stat-card:nth-child(2):hover {
+                    border-color: var(--accent);
+                    box-shadow: 0 20px 40px rgba(192, 132, 252, 0.15);
+                }
+
+                .stat-card:nth-child(2) .stat-value {
+                    background: linear-gradient(135deg, #c084fc, #a855f7);
+                    -webkit-background-clip: text;
+                }
+
+                .stat-card:nth-child(2) .stat-icon {
+                    color: var(--accent);
+                }
+
+                .stat-card:nth-child(3):hover {
+                    border-color: #10b981;
+                    box-shadow: 0 20px 40px rgba(16, 185, 129, 0.15);
+                }
+
+                .stat-card:nth-child(3) .stat-value {
+                    background: linear-gradient(135deg, #34d399, #10b981);
+                    -webkit-background-clip: text;
+                }
+
+                .stat-card:nth-child(3) .stat-icon {
+                    color: #10b981;
+                }
+
+                .stat-card:nth-child(4):hover {
+                    border-color: #facc15;
+                    box-shadow: 0 20px 40px rgba(250, 204, 21, 0.15);
+                }
+
+                .stat-card:nth-child(4) .stat-value {
+                    background: linear-gradient(135deg, #fde047, #facc15);
+                    -webkit-background-clip: text;
+                }
+
+                .stat-card:nth-child(4) .stat-icon {
+                    color: #facc15;
+                }
+
+                .stat-card:nth-child(5):hover {
+                    border-color: #fb923c;
+                    box-shadow: 0 20px 40px rgba(251, 146, 60, 0.15);
+                }
+
+                .stat-card:nth-child(5) .stat-value {
+                    background: linear-gradient(135deg, #fdba74, #fb923c);
+                    -webkit-background-clip: text;
+                }
+
+                .stat-card:nth-child(5) .stat-icon {
+                    color: #fb923c;
+                }
+
+                .stat-card:nth-child(6):hover {
+                    border-color: #f87171;
+                    box-shadow: 0 20px 40px rgba(248, 113, 113, 0.15);
+                }
+
+                .stat-card:nth-child(6) .stat-value {
+                    background: linear-gradient(135deg, #fca5a5, #f87171);
+                    -webkit-background-clip: text;
+                }
+
+                .stat-card:nth-child(6) .stat-icon {
+                    color: #f87171;
+                }
             </style>
 
             <div class="reveal">
                 <div class="stats-grid">
                     <div class="stat-card">
                         <i class="fas fa-calendar-alt stat-icon"></i>
-                        <div class="stat-value">8+</div>
+                        <div class="stat-value">7+</div>
                         <div class="stat-label">Years Exp</div>
                     </div>
                     <div class="stat-card">
@@ -2441,11 +2977,11 @@
                         <div class="stat-value">20+</div>
                         <div class="stat-label">AI Systems</div>
                     </div>
-                    <div class="stat-card">
+                    <!-- <div class="stat-card">
                         <i class="fas fa-layer-group stat-icon"></i>
                         <div class="stat-value">7+</div>
                         <div class="stat-label">Tech Domains</div>
-                    </div>
+                    </div> -->
                     <div class="stat-card">
                         <i class="fas fa-piggy-bank stat-icon"></i>
                         <div class="stat-value">80%</div>
@@ -2473,7 +3009,7 @@
                     <h3><i class="fas fa-briefcase"></i> Experience</h3>
                     <div class="timeline">
                         <div class="timeline-item">
-                            <div class="timeline-date">OCT 2017 – PRESENT</div>
+                            <div class="timeline-date">OCT 2018 – PRESENT</div>
                             <div class="timeline-title">Technical Architect</div>
                             <div class="timeline-subtitle">Hestabit Technologies Pvt Ltd, Noida</div>
                             <div class="timeline-content">
@@ -2507,17 +3043,17 @@
                     <h3><i class="fas fa-graduation-cap"></i> Education</h3>
                     <div class="timeline">
                         <div class="timeline-item">
-                            <div class="timeline-date">2017</div>
+                            <div class="timeline-date">2018</div>
                             <div class="timeline-title">Bachelor of Computer Applications</div>
                             <div class="timeline-subtitle">Shobhit University, Meerut</div>
                         </div>
                         <div class="timeline-item">
-                            <div class="timeline-date">2013</div>
+                            <div class="timeline-date">2015</div>
                             <div class="timeline-title">Intermediate</div>
                             <div class="timeline-subtitle">S.K. Inter College, Gorakhpur</div>
                         </div>
                         <div class="timeline-item">
-                            <div class="timeline-date">2011</div>
+                            <div class="timeline-date">2013</div>
                             <div class="timeline-title">Matriculation</div>
                             <div class="timeline-subtitle">D.V.N. Inter College, Gorakhpur</div>
                         </div>
@@ -2530,9 +3066,11 @@
         <section id="domains" class="container" style="padding-bottom: 2rem;">
             <div class="section-header reveal">
                 <span class="section-label">02. Service Offerings</span>
-                <h2 class="section-title">Core <span style="background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Expertise</span></h2>
+                <h2 class="section-title">Core <span
+                        style="background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Expertise</span>
+                </h2>
             </div>
-            
+
             <style>
                 .domains-grid {
                     display: grid;
@@ -2541,6 +3079,7 @@
                     perspective: 1500px;
                     margin-top: 3rem;
                 }
+
                 .domain-card {
                     position: relative;
                     background: rgba(17, 24, 39, 0.5);
@@ -2555,31 +3094,43 @@
                     overflow: hidden;
                     z-index: 1;
                 }
+
                 .domain-card::before {
                     content: '';
                     position: absolute;
-                    top: -50%; left: -50%;
-                    width: 200%; height: 200%;
-                    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 60%);
+                    top: -50%;
+                    left: -50%;
+                    width: 200%;
+                    height: 200%;
+                    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 60%);
                     opacity: 0;
                     transform: translateZ(0);
                     transition: opacity 0.6s ease;
                     pointer-events: none;
                 }
+
                 .domain-card:hover {
                     transform: translateY(-10px) rotateX(10deg) rotateY(10deg) scale(1.05);
                     background: rgba(17, 24, 39, 0.8);
                     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5), inset 0 0 0 1px var(--accent);
                     z-index: 10;
                 }
+
                 .domain-card:hover::before {
                     opacity: 1;
                     animation: rotateGlare 5s linear infinite;
                 }
+
                 @keyframes rotateGlare {
-                    0% { transform: rotate(0deg); }
-                    100% { transform: rotate(360deg); }
+                    0% {
+                        transform: rotate(0deg);
+                    }
+
+                    100% {
+                        transform: rotate(360deg);
+                    }
                 }
+
                 .domain-icon {
                     font-size: 3.5rem;
                     color: rgba(255, 255, 255, 0.2);
@@ -2587,11 +3138,13 @@
                     transition: all 0.5s ease;
                     transform: translateZ(30px);
                 }
+
                 .domain-card:hover .domain-icon {
                     color: var(--primary);
                     filter: drop-shadow(0 0 15px var(--primary));
                     transform: translateZ(50px) scale(1.1);
                 }
+
                 .domain-title {
                     font-size: 1.4rem;
                     font-weight: 800;
@@ -2600,10 +3153,12 @@
                     transform: translateZ(20px);
                     transition: all 0.5s ease;
                 }
+
                 .domain-card:hover .domain-title {
                     color: var(--accent);
                     transform: translateZ(40px);
                 }
+
                 .domain-desc {
                     font-size: 0.95rem;
                     color: var(--text-muted);
@@ -2611,53 +3166,61 @@
                     transform: translateZ(10px);
                     transition: all 0.5s ease;
                 }
+
                 .domain-card:hover .domain-desc {
                     transform: translateZ(30px);
                     color: #fff;
                 }
-                
+
                 @media (max-width: 1024px) {
                     .domains-grid {
                         grid-template-columns: repeat(2, 1fr);
                     }
                 }
+
                 @media (max-width: 600px) {
                     .domains-grid {
                         grid-template-columns: 1fr;
                     }
                 }
             </style>
-            
+
             <div class="domains-grid">
                 <div class="domain-card reveal">
                     <i class="fas fa-mobile-alt domain-icon"></i>
                     <h3 class="domain-title">Mobile App Development</h3>
-                    <p class="domain-desc">Native & Cross-platform solutions (React Native, Android) engineered for maximum performance and fluid UX.</p>
+                    <p class="domain-desc">Native & Cross-platform solutions (React Native, Android) engineered for
+                        maximum performance and fluid UX.</p>
                 </div>
                 <div class="domain-card reveal">
                     <i class="fas fa-laptop-code domain-icon"></i>
                     <h3 class="domain-title">Web App Development</h3>
-                    <p class="domain-desc">Highly scalable, reactive, and SEO-optimized web applications utilizing MERN, Next.js, and modern SSR.</p>
+                    <p class="domain-desc">Highly scalable, reactive, and SEO-optimized web applications utilizing MERN,
+                        Next.js, and modern SSR.</p>
                 </div>
                 <div class="domain-card reveal">
                     <i class="fas fa-desktop domain-icon"></i>
                     <h3 class="domain-title">Desktop App Development</h3>
-                    <p class="domain-desc">Cross-platform desktop solutions built with Electron/Tauri, offering native OS integrations and high performance.</p>
+                    <p class="domain-desc">Cross-platform desktop solutions built with Electron/Tauri, offering native
+                        OS integrations and high performance.</p>
                 </div>
                 <div class="domain-card reveal">
                     <i class="fas fa-brain domain-icon"></i>
                     <h3 class="domain-title">AI-Oriented Development</h3>
-                    <p class="domain-desc">Integrating LLMs, Agentic workflows (LangChain, LangGraph), and custom generative AI into core product logic.</p>
+                    <p class="domain-desc">Integrating LLMs, Agentic workflows (LangChain, LangGraph), and custom
+                        generative AI into core product logic.</p>
                 </div>
                 <div class="domain-card reveal">
                     <i class="fas fa-puzzle-piece domain-icon"></i>
                     <h3 class="domain-title">Extensions Development</h3>
-                    <p class="domain-desc">Architecting powerful Chrome/Browser extensions and VS Code extensions to supercharge user productivity.</p>
+                    <p class="domain-desc">Architecting powerful Chrome/Browser extensions and VS Code extensions to
+                        supercharge user productivity.</p>
                 </div>
                 <div class="domain-card reveal">
                     <i class="fas fa-spider domain-icon"></i>
                     <h3 class="domain-title">Web Scraping & Automation</h3>
-                    <p class="domain-desc">Building resilient, anti-bot bypassing data pipelines and headless browser automations at scale.</p>
+                    <p class="domain-desc">Building resilient, anti-bot bypassing data pipelines and headless browser
+                        automations at scale.</p>
                 </div>
             </div>
         </section>
@@ -2769,7 +3332,7 @@
                             <div class="project-icon-box"><i class="fas fa-hard-hat"></i></div>
                             <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
-                        <h3 class="project-title">ProjectEngineer</h3>
+                        <h3 class="project-title">AI Construction Platform</h3>
                         <p class="project-desc">AI-powered construction web app featuring subscriptions, AI document
                             analyzer, and RAG-based AI chat.</p>
                         <div class="project-tech">
@@ -2784,7 +3347,7 @@
                             <div class="project-icon-box"><i class="fas fa-shield-alt"></i></div>
                             <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
-                        <h3 class="project-title">Call Guard</h3>
+                        <h3 class="project-title">Smart Spam Filter</h3>
                         <p class="project-desc">PWA that smartly filters spam calls based on dynamic spam scoring and
                             intelligent routing logic.</p>
                         <div class="project-tech">
@@ -2799,8 +3362,9 @@
                             <div class="project-icon-box"><i class="fas fa-robot"></i></div>
                             <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
-                        <h3 class="project-title">Golf AI Helpline</h3>
-                        <p class="project-desc">Golf-focused hybrid app enabling users to interact via voice calls with
+                        <h3 class="project-title">AI Voice Assistant</h3>
+                        <p class="project-desc">Sports-focused hybrid app enabling users to interact via voice calls
+                            with
                             a human-like AI agent.</p>
                         <div class="project-tech">
                             <span>React Native</span><span>ElevenLabs</span><span>Node.js</span>
@@ -2814,7 +3378,7 @@
                             <div class="project-icon-box"><i class="fas fa-chart-line"></i></div>
                             <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
-                        <h3 class="project-title">Pairrot Prediction</h3>
+                        <h3 class="project-title">Predictive Analytics Engine</h3>
                         <p class="project-desc">Predictive analytics engine forecasting orders, sales, and labor needs
                             utilizing machine learning.</p>
                         <div class="project-tech">
@@ -2829,7 +3393,7 @@
                             <div class="project-icon-box"><i class="fas fa-camera"></i></div>
                             <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
-                        <h3 class="project-title">Image Recognition Alerts</h3>
+                        <h3 class="project-title">Image Recognition System</h3>
                         <p class="project-desc">Serverless architecture processing 1M+ images across 800+ devices to
                             detect blanks and alert admins.</p>
                         <div class="project-tech">
@@ -2844,7 +3408,7 @@
                             <div class="project-icon-box"><i class="fas fa-briefcase"></i></div>
                             <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
-                        <h3 class="project-title">GradBay Portal</h3>
+                        <h3 class="project-title">AI Job Board Portal</h3>
                         <p class="project-desc">Full-featured job portal with integrated ATS, subscription management,
                             and OpenAI integrations.</p>
                         <div class="project-tech">
