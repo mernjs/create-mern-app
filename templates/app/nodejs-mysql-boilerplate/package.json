@@ -17,7 +17,7 @@
     },
     "author": "nodejs-with-mysql@getnada.com",
     "dependencies": {
-        "bcrypt": "^5.1.1",
+        "bcrypt": "^6.0.0",
         "body-parser": "^1.20.2",
         "cors": "^2.8.5",
         "dotenv": "^16.4.5",
